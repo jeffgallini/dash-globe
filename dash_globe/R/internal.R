@@ -1,0 +1,27 @@
+.dashGlobe_js_metadata <- function() {
+deps_metadata <- list(`dash_globe` = structure(list(name = "dash_globe",
+version = "0.0.1", src = list(href = NULL,
+file = "deps"), meta = NULL,
+script = 'async-DashGlobe.js',
+stylesheet = NULL, head = NULL, attachment = NULL, package = "dashGlobe",
+all_files = FALSE, async = TRUE), class = "html_dependency"),
+`dash_globe` = structure(list(name = "dash_globe",
+version = "0.0.1", src = list(href = NULL,
+file = "deps"), meta = NULL,
+script = 'async-DashGlobe.js.map',
+stylesheet = NULL, head = NULL, attachment = NULL, package = "dashGlobe",
+all_files = FALSE, dynamic = TRUE), class = "html_dependency"),
+`dash_globe` = structure(list(name = "dash_globe",
+version = "0.0.1", src = list(href = NULL,
+file = "deps"), meta = NULL,
+script = 'dash_globe.min.js',
+stylesheet = NULL, head = NULL, attachment = NULL, package = "dashGlobe",
+all_files = FALSE), class = "html_dependency"),
+`dash_globe` = structure(list(name = "dash_globe",
+version = "0.0.1", src = list(href = NULL,
+file = "deps"), meta = NULL,
+script = 'dash_globe.min.js.map',
+stylesheet = NULL, head = NULL, attachment = NULL, package = "dashGlobe",
+all_files = FALSE, dynamic = TRUE), class = "html_dependency"))
+return(deps_metadata)
+}
