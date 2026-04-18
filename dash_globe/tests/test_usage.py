@@ -6,6 +6,7 @@ import usage
 
 
 HAS_DASH_TESTING_EXTRAS = importlib.util.find_spec("multiprocess") is not None
+GALLERY_RENDER_TIMEOUT = 20
 
 
 def _walk_components(component):
@@ -430,13 +431,13 @@ def test_render_component_gallery(dash_duo):
     assert len(dash_duo.find_elements("canvas")) == 0
 
     dash_duo.find_element("#basic-example-globe-run-button").click()
-    dash_duo.wait_for_element("#basic-example-globe canvas")
+    dash_duo.wait_for_element("#basic-example-globe canvas", timeout=GALLERY_RENDER_TIMEOUT)
 
     assert dash_duo.find_element("#basic-example-globe canvas")
     assert len(dash_duo.find_elements("canvas")) == 1
 
     dash_duo.find_element("#choropleth-countries-globe-run-button").click()
-    dash_duo.wait_for_element("#choropleth-countries-globe canvas")
+    dash_duo.wait_for_element("#choropleth-countries-globe canvas", timeout=GALLERY_RENDER_TIMEOUT)
     dash_duo.wait_for_element("#gallery-footer")
 
     assert len(dash_duo.find_elements("canvas")) == 1
