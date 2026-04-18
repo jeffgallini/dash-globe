@@ -2,12 +2,14 @@ import os
 import csv
 import io
 import json
+import math
 import time
+from pathlib import Path
 from random import Random
 from urllib.request import urlopen
 
 import dash_globe
-from dash import Dash, Input, Output, State, ctx, dcc, html
+from dash import Dash, Input, Output, State, ctx, dcc, html, no_update
 
 
 DEBUG_ENV_VAR = "DASH_GLOBE_DEBUG"
@@ -679,6 +681,393 @@ def load_submarine_cable_paths():
     return FALLBACK_SUBMARINE_CABLE_PATHS
 
 
+def format_demo_timestamp(timestamp):
+    return str(timestamp).replace("T", " ").replace("Z", " UTC")
+
+
+def normalize_demo_longitude(lng):
+    return ((lng + 180) % 360) - 180
+
+
+def build_situation_room_random_global_location(story_seed):
+    rng = Random(f"situation-room-global:{story_seed}")
+    return {
+        "name": "Global",
+        "lat": round(rng.uniform(-58, 58), 4),
+        "lng": round(rng.uniform(-180, 180), 4),
+    }
+
+
+def normalize_situation_room_story(story):
+    source_story = dict(story or {})
+    source_meta = dict(source_story.get("meta") or {})
+    source_location = dict(source_story.get("location") or {})
+    topics = [
+        str(topic).strip()
+        for topic in (source_meta.get("topics") or [])
+        if str(topic).strip()
+    ]
+    primary_topic = str(source_meta.get("topic") or (topics[0] if topics else "news")).strip().lower() or "news"
+    location_name = str(source_location.get("name") or "Unknown location").strip() or "Unknown location"
+    story_seed = source_story.get("id") or source_story.get("title") or location_name
+    location = {
+        "name": location_name,
+        "lat": float(source_location.get("lat") or 0),
+        "lng": float(source_location.get("lng") or 0),
+    }
+
+    if location_name.lower() == "global":
+        location = build_situation_room_random_global_location(story_seed)
+
+    return {
+        "id": str(source_story.get("id") or story_seed),
+        "title": source_story.get("title") or "Untitled story",
+        "description": source_story.get("description") or "",
+        "image": source_story.get("image"),
+        "publishedAt": source_story.get("publishedAt") or "",
+        "source": source_story.get("source") or "Unknown source",
+        "url": source_story.get("url"),
+        "location": location,
+        "meta": {
+            **source_meta,
+            "country": source_meta.get("country"),
+            "topic": primary_topic,
+            "topics": topics or [primary_topic],
+        },
+    }
+
+
+def load_situation_room_news_payload():
+    news_path = Path(__file__).resolve().parents[1] / "public" / "news.json"
+    with news_path.open("r", encoding="utf-8") as news_file:
+        payload = json.load(news_file)
+
+    stories = [
+        normalize_situation_room_story(story)
+        for story in payload.get("stories", [])
+    ]
+    return {
+        "updatedAt": payload.get("updatedAt", ""),
+        "count": len(stories),
+        "stories": stories,
+    }
+
+
+def get_demo_angular_distance(lat_a, lng_a, lat_b, lng_b):
+    start_lat = math.radians(lat_a)
+    start_lng = math.radians(lng_a)
+    end_lat = math.radians(lat_b)
+    end_lng = math.radians(lng_b)
+    cosine = (
+        math.sin(start_lat) * math.sin(end_lat)
+        + math.cos(start_lat) * math.cos(end_lat) * math.cos(start_lng - end_lng)
+    )
+    return math.acos(clamp(cosine, -1, 1))
+
+
+def build_situation_room_story_label(story):
+    location = story.get("location") or {}
+    meta = story.get("meta") or {}
+    return (
+        f"<div><b>{story.get('title', 'Untitled story')}</b></div>"
+        f"<div>{story.get('source', 'Unknown source')} | {location.get('name', 'Unknown location')}</div>"
+        f"<div>{meta.get('topic', 'news').title()}</div>"
+    )
+
+
+def build_situation_room_story_point(story):
+    topic = ((story.get("meta") or {}).get("topic") or "").lower()
+    radius_by_topic = {
+        "politics": 0.18,
+        "disaster": 0.24,
+        "economy": 0.2,
+    }
+    location = story["location"]
+    return {
+        "storyId": story["id"],
+        "lat": location["lat"],
+        "lng": location["lng"],
+        "radius": radius_by_topic.get(topic, 0.18),
+        "altitude": 0.015,
+        "color": "rgba(103, 232, 249, 0.95)",
+        "labelHtml": build_situation_room_story_label(story),
+    }
+
+
+def build_situation_room_story_ring(story, index):
+    location = story["location"]
+    return {
+        "storyId": story["id"],
+        "lat": location["lat"],
+        "lng": location["lng"],
+        "maxR": 4.6 + index * 0.8,
+        "propagationSpeed": 1.9 + index * 0.35,
+        "repeatPeriod": 1500 + index * 180,
+    }
+
+
+def build_situation_room_story_panel(story, layout_style=None):
+    meta = story.get("meta") or {}
+    location = story.get("location") or {}
+    topic = (meta.get("topic") or "news").upper()
+    country = meta.get("country") or "GLOBAL"
+    title_link = html.A(
+        story.get("title", "Untitled story"),
+        href=story.get("url"),
+        target="_blank",
+        rel="noreferrer",
+        style={
+            "color": "#f8fafc",
+            "textDecoration": "none",
+        },
+    )
+    return html.Div(
+        [
+            html.Div(
+                [
+                    html.Span(topic, style=SITUATION_ROOM_TOPIC_STYLE),
+                    html.Span(country, style=SITUATION_ROOM_COUNTRY_STYLE),
+                ],
+                style={"display": "flex", "justifyContent": "space-between", "gap": "10px", "alignItems": "center"},
+            ),
+            html.Img(
+                src=story.get("image"),
+                alt=story.get("title", "Story image"),
+                style=SITUATION_ROOM_CARD_IMAGE_STYLE,
+            ),
+            html.H4(
+                title_link,
+                style={"margin": 0, "fontSize": "0.98rem", "lineHeight": 1.35, "color": "#f8fafc"},
+            ),
+            html.P(
+                story.get("description", ""),
+                style=SITUATION_ROOM_CARD_DESCRIPTION_STYLE,
+            ),
+            html.Div(
+                [
+                    html.Span(story.get("source", "Unknown source"), style={"fontWeight": 700, "color": "#67e8f9"}),
+                    html.Span(location.get("name", "Unknown location"), style={"color": "#cbd5e1"}),
+                ],
+                style={"display": "flex", "justifyContent": "space-between", "gap": "10px", "fontSize": "0.76rem", "marginTop": "auto"},
+            ),
+            html.Div(
+                format_demo_timestamp(story.get("publishedAt", "")),
+                style={"fontSize": "0.73rem", "letterSpacing": "0.08em", "textTransform": "uppercase", "color": "#7dd3fc"},
+            ),
+        ],
+        style={**SITUATION_ROOM_CARD_STYLE, **(layout_style or {})},
+    )
+
+
+def build_situation_room_story_points():
+    return [
+        build_situation_room_story_point(story)
+        for story in SITUATION_ROOM_STORIES
+    ]
+
+
+def build_situation_room_live_view(cycle_step=0):
+    elapsed_seconds = max(0, cycle_step or 0) * (SITUATION_ROOM_STORY_DURATION_MS / 1000)
+    rotation_degrees = elapsed_seconds * SITUATION_ROOM_AUTO_ROTATE_SPEED * 6
+    return {
+        **SITUATION_ROOM_INITIAL_VIEW,
+        "lng": normalize_demo_longitude(SITUATION_ROOM_INITIAL_VIEW["lng"] - rotation_degrees),
+    }
+
+
+def get_situation_room_story_forward_angle(story, current_view=None):
+    view = {
+        **SITUATION_ROOM_INITIAL_VIEW,
+        **(current_view or build_situation_room_live_view()),
+    }
+    location = story["location"]
+    return get_demo_angular_distance(
+        location["lat"],
+        location["lng"],
+        view["lat"],
+        view["lng"],
+    )
+
+
+def get_situation_room_story_side(story, current_view=None):
+    view = {
+        **SITUATION_ROOM_INITIAL_VIEW,
+        **(current_view or build_situation_room_live_view()),
+    }
+    relative_lng = normalize_demo_longitude(story["location"]["lng"] - view["lng"])
+    return "right" if relative_lng >= 0 else "left"
+
+
+def get_situation_room_story_relative_lng(story, current_view=None):
+    view = {
+        **SITUATION_ROOM_INITIAL_VIEW,
+        **(current_view or build_situation_room_live_view()),
+    }
+    return normalize_demo_longitude(story["location"]["lng"] - view["lng"])
+
+
+def build_situation_room_story_overlay(story, side):
+    location = story["location"]
+    return {
+        "storyId": story["id"],
+        "lat": location["lat"],
+        "lng": location["lng"],
+        "altitude": 0.015,
+        "screenSide": side,
+        "screenX": SITUATION_ROOM_CARD_SCREEN_X_BY_SIDE.get(side, 16),
+        "screenY": SITUATION_ROOM_CARD_SCREEN_Y,
+        "tether": True,
+        "tetherColor": "rgba(103, 232, 249, 0.95)",
+        "tetherWidth": 1.9,
+        "tetherAttach": "right" if side == "left" else "left",
+    }
+
+
+def is_situation_room_story_visible(story, current_view=None):
+    return get_situation_room_story_forward_angle(story, current_view) <= math.radians(
+        SITUATION_ROOM_VISIBLE_HEMISPHERE_DEGREES
+    )
+
+
+def build_situation_room_story_snapshot(story, index, side, current_view=None):
+    return {
+        "index": index,
+        "side": side,
+        "story": story,
+        "point": build_situation_room_story_point(story),
+        "ring": build_situation_room_story_ring(story, index),
+        "overlay": build_situation_room_story_overlay(story, side),
+        "card": build_situation_room_story_panel(story),
+        "forwardAngle": get_situation_room_story_forward_angle(story, current_view),
+        "relativeLng": get_situation_room_story_relative_lng(story, current_view),
+    }
+
+
+def build_situation_room_story_candidates(current_view=None):
+    candidates = []
+
+    for index, story in enumerate(SITUATION_ROOM_STORIES):
+        if not is_situation_room_story_visible(story, current_view):
+            continue
+
+        candidates.append(
+            build_situation_room_story_snapshot(
+                story,
+                index,
+                get_situation_room_story_side(story, current_view),
+                current_view,
+            )
+        )
+
+    candidates.sort(key=lambda snapshot: (snapshot["forwardAngle"], abs(snapshot["relativeLng"]), snapshot["index"]))
+    return candidates
+
+
+def build_situation_room_visible_story_snapshots(current_view=None, cycle_step=0):
+    view = {
+        **build_situation_room_live_view(cycle_step),
+        **(current_view or {}),
+    }
+    selected = build_situation_room_story_candidates(view)[:2]
+    if not selected:
+        return []
+
+    selected.sort(key=lambda snapshot: (snapshot["relativeLng"], snapshot["forwardAngle"], snapshot["index"]))
+
+    if len(selected) == 1:
+        assigned_sides = ["right" if selected[0]["relativeLng"] >= 0 else "left"]
+    else:
+        assigned_sides = list(SITUATION_ROOM_SIDE_ORDER)
+
+    snapshots = [
+        build_situation_room_story_snapshot(
+            snapshot["story"],
+            snapshot["index"],
+            side,
+            view,
+        )
+        for snapshot, side in zip(selected, assigned_sides)
+    ]
+    snapshots.sort(key=lambda snapshot: (SITUATION_ROOM_SIDE_ORDER.index(snapshot["side"]), snapshot["index"]))
+    return snapshots
+
+
+def build_situation_room_header(snapshots):
+    return html.Div(
+        [
+            html.Div("Situation Room", style={"fontSize": "0.8rem", "fontWeight": 700, "letterSpacing": "0.18em", "textTransform": "uppercase", "color": "#67e8f9"}),
+            html.Div(
+                [
+                    html.Span(f"{len(snapshots)} front-most stories"),
+                    html.Span(f"Refreshes every {SITUATION_ROOM_STORY_DURATION_MS / 1000:.1f}s"),
+                    html.Span(format_demo_timestamp(SITUATION_ROOM_NEWS_PAYLOAD["updatedAt"])),
+                ],
+                style={"display": "flex", "gap": "14px", "flexWrap": "wrap", "justifyContent": "center", "fontSize": "0.74rem", "color": "#cbd5e1"},
+            ),
+        ],
+        style=SITUATION_ROOM_HEADER_STYLE,
+    )
+
+
+def build_situation_room_story_status(snapshots):
+    summary_children = [
+        html.Span(
+            f"Monitoring {len(SITUATION_ROOM_STORIES)} stories",
+            style={"fontWeight": 700, "color": "#e2e8f0"},
+        )
+    ]
+    for snapshot in snapshots:
+        summary_children.append(
+            html.Span(
+                f"{snapshot['side'].title()}: {snapshot['story']['location']['name']}",
+                style={"fontWeight": 700},
+            )
+        )
+        summary_children.append(html.Span(snapshot["story"].get("source", "Unknown source")))
+    if not snapshots:
+        summary_children.append(html.Span("No visible side stories in the current view"))
+
+    return html.Div(
+        summary_children,
+        style={
+            "position": "absolute",
+            "right": "16px",
+            "bottom": "16px",
+            "display": "flex",
+            "gap": "10px",
+            "flexWrap": "wrap",
+            "padding": "10px 12px",
+            "border": "1px solid rgba(103, 232, 249, 0.24)",
+            "borderRadius": "999px",
+            "background": "rgba(2, 6, 23, 0.72)",
+            "boxShadow": "0 0 24px rgba(34, 211, 238, 0.1)",
+            "fontSize": "0.72rem",
+            "color": "#cbd5e1",
+            "zIndex": 1,
+            "pointerEvents": "none",
+        },
+    )
+
+
+def build_situation_room_story_cards(snapshots):
+    snapshots_by_side = {snapshot["side"]: snapshot for snapshot in snapshots}
+    return [
+        snapshots_by_side[side]["card"]
+        for side in SITUATION_ROOM_SIDE_ORDER
+        if side in snapshots_by_side
+    ]
+
+
+def build_situation_room_selection_signature(snapshots):
+    return [
+        {
+            "storyId": snapshot["story"]["id"],
+            "side": snapshot["side"],
+        }
+        for snapshot in snapshots
+    ]
+
+
 BASIC_EXAMPLE_POINTS = build_random_points(300, seed=7)
 RANDOM_ARCS_EXAMPLE_DATA = build_random_arcs(20, seed=17)
 RANDOM_RINGS_EXAMPLE_DATA = build_random_rings(10, seed=23)
@@ -908,6 +1297,22 @@ CHOROPLETH_MAX_METRIC = max((country["metric"] for country in CHOROPLETH_COUNTRI
 HOLLOW_GLOBE_LAND_POLYGONS = [{"geometry": country["geometry"], "name": country["name"]} for country in CHOROPLETH_COUNTRIES]
 TILE_MARGIN = 0.35
 TILES_EXAMPLE_DATA, TILES_EXAMPLE_TILE_WIDTH, TILES_EXAMPLE_TILE_HEIGHT = build_tiles_example_data()
+SITUATION_ROOM_NEWS_PAYLOAD = load_situation_room_news_payload()
+SITUATION_ROOM_STORIES = SITUATION_ROOM_NEWS_PAYLOAD["stories"]
+SITUATION_ROOM_GLOBE_ID = "situation-room-globe"
+SITUATION_ROOM_HEADER_ID = "situation-room-header"
+SITUATION_ROOM_STATUS_ID = "situation-room-status"
+SITUATION_ROOM_SELECTION_STORE_ID = "situation-room-selection-store"
+SITUATION_ROOM_STAGE_MIN_HEIGHT = "540px"
+SITUATION_ROOM_GLOBE_HEIGHT = 540
+SITUATION_ROOM_INITIAL_VIEW = {"lat": 25, "lng": 12, "altitude": 2.15}
+SITUATION_ROOM_AUTO_ROTATE_SPEED = 0.32
+SITUATION_ROOM_VISIBLE_HEMISPHERE_DEGREES = 96
+SITUATION_ROOM_STORY_DURATION_MS = 1200
+SITUATION_ROOM_CURRENT_VIEW_REPORT_INTERVAL = 450
+SITUATION_ROOM_CARD_SCREEN_X_BY_SIDE = {"left": 0, "right": 0}
+SITUATION_ROOM_CARD_SCREEN_Y = 84
+SITUATION_ROOM_SIDE_ORDER = ["left", "right"]
 
 BASIC_EXAMPLE_CODE = """import dash_globe
 
@@ -1697,6 +2102,229 @@ def describe_country_hover(hover_data):
     if hover_data is None:
         return "Hover a country to inspect the latest population-polygon payload."
     return json.dumps(hover_data, indent=2)
+"""
+
+SITUATION_ROOM_EXAMPLE_CODE = """import json
+import math
+from pathlib import Path
+from random import Random
+
+import dash_globe
+from dash import Dash, Input, Output, dcc, html
+
+
+app = Dash(__name__)
+
+
+with (Path(__file__).resolve().parent / "public" / "news.json").open("r", encoding="utf-8") as news_file:
+    news_payload = json.load(news_file)
+
+initial_view = {"lat": 25, "lng": 12, "altitude": 2.15}
+story_refresh_ms = 1200
+auto_rotate_speed = 0.32
+side_order = ("left", "right")
+
+
+def resolve_location(story):
+    location = dict(story.get("location") or {})
+    location_name = (location.get("name") or "Unknown location").strip() or "Unknown location"
+    if location_name.lower() != "global":
+        return {
+            "name": location_name,
+            "lat": float(location.get("lat") or 0),
+            "lng": float(location.get("lng") or 0),
+        }
+
+    rng = Random(f"situation-room-global:{story.get('id') or story.get('title')}")
+    return {
+        "name": "Global",
+        "lat": round(rng.uniform(-58, 58), 4),
+        "lng": round(rng.uniform(-180, 180), 4),
+    }
+
+
+def normalize_story(story):
+    meta = dict(story.get("meta") or {})
+    topics = [topic for topic in (meta.get("topics") or []) if topic]
+    return {
+        **story,
+        "location": resolve_location(story),
+        "meta": {
+            **meta,
+            "topic": (meta.get("topic") or (topics[0] if topics else "news")).lower(),
+            "topics": topics,
+        },
+    }
+
+
+news_payload["stories"] = [normalize_story(story) for story in news_payload.get("stories", [])]
+news_payload["count"] = len(news_payload["stories"])
+
+
+def forward_angle(story, current_view):
+    start_lat = math.radians(story["location"]["lat"])
+    start_lng = math.radians(story["location"]["lng"])
+    view_lat = math.radians(current_view["lat"])
+    view_lng = math.radians(current_view["lng"])
+    cosine = (
+        math.sin(start_lat) * math.sin(view_lat)
+        + math.cos(start_lat) * math.cos(view_lat) * math.cos(start_lng - view_lng)
+    )
+    return math.acos(max(-1, min(cosine, 1)))
+
+
+def story_side(story, current_view):
+    relative_lng = ((story["location"]["lng"] - current_view["lng"] + 180) % 360) - 180
+    return "right" if relative_lng >= 0 else "left"
+
+
+def live_view(cycle_step):
+    elapsed_seconds = (cycle_step or 0) * story_refresh_ms / 1000
+    rotation_degrees = elapsed_seconds * auto_rotate_speed * 6
+    return {
+        **initial_view,
+        "lng": ((initial_view["lng"] - rotation_degrees + 180) % 360) - 180,
+    }
+
+
+def build_story_panel(story):
+    return html.Div(
+        [
+            html.Div([html.Span(story["meta"]["topic"].upper()), html.Span(story["meta"]["country"])]),
+            html.Img(src=story["image"]),
+            html.H4(html.A(story["title"], href=story["url"], target="_blank", rel="noreferrer")),
+            html.P(story["description"]),
+            html.Div([html.Span(story["source"]), html.Span(story["location"]["name"])]),
+            html.Div(story["publishedAt"]),
+        ],
+        style={"width": "210px"},
+    )
+
+
+def build_story_overlay(story, side):
+    return {
+        "storyId": story["id"],
+        "lat": story["location"]["lat"],
+        "lng": story["location"]["lng"],
+        "altitude": 0.015,
+        "screenSide": side,
+        "screenX": 0,
+        "screenY": 84,
+        "tether": True,
+        "tetherColor": "rgba(103, 232, 249, 0.95)",
+        "tetherWidth": 1.9,
+        "tetherAttach": "right" if side == "left" else "left",
+    }
+
+
+def pick_active_snapshots(cycle_step, current_view=None):
+    view = {
+        **live_view(cycle_step),
+        **(current_view or {}),
+    }
+    candidates = []
+
+    for index, story in enumerate(news_payload["stories"]):
+        angle = forward_angle(story, view)
+        if angle > math.radians(96):
+            continue
+
+        relative_lng = ((story["location"]["lng"] - view["lng"] + 180) % 360) - 180
+        candidates.append(
+            {
+                "index": index,
+                "story": story,
+                "forward_angle": angle,
+                "relative_lng": relative_lng,
+            }
+        )
+
+    selected = sorted(
+        candidates,
+        key=lambda item: (item["forward_angle"], abs(item["relative_lng"]), item["index"]),
+    )[:2]
+    selected.sort(key=lambda item: (item["relative_lng"], item["forward_angle"], item["index"]))
+
+    if len(selected) == 1:
+        assigned_sides = ["right" if selected[0]["relative_lng"] >= 0 else "left"]
+    else:
+        assigned_sides = list(side_order)
+
+    return [
+        {
+            "side": side,
+            "overlay": build_story_overlay(item["story"], side),
+            "ring": {"lat": item["story"]["location"]["lat"], "lng": item["story"]["location"]["lng"], "maxR": 5, "propagationSpeed": 2.1, "repeatPeriod": 1600},
+            "card": build_story_panel(item["story"]),
+        }
+        for item, side in zip(selected, assigned_sides)
+    ]
+
+
+snapshots = pick_active_snapshots(cycle_step=0)
+
+situation_room_globe = html.Div(
+    [
+        dash_globe.DashGlobe(id="situation-room-globe")
+        .update_layout(height=420, background_image_url=dash_globe.PRESETS.NIGHT_SKY)
+        .update_globe(
+            globe_image_url=dash_globe.PRESETS.EARTH_DARK,
+            bump_image_url=dash_globe.PRESETS.EARTH_TOPOGRAPHY,
+            show_graticules=True,
+            atmosphere_color="#22d3ee",
+            atmosphere_altitude=0.16,
+        )
+        .update_view(**initial_view, transition_duration=0)
+        .update_controls(auto_rotate=True, auto_rotate_speed=auto_rotate_speed)
+        .update_interaction(enable_pointer_interaction=False)
+        .add_points(
+            [
+                {"lat": story["location"]["lat"], "lng": story["location"]["lng"], "radius": 0.2, "altitude": 0.015, "color": "rgba(103, 232, 249, 0.75)"}
+                for story in news_payload["stories"]
+            ]
+        )
+        .update_points(point_lat="lat", point_lng="lng", point_altitude="altitude", point_color="color", point_radius="radius")
+        .add_rings([snapshot["ring"] for snapshot in snapshots])
+        .update_rings(
+            ring_lat="lat",
+            ring_lng="lng",
+            ring_color=dash_globe.ring_color_interpolator("#67e8f9"),
+            ring_max_radius="maxR",
+            ring_propagation_speed="propagationSpeed",
+            ring_repeat_period="repeatPeriod",
+        )
+        .update_html_elements(
+            [snapshot["overlay"] for snapshot in snapshots],
+            children=[snapshot["card"] for snapshot in snapshots],
+            html_element_lat="lat",
+            html_element_lng="lng",
+            html_element_altitude="altitude",
+            html_element_key="storyId",
+            html_element_screen_side="screenSide",
+            html_element_screen_x="screenX",
+            html_element_screen_y="screenY",
+            html_element_tether="tether",
+            html_element_tether_color="tetherColor",
+            html_element_tether_width="tetherWidth",
+            html_element_tether_attach="tetherAttach",
+        ),
+    ]
+)
+
+
+@app.callback(
+    Output("situation-room-globe", "ringsData"),
+    Output("situation-room-globe", "htmlElementsData"),
+    Output("situation-room-globe", "children"),
+    Input("situation-room-globe", "currentView"),
+)
+def sync_situation_room(current_view):
+    snapshots = pick_active_snapshots(cycle_step=0, current_view=current_view)
+    return (
+        [snapshot["ring"] for snapshot in snapshots],
+        [snapshot["overlay"] for snapshot in snapshots],
+        [snapshot["card"] for snapshot in snapshots],
+    )
 """
 
 QUICK_START_CODE = """from dash import Dash, html
@@ -2799,6 +3427,93 @@ GLOBE_CONTAINER_STYLE = {
     "minHeight": "420px",
 }
 
+SITUATION_ROOM_SCENE_STYLE = {
+    "position": "relative",
+    "minHeight": SITUATION_ROOM_STAGE_MIN_HEIGHT,
+    "overflow": "hidden",
+    "borderRadius": "14px",
+    "border": "1px solid rgba(34, 211, 238, 0.22)",
+    "background": "radial-gradient(circle at top, rgba(15, 23, 42, 0.96), rgba(2, 6, 23, 1) 60%, rgba(1, 3, 8, 1) 100%)",
+    "boxShadow": "inset 0 0 60px rgba(34, 211, 238, 0.08)",
+}
+
+SITUATION_ROOM_HEADER_STYLE = {
+    "position": "absolute",
+    "top": "16px",
+    "left": "50%",
+    "transform": "translateX(-50%)",
+    "display": "grid",
+    "gap": "6px",
+    "padding": "10px 16px",
+    "border": "1px solid rgba(103, 232, 249, 0.32)",
+    "borderRadius": "999px",
+    "background": "rgba(2, 6, 23, 0.72)",
+    "backdropFilter": "blur(10px)",
+    "boxShadow": "0 0 32px rgba(34, 211, 238, 0.12)",
+    "textAlign": "center",
+    "zIndex": 1,
+    "pointerEvents": "none",
+}
+
+SITUATION_ROOM_CARD_STYLE = {
+    "display": "grid",
+    "gap": "10px",
+    "width": "210px",
+    "maxWidth": "calc(100% - 28px)",
+    "minHeight": "268px",
+    "padding": "14px",
+    "border": "1px solid rgba(103, 232, 249, 0.72)",
+    "borderRadius": "14px",
+    "background": "linear-gradient(180deg, rgba(15, 23, 42, 0.94) 0%, rgba(2, 6, 23, 0.94) 100%)",
+    "boxShadow": "0 0 30px rgba(34, 211, 238, 0.14)",
+    "backdropFilter": "blur(12px)",
+    "zIndex": 1,
+    "pointerEvents": "auto",
+    "overflow": "hidden",
+}
+
+SITUATION_ROOM_TOPIC_STYLE = {
+    "display": "inline-flex",
+    "alignItems": "center",
+    "padding": "4px 8px",
+    "borderRadius": "999px",
+    "background": "rgba(34, 211, 238, 0.14)",
+    "color": "#67e8f9",
+    "fontSize": "0.68rem",
+    "fontWeight": 700,
+    "letterSpacing": "0.08em",
+}
+
+SITUATION_ROOM_COUNTRY_STYLE = {
+    "fontSize": "0.72rem",
+    "fontWeight": 700,
+    "letterSpacing": "0.08em",
+    "textTransform": "uppercase",
+    "color": "#e2e8f0",
+}
+
+SITUATION_ROOM_CARD_IMAGE_STYLE = {
+    "display": "block",
+    "width": "100%",
+    "height": "96px",
+    "objectFit": "cover",
+    "borderRadius": "10px",
+    "border": "1px solid rgba(103, 232, 249, 0.24)",
+    "background": "rgba(15, 23, 42, 0.78)",
+}
+
+SITUATION_ROOM_CARD_DESCRIPTION_STYLE = {
+    "margin": 0,
+    "fontSize": "0.82rem",
+    "lineHeight": 1.55,
+    "color": "#b6c2cf",
+    "maxHeight": "78px",
+    "overflow": "hidden",
+}
+
+SITUATION_ROOM_STORY_POINTS = build_situation_room_story_points()
+SITUATION_ROOM_VISIBLE_SNAPSHOTS = build_situation_room_visible_story_snapshots()
+
 GLOBE_IDS = [
     "basic-example-globe",
     "random-arcs-example-globe",
@@ -2814,6 +3529,7 @@ GLOBE_IDS = [
     "countries-population-globe",
     "choropleth-countries-globe",
     "hollow-globe",
+    "situation-room-globe",
 ]
 
 
@@ -2835,12 +3551,15 @@ def build_globe_placeholder(globe_id):
 
 
 def build_globe_stage(globe_id):
+    container_style = dict(GLOBE_CONTAINER_STYLE)
+    if globe_id == SITUATION_ROOM_GLOBE_ID:
+        container_style["minHeight"] = SITUATION_ROOM_STAGE_MIN_HEIGHT
     return html.Div(
         [
             html.Div(id=f"{globe_id}-mount", children=build_globe_placeholder(globe_id)),
             html.Button("Run", id=f"{globe_id}-run-button", n_clicks=0, style=RUN_BUTTON_STYLE),
         ],
-        style=GLOBE_CONTAINER_STYLE,
+        style=container_style,
     )
 
 
@@ -3141,6 +3860,78 @@ def build_countries_population_globe():
     )
 
 
+def build_situation_room_globe():
+    snapshots = SITUATION_ROOM_VISIBLE_SNAPSHOTS
+    globe = (
+        dash_globe.DashGlobe(id=SITUATION_ROOM_GLOBE_ID)
+        .update_layout(
+            height=SITUATION_ROOM_GLOBE_HEIGHT,
+            background_color="rgba(0, 0, 0, 0)",
+            background_image_url=dash_globe.PRESETS.NIGHT_SKY,
+        )
+        .update_globe(
+            globe_image_url=dash_globe.PRESETS.EARTH_DARK,
+            bump_image_url=dash_globe.PRESETS.EARTH_TOPOGRAPHY,
+            show_graticules=True,
+            atmosphere_color="#22d3ee",
+            atmosphere_altitude=0.16,
+        )
+        .update_view(**SITUATION_ROOM_INITIAL_VIEW, transition_duration=0)
+        .update_controls(auto_rotate=True, auto_rotate_speed=SITUATION_ROOM_AUTO_ROTATE_SPEED)
+        .update_interaction(
+            enable_pointer_interaction=False,
+            show_pointer_cursor=False,
+            current_view_report_interval=SITUATION_ROOM_CURRENT_VIEW_REPORT_INTERVAL,
+        )
+        .add_points(SITUATION_ROOM_STORY_POINTS)
+        .update_points(
+            point_lat="lat",
+            point_lng="lng",
+            point_altitude="altitude",
+            point_color="color",
+            point_radius="radius",
+            point_label="labelHtml",
+            point_resolution=12,
+        )
+        .add_rings([snapshot["ring"] for snapshot in snapshots])
+        .update_rings(
+            ring_lat="lat",
+            ring_lng="lng",
+            ring_color=dash_globe.ring_color_interpolator("#67e8f9"),
+            ring_max_radius="maxR",
+            ring_propagation_speed="propagationSpeed",
+            ring_repeat_period="repeatPeriod",
+        )
+        .update_html_elements(
+            [snapshot["overlay"] for snapshot in snapshots],
+            children=build_situation_room_story_cards(snapshots),
+            html_element_lat="lat",
+            html_element_lng="lng",
+            html_element_altitude="altitude",
+            html_element_key="storyId",
+            html_element_screen_side="screenSide",
+            html_element_screen_x="screenX",
+            html_element_screen_y="screenY",
+            html_element_tether="tether",
+            html_element_tether_color="tetherColor",
+            html_element_tether_width="tetherWidth",
+            html_element_tether_attach="tetherAttach",
+        )
+    )
+    return html.Div(
+        [
+            globe,
+            dcc.Store(
+                id=SITUATION_ROOM_SELECTION_STORE_ID,
+                data=build_situation_room_selection_signature(snapshots),
+            ),
+            html.Div(build_situation_room_header(snapshots), id=SITUATION_ROOM_HEADER_ID),
+            html.Div(build_situation_room_story_status(snapshots), id=SITUATION_ROOM_STATUS_ID),
+        ],
+        style=SITUATION_ROOM_SCENE_STYLE,
+    )
+
+
 GLOBE_BUILDERS = {
     "basic-example-globe": build_basic_example_globe,
     "random-arcs-example-globe": build_random_arcs_example_globe,
@@ -3156,6 +3947,7 @@ GLOBE_BUILDERS = {
     "countries-population-globe": build_countries_population_globe,
     "choropleth-countries-globe": build_choropleth_countries_globe,
     "hollow-globe": build_hollow_globe,
+    "situation-room-globe": build_situation_room_globe,
 }
 
 
@@ -3290,6 +4082,12 @@ def build_examples_grid():
                 "Interactive Data Stories",
                 "These examples combine callbacks with richer datasets so hover and selection drive visual state.",
                 [
+                    globe_card(
+                        "Situation Room Briefing",
+                        "This package-specific advanced example turns a breaking-news payload into a dark-mode command-center scene with up to two tethered popups at once, always choosing the two stories closest to the live camera center and updating as the user drags the globe.",
+                        build_globe_stage("situation-room-globe"),
+                        html.Pre(SITUATION_ROOM_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                    ),
                     globe_card(
                         "Upstream Airline Routes Highlight",
                         "This ports the official highlight-links demo into Dash by loading the OpenFlights airport and route datasets at startup, filtering them to Portuguese domestic non-stop routes, and then highlighting the hovered arc.",
@@ -3502,6 +4300,34 @@ def describe_countries_population_hover(hover_data):
         payload_text = json.dumps(hover_data, indent=2)
 
     return payload_text
+
+
+@app.callback(
+    Output(SITUATION_ROOM_SELECTION_STORE_ID, "data"),
+    Output(SITUATION_ROOM_GLOBE_ID, "ringsData"),
+    Output(SITUATION_ROOM_GLOBE_ID, "htmlElementsData"),
+    Output(SITUATION_ROOM_GLOBE_ID, "children"),
+    Output(SITUATION_ROOM_HEADER_ID, "children"),
+    Output(SITUATION_ROOM_STATUS_ID, "children"),
+    Input(SITUATION_ROOM_GLOBE_ID, "currentView"),
+    State(SITUATION_ROOM_SELECTION_STORE_ID, "data"),
+)
+def sync_situation_room_scene(current_view=None, selection_signature=None):
+    snapshots = build_situation_room_visible_story_snapshots(
+        current_view=current_view,
+        cycle_step=0,
+    )
+    next_signature = build_situation_room_selection_signature(snapshots)
+    if selection_signature == next_signature:
+        return no_update, no_update, no_update, no_update, no_update, no_update
+    return (
+        next_signature,
+        [snapshot["ring"] for snapshot in snapshots],
+        [snapshot["overlay"] for snapshot in snapshots],
+        build_situation_room_story_cards(snapshots),
+        build_situation_room_header(snapshots),
+        build_situation_room_story_status(snapshots),
+    )
 
 
 if __name__ == "__main__":

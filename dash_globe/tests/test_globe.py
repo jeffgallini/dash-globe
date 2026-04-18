@@ -1,4 +1,5 @@
 import pytest
+from dash import html
 
 from dash_globe import DashGlobe, event_coords, lambert_material, material_spec, ring_color_interpolator
 
@@ -252,3 +253,96 @@ def test_update_day_night_cycle_sets_serialisable_props():
     assert globe.dayNightCycleTime == "2026-04-17T12:00:00Z"
     assert globe.dayNightCycleAnimate is False
     assert globe.dayNightCycleMinutesPerSecond == 24
+
+
+def test_html_element_helpers_keep_overlay_data_and_children_in_sync():
+    overlay_a = html.Div("Alpha", id="overlay-a")
+    overlay_b = html.Div("Beta", id="overlay-b")
+    elements = [
+        {
+            "storyId": "alpha",
+            "lat": 10,
+            "lng": 20,
+            "altitude": 0.2,
+            "offsetX": 18,
+            "offsetY": -12,
+            "screenSide": "left",
+            "screenX": 18,
+            "screenY": 64,
+            "tether": True,
+            "tetherColor": "#67e8f9",
+            "tetherWidth": 2.25,
+            "tetherAttach": "right",
+        },
+        {
+            "storyId": "beta",
+            "lat": -5,
+            "lng": 120,
+            "altitude": 0.28,
+            "offsetX": -24,
+            "offsetY": 8,
+            "screenSide": "right",
+            "screenX": 18,
+            "screenY": 92,
+            "tether": True,
+            "tetherColor": "#67e8f9",
+            "tetherWidth": 1.75,
+            "tetherAttach": "left",
+        },
+    ]
+
+    globe = (
+        DashGlobe(id="html-overlays")
+        .add_html_elements(elements, children=[overlay_a, overlay_b])
+        .update_html_elements(
+            html_element_lat="lat",
+            html_element_lng="lng",
+            html_element_altitude="altitude",
+            html_element_key="storyId",
+            html_element_offset_x="offsetX",
+            html_element_offset_y="offsetY",
+            html_element_pointer_events="auto",
+            html_element_hidden=False,
+            html_element_screen_side="screenSide",
+            html_element_screen_x="screenX",
+            html_element_screen_y="screenY",
+            html_element_tether="tether",
+            html_element_tether_color="tetherColor",
+            html_element_tether_width="tetherWidth",
+            html_element_tether_attach="tetherAttach",
+        )
+    )
+
+    assert globe.htmlElementsData == elements
+    assert globe.children == [overlay_a, overlay_b]
+    assert globe.htmlElementLat == "lat"
+    assert globe.htmlElementLng == "lng"
+    assert globe.htmlElementAltitude == "altitude"
+    assert globe.htmlElementKey == "storyId"
+    assert globe.htmlElementOffsetX == "offsetX"
+    assert globe.htmlElementOffsetY == "offsetY"
+    assert globe.htmlElementPointerEvents == "auto"
+    assert globe.htmlElementHidden is False
+    assert globe.htmlElementScreenSide == "screenSide"
+    assert globe.htmlElementScreenX == "screenX"
+    assert globe.htmlElementScreenY == "screenY"
+    assert globe.htmlElementTether == "tether"
+    assert globe.htmlElementTetherColor == "tetherColor"
+    assert globe.htmlElementTetherWidth == "tetherWidth"
+    assert globe.htmlElementTetherAttach == "tetherAttach"
+
+
+def test_update_html_elements_can_replace_overlay_children():
+    replacement_child = html.Div("Replacement", id="replacement-overlay")
+
+    globe = DashGlobe(id="html-overlays-replace").update_html_elements(
+        data=[{"lat": 51.5, "lng": -0.1}],
+        children=replacement_child,
+        html_element_lat="lat",
+        html_element_lng="lng",
+    )
+
+    assert globe.htmlElementsData == [{"lat": 51.5, "lng": -0.1}]
+    assert globe.children == [replacement_child]
+    assert globe.htmlElementLat == "lat"
+    assert globe.htmlElementLng == "lng"

@@ -17,6 +17,7 @@ import {
 
 const INTERNAL_PROP_NAMES = new Set([
     'id',
+    'children',
     'className',
     'style',
     'responsive',
@@ -42,6 +43,23 @@ const INTERNAL_PROP_NAMES = new Set([
     'polygonHoverCapColor',
     'polygonHoverSideColor',
     'polygonHoverStrokeColor',
+    'currentViewReportInterval',
+    'htmlElementsData',
+    'htmlElementLat',
+    'htmlElementLng',
+    'htmlElementAltitude',
+    'htmlElementKey',
+    'htmlElementOffsetX',
+    'htmlElementOffsetY',
+    'htmlElementPointerEvents',
+    'htmlElementHidden',
+    'htmlElementScreenX',
+    'htmlElementScreenY',
+    'htmlElementScreenSide',
+    'htmlElementTether',
+    'htmlElementTetherColor',
+    'htmlElementTetherWidth',
+    'htmlElementTetherAttach',
     'clickData',
     'rightClickData',
     'hoverData',
@@ -613,6 +631,149 @@ function buildSerializableAccessor(accessor, resolveValue = (value) => value) {
     return resolveValue(accessor);
 }
 
+function isFiniteNumber(value) {
+    return Number.isFinite(Number(value));
+}
+
+function normaliseOverlaySide(value) {
+    if (typeof value !== 'string') {
+        return null;
+    }
+
+    const normalised = value.trim().toLowerCase();
+    return ['left', 'right', 'center'].includes(normalised) ? normalised : null;
+}
+
+function normaliseTetherAttach(value) {
+    if (typeof value !== 'string') {
+        return 'auto';
+    }
+
+    const normalised = value.trim().toLowerCase();
+    return ['auto', 'left', 'right', 'top', 'bottom'].includes(normalised) ? normalised : 'auto';
+}
+
+function shouldUseScreenOverlayPosition(item) {
+    return (
+        item.screenSide !== null ||
+        isFiniteNumber(item.screenX) ||
+        isFiniteNumber(item.screenY)
+    );
+}
+
+function resolveScreenOverlayRect(item, element, wrapperRect) {
+    const width = element.offsetWidth || 0;
+    const height = element.offsetHeight || 0;
+    const side = item.screenSide;
+    const rawX = isFiniteNumber(item.screenX) ? Number(item.screenX) : 0;
+    const rawY = isFiniteNumber(item.screenY) ? Number(item.screenY) : 0;
+
+    let left = rawX;
+    if (side === 'right') {
+        left = wrapperRect.width - rawX - width;
+    } else if (side === 'center') {
+        left = rawX - width / 2;
+    }
+
+    return {
+        left,
+        top: rawY,
+        width,
+        height,
+        right: left + width,
+        bottom: rawY + height,
+        centerX: left + width / 2,
+        centerY: rawY + height / 2
+    };
+}
+
+function resolveTetherAttachPoint(item, rect, originX, originY) {
+    const edgeInset = 2;
+    const attach = normaliseTetherAttach(item.tetherAttach);
+    let side = attach;
+
+    if (side === 'auto') {
+        if (originX <= rect.left) {
+            side = 'left';
+        } else if (originX >= rect.right) {
+            side = 'right';
+        } else if (originY <= rect.top) {
+            side = 'top';
+        } else {
+            side = 'bottom';
+        }
+    }
+
+    if (side === 'left') {
+        return {side, x: rect.left + edgeInset, y: rect.centerY};
+    }
+    if (side === 'right') {
+        return {side, x: rect.right - edgeInset, y: rect.centerY};
+    }
+    if (side === 'top') {
+        return {side, x: rect.centerX, y: rect.top + edgeInset};
+    }
+
+    return {side: 'bottom', x: rect.centerX, y: rect.bottom - edgeInset};
+}
+
+function buildTetherPath(originX, originY, targetX, targetY, attachSide) {
+    const elbowOffset = 18;
+
+    if (attachSide === 'left') {
+        const elbowX = targetX - elbowOffset;
+        return `M ${originX} ${originY} L ${elbowX} ${originY} L ${elbowX} ${targetY} L ${targetX} ${targetY}`;
+    }
+
+    if (attachSide === 'right') {
+        const elbowX = targetX + elbowOffset;
+        return `M ${originX} ${originY} L ${elbowX} ${originY} L ${elbowX} ${targetY} L ${targetX} ${targetY}`;
+    }
+
+    if (attachSide === 'top') {
+        const elbowY = targetY - elbowOffset;
+        return `M ${originX} ${originY} L ${originX} ${elbowY} L ${targetX} ${elbowY} L ${targetX} ${targetY}`;
+    }
+
+    const elbowY = targetY + elbowOffset;
+    return `M ${originX} ${originY} L ${originX} ${elbowY} L ${targetX} ${elbowY} L ${targetX} ${targetY}`;
+}
+
+function normaliseChildren(children) {
+    return React.Children.toArray(children);
+}
+
+function isProjectedPointVisible(cartesianCoords, cameraPosition, globeRadius) {
+    if (
+        !cartesianCoords ||
+        !cameraPosition ||
+        !Number.isFinite(globeRadius) ||
+        globeRadius <= 0
+    ) {
+        return true;
+    }
+
+    const pointX = Number(cartesianCoords.x);
+    const pointY = Number(cartesianCoords.y);
+    const pointZ = Number(cartesianCoords.z);
+    const cameraX = Number(cameraPosition.x);
+    const cameraY = Number(cameraPosition.y);
+    const cameraZ = Number(cameraPosition.z);
+
+    if (
+        !Number.isFinite(pointX) ||
+        !Number.isFinite(pointY) ||
+        !Number.isFinite(pointZ) ||
+        !Number.isFinite(cameraX) ||
+        !Number.isFinite(cameraY) ||
+        !Number.isFinite(cameraZ)
+    ) {
+        return true;
+    }
+
+    return ((pointX * cameraX) + (pointY * cameraY) + (pointZ * cameraZ)) > (globeRadius * globeRadius);
+}
+
 function buildPolygonHoverMatchSignature(datum, hoverKeyAccessor) {
     if (datum === undefined || datum === null) {
         return null;
@@ -636,6 +797,7 @@ function buildPolygonHoverMatchSignature(datum, hoverKeyAccessor) {
 export default function DashGlobe(props) {
     const {
         id,
+        children,
         className,
         style,
         responsive,
@@ -680,7 +842,13 @@ export default function DashGlobe(props) {
     const dayNightFrameTimestampRef = useRef(null);
     const cloudsMeshRef = useRef(null);
     const cloudsAnimationFrameRef = useRef(null);
+    const controlsChangeFrameRef = useRef(null);
+    const htmlOverlayAnimationFrameRef = useRef(null);
+    const htmlOverlayElementRefs = useRef(new Map());
+    const htmlOverlayLineRefs = useRef(new Map());
     const tileMaterialCacheRef = useRef(new Map());
+    const lastCurrentViewEmittedAtRef = useRef(0);
+    const lastCurrentViewSignatureRef = useRef(null);
     const [containerSize, setContainerSize] = useState({width: null, height: null});
     const [hoveredPolygonSignature, setHoveredPolygonSignature] = useState(null);
     const [dayNightMaterial, setDayNightMaterial] = useState(null);
@@ -696,6 +864,62 @@ export default function DashGlobe(props) {
         () => buildMaterialAccessor(props.tileMaterial, tileMaterialCacheRef),
         [props.tileMaterial]
     );
+    const projectedHtmlElements = useMemo(() => {
+        const data = Array.isArray(props.htmlElementsData) ? props.htmlElementsData : [];
+        const overlayChildren = normaliseChildren(children);
+        return data
+            .map((datum, index) => {
+                const child = overlayChildren[index];
+                if (!child) {
+                    return null;
+                }
+
+                const keyValue = props.htmlElementKey !== undefined
+                    ? resolveAccessorValue(props.htmlElementKey, datum)
+                    : datum?.id;
+
+                return {
+                    datum,
+                    child,
+                    key: keyValue === undefined || keyValue === null ? index : keyValue,
+                    lat: resolveAccessorValue(props.htmlElementLat, datum),
+                    lng: resolveAccessorValue(props.htmlElementLng, datum),
+                    altitude: resolveAccessorValue(props.htmlElementAltitude, datum),
+                    offsetX: resolveAccessorValue(props.htmlElementOffsetX, datum),
+                    offsetY: resolveAccessorValue(props.htmlElementOffsetY, datum),
+                    pointerEvents: resolveAccessorValue(props.htmlElementPointerEvents, datum),
+                    hidden: resolveAccessorValue(props.htmlElementHidden, datum),
+                    screenX: resolveAccessorValue(props.htmlElementScreenX, datum),
+                    screenY: resolveAccessorValue(props.htmlElementScreenY, datum),
+                    screenSide: normaliseOverlaySide(resolveAccessorValue(props.htmlElementScreenSide, datum)),
+                    tether: resolveAccessorValue(props.htmlElementTether, datum),
+                    tetherColor: resolveAccessorValue(props.htmlElementTetherColor, datum),
+                    tetherWidth: resolveAccessorValue(props.htmlElementTetherWidth, datum),
+                    tetherAttach: resolveAccessorValue(props.htmlElementTetherAttach, datum)
+                };
+            })
+            .filter(Boolean);
+    }, [
+        children,
+        props.htmlElementsData,
+        props.htmlElementAltitude,
+        props.htmlElementHidden,
+        props.htmlElementKey,
+        props.htmlElementLat,
+        props.htmlElementLng,
+        props.htmlElementOffsetX,
+        props.htmlElementOffsetY,
+        props.htmlElementPointerEvents,
+        props.htmlElementScreenSide,
+        props.htmlElementScreenX,
+        props.htmlElementScreenY,
+        props.htmlElementTether,
+        props.htmlElementTetherAttach,
+        props.htmlElementTetherColor,
+        props.htmlElementTetherWidth
+    ]);
+    const resolvedWidth = responsive ? (containerSize.width || width) : width;
+    const resolvedHeight = responsive ? (containerSize.height || height || 600) : height;
 
     const syncDayNightGlobeRotation = (pointOfViewOverride) => {
         const material = dayNightMaterialRef.current;
@@ -798,6 +1022,119 @@ export default function DashGlobe(props) {
             controls.autoRotateSpeed = autoRotateSpeed;
         }
     }, [autoRotate, autoRotateSpeed, globeReady]);
+
+    useEffect(() => {
+        if (htmlOverlayAnimationFrameRef.current) {
+            cancelAnimationFrame(htmlOverlayAnimationFrameRef.current);
+            htmlOverlayAnimationFrameRef.current = null;
+        }
+
+        if (!projectedHtmlElements.length) {
+            htmlOverlayElementRefs.current.forEach((element) => {
+                if (element) {
+                    element.style.display = 'none';
+                }
+            });
+            return undefined;
+        }
+
+        let cancelled = false;
+
+        const syncProjectedHtmlElements = () => {
+            if (cancelled || !globeRef.current) {
+                return;
+            }
+
+            const globe = globeRef.current;
+            const wrapperRect = wrapperRef.current?.getBoundingClientRect?.();
+            const globeRadius = globe.getGlobeRadius?.();
+            const cameraPosition = globe.camera?.()?.position;
+
+            projectedHtmlElements.forEach((item) => {
+                const element = htmlOverlayElementRefs.current.get(item.key);
+                const line = htmlOverlayLineRefs.current.get(item.key);
+                if (!element) {
+                    return;
+                }
+
+                if (item.hidden || !isFiniteNumber(item.lat) || !isFiniteNumber(item.lng)) {
+                    element.style.display = 'none';
+                    if (line) {
+                        line.style.display = 'none';
+                    }
+                    return;
+                }
+
+                const altitude = isFiniteNumber(item.altitude) ? Number(item.altitude) : 0;
+                const screenCoords = globe.getScreenCoords?.(Number(item.lat), Number(item.lng), altitude);
+                const cartesianCoords = globe.getCoords?.(Number(item.lat), Number(item.lng), altitude);
+                const isVisible = isProjectedPointVisible(cartesianCoords, cameraPosition, globeRadius);
+
+                if (
+                    !screenCoords ||
+                    !Number.isFinite(screenCoords.x) ||
+                    !Number.isFinite(screenCoords.y) ||
+                    !isVisible
+                ) {
+                    element.style.display = 'none';
+                    if (line) {
+                        line.style.display = 'none';
+                    }
+                    return;
+                }
+
+                element.style.display = 'block';
+                element.style.pointerEvents = item.pointerEvents || 'auto';
+
+                if (shouldUseScreenOverlayPosition(item) && wrapperRect) {
+                    const rect = resolveScreenOverlayRect(item, element, wrapperRect);
+                    element.style.transform = `translate(${rect.left}px, ${rect.top}px)`;
+
+                    if (line && item.tether) {
+                        const tetherPoint = resolveTetherAttachPoint(item, rect, screenCoords.x, screenCoords.y);
+                        line.style.display = 'block';
+                        line.setAttribute(
+                            'd',
+                            buildTetherPath(
+                                screenCoords.x,
+                                screenCoords.y,
+                                tetherPoint.x,
+                                tetherPoint.y,
+                                tetherPoint.side
+                            )
+                        );
+                        line.setAttribute('stroke', item.tetherColor || 'rgba(103, 232, 249, 0.95)');
+                        line.setAttribute(
+                            'stroke-width',
+                            String(isFiniteNumber(item.tetherWidth) ? Number(item.tetherWidth) : 1.8)
+                        );
+                    } else if (line) {
+                        line.style.display = 'none';
+                    }
+                    return;
+                }
+
+                const offsetX = isFiniteNumber(item.offsetX) ? Number(item.offsetX) : 0;
+                const offsetY = isFiniteNumber(item.offsetY) ? Number(item.offsetY) : 0;
+                element.style.transform = `translate(${screenCoords.x + offsetX}px, ${screenCoords.y + offsetY}px) translate(-50%, -50%)`;
+                if (line) {
+                    line.style.display = 'none';
+                }
+            });
+
+            htmlOverlayAnimationFrameRef.current = requestAnimationFrame(syncProjectedHtmlElements);
+        };
+
+        syncProjectedHtmlElements();
+
+        return () => {
+            cancelled = true;
+            if (htmlOverlayAnimationFrameRef.current) {
+                cancelAnimationFrame(htmlOverlayAnimationFrameRef.current);
+                htmlOverlayAnimationFrameRef.current = null;
+            }
+        };
+    }, [globeReady, projectedHtmlElements, resolvedHeight, resolvedWidth]);
 
     useEffect(() => {
         if (cloudsAnimationFrameRef.current) {
@@ -944,6 +1281,63 @@ export default function DashGlobe(props) {
     }, [cameraPosition, cameraTransitionDuration]);
 
     useEffect(() => {
+        const globe = globeRef.current;
+        if (!globe) {
+            return undefined;
+        }
+
+        const controls = globe.controls?.();
+        if (
+            !controls ||
+            typeof controls.addEventListener !== 'function' ||
+            typeof controls.removeEventListener !== 'function'
+        ) {
+            return undefined;
+        }
+
+        const flushControlChange = () => {
+            if (controlsChangeFrameRef.current !== null) {
+                return;
+            }
+
+            controlsChangeFrameRef.current = requestAnimationFrame(() => {
+                controlsChangeFrameRef.current = null;
+                emitCurrentView();
+            });
+        };
+
+        const handleControlStart = () => {
+            emitCurrentView(undefined, {force: true});
+        };
+
+        const handleControlChange = () => {
+            flushControlChange();
+        };
+
+        const handleControlEnd = () => {
+            if (controlsChangeFrameRef.current !== null) {
+                cancelAnimationFrame(controlsChangeFrameRef.current);
+                controlsChangeFrameRef.current = null;
+            }
+            emitCurrentView(undefined, {force: true});
+        };
+
+        controls.addEventListener('start', handleControlStart);
+        controls.addEventListener('change', handleControlChange);
+        controls.addEventListener('end', handleControlEnd);
+
+        return () => {
+            controls.removeEventListener('start', handleControlStart);
+            controls.removeEventListener('change', handleControlChange);
+            controls.removeEventListener('end', handleControlEnd);
+            if (controlsChangeFrameRef.current !== null) {
+                cancelAnimationFrame(controlsChangeFrameRef.current);
+                controlsChangeFrameRef.current = null;
+            }
+        };
+    }, [setProps]);
+
+    useEffect(() => {
         if (!globeRef.current || animationPaused === undefined || animationPaused === null) {
             return;
         }
@@ -1052,6 +1446,53 @@ export default function DashGlobe(props) {
         });
     };
 
+    const emitCurrentView = (pointOfViewOverride, options = {}) => {
+        const globe = globeRef.current;
+        if (!globe || !setProps) {
+            return;
+        }
+
+        const pointOfView = pointOfViewOverride || globe.pointOfView?.();
+        if (
+            !pointOfView ||
+            !Number.isFinite(pointOfView.lat) ||
+            !Number.isFinite(pointOfView.lng) ||
+            !Number.isFinite(pointOfView.altitude)
+        ) {
+            return;
+        }
+
+        syncDayNightGlobeRotation(pointOfView);
+
+        const signature = JSON.stringify({
+            lat: Number(pointOfView.lat).toFixed(4),
+            lng: Number(pointOfView.lng).toFixed(4),
+            altitude: Number(pointOfView.altitude).toFixed(4)
+        });
+
+        if (signature === lastCurrentViewSignatureRef.current) {
+            return;
+        }
+
+        const now = Date.now();
+        const emitIntervalMs = Number.isFinite(props.currentViewReportInterval)
+            ? Number(props.currentViewReportInterval)
+            : 250;
+        if (!options.force && (now - lastCurrentViewEmittedAtRef.current) < emitIntervalMs) {
+            return;
+        }
+
+        lastCurrentViewSignatureRef.current = signature;
+        lastCurrentViewEmittedAtRef.current = now;
+
+        setProps({
+            currentView: {
+                ...pointOfView,
+                timestamp: now
+            }
+        });
+    };
+
     const handleObjectEvent = (type, layer) => (data, event, coords) => {
         emitEvent(
             type === 'click' ? 'clickData' : 'rightClickData',
@@ -1074,18 +1515,7 @@ export default function DashGlobe(props) {
     };
 
     const handleZoom = (pointOfView) => {
-        syncDayNightGlobeRotation(pointOfView);
-
-        if (!setProps) {
-            return;
-        }
-
-        setProps({
-            currentView: {
-                ...pointOfView,
-                timestamp: Date.now()
-            }
-        });
+        emitCurrentView(pointOfView);
     };
 
     const wrapperStyle = {
@@ -1094,9 +1524,6 @@ export default function DashGlobe(props) {
         height: height ? `${height}px` : 600,
         ...style
     };
-
-    const resolvedWidth = responsive ? (containerSize.width || width) : width;
-    const resolvedHeight = responsive ? (containerSize.height || height || 600) : height;
 
     const shouldApplyPolygonHoverOverride = (
         polygonHoverAltitude !== undefined ||
@@ -1210,6 +1637,72 @@ export default function DashGlobe(props) {
     return (
         <div id={id} className={className} style={wrapperStyle} ref={wrapperRef}>
             <Globe ref={globeRef} {...globeProps} />
+            {projectedHtmlElements.length > 0 ? (
+                <div
+                    style={{
+                        position: 'absolute',
+                        inset: 0,
+                        overflow: 'hidden',
+                        pointerEvents: 'none',
+                        zIndex: 1
+                    }}
+                >
+                    <svg
+                        style={{
+                            position: 'absolute',
+                            inset: 0,
+                            width: '100%',
+                            height: '100%',
+                            overflow: 'hidden',
+                            zIndex: 2,
+                            pointerEvents: 'none'
+                        }}
+                    >
+                        {projectedHtmlElements.map((item) => (
+                            <path
+                                key={`line-${String(item.key)}`}
+                                ref={(element) => {
+                                    if (element) {
+                                        htmlOverlayLineRefs.current.set(item.key, element);
+                                    } else {
+                                        htmlOverlayLineRefs.current.delete(item.key);
+                                    }
+                                }}
+                            style={{
+                                display: 'none',
+                                fill: 'none',
+                                pointerEvents: 'none',
+                                strokeLinecap: 'round',
+                                strokeLinejoin: 'round',
+                                filter: 'drop-shadow(0 0 6px rgba(34, 211, 238, 0.55))'
+                            }}
+                        />
+                    ))}
+                    </svg>
+                    {projectedHtmlElements.map((item) => (
+                        <div
+                            key={String(item.key)}
+                            ref={(element) => {
+                                if (element) {
+                                    htmlOverlayElementRefs.current.set(item.key, element);
+                                } else {
+                                    htmlOverlayElementRefs.current.delete(item.key);
+                                }
+                            }}
+                            style={{
+                                position: 'absolute',
+                                top: 0,
+                                left: 0,
+                                display: 'none',
+                                willChange: 'transform',
+                                zIndex: 1
+                            }}
+                        >
+                            {item.child}
+                        </div>
+                    ))}
+                </div>
+            ) : null}
         </div>
     );
 }

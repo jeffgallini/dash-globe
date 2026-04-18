@@ -279,6 +279,131 @@ def test_heatmap_gallery_entry_uses_single_dataset_helper():
     assert globe.heatmapsTransitionDuration == 3000
 
 
+def test_situation_room_gallery_entry_uses_html_element_helper_and_side_selection():
+    assert usage.SITUATION_ROOM_GLOBE_ID in usage.GLOBE_IDS
+    assert usage.SITUATION_ROOM_GLOBE_ID in usage.GLOBE_BUILDERS
+    assert "html.Img" in usage.SITUATION_ROOM_EXAMPLE_CODE
+    assert "forward_angle" in usage.SITUATION_ROOM_EXAMPLE_CODE
+    assert "update_html_elements" in usage.SITUATION_ROOM_EXAMPLE_CODE
+    assert "html_element_tether" in usage.SITUATION_ROOM_EXAMPLE_CODE
+    assert "currentView" in usage.SITUATION_ROOM_EXAMPLE_CODE
+    assert usage.SITUATION_ROOM_NEWS_PAYLOAD["count"] == len(usage.SITUATION_ROOM_STORIES) == 20
+    assert any(
+        story["location"]["name"] == "Global" and (story["location"]["lat"] != 0 or story["location"]["lng"] != 0)
+        for story in usage.SITUATION_ROOM_STORIES
+    )
+
+    stage_container = usage.build_globe_stage(usage.SITUATION_ROOM_GLOBE_ID)
+    stage = usage.build_situation_room_globe()
+    globe, selection_store, header, status = stage.children
+    snapshots = usage.SITUATION_ROOM_VISIBLE_SNAPSHOTS
+
+    assert stage_container.style["minHeight"] == usage.SITUATION_ROOM_STAGE_MIN_HEIGHT
+    assert globe.id == usage.SITUATION_ROOM_GLOBE_ID
+    assert selection_store.id == usage.SITUATION_ROOM_SELECTION_STORE_ID
+    assert selection_store.data == usage.build_situation_room_selection_signature(snapshots)
+    assert globe.pointsData == usage.SITUATION_ROOM_STORY_POINTS
+    assert len(globe.pointsData) == len(usage.SITUATION_ROOM_STORIES)
+    assert globe.currentViewReportInterval == usage.SITUATION_ROOM_CURRENT_VIEW_REPORT_INTERVAL
+    assert globe.ringsData == [snapshot["ring"] for snapshot in snapshots]
+    assert globe.htmlElementsData == [snapshot["overlay"] for snapshot in snapshots]
+    assert len(globe.children) == len(snapshots)
+    first_card = globe.children[0]
+    assert first_card.children[1].src == snapshots[0]["story"]["image"]
+    assert first_card.children[2].children.href == snapshots[0]["story"]["url"]
+    assert first_card.children[4].children[0].children == snapshots[0]["story"]["source"]
+    assert first_card.children[5].children == usage.format_demo_timestamp(snapshots[0]["story"]["publishedAt"])
+    assert header.id == usage.SITUATION_ROOM_HEADER_ID
+    assert status.id == usage.SITUATION_ROOM_STATUS_ID
+
+
+def test_situation_room_visible_story_selection_chooses_two_most_forward_stories():
+    snapshots = usage.build_situation_room_visible_story_snapshots(cycle_step=0)
+    candidates = usage.build_situation_room_story_candidates(usage.build_situation_room_live_view(0))
+
+    assert len(snapshots) <= 2
+    assert [snapshot["side"] for snapshot in snapshots] == sorted(
+        [snapshot["side"] for snapshot in snapshots],
+        key=usage.SITUATION_ROOM_SIDE_ORDER.index,
+    )
+    assert len(candidates) >= len(snapshots)
+
+    expected_story_ids = [
+        snapshot["story"]["id"]
+        for snapshot in candidates[: len(snapshots)]
+    ]
+    actual_story_ids = sorted(snapshot["story"]["id"] for snapshot in snapshots)
+    assert actual_story_ids == sorted(expected_story_ids)
+
+    for snapshot in snapshots:
+        assert usage.is_situation_room_story_visible(snapshot["story"], usage.build_situation_room_live_view(0))
+        assert snapshot["overlay"]["screenSide"] == snapshot["side"]
+        assert snapshot["overlay"]["tether"] is True
+        assert "forwardAngle" in snapshot
+        assert "relativeLng" in snapshot
+
+
+def test_situation_room_scene_callback_refreshes_tethered_cards():
+    snapshots = usage.build_situation_room_visible_story_snapshots(cycle_step=0)
+
+    signature, rings, html_elements, card_children, header, status = usage.sync_situation_room_scene(
+        None,
+        None,
+    )
+
+    assert signature == usage.build_situation_room_selection_signature(snapshots)
+    assert rings == [snapshot["ring"] for snapshot in snapshots]
+    assert html_elements == [snapshot["overlay"] for snapshot in snapshots]
+    assert len(card_children) == len(snapshots)
+    assert header.children[0].children == "Situation Room"
+    assert "Monitoring" in status.children[0].children
+
+
+def test_situation_room_story_selection_updates_as_auto_rotate_view_moves():
+    cycle_zero = usage.build_situation_room_visible_story_snapshots(cycle_step=0)
+    cycle_later = usage.build_situation_room_visible_story_snapshots(cycle_step=40)
+    live_view = usage.build_situation_room_live_view(40)
+
+    assert live_view["lng"] != usage.SITUATION_ROOM_INITIAL_VIEW["lng"]
+    assert [snapshot["story"]["id"] for snapshot in cycle_zero] != [
+        snapshot["story"]["id"] for snapshot in cycle_later
+    ]
+
+
+def test_situation_room_scene_callback_tracks_manual_current_view():
+    manual_view = {"lat": 35, "lng": 128, "altitude": 2.15}
+    expected = usage.build_situation_room_visible_story_snapshots(current_view=manual_view, cycle_step=0)
+
+    signature, rings, html_elements, card_children, _header, _status = usage.sync_situation_room_scene(
+        manual_view,
+        None,
+    )
+
+    assert signature == usage.build_situation_room_selection_signature(expected)
+    assert rings == [snapshot["ring"] for snapshot in expected]
+    assert html_elements == [snapshot["overlay"] for snapshot in expected]
+    assert len(card_children) == len(expected)
+    assert [child.children[2].children.children for child in card_children] == [
+        snapshot["story"]["title"] for snapshot in expected
+    ]
+
+
+def test_situation_room_scene_callback_skips_rebuild_when_selection_is_unchanged():
+    snapshots = usage.build_situation_room_visible_story_snapshots(cycle_step=0)
+    signature = usage.build_situation_room_selection_signature(snapshots)
+
+    result = usage.sync_situation_room_scene(None, signature)
+
+    assert result == (
+        usage.no_update,
+        usage.no_update,
+        usage.no_update,
+        usage.no_update,
+        usage.no_update,
+        usage.no_update,
+    )
+
+
 def test_usage_page_replaces_old_custom_examples_with_reference_docs():
     assert "city-globe" not in usage.GLOBE_IDS
     assert "route-globe" not in usage.GLOBE_IDS

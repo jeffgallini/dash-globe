@@ -24,6 +24,10 @@ it can be configured naturally from Python.
 
 Keyword arguments:
 
+- children (a list of or a singular dash component, string or number; optional):
+    Dash components rendered as geo-anchored HTML overlays. Children
+    are matched to htmlElementsData by index.
+
 - id (string | dict; optional):
     The ID used to identify this component in Dash callbacks.
 
@@ -109,6 +113,8 @@ Keyword arguments:
 
 - currentView (dict; optional):
     Current point of view reported by zoom and rotation interactions.
+
+- currentViewReportInterval (number; default 250)
 
 - dayNightCycle (boolean; optional)
 
@@ -210,6 +216,40 @@ Keyword arguments:
 
 - hoverData (dict; optional):
     Last hover event payload emitted by any supported layer.
+
+- htmlElementAltitude (boolean | number | string | dict | list; optional)
+
+- htmlElementHidden (boolean | number | string | dict | list; optional)
+
+- htmlElementKey (boolean | number | string | dict | list; optional)
+
+- htmlElementLat (boolean | number | string | dict | list; optional)
+
+- htmlElementLng (boolean | number | string | dict | list; optional)
+
+- htmlElementOffsetX (boolean | number | string | dict | list; optional)
+
+- htmlElementOffsetY (boolean | number | string | dict | list; optional)
+
+- htmlElementPointerEvents (boolean | number | string | dict | list; optional)
+
+- htmlElementScreenSide (boolean | number | string | dict | list; optional)
+
+- htmlElementScreenX (boolean | number | string | dict | list; optional)
+
+- htmlElementScreenY (boolean | number | string | dict | list; optional)
+
+- htmlElementTether (boolean | number | string | dict | list; optional)
+
+- htmlElementTetherAttach (boolean | number | string | dict | list; optional)
+
+- htmlElementTetherColor (boolean | number | string | dict | list; optional)
+
+- htmlElementTetherWidth (boolean | number | string | dict | list; optional)
+
+- htmlElementsData (list; optional):
+    Geo-anchored HTML overlay data. Children are projected onto the
+    globe by matching each child to a data item with the same index.
 
 - labelAltitude (boolean | number | string | dict | list; optional)
 
@@ -418,6 +458,7 @@ Keyword arguments:
 
     def __init__(
         self,
+        children: typing.Optional[ComponentType] = None,
         id: typing.Optional[typing.Union[str, dict]] = None,
         className: typing.Optional[str] = None,
         style: typing.Optional[typing.Any] = None,
@@ -458,6 +499,7 @@ Keyword arguments:
         enablePointerInteraction: typing.Optional[bool] = None,
         lineHoverPrecision: typing.Optional[NumberType] = None,
         showPointerCursor: typing.Optional[bool] = None,
+        currentViewReportInterval: typing.Optional[NumberType] = None,
         pointsData: typing.Optional[typing.Sequence] = None,
         pointLabel: typing.Optional[typing.Any] = None,
         pointLat: typing.Optional[typing.Any] = None,
@@ -594,6 +636,22 @@ Keyword arguments:
         labelDotRadius: typing.Optional[typing.Any] = None,
         labelDotOrientation: typing.Optional[typing.Any] = None,
         labelsTransitionDuration: typing.Optional[NumberType] = None,
+        htmlElementsData: typing.Optional[typing.Sequence] = None,
+        htmlElementLat: typing.Optional[typing.Any] = None,
+        htmlElementLng: typing.Optional[typing.Any] = None,
+        htmlElementAltitude: typing.Optional[typing.Any] = None,
+        htmlElementKey: typing.Optional[typing.Any] = None,
+        htmlElementOffsetX: typing.Optional[typing.Any] = None,
+        htmlElementOffsetY: typing.Optional[typing.Any] = None,
+        htmlElementPointerEvents: typing.Optional[typing.Any] = None,
+        htmlElementHidden: typing.Optional[typing.Any] = None,
+        htmlElementScreenX: typing.Optional[typing.Any] = None,
+        htmlElementScreenY: typing.Optional[typing.Any] = None,
+        htmlElementScreenSide: typing.Optional[typing.Any] = None,
+        htmlElementTether: typing.Optional[typing.Any] = None,
+        htmlElementTetherColor: typing.Optional[typing.Any] = None,
+        htmlElementTetherWidth: typing.Optional[typing.Any] = None,
+        htmlElementTetherAttach: typing.Optional[typing.Any] = None,
         clickData: typing.Optional[dict] = None,
         rightClickData: typing.Optional[dict] = None,
         hoverData: typing.Optional[dict] = None,
@@ -602,15 +660,15 @@ Keyword arguments:
         lastInteraction: typing.Optional[dict] = None,
         **kwargs
     ):
-        self._prop_names = ['id', 'animateIn', 'animationPaused', 'arcAltitude', 'arcAltitudeAutoScale', 'arcCircularResolution', 'arcColor', 'arcCurveResolution', 'arcDashAnimateTime', 'arcDashGap', 'arcDashInitialGap', 'arcDashLength', 'arcEndAltitude', 'arcEndLat', 'arcEndLng', 'arcLabel', 'arcStartAltitude', 'arcStartLat', 'arcStartLng', 'arcStroke', 'arcsData', 'arcsTransitionDuration', 'atmosphereAltitude', 'atmosphereColor', 'autoRotate', 'autoRotateSpeed', 'backgroundColor', 'backgroundImageUrl', 'bumpImageUrl', 'cameraPosition', 'cameraTransitionDuration', 'className', 'clearGlobeTileCacheKey', 'clickData', 'clouds', 'cloudsAltitude', 'cloudsImageUrl', 'cloudsOpacity', 'cloudsRotationSpeed', 'currentView', 'dayNightCycle', 'dayNightCycleAnimate', 'dayNightCycleDayImageUrl', 'dayNightCycleMinutesPerSecond', 'dayNightCycleNightImageUrl', 'dayNightCycleTime', 'enablePointerInteraction', 'globeCurvatureResolution', 'globeImageUrl', 'globeOffset', 'globeReady', 'heatmapBandwidth', 'heatmapBaseAltitude', 'heatmapColorSaturation', 'heatmapPointLat', 'heatmapPointLng', 'heatmapPointWeight', 'heatmapPoints', 'heatmapTopAltitude', 'heatmapsData', 'heatmapsTransitionDuration', 'height', 'hexAltitude', 'hexBinMerge', 'hexBinPointLat', 'hexBinPointLng', 'hexBinPointWeight', 'hexBinPointsData', 'hexBinResolution', 'hexLabel', 'hexMargin', 'hexPolygonAltitude', 'hexPolygonColor', 'hexPolygonCurvatureResolution', 'hexPolygonDotResolution', 'hexPolygonGeoJsonGeometry', 'hexPolygonLabel', 'hexPolygonMargin', 'hexPolygonResolution', 'hexPolygonUseDots', 'hexPolygonsData', 'hexPolygonsTransitionDuration', 'hexSideColor', 'hexTopColor', 'hexTopCurvatureResolution', 'hexTransitionDuration', 'hoverData', 'labelAltitude', 'labelColor', 'labelDotOrientation', 'labelDotRadius', 'labelIncludeDot', 'labelLabel', 'labelLat', 'labelLng', 'labelResolution', 'labelRotation', 'labelSize', 'labelText', 'labelsData', 'labelsTransitionDuration', 'lastInteraction', 'lineHoverPrecision', 'particleAltitude', 'particleLabel', 'particleLat', 'particleLng', 'particlesColor', 'particlesData', 'particlesList', 'particlesSize', 'particlesSizeAttenuation', 'pathColor', 'pathDashAnimateTime', 'pathDashGap', 'pathDashInitialGap', 'pathDashLength', 'pathLabel', 'pathPointAlt', 'pathPointLat', 'pathPointLng', 'pathPoints', 'pathResolution', 'pathStroke', 'pathTransitionDuration', 'pathsData', 'pointAltitude', 'pointColor', 'pointLabel', 'pointLat', 'pointLng', 'pointRadius', 'pointResolution', 'pointsData', 'pointsMerge', 'pointsTransitionDuration', 'polygonAltitude', 'polygonCapColor', 'polygonCapCurvatureResolution', 'polygonCapMaterial', 'polygonGeoJsonGeometry', 'polygonHoverAltitude', 'polygonHoverCapColor', 'polygonHoverKey', 'polygonHoverSideColor', 'polygonHoverStrokeColor', 'polygonLabel', 'polygonSideColor', 'polygonSideMaterial', 'polygonStrokeColor', 'polygonsData', 'polygonsTransitionDuration', 'rendererConfig', 'responsive', 'rightClickData', 'ringAltitude', 'ringColor', 'ringLat', 'ringLng', 'ringMaxRadius', 'ringPropagationSpeed', 'ringRepeatPeriod', 'ringResolution', 'ringsData', 'showAtmosphere', 'showGlobe', 'showGraticules', 'showPointerCursor', 'style', 'tileAltitude', 'tileCurvatureResolution', 'tileHeight', 'tileLabel', 'tileLat', 'tileLng', 'tileMaterial', 'tileUseGlobeProjection', 'tileWidth', 'tilesData', 'tilesTransitionDuration', 'waitForGlobeReady', 'width']
+        self._prop_names = ['children', 'id', 'animateIn', 'animationPaused', 'arcAltitude', 'arcAltitudeAutoScale', 'arcCircularResolution', 'arcColor', 'arcCurveResolution', 'arcDashAnimateTime', 'arcDashGap', 'arcDashInitialGap', 'arcDashLength', 'arcEndAltitude', 'arcEndLat', 'arcEndLng', 'arcLabel', 'arcStartAltitude', 'arcStartLat', 'arcStartLng', 'arcStroke', 'arcsData', 'arcsTransitionDuration', 'atmosphereAltitude', 'atmosphereColor', 'autoRotate', 'autoRotateSpeed', 'backgroundColor', 'backgroundImageUrl', 'bumpImageUrl', 'cameraPosition', 'cameraTransitionDuration', 'className', 'clearGlobeTileCacheKey', 'clickData', 'clouds', 'cloudsAltitude', 'cloudsImageUrl', 'cloudsOpacity', 'cloudsRotationSpeed', 'currentView', 'currentViewReportInterval', 'dayNightCycle', 'dayNightCycleAnimate', 'dayNightCycleDayImageUrl', 'dayNightCycleMinutesPerSecond', 'dayNightCycleNightImageUrl', 'dayNightCycleTime', 'enablePointerInteraction', 'globeCurvatureResolution', 'globeImageUrl', 'globeOffset', 'globeReady', 'heatmapBandwidth', 'heatmapBaseAltitude', 'heatmapColorSaturation', 'heatmapPointLat', 'heatmapPointLng', 'heatmapPointWeight', 'heatmapPoints', 'heatmapTopAltitude', 'heatmapsData', 'heatmapsTransitionDuration', 'height', 'hexAltitude', 'hexBinMerge', 'hexBinPointLat', 'hexBinPointLng', 'hexBinPointWeight', 'hexBinPointsData', 'hexBinResolution', 'hexLabel', 'hexMargin', 'hexPolygonAltitude', 'hexPolygonColor', 'hexPolygonCurvatureResolution', 'hexPolygonDotResolution', 'hexPolygonGeoJsonGeometry', 'hexPolygonLabel', 'hexPolygonMargin', 'hexPolygonResolution', 'hexPolygonUseDots', 'hexPolygonsData', 'hexPolygonsTransitionDuration', 'hexSideColor', 'hexTopColor', 'hexTopCurvatureResolution', 'hexTransitionDuration', 'hoverData', 'htmlElementAltitude', 'htmlElementHidden', 'htmlElementKey', 'htmlElementLat', 'htmlElementLng', 'htmlElementOffsetX', 'htmlElementOffsetY', 'htmlElementPointerEvents', 'htmlElementScreenSide', 'htmlElementScreenX', 'htmlElementScreenY', 'htmlElementTether', 'htmlElementTetherAttach', 'htmlElementTetherColor', 'htmlElementTetherWidth', 'htmlElementsData', 'labelAltitude', 'labelColor', 'labelDotOrientation', 'labelDotRadius', 'labelIncludeDot', 'labelLabel', 'labelLat', 'labelLng', 'labelResolution', 'labelRotation', 'labelSize', 'labelText', 'labelsData', 'labelsTransitionDuration', 'lastInteraction', 'lineHoverPrecision', 'particleAltitude', 'particleLabel', 'particleLat', 'particleLng', 'particlesColor', 'particlesData', 'particlesList', 'particlesSize', 'particlesSizeAttenuation', 'pathColor', 'pathDashAnimateTime', 'pathDashGap', 'pathDashInitialGap', 'pathDashLength', 'pathLabel', 'pathPointAlt', 'pathPointLat', 'pathPointLng', 'pathPoints', 'pathResolution', 'pathStroke', 'pathTransitionDuration', 'pathsData', 'pointAltitude', 'pointColor', 'pointLabel', 'pointLat', 'pointLng', 'pointRadius', 'pointResolution', 'pointsData', 'pointsMerge', 'pointsTransitionDuration', 'polygonAltitude', 'polygonCapColor', 'polygonCapCurvatureResolution', 'polygonCapMaterial', 'polygonGeoJsonGeometry', 'polygonHoverAltitude', 'polygonHoverCapColor', 'polygonHoverKey', 'polygonHoverSideColor', 'polygonHoverStrokeColor', 'polygonLabel', 'polygonSideColor', 'polygonSideMaterial', 'polygonStrokeColor', 'polygonsData', 'polygonsTransitionDuration', 'rendererConfig', 'responsive', 'rightClickData', 'ringAltitude', 'ringColor', 'ringLat', 'ringLng', 'ringMaxRadius', 'ringPropagationSpeed', 'ringRepeatPeriod', 'ringResolution', 'ringsData', 'showAtmosphere', 'showGlobe', 'showGraticules', 'showPointerCursor', 'style', 'tileAltitude', 'tileCurvatureResolution', 'tileHeight', 'tileLabel', 'tileLat', 'tileLng', 'tileMaterial', 'tileUseGlobeProjection', 'tileWidth', 'tilesData', 'tilesTransitionDuration', 'waitForGlobeReady', 'width']
         self._valid_wildcard_attributes =            []
-        self.available_properties = ['id', 'animateIn', 'animationPaused', 'arcAltitude', 'arcAltitudeAutoScale', 'arcCircularResolution', 'arcColor', 'arcCurveResolution', 'arcDashAnimateTime', 'arcDashGap', 'arcDashInitialGap', 'arcDashLength', 'arcEndAltitude', 'arcEndLat', 'arcEndLng', 'arcLabel', 'arcStartAltitude', 'arcStartLat', 'arcStartLng', 'arcStroke', 'arcsData', 'arcsTransitionDuration', 'atmosphereAltitude', 'atmosphereColor', 'autoRotate', 'autoRotateSpeed', 'backgroundColor', 'backgroundImageUrl', 'bumpImageUrl', 'cameraPosition', 'cameraTransitionDuration', 'className', 'clearGlobeTileCacheKey', 'clickData', 'clouds', 'cloudsAltitude', 'cloudsImageUrl', 'cloudsOpacity', 'cloudsRotationSpeed', 'currentView', 'dayNightCycle', 'dayNightCycleAnimate', 'dayNightCycleDayImageUrl', 'dayNightCycleMinutesPerSecond', 'dayNightCycleNightImageUrl', 'dayNightCycleTime', 'enablePointerInteraction', 'globeCurvatureResolution', 'globeImageUrl', 'globeOffset', 'globeReady', 'heatmapBandwidth', 'heatmapBaseAltitude', 'heatmapColorSaturation', 'heatmapPointLat', 'heatmapPointLng', 'heatmapPointWeight', 'heatmapPoints', 'heatmapTopAltitude', 'heatmapsData', 'heatmapsTransitionDuration', 'height', 'hexAltitude', 'hexBinMerge', 'hexBinPointLat', 'hexBinPointLng', 'hexBinPointWeight', 'hexBinPointsData', 'hexBinResolution', 'hexLabel', 'hexMargin', 'hexPolygonAltitude', 'hexPolygonColor', 'hexPolygonCurvatureResolution', 'hexPolygonDotResolution', 'hexPolygonGeoJsonGeometry', 'hexPolygonLabel', 'hexPolygonMargin', 'hexPolygonResolution', 'hexPolygonUseDots', 'hexPolygonsData', 'hexPolygonsTransitionDuration', 'hexSideColor', 'hexTopColor', 'hexTopCurvatureResolution', 'hexTransitionDuration', 'hoverData', 'labelAltitude', 'labelColor', 'labelDotOrientation', 'labelDotRadius', 'labelIncludeDot', 'labelLabel', 'labelLat', 'labelLng', 'labelResolution', 'labelRotation', 'labelSize', 'labelText', 'labelsData', 'labelsTransitionDuration', 'lastInteraction', 'lineHoverPrecision', 'particleAltitude', 'particleLabel', 'particleLat', 'particleLng', 'particlesColor', 'particlesData', 'particlesList', 'particlesSize', 'particlesSizeAttenuation', 'pathColor', 'pathDashAnimateTime', 'pathDashGap', 'pathDashInitialGap', 'pathDashLength', 'pathLabel', 'pathPointAlt', 'pathPointLat', 'pathPointLng', 'pathPoints', 'pathResolution', 'pathStroke', 'pathTransitionDuration', 'pathsData', 'pointAltitude', 'pointColor', 'pointLabel', 'pointLat', 'pointLng', 'pointRadius', 'pointResolution', 'pointsData', 'pointsMerge', 'pointsTransitionDuration', 'polygonAltitude', 'polygonCapColor', 'polygonCapCurvatureResolution', 'polygonCapMaterial', 'polygonGeoJsonGeometry', 'polygonHoverAltitude', 'polygonHoverCapColor', 'polygonHoverKey', 'polygonHoverSideColor', 'polygonHoverStrokeColor', 'polygonLabel', 'polygonSideColor', 'polygonSideMaterial', 'polygonStrokeColor', 'polygonsData', 'polygonsTransitionDuration', 'rendererConfig', 'responsive', 'rightClickData', 'ringAltitude', 'ringColor', 'ringLat', 'ringLng', 'ringMaxRadius', 'ringPropagationSpeed', 'ringRepeatPeriod', 'ringResolution', 'ringsData', 'showAtmosphere', 'showGlobe', 'showGraticules', 'showPointerCursor', 'style', 'tileAltitude', 'tileCurvatureResolution', 'tileHeight', 'tileLabel', 'tileLat', 'tileLng', 'tileMaterial', 'tileUseGlobeProjection', 'tileWidth', 'tilesData', 'tilesTransitionDuration', 'waitForGlobeReady', 'width']
+        self.available_properties = ['children', 'id', 'animateIn', 'animationPaused', 'arcAltitude', 'arcAltitudeAutoScale', 'arcCircularResolution', 'arcColor', 'arcCurveResolution', 'arcDashAnimateTime', 'arcDashGap', 'arcDashInitialGap', 'arcDashLength', 'arcEndAltitude', 'arcEndLat', 'arcEndLng', 'arcLabel', 'arcStartAltitude', 'arcStartLat', 'arcStartLng', 'arcStroke', 'arcsData', 'arcsTransitionDuration', 'atmosphereAltitude', 'atmosphereColor', 'autoRotate', 'autoRotateSpeed', 'backgroundColor', 'backgroundImageUrl', 'bumpImageUrl', 'cameraPosition', 'cameraTransitionDuration', 'className', 'clearGlobeTileCacheKey', 'clickData', 'clouds', 'cloudsAltitude', 'cloudsImageUrl', 'cloudsOpacity', 'cloudsRotationSpeed', 'currentView', 'currentViewReportInterval', 'dayNightCycle', 'dayNightCycleAnimate', 'dayNightCycleDayImageUrl', 'dayNightCycleMinutesPerSecond', 'dayNightCycleNightImageUrl', 'dayNightCycleTime', 'enablePointerInteraction', 'globeCurvatureResolution', 'globeImageUrl', 'globeOffset', 'globeReady', 'heatmapBandwidth', 'heatmapBaseAltitude', 'heatmapColorSaturation', 'heatmapPointLat', 'heatmapPointLng', 'heatmapPointWeight', 'heatmapPoints', 'heatmapTopAltitude', 'heatmapsData', 'heatmapsTransitionDuration', 'height', 'hexAltitude', 'hexBinMerge', 'hexBinPointLat', 'hexBinPointLng', 'hexBinPointWeight', 'hexBinPointsData', 'hexBinResolution', 'hexLabel', 'hexMargin', 'hexPolygonAltitude', 'hexPolygonColor', 'hexPolygonCurvatureResolution', 'hexPolygonDotResolution', 'hexPolygonGeoJsonGeometry', 'hexPolygonLabel', 'hexPolygonMargin', 'hexPolygonResolution', 'hexPolygonUseDots', 'hexPolygonsData', 'hexPolygonsTransitionDuration', 'hexSideColor', 'hexTopColor', 'hexTopCurvatureResolution', 'hexTransitionDuration', 'hoverData', 'htmlElementAltitude', 'htmlElementHidden', 'htmlElementKey', 'htmlElementLat', 'htmlElementLng', 'htmlElementOffsetX', 'htmlElementOffsetY', 'htmlElementPointerEvents', 'htmlElementScreenSide', 'htmlElementScreenX', 'htmlElementScreenY', 'htmlElementTether', 'htmlElementTetherAttach', 'htmlElementTetherColor', 'htmlElementTetherWidth', 'htmlElementsData', 'labelAltitude', 'labelColor', 'labelDotOrientation', 'labelDotRadius', 'labelIncludeDot', 'labelLabel', 'labelLat', 'labelLng', 'labelResolution', 'labelRotation', 'labelSize', 'labelText', 'labelsData', 'labelsTransitionDuration', 'lastInteraction', 'lineHoverPrecision', 'particleAltitude', 'particleLabel', 'particleLat', 'particleLng', 'particlesColor', 'particlesData', 'particlesList', 'particlesSize', 'particlesSizeAttenuation', 'pathColor', 'pathDashAnimateTime', 'pathDashGap', 'pathDashInitialGap', 'pathDashLength', 'pathLabel', 'pathPointAlt', 'pathPointLat', 'pathPointLng', 'pathPoints', 'pathResolution', 'pathStroke', 'pathTransitionDuration', 'pathsData', 'pointAltitude', 'pointColor', 'pointLabel', 'pointLat', 'pointLng', 'pointRadius', 'pointResolution', 'pointsData', 'pointsMerge', 'pointsTransitionDuration', 'polygonAltitude', 'polygonCapColor', 'polygonCapCurvatureResolution', 'polygonCapMaterial', 'polygonGeoJsonGeometry', 'polygonHoverAltitude', 'polygonHoverCapColor', 'polygonHoverKey', 'polygonHoverSideColor', 'polygonHoverStrokeColor', 'polygonLabel', 'polygonSideColor', 'polygonSideMaterial', 'polygonStrokeColor', 'polygonsData', 'polygonsTransitionDuration', 'rendererConfig', 'responsive', 'rightClickData', 'ringAltitude', 'ringColor', 'ringLat', 'ringLng', 'ringMaxRadius', 'ringPropagationSpeed', 'ringRepeatPeriod', 'ringResolution', 'ringsData', 'showAtmosphere', 'showGlobe', 'showGraticules', 'showPointerCursor', 'style', 'tileAltitude', 'tileCurvatureResolution', 'tileHeight', 'tileLabel', 'tileLat', 'tileLng', 'tileMaterial', 'tileUseGlobeProjection', 'tileWidth', 'tilesData', 'tilesTransitionDuration', 'waitForGlobeReady', 'width']
         self.available_wildcard_properties =            []
         _explicit_args = kwargs.pop('_explicit_args')
         _locals = locals()
         _locals.update(kwargs)  # For wildcard attrs and excess named props
-        args = {k: _locals[k] for k in _explicit_args}
+        args = {k: _locals[k] for k in _explicit_args if k != 'children'}
 
-        super(DashGlobe, self).__init__(**args)
+        super(DashGlobe, self).__init__(children=children, **args)
 
 setattr(DashGlobe, "__init__", _explicitize_args(DashGlobe.__init__))

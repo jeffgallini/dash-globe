@@ -4,6 +4,9 @@ export ''_dashglobe
 
 """
     ''_dashglobe(;kwargs...)
+    ''_dashglobe(children::Any;kwargs...)
+    ''_dashglobe(children_maker::Function;kwargs...)
+
 
 A DashGlobe component.
 Dash wrapper around react-globe.gl.
@@ -11,6 +14,8 @@ Dash wrapper around react-globe.gl.
 The component focuses on the JSON-serialisable portion of the upstream API so
 it can be configured naturally from Python.
 Keyword arguments:
+- `children` (a list of or a singular dash component, string or number; optional): Dash components rendered as geo-anchored HTML overlays. Children are
+matched to htmlElementsData by index.
 - `id` (String | Dict; optional): The ID used to identify this component in Dash callbacks.
 - `animateIn` (Bool; optional)
 - `animationPaused` (Bool; optional)
@@ -98,6 +103,16 @@ Keyword arguments:
 - `hexTopCurvatureResolution` (Real; optional)
 - `hexTransitionDuration` (Real; optional)
 - `hoverData` (Dict; optional): Last hover event payload emitted by any supported layer.
+- `htmlElementAltitude` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementHidden` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementKey` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementLat` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementLng` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementOffsetX` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementOffsetY` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementPointerEvents` (Bool | Real | String | Dict | Array; optional)
+- `htmlElementsData` (Array; optional): Geo-anchored HTML overlay data. Children are projected onto the globe by
+matching each child to a data item with the same index.
 - `labelAltitude` (Bool | Real | String | Dict | Array; optional)
 - `labelColor` (Bool | Real | String | Dict | Array; optional)
 - `labelDotOrientation` (Bool | Real | String | Dict | Array; optional)
@@ -195,8 +210,11 @@ Keyword arguments:
 - `width` (Real; optional): Canvas width in pixels.
 """
 function ''_dashglobe(; kwargs...)
-        available_props = Symbol[:id, :animateIn, :animationPaused, :arcAltitude, :arcAltitudeAutoScale, :arcCircularResolution, :arcColor, :arcCurveResolution, :arcDashAnimateTime, :arcDashGap, :arcDashInitialGap, :arcDashLength, :arcEndAltitude, :arcEndLat, :arcEndLng, :arcLabel, :arcStartAltitude, :arcStartLat, :arcStartLng, :arcStroke, :arcsData, :arcsTransitionDuration, :atmosphereAltitude, :atmosphereColor, :autoRotate, :autoRotateSpeed, :backgroundColor, :backgroundImageUrl, :bumpImageUrl, :cameraPosition, :cameraTransitionDuration, :className, :clearGlobeTileCacheKey, :clickData, :clouds, :cloudsAltitude, :cloudsImageUrl, :cloudsOpacity, :cloudsRotationSpeed, :currentView, :dayNightCycle, :dayNightCycleAnimate, :dayNightCycleDayImageUrl, :dayNightCycleMinutesPerSecond, :dayNightCycleNightImageUrl, :dayNightCycleTime, :enablePointerInteraction, :globeCurvatureResolution, :globeImageUrl, :globeOffset, :globeReady, :heatmapBandwidth, :heatmapBaseAltitude, :heatmapColorSaturation, :heatmapPointLat, :heatmapPointLng, :heatmapPointWeight, :heatmapPoints, :heatmapTopAltitude, :heatmapsData, :heatmapsTransitionDuration, :height, :hexAltitude, :hexBinMerge, :hexBinPointLat, :hexBinPointLng, :hexBinPointWeight, :hexBinPointsData, :hexBinResolution, :hexLabel, :hexMargin, :hexPolygonAltitude, :hexPolygonColor, :hexPolygonCurvatureResolution, :hexPolygonDotResolution, :hexPolygonGeoJsonGeometry, :hexPolygonLabel, :hexPolygonMargin, :hexPolygonResolution, :hexPolygonUseDots, :hexPolygonsData, :hexPolygonsTransitionDuration, :hexSideColor, :hexTopColor, :hexTopCurvatureResolution, :hexTransitionDuration, :hoverData, :labelAltitude, :labelColor, :labelDotOrientation, :labelDotRadius, :labelIncludeDot, :labelLabel, :labelLat, :labelLng, :labelResolution, :labelRotation, :labelSize, :labelText, :labelsData, :labelsTransitionDuration, :lastInteraction, :lineHoverPrecision, :particleAltitude, :particleLabel, :particleLat, :particleLng, :particlesColor, :particlesData, :particlesList, :particlesSize, :particlesSizeAttenuation, :pathColor, :pathDashAnimateTime, :pathDashGap, :pathDashInitialGap, :pathDashLength, :pathLabel, :pathPointAlt, :pathPointLat, :pathPointLng, :pathPoints, :pathResolution, :pathStroke, :pathTransitionDuration, :pathsData, :pointAltitude, :pointColor, :pointLabel, :pointLat, :pointLng, :pointRadius, :pointResolution, :pointsData, :pointsMerge, :pointsTransitionDuration, :polygonAltitude, :polygonCapColor, :polygonCapCurvatureResolution, :polygonCapMaterial, :polygonGeoJsonGeometry, :polygonHoverAltitude, :polygonHoverCapColor, :polygonHoverKey, :polygonHoverSideColor, :polygonHoverStrokeColor, :polygonLabel, :polygonSideColor, :polygonSideMaterial, :polygonStrokeColor, :polygonsData, :polygonsTransitionDuration, :rendererConfig, :responsive, :rightClickData, :ringAltitude, :ringColor, :ringLat, :ringLng, :ringMaxRadius, :ringPropagationSpeed, :ringRepeatPeriod, :ringResolution, :ringsData, :showAtmosphere, :showGlobe, :showGraticules, :showPointerCursor, :style, :tileAltitude, :tileCurvatureResolution, :tileHeight, :tileLabel, :tileLat, :tileLng, :tileMaterial, :tileUseGlobeProjection, :tileWidth, :tilesData, :tilesTransitionDuration, :waitForGlobeReady, :width]
+        available_props = Symbol[:children, :id, :animateIn, :animationPaused, :arcAltitude, :arcAltitudeAutoScale, :arcCircularResolution, :arcColor, :arcCurveResolution, :arcDashAnimateTime, :arcDashGap, :arcDashInitialGap, :arcDashLength, :arcEndAltitude, :arcEndLat, :arcEndLng, :arcLabel, :arcStartAltitude, :arcStartLat, :arcStartLng, :arcStroke, :arcsData, :arcsTransitionDuration, :atmosphereAltitude, :atmosphereColor, :autoRotate, :autoRotateSpeed, :backgroundColor, :backgroundImageUrl, :bumpImageUrl, :cameraPosition, :cameraTransitionDuration, :className, :clearGlobeTileCacheKey, :clickData, :clouds, :cloudsAltitude, :cloudsImageUrl, :cloudsOpacity, :cloudsRotationSpeed, :currentView, :dayNightCycle, :dayNightCycleAnimate, :dayNightCycleDayImageUrl, :dayNightCycleMinutesPerSecond, :dayNightCycleNightImageUrl, :dayNightCycleTime, :enablePointerInteraction, :globeCurvatureResolution, :globeImageUrl, :globeOffset, :globeReady, :heatmapBandwidth, :heatmapBaseAltitude, :heatmapColorSaturation, :heatmapPointLat, :heatmapPointLng, :heatmapPointWeight, :heatmapPoints, :heatmapTopAltitude, :heatmapsData, :heatmapsTransitionDuration, :height, :hexAltitude, :hexBinMerge, :hexBinPointLat, :hexBinPointLng, :hexBinPointWeight, :hexBinPointsData, :hexBinResolution, :hexLabel, :hexMargin, :hexPolygonAltitude, :hexPolygonColor, :hexPolygonCurvatureResolution, :hexPolygonDotResolution, :hexPolygonGeoJsonGeometry, :hexPolygonLabel, :hexPolygonMargin, :hexPolygonResolution, :hexPolygonUseDots, :hexPolygonsData, :hexPolygonsTransitionDuration, :hexSideColor, :hexTopColor, :hexTopCurvatureResolution, :hexTransitionDuration, :hoverData, :htmlElementAltitude, :htmlElementHidden, :htmlElementKey, :htmlElementLat, :htmlElementLng, :htmlElementOffsetX, :htmlElementOffsetY, :htmlElementPointerEvents, :htmlElementsData, :labelAltitude, :labelColor, :labelDotOrientation, :labelDotRadius, :labelIncludeDot, :labelLabel, :labelLat, :labelLng, :labelResolution, :labelRotation, :labelSize, :labelText, :labelsData, :labelsTransitionDuration, :lastInteraction, :lineHoverPrecision, :particleAltitude, :particleLabel, :particleLat, :particleLng, :particlesColor, :particlesData, :particlesList, :particlesSize, :particlesSizeAttenuation, :pathColor, :pathDashAnimateTime, :pathDashGap, :pathDashInitialGap, :pathDashLength, :pathLabel, :pathPointAlt, :pathPointLat, :pathPointLng, :pathPoints, :pathResolution, :pathStroke, :pathTransitionDuration, :pathsData, :pointAltitude, :pointColor, :pointLabel, :pointLat, :pointLng, :pointRadius, :pointResolution, :pointsData, :pointsMerge, :pointsTransitionDuration, :polygonAltitude, :polygonCapColor, :polygonCapCurvatureResolution, :polygonCapMaterial, :polygonGeoJsonGeometry, :polygonHoverAltitude, :polygonHoverCapColor, :polygonHoverKey, :polygonHoverSideColor, :polygonHoverStrokeColor, :polygonLabel, :polygonSideColor, :polygonSideMaterial, :polygonStrokeColor, :polygonsData, :polygonsTransitionDuration, :rendererConfig, :responsive, :rightClickData, :ringAltitude, :ringColor, :ringLat, :ringLng, :ringMaxRadius, :ringPropagationSpeed, :ringRepeatPeriod, :ringResolution, :ringsData, :showAtmosphere, :showGlobe, :showGraticules, :showPointerCursor, :style, :tileAltitude, :tileCurvatureResolution, :tileHeight, :tileLabel, :tileLat, :tileLng, :tileMaterial, :tileUseGlobeProjection, :tileWidth, :tilesData, :tilesTransitionDuration, :waitForGlobeReady, :width]
         wild_props = Symbol[]
         return Component("''_dashglobe", "DashGlobe", "dash_globe", available_props, wild_props; kwargs...)
 end
+
+''_dashglobe(children::Any; kwargs...) = ''_dashglobe(;kwargs..., children = children)
+''_dashglobe(children_maker::Function; kwargs...) = ''_dashglobe(children_maker(); kwargs...)
 

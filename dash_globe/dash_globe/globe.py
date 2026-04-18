@@ -20,6 +20,16 @@ def _coerce_items(items: Sequence[Any]) -> list[Any]:
     return list(items)
 
 
+def _coerce_children(children: Any) -> list[Any]:
+    if children is None:
+        return []
+    if isinstance(children, list):
+        return list(children)
+    if isinstance(children, tuple):
+        return list(children)
+    return [children]
+
+
 def _snake_to_camel(name: str) -> str:
     head, *tail = name.split("_")
     return head + "".join(part[:1].upper() + part[1:] for part in tail if part)
@@ -267,6 +277,7 @@ class DashGlobe(_DashGlobeBase):
         show_pointer_cursor: bool | None = None,
         line_hover_precision: float | None = None,
         animation_paused: bool | None = None,
+        current_view_report_interval: float | None = None,
     ) -> "DashGlobe":
         """Update interaction-related component settings.
 
@@ -281,6 +292,9 @@ class DashGlobe(_DashGlobeBase):
             Hover picking precision for line-like layers.
         animation_paused : bool, optional
             Whether globe animation should pause.
+        current_view_report_interval : float, optional
+            Minimum interval in milliseconds between reported ``currentView``
+            prop updates.
 
         Returns
         -------
@@ -296,6 +310,8 @@ class DashGlobe(_DashGlobeBase):
             updates["lineHoverPrecision"] = line_hover_precision
         if animation_paused is not None:
             updates["animationPaused"] = animation_paused
+        if current_view_report_interval is not None:
+            updates["currentViewReportInterval"] = current_view_report_interval
         return self.update(**updates)
 
     def update_controls(
@@ -432,6 +448,11 @@ class DashGlobe(_DashGlobeBase):
         existing = list(getattr(self, prop_name, None) or [])
         existing.extend(_coerce_items(items))
         return self.update(**{prop_name: existing})
+
+    def _extend_children(self, children: Any) -> "DashGlobe":
+        existing = _coerce_children(getattr(self, "children", None))
+        existing.extend(_coerce_children(children))
+        return self.update(children=existing)
 
     def _update_layer(self, data_prop: str, data: Iterable[Any] | None = None, **props: Any) -> "DashGlobe":
         updates = dict(props)
@@ -1040,3 +1061,126 @@ class DashGlobe(_DashGlobeBase):
         if labels_transition_duration is not None:
             updates["labels_transition_duration"] = labels_transition_duration
         return self._update_layer("labelsData", data, **updates)
+
+    def add_html_elements(self, *elements: Any, children: Any | None = None) -> "DashGlobe":
+        """Append geo-anchored HTML overlay records.
+
+        Parameters
+        ----------
+        *elements
+            Overlay data records to append. A single list may be passed instead
+            of multiple positional items.
+        children : Any, optional
+            Dash component children rendered as tethered overlays. Children are
+            matched to ``htmlElementsData`` by index.
+
+        Returns
+        -------
+        DashGlobe
+            The updated globe instance.
+        """
+        self._extend_data("htmlElementsData", elements)
+        if children is not None:
+            self._extend_children(children)
+        return self
+
+    def update_html_elements(
+        self,
+        data: Iterable[Any] | None = None,
+        *,
+        children: Any | None = None,
+        html_element_lat: Any | None = None,
+        html_element_lng: Any | None = None,
+        html_element_altitude: Any | None = None,
+        html_element_key: Any | None = None,
+        html_element_offset_x: Any | None = None,
+        html_element_offset_y: Any | None = None,
+        html_element_pointer_events: Any | None = None,
+        html_element_hidden: Any | None = None,
+        html_element_screen_x: Any | None = None,
+        html_element_screen_y: Any | None = None,
+        html_element_screen_side: Any | None = None,
+        html_element_tether: Any | None = None,
+        html_element_tether_color: Any | None = None,
+        html_element_tether_width: Any | None = None,
+        html_element_tether_attach: Any | None = None,
+        **props: Any,
+    ) -> "DashGlobe":
+        """Replace or reconfigure geo-anchored HTML overlays.
+
+        Parameters
+        ----------
+        data : iterable, optional
+            Replacement ``htmlElementsData`` payload.
+        children : Any, optional
+            Dash component children rendered as tethered overlays. Children are
+            matched to ``htmlElementsData`` by index.
+        html_element_lat, html_element_lng, html_element_altitude : Any, optional
+            Friendly aliases for geographic overlay accessors.
+        html_element_key : Any, optional
+            Accessor or constant key used to stabilise overlay identity.
+        html_element_offset_x, html_element_offset_y : Any, optional
+            Pixel offsets applied after projection.
+        html_element_pointer_events : Any, optional
+            Accessor or constant CSS pointer-events value.
+        html_element_hidden : Any, optional
+            Accessor or constant value controlling whether an overlay is hidden.
+        html_element_screen_x, html_element_screen_y : Any, optional
+            Accessors or constant values for pinning overlays to screen-space
+            coordinates instead of the projected globe point.
+        html_element_screen_side : Any, optional
+            Accessor or constant side hint (``"left"``, ``"right"``, or
+            ``"center"``) used when resolving ``html_element_screen_x``.
+        html_element_tether : Any, optional
+            Accessor or constant value controlling whether a live screen-space
+            tether line should connect the overlay to its tracked lat/lng.
+        html_element_tether_color : Any, optional
+            Accessor or constant stroke color for the tether line.
+        html_element_tether_width : Any, optional
+            Accessor or constant stroke width for the tether line.
+        html_element_tether_attach : Any, optional
+            Accessor or constant side of the overlay card where the tether
+            should land. Accepted values are ``"auto"``, ``"left"``,
+            ``"right"``, ``"top"``, and ``"bottom"``.
+        **props
+            Additional raw component props.
+
+        Returns
+        -------
+        DashGlobe
+            The updated globe instance.
+        """
+        updates = dict(props)
+        if children is not None:
+            updates["children"] = _coerce_children(children)
+        if html_element_lat is not None:
+            updates["html_element_lat"] = html_element_lat
+        if html_element_lng is not None:
+            updates["html_element_lng"] = html_element_lng
+        if html_element_altitude is not None:
+            updates["html_element_altitude"] = html_element_altitude
+        if html_element_key is not None:
+            updates["html_element_key"] = html_element_key
+        if html_element_offset_x is not None:
+            updates["html_element_offset_x"] = html_element_offset_x
+        if html_element_offset_y is not None:
+            updates["html_element_offset_y"] = html_element_offset_y
+        if html_element_pointer_events is not None:
+            updates["html_element_pointer_events"] = html_element_pointer_events
+        if html_element_hidden is not None:
+            updates["html_element_hidden"] = html_element_hidden
+        if html_element_screen_x is not None:
+            updates["html_element_screen_x"] = html_element_screen_x
+        if html_element_screen_y is not None:
+            updates["html_element_screen_y"] = html_element_screen_y
+        if html_element_screen_side is not None:
+            updates["html_element_screen_side"] = html_element_screen_side
+        if html_element_tether is not None:
+            updates["html_element_tether"] = html_element_tether
+        if html_element_tether_color is not None:
+            updates["html_element_tether_color"] = html_element_tether_color
+        if html_element_tether_width is not None:
+            updates["html_element_tether_width"] = html_element_tether_width
+        if html_element_tether_attach is not None:
+            updates["html_element_tether_attach"] = html_element_tether_attach
+        return self._update_layer("htmlElementsData", data, **updates)

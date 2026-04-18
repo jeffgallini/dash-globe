@@ -26,10 +26,17 @@ DashGlobe.defaultProps = {
     cloudsRotationSpeed: -0.006,
     cloudsOpacity: 1,
     cameraTransitionDuration: 0,
-    animationPaused: false
+    animationPaused: false,
+    currentViewReportInterval: 250
 };
 
 DashGlobe.propTypes = {
+    /**
+     * Dash components rendered as geo-anchored HTML overlays. Children are
+     * matched to htmlElementsData by index.
+     */
+    children: PropTypes.node,
+
     /**
      * The ID used to identify this component in Dash callbacks.
      */
@@ -101,6 +108,7 @@ DashGlobe.propTypes = {
     enablePointerInteraction: PropTypes.bool,
     lineHoverPrecision: PropTypes.number,
     showPointerCursor: PropTypes.bool,
+    currentViewReportInterval: PropTypes.number,
 
     /**
      * Point layer data and accessors.
@@ -281,6 +289,27 @@ DashGlobe.propTypes = {
     labelDotRadius: PropTypes.any,
     labelDotOrientation: PropTypes.any,
     labelsTransitionDuration: PropTypes.number,
+
+    /**
+     * Geo-anchored HTML overlay data. Children are projected onto the globe by
+     * matching each child to a data item with the same index.
+     */
+    htmlElementsData: PropTypes.array,
+    htmlElementLat: PropTypes.any,
+    htmlElementLng: PropTypes.any,
+    htmlElementAltitude: PropTypes.any,
+    htmlElementKey: PropTypes.any,
+    htmlElementOffsetX: PropTypes.any,
+    htmlElementOffsetY: PropTypes.any,
+    htmlElementPointerEvents: PropTypes.any,
+    htmlElementHidden: PropTypes.any,
+    htmlElementScreenX: PropTypes.any,
+    htmlElementScreenY: PropTypes.any,
+    htmlElementScreenSide: PropTypes.any,
+    htmlElementTether: PropTypes.any,
+    htmlElementTetherColor: PropTypes.any,
+    htmlElementTetherWidth: PropTypes.any,
+    htmlElementTetherAttach: PropTypes.any,
 
     /**
      * Last click event payload emitted by any supported layer.

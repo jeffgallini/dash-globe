@@ -10,11 +10,12 @@ Dash wrapper around react-globe.gl.  The component focuses on the JSON-serialisa
 }
 
 \usage{
-''DashGlobe(id=NULL, animateIn=NULL, animationPaused=NULL,
-arcAltitude=NULL, arcAltitudeAutoScale=NULL,
-arcCircularResolution=NULL, arcColor=NULL,
-arcCurveResolution=NULL, arcDashAnimateTime=NULL,
-arcDashGap=NULL, arcDashInitialGap=NULL, arcDashLength=NULL,
+''DashGlobe(children=NULL, id=NULL, animateIn=NULL,
+animationPaused=NULL, arcAltitude=NULL,
+arcAltitudeAutoScale=NULL, arcCircularResolution=NULL,
+arcColor=NULL, arcCurveResolution=NULL,
+arcDashAnimateTime=NULL, arcDashGap=NULL,
+arcDashInitialGap=NULL, arcDashLength=NULL,
 arcEndAltitude=NULL, arcEndLat=NULL, arcEndLng=NULL,
 arcLabel=NULL, arcStartAltitude=NULL, arcStartLat=NULL,
 arcStartLng=NULL, arcStroke=NULL, arcsData=NULL,
@@ -50,7 +51,11 @@ hexPolygonUseDots=NULL, hexPolygonsData=NULL,
 hexPolygonsTransitionDuration=NULL, hexSideColor=NULL,
 hexTopColor=NULL, hexTopCurvatureResolution=NULL,
 hexTransitionDuration=NULL, hoverData=NULL,
-labelAltitude=NULL, labelColor=NULL,
+htmlElementAltitude=NULL, htmlElementHidden=NULL,
+htmlElementKey=NULL, htmlElementLat=NULL,
+htmlElementLng=NULL, htmlElementOffsetX=NULL,
+htmlElementOffsetY=NULL, htmlElementPointerEvents=NULL,
+htmlElementsData=NULL, labelAltitude=NULL, labelColor=NULL,
 labelDotOrientation=NULL, labelDotRadius=NULL,
 labelIncludeDot=NULL, labelLabel=NULL, labelLat=NULL,
 labelLng=NULL, labelResolution=NULL, labelRotation=NULL,
@@ -92,6 +97,9 @@ width=NULL)
 }
 
 \arguments{
+\item{children}{A list of or a singular dash component, string or number. Dash components rendered as geo-anchored HTML overlays. Children are
+matched to htmlElementsData by index.}
+
 \item{id}{Character | named list. The ID used to identify this component in Dash callbacks.}
 
 \item{animateIn}{Logical. }
@@ -265,6 +273,25 @@ width=NULL)
 \item{hexTransitionDuration}{Numeric. }
 
 \item{hoverData}{Named list. Last hover event payload emitted by any supported layer.}
+
+\item{htmlElementAltitude}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementHidden}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementKey}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementLat}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementLng}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementOffsetX}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementOffsetY}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementPointerEvents}{Logical | numeric | character | named list | unnamed list. }
+
+\item{htmlElementsData}{Unnamed list. Geo-anchored HTML overlay data. Children are projected onto the globe by
+matching each child to a data item with the same index.}
 
 \item{labelAltitude}{Logical | numeric | character | named list | unnamed list. }
 
