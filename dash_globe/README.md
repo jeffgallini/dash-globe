@@ -11,12 +11,33 @@ Dash Globe is a Dash component library that wraps `react-globe.gl` with a more P
 - Serializable ripple-ring fades via `ring_color_interpolator(...)`
 - Data-driven globe layers for points, arcs, polygons, paths, heatmaps, hex bins, tiles, particles, rings, and labels
 - Dash callback props for `clickData`, `rightClickData`, `hoverData`, and `currentView`
-- Example gallery in [`usage.py`](./usage.py), including upstream ports for clouds, submarine cables, ripple rings, and airline-routes hover highlighting
+- Example gallery in
+  [`usage.py`](https://github.com/jeffgallini/dash-globe/blob/main/dash_globe/usage.py),
+  including upstream ports for clouds, submarine cables, ripple rings, and
+  airline-routes hover highlighting
 
 ## Quick Start
 
 ```bash
+pip install dash_globe
+```
+
+Then:
+
+```bash
 python usage.py
+```
+
+Or embed it in your own Dash app:
+
+```python
+from dash import Dash, html
+import dash_globe
+
+app = Dash(__name__)
+app.layout = html.Div(
+    dash_globe.DashGlobe(id="globe").update_layout(height=500)
+)
 ```
 
 ## Example
@@ -51,3 +72,6 @@ npm run build:js
 venv\Scripts\dash-generate-components.exe .\src\lib\components dash_globe -p package-info.json -i \.test\.
 python usage.py
 ```
+
+The live gallery referenced above is available in the repository at
+`https://github.com/jeffgallini/dash-globe/blob/main/dash_globe/usage.py`.
