@@ -54,7 +54,7 @@ jobs:
 
       - name: Run package tests
         working-directory: dash_globe
-        run: python -m pytest tests -q
+        run: python -m pytest tests -q --headless
 
       - name: Build distributions
         working-directory: dash_globe
