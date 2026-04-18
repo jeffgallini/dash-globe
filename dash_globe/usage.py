@@ -4141,7 +4141,7 @@ def build_examples_grid():
 
 
 app = Dash(__name__, suppress_callback_exceptions=True)
-
+server = app.server
 app.layout = html.Div(
     [
         html.Div(
