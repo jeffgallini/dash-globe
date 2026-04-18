@@ -1,0 +1,35 @@
+name: Update news snapshot
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 6 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run updater
+        env:
+          NEWSDATAHUB_API_KEY: ${{ secrets.NEWSDATAHUB_API_KEY }}
+        run: node script/update-news.mjs
+
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/news.json
+          git diff --staged --quiet || git commit -m "Update news snapshot"
+          git push
