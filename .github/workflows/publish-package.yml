@@ -3,11 +3,11 @@ name: Publish package
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 concurrency:
-  group: publish-package-main
+  group: publish-package-master
   cancel-in-progress: false
 
 jobs:
@@ -35,7 +35,10 @@ jobs:
         id: version
         run: |
           current_version="$(python script/release_version.py current)"
-          if git rev-parse "refs/tags/v${current_version}" >/dev/null 2>&1; then
+          requested_version="$(git log -1 --pretty=%B | python script/release_version.py extract)"
+          if [ -n "${requested_version}" ]; then
+            version="$(python script/release_version.py set-release "${requested_version}")"
+          elif git rev-parse "refs/tags/v${current_version}" >/dev/null 2>&1; then
             version="$(python script/release_version.py bump patch)"
           else
             version="${current_version}"
@@ -73,7 +76,7 @@ jobs:
 
       - name: Push release commit and tag
         run: |
-          git push origin HEAD:main
+          git push origin HEAD:master
           git push origin "${{ steps.version.outputs.tag }}"
 
       - name: Upload distributions
@@ -105,4 +108,3 @@ jobs:
           username: __token__
           password: ${{ secrets.PYPI_TOKEN }}
           packages-dir: dist/
-

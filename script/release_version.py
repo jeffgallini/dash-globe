@@ -14,6 +14,7 @@ PROJECT_TOML_PATH = PACKAGE_ROOT / "Project.toml"
 
 PROJECT_TOML_VERSION_PATTERN = re.compile(r'(?m)^version\s*=\s*"(?P<version>[^"]+)"\s*$')
 SEMVER_PATTERN = re.compile(r"^(?P<major>\d+)\.(?P<minor>\d+)\.(?P<patch>\d+)$")
+COMMIT_VERSION_PATTERN = re.compile(r"\bv(?P<version>\d+\.\d+\.\d+)\b", re.IGNORECASE)
 
 
 def _load_json(path: Path) -> dict:
@@ -38,6 +39,18 @@ def _write_project_toml_version(version: str) -> None:
     PROJECT_TOML_PATH.write_text(updated, encoding="utf-8")
 
 
+def _parse_semver(version: str) -> tuple[int, int, int]:
+    match = SEMVER_PATTERN.fullmatch(version)
+    if match is None:
+        raise ValueError(f"Expected a semantic version in X.Y.Z form, got {version!r}")
+
+    return (
+        int(match.group("major")),
+        int(match.group("minor")),
+        int(match.group("patch")),
+    )
+
+
 def read_version() -> str:
     package_json_version = _load_json(PACKAGE_JSON_PATH)["version"]
     package_info_version = _load_json(PACKAGE_INFO_PATH)["version"]
@@ -54,8 +67,7 @@ def read_version() -> str:
 
 
 def write_version(version: str) -> str:
-    if SEMVER_PATTERN.fullmatch(version) is None:
-        raise ValueError(f"Expected a semantic version in X.Y.Z form, got {version!r}")
+    _parse_semver(version)
 
     package_json = _load_json(PACKAGE_JSON_PATH)
     package_json["version"] = version
@@ -70,13 +82,7 @@ def write_version(version: str) -> str:
 
 
 def bump_version(part: str) -> str:
-    match = SEMVER_PATTERN.fullmatch(read_version())
-    if match is None:
-        raise RuntimeError("Current version must be in X.Y.Z form before it can be bumped")
-
-    major = int(match.group("major"))
-    minor = int(match.group("minor"))
-    patch = int(match.group("patch"))
+    major, minor, patch = _parse_semver(read_version())
 
     if part == "major":
         major += 1
@@ -93,6 +99,29 @@ def bump_version(part: str) -> str:
     return write_version(f"{major}.{minor}.{patch}")
 
 
+def extract_version_from_text(text: str) -> str | None:
+    match = COMMIT_VERSION_PATTERN.search(text)
+    if match is None:
+        return None
+    return match.group("version")
+
+
+def read_text_argument(text: str | None) -> str:
+    if text is not None:
+        return text
+    return sys.stdin.read()
+
+
+def set_release_version(version: str) -> str:
+    current_version = read_version()
+    if _parse_semver(version) < _parse_semver(current_version):
+        raise ValueError(
+            f"Refusing to set release version {version!r} lower than current version {current_version!r}"
+        )
+
+    return write_version(version)
+
+
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(description="Manage the dash_globe release version")
     subparsers = parser.add_subparsers(dest="command", required=True)
@@ -105,6 +134,18 @@ def build_parser() -> argparse.ArgumentParser:
 
     bump_parser = subparsers.add_parser("bump", help="Increment a semantic version part")
     bump_parser.add_argument("part", choices=("major", "minor", "patch"))
+
+    release_set_parser = subparsers.add_parser(
+        "set-release",
+        help="Write an explicit release version, refusing to downgrade from the current version",
+    )
+    release_set_parser.add_argument("version")
+
+    extract_parser = subparsers.add_parser(
+        "extract",
+        help="Extract the first vX.Y.Z version token from text or stdin",
+    )
+    extract_parser.add_argument("text", nargs="?")
 
     return parser
 
@@ -120,8 +161,14 @@ def main(argv: list[str] | None = None) -> int:
             print(read_version())
         elif args.command == "set":
             print(write_version(args.version))
+        elif args.command == "set-release":
+            print(set_release_version(args.version))
         elif args.command == "bump":
             print(bump_version(args.part))
+        elif args.command == "extract":
+            version = extract_version_from_text(read_text_argument(args.text))
+            if version is not None:
+                print(version)
         else:
             parser.error(f"Unsupported command: {args.command}")
     except Exception as exc:
