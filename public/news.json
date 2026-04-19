@@ -1,15 +1,44 @@
 {
-  "updatedAt": "2026-04-18T18:23:14.339Z",
+  "updatedAt": "2026-04-19T06:51:55.731Z",
   "count": 20,
   "stories": [
     {
-      "id": "b2f81ba9-3ebe-40d1-8215-212545552022",
-      "title": "Lawmakers Hammer Pentagon Official Over Army Chief’s Dismissal",
-      "description": "US lawmakers questioned a top military officer over Defense Secretary Pete Hegseth’s decision to fire Army Chief of Staff General Randy George earlier this month, saying the Pentagon chief had given no explanation for the move.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i6JPige6ej7Q/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-15T22:10:03",
+      "id": "35090911-ff80-4aa6-a27d-8540c872f8df",
+      "title": "Starmer in Crisis After Mandelson Scandal Roars Back to Life",
+      "description": "In recent weeks, Keir Starmer had capitalized on crisis abroad to shore up his position as Britain’s prime minister. New details about his appointment of Peter Mandelson as ambassador to the US are rekindling doubts about his grip on power at home.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGKMXk2wR1os/v0/1200x-1.jpg",
+      "publishedAt": "2026-04-16T23:02:45",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/lawmakers-hammer-pentagon-official-over-army-chief-s-dismissal",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-16/starmer-in-crisis-after-mandelson-scandal-roars-back-to-life",
+      "location": {
+        "name": "United Kingdom",
+        "lat": 55.3781,
+        "lng": -3.436
+      },
+      "meta": {
+        "country": "GB",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "2f98274d-6acd-4482-b2cd-95699f2987c2",
+      "title": "IMF to Resume Formal Engagement With Venezuelan Government",
+      "description": "The International Monetary Fund will resume formal contact with Venezuela, potentially paving the way for the acting administration of Delcy Rodriguez to regain access to the lender’s financing.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iYiXxEryeFT4/v0/1200x-1.jpg",
+      "publishedAt": "2026-04-16T22:51:01",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-16/imf-said-to-engage-formally-with-venezuelan-government",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -32,13 +61,13 @@
       }
     },
     {
-      "id": "9061348b-0e39-40eb-bdc7-66a2d97c4d89",
-      "title": "Jailed Iranian Nobel laureate Narges Mohammadi in critical condition, supporters say",
-      "description": "The health of jailed Iranian Nobel Peace Prize laureate Narges Mohammadi is critical after she suffered a heart attack last month, supporters said on Wednesday. Her family and lawyers, allowed a second prison visit, reported a sharp deterioration in her condition, with her physical state now described as critical, her foundation said.",
-      "image": "https://s.france24.com/media/display/58065fc6-051f-11f1-8ae8-005056a90284/w:1024/p:16x9/Capture-217.jpg",
-      "publishedAt": "2026-04-15T21:55:39",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/middle-east/20260415-jailed-iranian-nobel-laureate-narges-mohammadi-critical-condition-supporters-say",
+      "id": "0aa1dcce-e960-43b1-b537-7ab48c3aed9f",
+      "title": "US Wants New Electoral Board to Oversee Next Venezuela Vote",
+      "description": "The US wants Venezuela’s political transition to end in a vote overseen by a new electoral board, a senior State Department official said Thursday, echoing demands from the country’s main opposition coalition.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ir6lF3S.RFSw/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-16T22:36:20",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-16/us-wants-new-electoral-board-to-oversee-next-venezuela-vote",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -46,6 +75,93 @@
       },
       "meta": {
         "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "77427058-3f63-47d8-8058-4311b6f7d547",
+      "title": "Trump Officials Urge Oil Industry to Boost Output Amid War",
+      "description": "Trump administration officials urged US oil producers to boost output, driving home a message to the industry that’s become more urgent amid the war in Iran.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i54lSfTzYGdY/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-16T22:03:26",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-16/trump-officials-prod-oil-industry-to-boost-output-amid-war",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "98f9ce86-9f21-4deb-9a5d-c18701a75893",
+      "title": "Åberg leads RBC Heritage as MacIntyre makes strong start after Masters drama",
+      "description": "Ludvig Åberg took the lead after the opening round of the RBC Heritage as Robert MacIntyre made a strong start following his controversial showing at The Masters.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-robert-macintyre_7222218.jpg?20260416224432",
+      "publishedAt": "2026-04-16T22:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/rbc-heritage-ludvig-197berg-leads-after-first-round-as-robert-macintyre-makes-strong-start-following-masters-drama-13532659",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "66d11efe-d175-4dc1-99e2-355f94eb89df",
+      "title": "France finance minister says Hormuz must open 'but not at any price'",
+      "description": "France and Britain will co-host a video conference Friday of countries ready to contribute to a \"purely defensive mission\" to secure the Strait of Hormuz. Speaking with FRANCE 24's Yinka Oyetade, Dr Bamo Nouri, Senior Lecturer in International Relations at the University of West London, says that the initiative is an attempt by Europe \"to reinsert itself into a crisis that has been shaped by US and Israeli decision-making in a war of choice\".",
+      "image": "https://s.france24.com/media/display/a0df8cb2-39d7-11f1-9c87-005056a90284/w:1024/p:16x9/EN-20260416-223117-224459-CS.jpg",
+      "publishedAt": "2026-04-16T21:10:48",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/france-finance-minister-says-hormuz-must-open-but-not-at-any-price",
+      "location": {
+        "name": "France",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      "meta": {
+        "country": "FR",
         "topics": [
           "middle east",
           "politics"
@@ -62,216 +178,13 @@
       }
     },
     {
-      "id": "a48af996-4187-4f8d-aa20-021aa2f3f7f5",
-      "title": "Arteta hails 'huge boost' as Arsenal reach CL semis - but problems remain",
-      "description": "Mikel Arteta says reaching the semi-finals of the Champions League is a 'massive boost' for Arsenal despite once again struggling against Sporting on Wednesday.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-arteta-arsenal_7221202.jpg?20260415234735",
-      "publishedAt": "2026-04-15T21:51:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/arsenals-attacking-issues-remain-a-big-problem-despite-mikel-artetas-side-reaching-champions-league-semi-finals-again-13532338",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "f0928328-b2e1-4dc0-aa70-be69b6ab45ab",
-      "title": "The Winners and Losers of Trump’s Tax Policy",
-      "description": "Trump promised higher tax refunds. But so far, the average is falling short. Host David Gura and Bloomberg reporter Ben Steverman dig into why, and what it could mean for Republicans come midterms: Listen to the Big Take podcast. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ichKMBFB3DWI/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-15T21:32:57",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-15/the-winners-and-losers-of-trump-s-tax-policy-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "f0bc5152-47ff-469c-87c1-931d22912ba4",
-      "title": "Starmer summons X, TikTok and Meta bosses to No 10 as he pushes for further action on child safety online",
-      "description": "The Prime Minister says failure to act would have “stark” consequences",
-      "image": "https://static.independent.co.uk/2026/04/15/17/2271439860.jpg?width=1200&auto=webp&crop=3%3A2",
-      "publishedAt": "2026-04-15T21:30:04",
-      "source": "The Independent",
-      "url": "https://www.independent.co.uk/news/uk/politics/starmer-x-tiktok-meta-child-safety-b2958344.html",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "7f41c795-4d37-4e0f-807e-32334c6de9b9",
-      "title": "Canada Is Mulling Age Restrictions on AI Chatbots and Social Media",
-      "description": "Canadian Culture Minister Marc Miller said the government is “seriously” considering a ban or moratorium on young people using social media and artificial intelligence chatbots.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iMyehp84pHxI/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-15T21:17:55",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/canada-is-mulling-age-restrictions-on-ai-chatbots-and-social-media",
-      "location": {
-        "name": "Canada",
-        "lat": 56.1304,
-        "lng": -106.3468
-      },
-      "meta": {
-        "country": "CA",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "70256589-6072-4f2b-af31-1de054b14fa0",
-      "title": "New Zealand’s Finance Minister Says Iran War has Made ‘Whole World Poorer’",
-      "description": "New Zealand Finance Minister Nicola Willis said finance chiefs gathered in Washington are increasingly uneasy about the lack of clarity over what comes next in the Middle East — and how countries should prepare.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ipYih_Nj8vP8/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-15T21:17:35",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/new-zealand-s-finance-minister-says-iran-war-has-made-whole-world-poorer",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "483cdbb3-c78a-4d44-8bff-00cbf2e3c97c",
-      "title": "Bayern Munich knock out Real Madrid in Champions League epic",
-      "description": "Diaz drilled home his side’s third equaliser of the night before Olise struck in stoppage time to clinch a 4-3 win and 6-4 aggregate victory.",
-      "image": "https://static.independent.co.uk/2026/04/15/22/15-e534555e7df3435ebc2b21e87f5106cd.jpg?width=1200&auto=webp&crop=3%3A2",
-      "publishedAt": "2026-04-15T21:14:10",
-      "source": "The Independent",
-      "url": "https://www.independent.co.uk/sport/football/luis-diaz-michael-olise-champions-league-real-madrid-bayern-munich-b2958555.html",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "88bb18fa-a176-48af-bdd9-c97260241f1f",
-      "title": "US Expands Sanctions on Oil Tycoon to Keep Up Pressure on Iran",
-      "description": "The Trump administration sanctioned more than a dozen entities tied to the network of Iranian oil kingpin Hossein Shamkhani, part of its campaign to maintain pressure on Tehran amid diplomatic talks and a standoff in the Strait of Hormuz.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i4AJgCauUV5Y/v0/1200x-1.jpg",
-      "publishedAt": "2026-04-15T21:01:04",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/us-expands-sanctions-on-oil-tycoon-to-keep-up-pressure-on-iran",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "2cbb3996-00f2-4ae1-ab7a-02a380fc6607",
-      "title": "Papers: Mourinho to replace Howe as Newcastle boss?",
-      "description": "The top stories and transfer rumours from Thursday's newspapers...",
+      "id": "7c81a82d-7bfa-46c2-9692-af97f63cd008",
+      "title": "Papers: Chelsea open to selling Garnacho in the summer",
+      "description": "The top stories and transfer rumours from Friday's newspapers...",
       "image": "https://e3.365dm.com/25/03/1920x1080/skysports-paper-talk-brand-refresh_6852897.jpg?20250311094415",
-      "publishedAt": "2026-04-15T21:00:00",
+      "publishedAt": "2026-04-16T21:00:00",
       "source": "Sky News",
-      "url": "https://news.sky.com/story/jose-mourinho-to-replace-eddie-howe-as-newcastle-boss-paper-talk-and-football-transfer-gossip-13532331",
+      "url": "https://news.sky.com/story/chelsea-open-to-selling-alejandro-garnacho-in-the-summer-paper-talk-and-football-transfer-gossip-13532778",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -294,13 +207,42 @@
       }
     },
     {
-      "id": "2cc5bd42-114f-4528-8740-d8fee26f3647",
-      "title": "Congress Takes a Stab at Accountability on Ethics Cases",
-      "description": "The resignations of Swalwell and Gonzales come amid other ethics probes.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iYemZ9HtsJn4/v10/1200x-1.jpg",
-      "publishedAt": "2026-04-15T20:32:15",
+      "id": "4e738b40-b471-42a1-99fc-49f707187b5c",
+      "title": "PL Predictions: Liverpool to be held by Everton",
+      "description": "Our football betting expert Jones Knows offers his insight across the weekend action and tips up a 78/1 best bet treble.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-premier-league-premier-league-prediction_7223294.jpg?20260418114637",
+      "publishedAt": "2026-04-16T21:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/premier-league-predictions-and-best-bets-brighton-to-send-spurs-sliding-towards-the-unthinkable-13532587",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "70e1bbcb-75ca-4d24-9969-17cb874c1879",
+      "title": "Netflix Earnings Forecast Misses, Reed Hastings Steps Down",
+      "description": "Bloomberg's Geetha Ranganathan breaks down a subpar earnings report from Netflix, as the media giant's forecast fell short of analyst estimates. Alongside the report, Netflix also announced that its co-founder and chairman Reed Hastings would step down from the board in June after 29 years. (Source: Bloomberg)",
+      "image": "http://assets.bwbx.io/images/isCsrmKAHDic/v2/1200x-1.jpg",
+      "publishedAt": "2026-04-16T20:52:56",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-04-15/congress-takes-a-stab-at-accountability-on-ethics-cases",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-16/netflix-earnings-forecast-misses-hastings-steps-down-video",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -323,13 +265,245 @@
       }
     },
     {
-      "id": "884b0808-3e39-48cb-9a98-96233d4d7abf",
-      "title": "'L’Abuso': Real Italian magazine cover of Israeli settler sparks online storm",
-      "description": "Prominent left-leaning Italian weekly L’Espresso is at the centre of a diplomatic storm online, after the Israeli ambassador to Italy slammed its choice of front cover as \"manipulative.\" The magazine titled its latest edition “L’Abuso” or “The Abuse,” illustrating the cover with a photo of an armed Israeli settler sneering, whilst pointing his smartphone at a visibly-distressed Palestinian woman.",
-      "image": "https://s.france24.com/media/display/bbcc2596-3903-11f1-850f-005056a97e36/w:1024/p:16x9/capture-202400289569dfeaf9eaae39-21199429.jpg",
-      "publishedAt": "2026-04-15T20:06:11",
+      "id": "84f9138c-bfe4-4290-bc12-07bc158cdad0",
+      "title": "Clayton beats Littler in Rotterdam final to extend lead to top of table",
+      "description": "Jonny Clayton cemented his lead at the top of the Premier League Darts table with a 6-4 victory over Luke Littler in the Night 11 final in Rotterdam.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-jonny-clayton-darts_7222147.jpg?20260416214252",
+      "publishedAt": "2026-04-16T20:45:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/premier-league-darts-jonny-clayton-beats-luke-littler-in-rotterdam-night-11-final-to-cement-position-at-top-of-table-13532581",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "e0120b4e-763f-4e9f-b0bb-d668879ea774",
+      "title": "Democrats Try to Turn the Table on Trump With Taxes",
+      "description": "The party is looking for a political advantage on a key GOP issue",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i9C0UZCUVlvw/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-16T20:31:44",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-04-16/democrats-try-to-turn-the-table-on-trump-with-taxes",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "5f2213de-4688-48a5-8458-d9bdfd696193",
+      "title": "Mideast Ceasefires to Renew Growth, Rate Cuts, Says BOI Governor",
+      "description": "The Bank of Israel is likely to upgrade its growth projection for 2026 given the ceasefire in Iran and freshly announced cessation of hostilities in Lebanon, says central bank Governor Amir Yaron.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ijuoDO3JzAQI/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-16T20:03:01",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-16/mideast-ceasefires-to-renew-growth-rate-cuts-says-boi-governor",
+      "location": {
+        "name": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "meta": {
+        "country": "IL",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "cf25645f-00bb-4d31-8842-cd6ca7522a50",
+      "title": "Bank of Israel May Upgrade Growth Forecast, Yaron Says",
+      "description": "The Bank of Israel is likely to upgrade its growth projection for 2026 given the ceasefire in Iran and a new deal to end hostilities in Lebanon, says central bank Governor Amir Yaron. He speaks to Bloomberg's Lisa Abramowicz on the sidelines of the IMF Spring Meetings in Washington. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iEOIxoo0FAEo/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-16T20:02:17",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-16/bank-of-israel-may-upgrade-growth-forecast-yaron-says-video",
+      "location": {
+        "name": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "meta": {
+        "country": "IL",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "fc2114b9-d9d5-423a-9bc5-ca4a7f1d1b28",
+      "title": "Short to make debut as England forced into five changes for Scotland game",
+      "description": "England head coach John Mitchell insists the Red Roses will roll with the punches as they come to terms with a growing list of absentees.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-demelza-short-england_7222139.jpg?20260416213012",
+      "publishedAt": "2026-04-16T20:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/womens-six-nations-injury-hit-england-forced-into-five-changes-to-starting-xv-for-scotland-game-13532613",
+      "location": {
+        "name": "United Kingdom",
+        "lat": 55.3781,
+        "lng": -3.436
+      },
+      "meta": {
+        "country": "GB",
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "e4967149-5a6c-4a24-9394-b1758057e2bc",
+      "title": "Australia’s Housing Crisis Set to Worsen on Iran War Fallout",
+      "description": "Higher construction costs caused by the war in the Middle East could worsen Australia’s ongoing housing crisis and threaten the country’s ability to meet ambitious housing targets, builders and economists have warned.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iixdVYNq564g/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-16T20:00:00",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-16/australia-s-housing-crisis-set-to-worsen-on-iran-war-fallout",
+      "location": {
+        "name": "Australia",
+        "lat": -25.2744,
+        "lng": 133.7751
+      },
+      "meta": {
+        "country": "AU",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "6121357e-1cbe-48cd-a08f-426bddabc28c",
+      "title": "'A partnership, not a takeover' - NRL boss reveals progress in Super League talks",
+      "description": "NRL chief executive Andrew Abdo says progress has been made in talks over the southern-hemisphere body investing in Super League, but insists they are interested in a \"partnership\" as opposed to a \"takeover\".",
+      "image": "https://e3.365dm.com/26/02/1920x1080/skysports-rugby-league-super-league_7169776.jpg?20260219214504",
+      "publishedAt": "2026-04-16T20:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/super-league-investment-talks-nrl-chief-executive-andrew-abdo-says-progress-made-amid-hopes-of-partnership-not-takeover-13532717",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "602d0192-26ee-428d-84b6-c31cd57f1a97",
+      "title": "Stocks Extend High as Traders Await Clarity on US, Iran Truce | Bloomberg Businessweek Daily 4/16/26",
+      "description": "On today's episode of Bloomberg Businessweek Daily, Carol Massar and Tim Stenovec discuss geopolitical market impact on the Iran War and regulation with Verena Ross, European Securities and Market Authorities Chair. They were later joined by Pete Mulmat, tastytrade Head of Brokerage, Schwab CEO Rick Wurster on earnings, prediction markets, financial sector health and Dr. Bea Bakshi, CEO & Co-Founder of C the Signs on AI cancer early detection platform. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ih1kbckv2A40/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-16T19:59:04",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-16/bloomberg-businessweek-daily-4-16-2026-video",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "7362db7d-84b9-4bb9-a226-efd794e6800d",
+      "title": "Israeli military admit to posting AI photo of Lebanese journalist it killed",
+      "description": "The Foreign Press Association has accused the Israeli military of discrediting a Lebanese journalist it killed in March, by using an AI-generated photo to present him as a “Hezbollah terrorist.” The Israel Defence Forces claimed responsibility for killing Ali Shoeib in a targeted Israeli airstrike in southern Lebanon. It then shared an edited photo of him on social media, overlaying his press vest with a Hezbollah uniform, saying a “press vest is just a cover for terror.”",
+      "image": "https://s.france24.com/media/display/3d76ce3e-39c7-11f1-bcec-005056bf30b7/w:1024/p:16x9/capture-178752253669e132fb53c7d9-53162423.jpg",
+      "publishedAt": "2026-04-16T19:46:13",
       "source": "France 24",
-      "url": "https://www.france24.com/en/l-abuso-real-italian-magazine-cover-of-israeli-settler-sparks-online-storm",
+      "url": "https://www.france24.com/en/israeli-military-admit-to-posting-ai-photo-of-killed-lebanese-journalist",
       "location": {
         "name": "Israel",
         "lat": 31.0461,
@@ -353,20 +527,20 @@
       }
     },
     {
-      "id": "6a9903f0-244b-4058-9805-bcd310ec6779",
-      "title": "Fed’s Beige Book Says War Lifts Uncertainty for US Companies | Bloomberg Businessweek Daily 4/15/26",
-      "description": "On today's episode of Bloomberg Businessweek Daily, Carol Massar and Tim Stenovec speak with Bloomberg's Mike McKee on the Fed's Beige Book release. They also spoke to Nicola Willis, New Zealand Finance Minister live from the IMF meeting in Washington DC on how New Zealand is being affected by the the war in the Middle East. Later on they spoke with Josh Wingrove, Bloomberg News Senior White House Correspondent, Herman Chan, Bloomberg Intelligence Senior Analyst for US Banks and Michael Ha, Baird Senior Research Analyst alongside Avalon Pernell, Bloomberg News Equities Reporter on his thoughts on the future of UnitedHealth. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/igWE4Y2BrcUk/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-15T20:03:32",
+      "id": "37ccf39e-7e5c-4606-92e9-36fa5dbf02a7",
+      "title": "UK Government Looking at Delinking Gas and Electricity Prices",
+      "description": "Chancellor of the Exchequer Rachel Reeves said the UK government was drafting plans to help delink gas prices from electricity costs.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iop_JqoYSx5Q/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-16T19:19:04",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-15/bloomberg-businessweek-daily-4-15-2026-video",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-16/uk-government-looking-at-delinking-gas-and-electricity-prices",
       "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
+        "name": "United Kingdom",
+        "lat": 55.3781,
+        "lng": -3.436
       },
       "meta": {
-        "country": "US",
+        "country": "GB",
         "topics": [
           "politics"
         ],
@@ -382,13 +556,13 @@
       }
     },
     {
-      "id": "262b5b2f-9804-40a9-bca3-925751db5a2e",
-      "title": "Trump’s $1.5 Trillion Pentagon Budget Raises Some GOP Eyebrows",
-      "description": "Some House Republicans pushed back on President Donald Trump’s request to supercharge the military’s annual budget at a meeting with Pentagon officials, spelling trouble for a cornerstone of his fiscal policy.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iUkG0rYAqscs/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-15T19:48:30",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/trump-s-1-5-trillion-pentagon-budget-raises-some-gop-eyebrows",
+      "id": "c8e2d37c-928a-4587-97cf-6fc65bfc4895",
+      "title": "Hard-punching cruiserweight Rozicki signs with Zuffa Boxing",
+      "description": "Hard-punching cruiserweight Ryan Rozicki has signed a multi-fight deal with Zuffa Boxing.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-ryan-rozicki-zuffa-boxing_7221966.jpg?20260416183242",
+      "publishedAt": "2026-04-16T19:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/ryan-rozicki-hard-punching-canadian-cruiserweight-signs-multi-fight-deal-with-zuffa-boxing-im-ready-to-make-a-statement-13532638",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -397,181 +571,7 @@
       "meta": {
         "country": null,
         "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "ad16c438-247b-4f1c-baa0-0a862618fb6a",
-      "title": "US, Iran Weigh Truce Extension | Balance of Power: Early Edition 4/15/2026",
-      "description": "On the early edition of Balance of Power, Bloomberg Washington Correspondents Joe Mathieu and Kailey Leinz discuss the latest from ceasefire negotiations between the US and Iran. On today's show, Stonecourt Capital Partner Rick Davis, Harvard Kennedy School Ash Center Visiting Democracy Fellow Jeanne Sheehan Zaino, former IRS Commissioner Danny Werfel and Arbroath Group Managing Partner Christopher Smart. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ifHpJZa.NBiU/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-15T19:35:12",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-15/balance-of-power-early-edition-4-15-2026-video",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "bc99ad5b-3bd3-4677-ada9-b0bef1405e48",
-      "title": "White House Declines to Discuss Possible United-American Merger",
-      "description": "The White House said it was withholding judgment on a proposal by United Airlines Holdings Inc. to merge with rival American Airlines Group Inc., a tie-up that would raise significant antitrust concerns.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/if6UKCG7T10g/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-15T19:27:58",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/white-house-declines-to-opine-on-possible-united-american-merger",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "5d9269ac-bd6b-4d63-84e1-8e8e2eba9ea0",
-      "title": "S&P 500 Hits Record High as Markets See Hope for Ceasefire Extension",
-      "description": "Christopher Smart, founder and managing partner at Arbroath Group, said that investors are finding it hard to readjust and price global geopolitical change into their market moves, as the S&P 500 hits a new all-time high amid war with Iran. Smart also discussed the global economic conversation happening at the IMF spring meetings in DC. Smart said that the big headline from the IMF conference is that economists are warning that while global economic growth has continued to slow, inflationary pressures are also not going down. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i7zm.i6IrFVA/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-15T19:27:34",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-15/s-p-hits-record-high-as-markets-see-hope-for-ceasefire-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "138b584c-edb4-4d27-aea7-7c07558878be",
-      "title": "Bessent Optimistic We'll See $3 a Gallon Gas This Summer",
-      "description": "Treasury Secretary Scott Bessent says he's \"optimistic\" gas prices will drop below $3 a gallon sometime between June 20 and September 20. He speaks at a White House press briefing. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWR.eHtHC0QU/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-15T19:24:24",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-15/bessent-optimistic-we-ll-see-3-gas-this-summer-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "32500f99-eae5-44c1-95ec-edc225873f29",
-      "title": "Sheinbaum Eyes Fracking Plan in Mexico to Lessen Reliance on US Imports",
-      "description": "Mexican President Claudia Sheinbaum wants to see more domestic natural gas production to ease a longstanding dependence on US supplies, including potentially using fracking techniques that she thinks can sidestep major ecological concerns.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i4T58D0Dr7R8/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-15T19:02:59",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/sheinbaum-eyes-fracking-plan-in-mexico-to-lessen-reliance-on-us-imports",
-      "location": {
-        "name": "Mexico",
-        "lat": 23.6345,
-        "lng": -102.5528
-      },
-      "meta": {
-        "country": "MX",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "4a6a3b04-2127-46a6-9ab5-6a7042ad01dc",
-      "title": "Cantor Fitzgerald Gives $10 Million to Tether-Led Crypto PAC",
-      "description": "Cantor Fitzgerald, the Wall Street bank run by the sons of Commerce Secretary Howard Lutnick, has donated $10 million to a Super PAC led by its biggest client and designed to elect US political candidates supportive of cryptocurrency.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iuSLsHBhhUz0/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-15T18:57:21",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-15/cantor-fitzgerald-gives-10-million-to-tether-led-crypto-pac",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
+          "sports"
         ],
         "keywords": [
           "general",
