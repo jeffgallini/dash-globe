@@ -1,44 +1,15 @@
 {
-  "updatedAt": "2026-04-19T06:51:55.731Z",
+  "updatedAt": "2026-04-20T07:04:51.176Z",
   "count": 20,
   "stories": [
     {
-      "id": "35090911-ff80-4aa6-a27d-8540c872f8df",
-      "title": "Starmer in Crisis After Mandelson Scandal Roars Back to Life",
-      "description": "In recent weeks, Keir Starmer had capitalized on crisis abroad to shore up his position as Britain’s prime minister. New details about his appointment of Peter Mandelson as ambassador to the US are rekindling doubts about his grip on power at home.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iGKMXk2wR1os/v0/1200x-1.jpg",
-      "publishedAt": "2026-04-16T23:02:45",
+      "id": "3c96fadd-5f71-4a92-8c6a-afa4a3d3f141",
+      "title": "Trump Claims Hormuz is 'Open For Business' | Balance of Power: Late Edition 04/17/2026",
+      "description": "\"Balance of Power: Late Edition\" focuses on the intersection of politics and global business. On today's show, Representative Jake Auchincloss (D-MA) shares his disbelief when discussing President Trump saying the Strait of Hormuz is open. Neil Bradley, US Chamber of Commerce Executive Vice President, talks about the impact the Middle East conflict is having on small businesses. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyAqVqq.nGmM/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-17T23:39:17",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-16/starmer-in-crisis-after-mandelson-scandal-roars-back-to-life",
-      "location": {
-        "name": "United Kingdom",
-        "lat": 55.3781,
-        "lng": -3.436
-      },
-      "meta": {
-        "country": "GB",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "2f98274d-6acd-4482-b2cd-95699f2987c2",
-      "title": "IMF to Resume Formal Engagement With Venezuelan Government",
-      "description": "The International Monetary Fund will resume formal contact with Venezuela, potentially paving the way for the acting administration of Delcy Rodriguez to regain access to the lender’s financing.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iYiXxEryeFT4/v0/1200x-1.jpg",
-      "publishedAt": "2026-04-16T22:51:01",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-16/imf-said-to-engage-formally-with-venezuelan-government",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-17/balance-of-power-late-edition-04-17-2026-video",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -61,13 +32,13 @@
       }
     },
     {
-      "id": "0aa1dcce-e960-43b1-b537-7ab48c3aed9f",
-      "title": "US Wants New Electoral Board to Oversee Next Venezuela Vote",
-      "description": "The US wants Venezuela’s political transition to end in a vote overseen by a new electoral board, a senior State Department official said Thursday, echoing demands from the country’s main opposition coalition.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ir6lF3S.RFSw/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-16T22:36:20",
+      "id": "1c826540-f6ba-4137-9489-2e33fc0fe2e3",
+      "title": "Trump Telegraphs End to Iran War as Focus Turns to Economy",
+      "description": "President Donald Trump is signaling he’s ready to wrap up the US war with Iran, even as details of a deal remain murky and hurdles to a lasting peace remain high.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/il3PO4gO6shA/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-17T22:49:02",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-16/us-wants-new-electoral-board-to-oversee-next-venezuela-vote",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/trump-telegraphs-end-to-iran-war-as-focus-turns-to-economy",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -90,13 +61,13 @@
       }
     },
     {
-      "id": "77427058-3f63-47d8-8058-4311b6f7d547",
-      "title": "Trump Officials Urge Oil Industry to Boost Output Amid War",
-      "description": "Trump administration officials urged US oil producers to boost output, driving home a message to the industry that’s become more urgent amid the war in Iran.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i54lSfTzYGdY/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-16T22:03:26",
+      "id": "7110d273-16ab-4f0e-bafc-3a29a706495d",
+      "title": "Given Iran Chokehold Control of Strait: Rep. Auchincloss",
+      "description": "Representative Jake Auchincloss (D-MA) shares his disbelief when discussing President Trump saying the Strait of Hormuz is open, stating markets “would be wise to put the President on mute.” He goes on to explain how Trump has now given Iran a different strategic deterrent in chokehold control of the Strait, and whether or not he believes the president can talk peace into existence with Iran. Rep. Auchincloss speaks with Kailey Leinz and Joe Mathieu on the late edition of Bloomberg's \"Balance of Power.\" (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i8UMEdUWPhgg/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-17T22:05:32",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-16/trump-officials-prod-oil-industry-to-boost-output-amid-war",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-17/given-iran-chokehold-control-of-strait-rep-auchincloss-video",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -119,13 +90,100 @@
       }
     },
     {
-      "id": "98f9ce86-9f21-4deb-9a5d-c18701a75893",
-      "title": "Åberg leads RBC Heritage as MacIntyre makes strong start after Masters drama",
-      "description": "Ludvig Åberg took the lead after the opening round of the RBC Heritage as Robert MacIntyre made a strong start following his controversial showing at The Masters.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-robert-macintyre_7222218.jpg?20260416224432",
-      "publishedAt": "2026-04-16T22:00:00",
+      "id": "056bb6af-0c99-4943-82de-8c8a7f83f8d0",
+      "title": "US Backs Almost $12 Billion in Naval Equipment Sales to Germany",
+      "description": "The US government has approved a potential sale to Germany of up to $11.9 billion in combat management systems for surface vessels, the State Department announced Friday.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iB8AAovqU_Fo/v0/1200x-1.jpg",
+      "publishedAt": "2026-04-17T21:56:24",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/us-backs-almost-12-billion-in-naval-equipment-sales-to-germany",
+      "location": {
+        "name": "Germany",
+        "lat": 51.1657,
+        "lng": 10.4515
+      },
+      "meta": {
+        "country": "DE",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "6e675a6b-3b3c-4e19-b6b0-71865fc9c78c",
+      "title": "Lutnick Shuts Down Talk of Any Chinese Investment in US Autos",
+      "description": "Commerce Secretary Howard Lutnick ruled out the possibility of Chinese investment in the US auto industry, saying there’s no need for companies like electric carmaker BYD Co. in America.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iq5fZcPUAxrw/v0/1200x-1.jpg",
+      "publishedAt": "2026-04-17T21:50:59",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/lutnick-shuts-down-talk-of-any-chinese-investment-in-us-autos",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "2b56a179-f5d9-4b9c-bbb9-6cb83487af47",
+      "title": "US Weighs Tougher Auto Import Rules to Accelerate Reshoring",
+      "description": "The Trump administration is considering potential changes to North American trade rules that would raise tariff costs on US automobile imports and push manufacturers to boost domestic production, according to people familiar with the matter.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioQVZSRwQQfQ/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-17T21:36:03",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/us-weighs-tougher-auto-import-rules-to-accelerate-reshoring",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "874465d0-147f-4073-bcca-00dc53cf9811",
+      "title": "Carrick: No decision made over Rashford Man Utd return",
+      "description": "Manchester United interim boss Michael Carrick says no decision has been made over Marcus Rashford's future at Old Trafford.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-marcus-rashford-manchester-united_7222932.jpg?20260417175726",
+      "publishedAt": "2026-04-17T21:30:00",
       "source": "Sky News",
-      "url": "https://news.sky.com/story/rbc-heritage-ludvig-197berg-leads-after-first-round-as-robert-macintyre-makes-strong-start-following-masters-drama-13532659",
+      "url": "https://news.sky.com/story/marcus-rashford-man-united-boss-michael-carrick-says-no-decison-has-been-made-over-on-loan-barcelona-forwards-old-trafford-future-13533083",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -148,362 +206,100 @@
       }
     },
     {
-      "id": "66d11efe-d175-4dc1-99e2-355f94eb89df",
-      "title": "France finance minister says Hormuz must open 'but not at any price'",
-      "description": "France and Britain will co-host a video conference Friday of countries ready to contribute to a \"purely defensive mission\" to secure the Strait of Hormuz. Speaking with FRANCE 24's Yinka Oyetade, Dr Bamo Nouri, Senior Lecturer in International Relations at the University of West London, says that the initiative is an attempt by Europe \"to reinsert itself into a crisis that has been shaped by US and Israeli decision-making in a war of choice\".",
-      "image": "https://s.france24.com/media/display/a0df8cb2-39d7-11f1-9c87-005056a90284/w:1024/p:16x9/EN-20260416-223117-224459-CS.jpg",
-      "publishedAt": "2026-04-16T21:10:48",
+      "id": "d1769753-7502-44da-8abb-e344f2b3d8ab",
+      "title": "Can RFK Jr. Save The GOP In The Midterms?",
+      "description": "RFK Jr. is divisive, but he may also be the best hope for Republicans in the midterms, explains Bloomberg Opinion columnist Abby McCloskey. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iMbxjdkFk6dk/v3/1200x-1.png",
+      "publishedAt": "2026-04-17T21:15:00",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-17/opinion-can-rfk-jr-save-the-gop-in-the-midterms-video",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "c0e4f707-3d00-4e90-8d69-7a3996212407",
+      "title": "Credit Markets Show Resilience Amid Geopolitical Tensions with Rosner & Cocke",
+      "description": "In this segment, John Cocke, Deputy CIO for Credit at Corbin Capital Partners, and Lindsay Rosner, Head of Multi Sector Fixed Income at Goldman Sachs Asset Management, discuss the current state of credit markets amid geopolitical tensions and private credit challenges. Rosner highlights that while credit spreads remain tight, the all-in yield remains attractive to investors, encouraging continued investment despite some reluctance to add further risk. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/izVQffCPamb4/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-17T21:11:22",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-17/credit-markets-show-resilience-amid-geopolitical-tension-video",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "2ed3fb23-70a3-4b87-ac19-769ef85901dc",
+      "title": "Wall Street Extends April Surge on Peace Prospects | Bloomberg Businessweek Daily 4/17/2026",
+      "description": "On today's episode of Bloomberg Businessweek Daily, Carol Massar and Tim Stenovec discuss the reopeing of the Strait of Hormuz with Spencer Faragasso, Institute for Science and International Security Senior Fellow. Then they were joined by Olaolu Aganga, Citi Wealth Head of Portfolio Construction and Analytics to break down the market reaction to the reopening on the Strait of Hormuz. Later they were joined by Felix Gillette, Bloomberg News Media and Entertainment Editor on to discuss Netflix earnings and the upcoming departure of Reed Hastings. Later they were joined by Mishal Husain, 'The Mishal Husain Show' Host to discuss the role of Pakistan the peace negotiations in the Middle East. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNGAeIl3iWAo/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-17T21:10:42",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-17/bloomberg-businessweek-daily-4-17-2026-video",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "b621ef26-6508-43bf-a2c0-4a5d96d9caa3",
+      "title": "Trump says Iran peace deal could be reached ‘soon’ after Tehran reopens Hormuz Strait",
+      "description": "Tehran's announcement on Friday that the critical Strait of Hormuz was reopen to commercial shipping for the remainder of the Israel-Lebanon ceasefire was followed by a flurry of social media posts by US President Donald Trump suggesting that a peace deal with Washington could be reached \"soon\". But Iranian officials said the two sides still needed to overcome serious differences.",
+      "image": "https://s.france24.com/media/display/88e327da-3a9b-11f1-a1b3-005056a97e36/w:1024/p:16x9/2026-04-17T153425Z-1797731019-RC23RKAOVSFD-RTRMADP-3-IRAQ-BASRA-OIL.jpg",
+      "publishedAt": "2026-04-17T20:54:37",
       "source": "France 24",
-      "url": "https://www.france24.com/en/france-finance-minister-says-hormuz-must-open-but-not-at-any-price",
-      "location": {
-        "name": "France",
-        "lat": 46.2276,
-        "lng": 2.2137
-      },
-      "meta": {
-        "country": "FR",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "7c81a82d-7bfa-46c2-9692-af97f63cd008",
-      "title": "Papers: Chelsea open to selling Garnacho in the summer",
-      "description": "The top stories and transfer rumours from Friday's newspapers...",
-      "image": "https://e3.365dm.com/25/03/1920x1080/skysports-paper-talk-brand-refresh_6852897.jpg?20250311094415",
-      "publishedAt": "2026-04-16T21:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/chelsea-open-to-selling-alejandro-garnacho-in-the-summer-paper-talk-and-football-transfer-gossip-13532778",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "4e738b40-b471-42a1-99fc-49f707187b5c",
-      "title": "PL Predictions: Liverpool to be held by Everton",
-      "description": "Our football betting expert Jones Knows offers his insight across the weekend action and tips up a 78/1 best bet treble.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-premier-league-premier-league-prediction_7223294.jpg?20260418114637",
-      "publishedAt": "2026-04-16T21:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/premier-league-predictions-and-best-bets-brighton-to-send-spurs-sliding-towards-the-unthinkable-13532587",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "70e1bbcb-75ca-4d24-9969-17cb874c1879",
-      "title": "Netflix Earnings Forecast Misses, Reed Hastings Steps Down",
-      "description": "Bloomberg's Geetha Ranganathan breaks down a subpar earnings report from Netflix, as the media giant's forecast fell short of analyst estimates. Alongside the report, Netflix also announced that its co-founder and chairman Reed Hastings would step down from the board in June after 29 years. (Source: Bloomberg)",
-      "image": "http://assets.bwbx.io/images/isCsrmKAHDic/v2/1200x-1.jpg",
-      "publishedAt": "2026-04-16T20:52:56",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-16/netflix-earnings-forecast-misses-hastings-steps-down-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "84f9138c-bfe4-4290-bc12-07bc158cdad0",
-      "title": "Clayton beats Littler in Rotterdam final to extend lead to top of table",
-      "description": "Jonny Clayton cemented his lead at the top of the Premier League Darts table with a 6-4 victory over Luke Littler in the Night 11 final in Rotterdam.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-jonny-clayton-darts_7222147.jpg?20260416214252",
-      "publishedAt": "2026-04-16T20:45:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/premier-league-darts-jonny-clayton-beats-luke-littler-in-rotterdam-night-11-final-to-cement-position-at-top-of-table-13532581",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "e0120b4e-763f-4e9f-b0bb-d668879ea774",
-      "title": "Democrats Try to Turn the Table on Trump With Taxes",
-      "description": "The party is looking for a political advantage on a key GOP issue",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i9C0UZCUVlvw/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-16T20:31:44",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-04-16/democrats-try-to-turn-the-table-on-trump-with-taxes",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "5f2213de-4688-48a5-8458-d9bdfd696193",
-      "title": "Mideast Ceasefires to Renew Growth, Rate Cuts, Says BOI Governor",
-      "description": "The Bank of Israel is likely to upgrade its growth projection for 2026 given the ceasefire in Iran and freshly announced cessation of hostilities in Lebanon, says central bank Governor Amir Yaron.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ijuoDO3JzAQI/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-16T20:03:01",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-16/mideast-ceasefires-to-renew-growth-rate-cuts-says-boi-governor",
-      "location": {
-        "name": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "meta": {
-        "country": "IL",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "cf25645f-00bb-4d31-8842-cd6ca7522a50",
-      "title": "Bank of Israel May Upgrade Growth Forecast, Yaron Says",
-      "description": "The Bank of Israel is likely to upgrade its growth projection for 2026 given the ceasefire in Iran and a new deal to end hostilities in Lebanon, says central bank Governor Amir Yaron. He speaks to Bloomberg's Lisa Abramowicz on the sidelines of the IMF Spring Meetings in Washington. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iEOIxoo0FAEo/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-16T20:02:17",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-16/bank-of-israel-may-upgrade-growth-forecast-yaron-says-video",
-      "location": {
-        "name": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "meta": {
-        "country": "IL",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "fc2114b9-d9d5-423a-9bc5-ca4a7f1d1b28",
-      "title": "Short to make debut as England forced into five changes for Scotland game",
-      "description": "England head coach John Mitchell insists the Red Roses will roll with the punches as they come to terms with a growing list of absentees.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-demelza-short-england_7222139.jpg?20260416213012",
-      "publishedAt": "2026-04-16T20:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/womens-six-nations-injury-hit-england-forced-into-five-changes-to-starting-xv-for-scotland-game-13532613",
-      "location": {
-        "name": "United Kingdom",
-        "lat": 55.3781,
-        "lng": -3.436
-      },
-      "meta": {
-        "country": "GB",
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "e4967149-5a6c-4a24-9394-b1758057e2bc",
-      "title": "Australia’s Housing Crisis Set to Worsen on Iran War Fallout",
-      "description": "Higher construction costs caused by the war in the Middle East could worsen Australia’s ongoing housing crisis and threaten the country’s ability to meet ambitious housing targets, builders and economists have warned.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iixdVYNq564g/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-16T20:00:00",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-16/australia-s-housing-crisis-set-to-worsen-on-iran-war-fallout",
-      "location": {
-        "name": "Australia",
-        "lat": -25.2744,
-        "lng": 133.7751
-      },
-      "meta": {
-        "country": "AU",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "6121357e-1cbe-48cd-a08f-426bddabc28c",
-      "title": "'A partnership, not a takeover' - NRL boss reveals progress in Super League talks",
-      "description": "NRL chief executive Andrew Abdo says progress has been made in talks over the southern-hemisphere body investing in Super League, but insists they are interested in a \"partnership\" as opposed to a \"takeover\".",
-      "image": "https://e3.365dm.com/26/02/1920x1080/skysports-rugby-league-super-league_7169776.jpg?20260219214504",
-      "publishedAt": "2026-04-16T20:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/super-league-investment-talks-nrl-chief-executive-andrew-abdo-says-progress-made-amid-hopes-of-partnership-not-takeover-13532717",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "602d0192-26ee-428d-84b6-c31cd57f1a97",
-      "title": "Stocks Extend High as Traders Await Clarity on US, Iran Truce | Bloomberg Businessweek Daily 4/16/26",
-      "description": "On today's episode of Bloomberg Businessweek Daily, Carol Massar and Tim Stenovec discuss geopolitical market impact on the Iran War and regulation with Verena Ross, European Securities and Market Authorities Chair. They were later joined by Pete Mulmat, tastytrade Head of Brokerage, Schwab CEO Rick Wurster on earnings, prediction markets, financial sector health and Dr. Bea Bakshi, CEO & Co-Founder of C the Signs on AI cancer early detection platform. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ih1kbckv2A40/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-16T19:59:04",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-16/bloomberg-businessweek-daily-4-16-2026-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "7362db7d-84b9-4bb9-a226-efd794e6800d",
-      "title": "Israeli military admit to posting AI photo of Lebanese journalist it killed",
-      "description": "The Foreign Press Association has accused the Israeli military of discrediting a Lebanese journalist it killed in March, by using an AI-generated photo to present him as a “Hezbollah terrorist.” The Israel Defence Forces claimed responsibility for killing Ali Shoeib in a targeted Israeli airstrike in southern Lebanon. It then shared an edited photo of him on social media, overlaying his press vest with a Hezbollah uniform, saying a “press vest is just a cover for terror.”",
-      "image": "https://s.france24.com/media/display/3d76ce3e-39c7-11f1-bcec-005056bf30b7/w:1024/p:16x9/capture-178752253669e132fb53c7d9-53162423.jpg",
-      "publishedAt": "2026-04-16T19:46:13",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/israeli-military-admit-to-posting-ai-photo-of-killed-lebanese-journalist",
+      "url": "https://www.france24.com/en/middle-east/20260417-trump-says-iran-peace-deal-could-be-reached-soon-after-tehran-reopens-hormuz-strait",
       "location": {
         "name": "Israel",
         "lat": 31.0461,
@@ -527,20 +323,20 @@
       }
     },
     {
-      "id": "37ccf39e-7e5c-4606-92e9-36fa5dbf02a7",
-      "title": "UK Government Looking at Delinking Gas and Electricity Prices",
-      "description": "Chancellor of the Exchequer Rachel Reeves said the UK government was drafting plans to help delink gas prices from electricity costs.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iop_JqoYSx5Q/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-16T19:19:04",
+      "id": "ac16b228-aaf8-433c-a0f3-e00d0cac7f6b",
+      "title": "The Clock Is Ticking for Trump’s Deregulatory Agenda",
+      "description": "With possible gridlock after the midterms, the administration may focus on rules.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iBLPi5evsZMY/v5/1200x-1.jpg",
+      "publishedAt": "2026-04-17T20:32:10",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-16/uk-government-looking-at-delinking-gas-and-electricity-prices",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-04-17/trump-s-deregulatory-agenda-confronts-a-ticking-clock-for-action",
       "location": {
-        "name": "United Kingdom",
-        "lat": 55.3781,
-        "lng": -3.436
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
       },
       "meta": {
-        "country": "GB",
+        "country": null,
         "topics": [
           "politics"
         ],
@@ -556,13 +352,13 @@
       }
     },
     {
-      "id": "c8e2d37c-928a-4587-97cf-6fc65bfc4895",
-      "title": "Hard-punching cruiserweight Rozicki signs with Zuffa Boxing",
-      "description": "Hard-punching cruiserweight Ryan Rozicki has signed a multi-fight deal with Zuffa Boxing.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-ryan-rozicki-zuffa-boxing_7221966.jpg?20260416183242",
-      "publishedAt": "2026-04-16T19:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/ryan-rozicki-hard-punching-canadian-cruiserweight-signs-multi-fight-deal-with-zuffa-boxing-im-ready-to-make-a-statement-13532638",
+      "id": "696a56a0-75c6-461d-889a-cff0661efd71",
+      "title": "Bessent’s Busy Week Clashes With Global Thirst for US Attention",
+      "description": "The message from US Treasury Secretary Scott Bessent to his fellow economic policymakers a year ago came as a welcome surprise — that “America First does not mean America alone” and that the US is “doubling down on our engagement with the international economic system.”",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ii9wSMhFDT7g/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-17T20:04:29",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/bessent-s-busy-week-clashes-with-global-thirst-for-us-attention",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -571,7 +367,211 @@
       "meta": {
         "country": null,
         "topics": [
-          "sports"
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "cf18a7e8-98bf-49e3-b1cf-217027a2ca83",
+      "title": "Trump Says Iran Will Suspend Nuclear Program, Hormuz Reopens | Balance of Power 4/17/2026",
+      "description": "On the early edition of Balance of Power, Bloombe Bloomberg Washington Correspondents Joe Mathieu and Kailey Leinz discuss the reopening of the Strait of Hormuz and the potential suspension of Iran's nuclear program. On today's show Chatham House associate fellow Natasha Hall, Harvard Kennedy School Ash Center Visiting Democracy Fellow Jeanne Sheehan Zaino, principal of the International Practice at BGR Group Lester Munson, and Rapidan Energy Group founder and president Bob McNally. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iebkx_.UeJ90/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-17T19:47:22",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-17/balance-of-power-early-edition-4-17-2026-video",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "e070f15d-a0df-44cb-8136-1b3c2d8030aa",
+      "title": "Iran, Magyar, Mythos & the Pope",
+      "description": "In a week where Iran declared the Strait of Hormuz fully open for commercial trade—effectively ending its nearly seven-week de facto blockade of the critical shipping lane, President Trump imposed a U.S. blockade on Iranian ports to strangle its ability to trade. Trump vowed to continue enforcing what is effectively a U.S. siege until a peace deal is finalized.",
+      "image": "https://s.france24.com/media/display/78a60976-3a89-11f1-b414-005056a90284/w:1024/p:16x9/Anglais-2026-04-17T17-56-00-252Z.jpg",
+      "publishedAt": "2026-04-17T19:45:58",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20260417-iran-magyar-mythos-the-pope",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "d46c1a80-a9d3-419d-96b4-9759f9f01e66",
+      "title": "Global Financial Watchdog to Share Insight on Anthropic’s Mythos",
+      "description": "The Financial Stability Board is gathering information from members about potential risks posed by Anthropic’s Mythos model as it look to share such insights more broadly among its network of regulators and central bankers to help them judge the risks of autonomous cyber attacks. Bloomberg's Jake Bleiberg reports. Bank of Canada Governor Tiff Macklem, who heads the FSB’s key committee for monitoring risks, said officials have “work to do” as they assess the severity of the risks posed by the artificial intelligence model relative to other budding dangers like private credit and the global energy crisis. The topic has featured heavily in conversations at this week’s IMF and World Bank meetings. It was discussed at a meeting of FSB representatives on Wednesday amid concerns that financial systems beyond the US are disadvantaged because they have little access to the model created by San Francisco-based Anthropic. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iupFJOlrOUC4/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-17T19:27:37",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-17/financial-watchdog-to-share-insight-on-anthropic-ai-video",
+      "location": {
+        "name": "Canada",
+        "lat": 56.1304,
+        "lng": -106.3468
+      },
+      "meta": {
+        "country": "CA",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "768b92f6-6781-45cf-97c3-791f1209e995",
+      "title": "Spain Signs Deals With Brazil as Sánchez Builds Anti-Trump Bloc",
+      "description": "Spain and Brazil signed a flurry of agreements at Pedro Sánchez and Luiz Inácio Lula da Silva’s first bilateral summit, as the Spanish leader seeks to build an alliance to counter US President Donald Trump.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i7nGj4VppsUs/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-17T19:23:08",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/spain-signs-deals-with-brazil-as-sanchez-builds-anti-trump-bloc",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "13a9ac16-0f17-4298-9a74-7db4b6d77e18",
+      "title": "What's really happened with Mandelson's vetting",
+      "description": "What do I think really happened with Mandelson and vetting?",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skynews-peter-mandelson-london_7222482.jpg?20260417110805",
+      "publishedAt": "2026-04-17T19:23:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/what-really-happened-with-peter-mandelson-and-how-olly-robbins-did-pm-two-favours-13533153",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "564d0420-e6b8-45f5-afcf-7187e55449b9",
+      "title": "Justice Department Shakes Up Probe Into Alleged Trump Conspiracy",
+      "description": "The Justice Department is shaking up the team probing former CIA Director John Brennan as part of a broad investigation into an alleged years-long conspiracy against President Donald Trump, according to people familiar with the matter.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/idVz2V.tjM.s/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-17T19:14:30",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/justice-department-shakes-up-probe-into-alleged-trump-conspiracy",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "67df44c9-6d56-4e5d-921c-0ae47b10503c",
+      "title": "Palantir, Thales Among Companies Competing on New FAA AI Tool",
+      "description": "The US Federal Aviation Administration has brought in Palantir Technologies Inc., Thales SA and Air Space Intelligence Inc. to compete on a new artificial intelligence tool for air traffic management, according to a person familiar with the matter.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iLmXuDYU1DF0/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-17T18:40:07",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-17/palantir-thales-among-companies-competing-on-new-faa-ai-tool",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
         ],
         "keywords": [
           "general",
