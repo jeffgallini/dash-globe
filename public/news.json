@@ -1,189 +1,15 @@
 {
-  "updatedAt": "2026-04-20T07:04:51.176Z",
+  "updatedAt": "2026-04-21T06:56:48.633Z",
   "count": 20,
   "stories": [
     {
-      "id": "3c96fadd-5f71-4a92-8c6a-afa4a3d3f141",
-      "title": "Trump Claims Hormuz is 'Open For Business' | Balance of Power: Late Edition 04/17/2026",
-      "description": "\"Balance of Power: Late Edition\" focuses on the intersection of politics and global business. On today's show, Representative Jake Auchincloss (D-MA) shares his disbelief when discussing President Trump saying the Strait of Hormuz is open. Neil Bradley, US Chamber of Commerce Executive Vice President, talks about the impact the Middle East conflict is having on small businesses. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iyAqVqq.nGmM/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-17T23:39:17",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-17/balance-of-power-late-edition-04-17-2026-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "1c826540-f6ba-4137-9489-2e33fc0fe2e3",
-      "title": "Trump Telegraphs End to Iran War as Focus Turns to Economy",
-      "description": "President Donald Trump is signaling he’s ready to wrap up the US war with Iran, even as details of a deal remain murky and hurdles to a lasting peace remain high.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/il3PO4gO6shA/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-17T22:49:02",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/trump-telegraphs-end-to-iran-war-as-focus-turns-to-economy",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "7110d273-16ab-4f0e-bafc-3a29a706495d",
-      "title": "Given Iran Chokehold Control of Strait: Rep. Auchincloss",
-      "description": "Representative Jake Auchincloss (D-MA) shares his disbelief when discussing President Trump saying the Strait of Hormuz is open, stating markets “would be wise to put the President on mute.” He goes on to explain how Trump has now given Iran a different strategic deterrent in chokehold control of the Strait, and whether or not he believes the president can talk peace into existence with Iran. Rep. Auchincloss speaks with Kailey Leinz and Joe Mathieu on the late edition of Bloomberg's \"Balance of Power.\" (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i8UMEdUWPhgg/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-17T22:05:32",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-17/given-iran-chokehold-control-of-strait-rep-auchincloss-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "056bb6af-0c99-4943-82de-8c8a7f83f8d0",
-      "title": "US Backs Almost $12 Billion in Naval Equipment Sales to Germany",
-      "description": "The US government has approved a potential sale to Germany of up to $11.9 billion in combat management systems for surface vessels, the State Department announced Friday.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iB8AAovqU_Fo/v0/1200x-1.jpg",
-      "publishedAt": "2026-04-17T21:56:24",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/us-backs-almost-12-billion-in-naval-equipment-sales-to-germany",
-      "location": {
-        "name": "Germany",
-        "lat": 51.1657,
-        "lng": 10.4515
-      },
-      "meta": {
-        "country": "DE",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "6e675a6b-3b3c-4e19-b6b0-71865fc9c78c",
-      "title": "Lutnick Shuts Down Talk of Any Chinese Investment in US Autos",
-      "description": "Commerce Secretary Howard Lutnick ruled out the possibility of Chinese investment in the US auto industry, saying there’s no need for companies like electric carmaker BYD Co. in America.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iq5fZcPUAxrw/v0/1200x-1.jpg",
-      "publishedAt": "2026-04-17T21:50:59",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/lutnick-shuts-down-talk-of-any-chinese-investment-in-us-autos",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "2b56a179-f5d9-4b9c-bbb9-6cb83487af47",
-      "title": "US Weighs Tougher Auto Import Rules to Accelerate Reshoring",
-      "description": "The Trump administration is considering potential changes to North American trade rules that would raise tariff costs on US automobile imports and push manufacturers to boost domestic production, according to people familiar with the matter.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioQVZSRwQQfQ/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-17T21:36:03",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/us-weighs-tougher-auto-import-rules-to-accelerate-reshoring",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "874465d0-147f-4073-bcca-00dc53cf9811",
-      "title": "Carrick: No decision made over Rashford Man Utd return",
-      "description": "Manchester United interim boss Michael Carrick says no decision has been made over Marcus Rashford's future at Old Trafford.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-marcus-rashford-manchester-united_7222932.jpg?20260417175726",
-      "publishedAt": "2026-04-17T21:30:00",
+      "id": "a06b757f-6821-4344-ac20-621668aedd02",
+      "title": "Rosenior admits he doesn't know consequences of no CL football",
+      "description": "Chelsea boss Liam Rosenior has admitted he doesn't know what consequences the Blues will face if they fail to qualify for the Champions League.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-liam-rosenior-chelsea_7223982.jpg?20260418221139",
+      "publishedAt": "2026-04-18T21:52:00",
       "source": "Sky News",
-      "url": "https://news.sky.com/story/marcus-rashford-man-united-boss-michael-carrick-says-no-decison-has-been-made-over-on-loan-barcelona-forwards-old-trafford-future-13533083",
+      "url": "https://news.sky.com/story/chelsea-0-1-manchester-united-liam-rosenior-admits-he-doesnt-know-what-consequences-there-will-be-if-he-fails-to-bring-champions-league-football-13533607",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -206,13 +32,13 @@
       }
     },
     {
-      "id": "d1769753-7502-44da-8abb-e344f2b3d8ab",
-      "title": "Can RFK Jr. Save The GOP In The Midterms?",
-      "description": "RFK Jr. is divisive, but he may also be the best hope for Republicans in the midterms, explains Bloomberg Opinion columnist Abby McCloskey. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iMbxjdkFk6dk/v3/1200x-1.png",
-      "publishedAt": "2026-04-17T21:15:00",
+      "id": "9d0ce44c-3a28-4fcc-b43c-ed3f5e9eba99",
+      "title": "North Korea Tests Unidentified Ballistic Missile, Yonhap Says",
+      "description": "North Korea launched an unidentified ballistic missile eastward, Yonhap news agency reported, citing the South Korean military.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i99RuI0i1S2c/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-18T21:47:34",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-17/opinion-can-rfk-jr-save-the-gop-in-the-midterms-video",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-18/north-korea-tests-unidentified-ballistic-missile-yonhap-says-mo4vbi1i",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -235,71 +61,337 @@
       }
     },
     {
-      "id": "c0e4f707-3d00-4e90-8d69-7a3996212407",
-      "title": "Credit Markets Show Resilience Amid Geopolitical Tensions with Rosner & Cocke",
-      "description": "In this segment, John Cocke, Deputy CIO for Credit at Corbin Capital Partners, and Lindsay Rosner, Head of Multi Sector Fixed Income at Goldman Sachs Asset Management, discuss the current state of credit markets amid geopolitical tensions and private credit challenges. Rosner highlights that while credit spreads remain tight, the all-in yield remains attractive to investors, encouraging continued investment despite some reluctance to add further risk. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/izVQffCPamb4/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-17T21:11:22",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-17/credit-markets-show-resilience-amid-geopolitical-tension-video",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "2ed3fb23-70a3-4b87-ac19-769ef85901dc",
-      "title": "Wall Street Extends April Surge on Peace Prospects | Bloomberg Businessweek Daily 4/17/2026",
-      "description": "On today's episode of Bloomberg Businessweek Daily, Carol Massar and Tim Stenovec discuss the reopeing of the Strait of Hormuz with Spencer Faragasso, Institute for Science and International Security Senior Fellow. Then they were joined by Olaolu Aganga, Citi Wealth Head of Portfolio Construction and Analytics to break down the market reaction to the reopening on the Strait of Hormuz. Later they were joined by Felix Gillette, Bloomberg News Media and Entertainment Editor on to discuss Netflix earnings and the upcoming departure of Reed Hastings. Later they were joined by Mishal Husain, 'The Mishal Husain Show' Host to discuss the role of Pakistan the peace negotiations in the Middle East. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iNGAeIl3iWAo/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-17T21:10:42",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-17/bloomberg-businessweek-daily-4-17-2026-video",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "b621ef26-6508-43bf-a2c0-4a5d96d9caa3",
-      "title": "Trump says Iran peace deal could be reached ‘soon’ after Tehran reopens Hormuz Strait",
-      "description": "Tehran's announcement on Friday that the critical Strait of Hormuz was reopen to commercial shipping for the remainder of the Israel-Lebanon ceasefire was followed by a flurry of social media posts by US President Donald Trump suggesting that a peace deal with Washington could be reached \"soon\". But Iranian officials said the two sides still needed to overcome serious differences.",
-      "image": "https://s.france24.com/media/display/88e327da-3a9b-11f1-a1b3-005056a97e36/w:1024/p:16x9/2026-04-17T153425Z-1797731019-RC23RKAOVSFD-RTRMADP-3-IRAQ-BASRA-OIL.jpg",
-      "publishedAt": "2026-04-17T20:54:37",
+      "id": "875cc2c6-f41b-4675-a087-0add5d0cd9f0",
+      "title": "Strait of Hormuz: Open, closed, open, closed - What's actually happening?",
+      "description": "The confusion around the Strait of Hormuz continues at pace. Having opened the straight on Friday for commercial vessels, Iran has moved to close the crucial channel once again. Tehran has accused the United States of \"piracy\" and added that any ship approaching the straights will now be targetted, until the US blockade is over. Jean-Emile Jammine speaks to International Affairs Editor, Andrew Hilliar, and Yousef Alshammari, President of London College of Energy Economics.",
+      "image": "https://s.france24.com/media/display/06e2de48-3b6c-11f1-9f91-005056bf30b7/w:1024/p:16x9/capture-134498234369e3f4f1cdc8f7-87855347.jpg",
+      "publishedAt": "2026-04-18T21:26:11",
       "source": "France 24",
-      "url": "https://www.france24.com/en/middle-east/20260417-trump-says-iran-peace-deal-could-be-reached-soon-after-tehran-reopens-hormuz-strait",
+      "url": "https://www.france24.com/en/video/20260418-strait-of-hormuz-open-closed-open-closed-what-s-actually-happening",
+      "location": {
+        "name": "United Kingdom",
+        "lat": 55.3781,
+        "lng": -3.436
+      },
+      "meta": {
+        "country": "GB",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "b45ee341-7281-4277-8759-44a08613db82",
+      "title": "French UNIFIL soldier killed in Lebanon, Hezbollah responsible, says Macron",
+      "description": "French President Emmanuel Macron announced the death of a French UN peacekeeping soldier Saturday following an attack that also left three people wounded in southern Lebanon, saying that \"everything suggests\" Hezbollah being responsible for the attack. The Iran-backed group denied involvement.",
+      "image": "https://s.france24.com/media/display/74c13bda-3b3f-11f1-9c78-005056bf30b7/w:1024/p:16x9/000-A8AD8NQ.jpg",
+      "publishedAt": "2026-04-18T20:44:45",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20260418-french-unifil-soldier-killed-in-lebanon-hezbollah-responsible-says-macron",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "f8f3017c-8135-4f3f-b2fa-4a1021e3e356",
+      "title": "De Zerbi believes Spurs can win their last five games to stay up",
+      "description": "Tottenham head coach Roberto De Zerbi believes his side can win all five of their remaining games to stay in the Premier League.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-pedro-porro-spurs_7223950.jpg?20260418210155",
+      "publishedAt": "2026-04-18T20:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/roberto-de-zerbi-tottenham-boss-believes-relegation-threatened-side-can-win-final-five-games-to-stay-in-premier-league-13533574",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "cd3db84e-d83a-49be-997a-7ca490610085",
+      "title": "Somerset's Rew tipped for England as Hampshire mount fightback",
+      "description": "Division One pace-setters Somerset came up against stubborn resistance from Hampshire on day two at the Utilita Bowl.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-james-rew-somerset_7212008.jpg?20260406075152",
+      "publishedAt": "2026-04-18T19:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/county-championship-james-rew-gets-england-backing-but-sees-hampshire-fight-back-against-somerset-13533405",
+      "location": {
+        "name": "United Kingdom",
+        "lat": 55.3781,
+        "lng": -3.436
+      },
+      "meta": {
+        "country": "GB",
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "320828a0-4e18-442e-9280-df7a2fc66334",
+      "title": "Premiership Rugby: Smith breaks Chiefs' hearts with last-gasp winner",
+      "description": "A last-minute try by England fly-half Fin Smith saw Northampton Saints snatch a thrilling 35-28 victory over Exeter Chiefs at Sandy Park on Saturday afternoon.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-fin-smith-northampton_7223909.jpg?20260418200019",
+      "publishedAt": "2026-04-18T17:31:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/premiership-rugby-fin-smiths-late-try-sees-northampton-saints-claim-thrilling-win-against-exeter-chiefs-as-bath-thump-harlequins-13533540",
+      "location": {
+        "name": "United Kingdom",
+        "lat": 55.3781,
+        "lng": -3.436
+      },
+      "meta": {
+        "country": "GB",
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "931fb2be-728d-4b94-8c04-232ab0805163",
+      "title": "Leeds edge closer to Premier League safety leaving Wolves on brink of relegation",
+      "description": "Leeds 3-0 Wolves: James Justin, Noah Okafor and Dominic Calvert-Lewin were the goalscorers for the hosts",
+      "image": "https://static.independent.co.uk/2026/04/18/17/554654a7f9a6918a753a8160cf389e80Y29udGVudHNlYXJjaGFwaSwxNzc2NjE0Nzg2-2.84314181.jpg?width=1200&auto=webp&crop=3%3A2",
+      "publishedAt": "2026-04-18T16:25:01",
+      "source": "The Independent",
+      "url": "https://www.independent.co.uk/sport/football/leeds-wolves-dominic-calvert-lewin-goals-premier-league-result-b2960375.html",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports",
+          "soccer"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "83553981-5256-462c-8bb9-8f9afe38e876",
+      "title": "Modi Attacks Rivals After Failed Bid to Fast-Track Women’s Quota",
+      "description": "Indian Prime Minister Narendra Modi launched a vehement attack on opposition parties a day after his proposed amendments to expand Parliament and accelerate the reservation of at least a third of seats for women were struck down by rivals.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i5IG.m1F9Fu0/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-18T16:00:28",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-18/modi-attacks-rivals-after-failed-bid-to-fast-track-women-s-quota",
+      "location": {
+        "name": "India",
+        "lat": 20.5937,
+        "lng": 78.9629
+      },
+      "meta": {
+        "country": "IN",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "39949938-5505-4ea1-b021-5b50db9522f9",
+      "title": "Bromley promoted to League One for first time in their history",
+      "description": "Bromley have been promoted to League One for the first time in their history with two games of the season to spare.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-bromley-fc_7216830.jpg?20260411111207",
+      "publishedAt": "2026-04-18T16:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/bromley-promoted-to-league-one-for-the-first-time-in-their-history-13530042",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "636f554e-d847-412f-ac08-8e6c124dbd0e",
+      "title": "Replay : Donald Trump holds briefing amid Hormuz tension",
+      "description": "Rewatch Donald Trump’s live briefing from the White House on Saturday, April 18, as Iran announced it was re-closing the Strait of Hormuz while the US maintains its port blockade. FRANCE 24's Andrew Hilliar has the analysis.",
+      "image": "https://s.france24.com/media/display/826cc2b0-3b38-11f1-9585-005056a90284/w:1024/p:16x9/EN-20260418-150859-152550-CS.jpg",
+      "publishedAt": "2026-04-18T15:27:53",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/replay-donald-trump-holds-briefing-amid-hormuz-tension",
+      "location": {
+        "name": "France",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      "meta": {
+        "country": "FR",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "33f4da30-7cb2-4c77-bc92-c3ed2a55fa5f",
+      "title": "UNIFIL sheds light on southern Lebanon attack that killed French soldier",
+      "description": "A French soldier was killed in southern Lebanon on Saturday 18, while serving with UNIFIL, the United Nations peacekeeping force. UNIFIL deputy spokesperson Tilak Pokharel was FRANCE 24’s guest this afternoon to explain what happened and what is currently known about those responsible.",
+      "image": "https://s.france24.com/media/display/214f3f2e-3b35-11f1-922e-005056bf30b7/w:1024/p:16x9/EN-20260418-160110-160632-CS.jpg",
+      "publishedAt": "2026-04-18T15:10:03",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/unifil-sheds-light-on-southern-lebanon-attack-that-killed-french-soldier",
+      "location": {
+        "name": "France",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      "meta": {
+        "country": "FR",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "91a3fc32-37c3-4c56-b0e2-dd3d5afb6eaf",
+      "title": "US Preparing to Board Iran-Linked Ships in Coming Days, WSJ Says",
+      "description": "The US military is preparing to board Iran-linked oil tankers and seize commercial ships in international waters in coming days, the Wall Street Journal reported, citing unnamed US officials.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWC4AiCVtuIY/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-18T15:09:47",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-18/us-preparing-to-board-iran-linked-ships-in-coming-days-wsj-says",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "03e8dfec-6643-4cf5-b8cb-6f5baf291728",
+      "title": "No signs of regime collapse as Iran weathers weeks of war",
+      "description": "After weeks of US and Israeli strikes, Iranians are watching to see if ceasefire talks could lead to negotiations, while uncertainty over the future of the conflict persists. Despite foreign calls for regime change, analysts say Iran’s leadership remains entrenched, as economic pressure, repression and war damage deepen tensions inside the country.",
+      "image": "https://s.france24.com/media/display/87c9d352-3b37-11f1-94f2-005056a90284/w:1024/p:16x9/EN-20260418-160946-161132-CS.jpg",
+      "publishedAt": "2026-04-18T15:07:39",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/no-signs-of-regime-collapse-as-iran-weathers-weeks-of-war",
       "location": {
         "name": "Israel",
         "lat": 31.0461,
@@ -323,13 +415,13 @@
       }
     },
     {
-      "id": "ac16b228-aaf8-433c-a0f3-e00d0cac7f6b",
-      "title": "The Clock Is Ticking for Trump’s Deregulatory Agenda",
-      "description": "With possible gridlock after the midterms, the administration may focus on rules.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iBLPi5evsZMY/v5/1200x-1.jpg",
-      "publishedAt": "2026-04-17T20:32:10",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-04-17/trump-s-deregulatory-agenda-confronts-a-ticking-clock-for-action",
+      "id": "cd51d553-0d2c-440e-926e-2dab78487b5e",
+      "title": "Hits & misses: Fire has gone from Howe's Magpies | Should Silva give someone else a go?",
+      "description": "",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-premier-league-hits-and-misses_7223893.jpg?20260418194512",
+      "publishedAt": "2026-04-18T14:50:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/eddie-howes-newcastle-have-lost-their-fire-should-marco-silva-give-someone-else-a-go-at-fulham-premier-league-hits-misses-13533371",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -338,7 +430,7 @@
       "meta": {
         "country": null,
         "topics": [
-          "politics"
+          "sports"
         ],
         "keywords": [
           "general",
@@ -352,78 +444,20 @@
       }
     },
     {
-      "id": "696a56a0-75c6-461d-889a-cff0661efd71",
-      "title": "Bessent’s Busy Week Clashes With Global Thirst for US Attention",
-      "description": "The message from US Treasury Secretary Scott Bessent to his fellow economic policymakers a year ago came as a welcome surprise — that “America First does not mean America alone” and that the US is “doubling down on our engagement with the international economic system.”",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ii9wSMhFDT7g/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-17T20:04:29",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/bessent-s-busy-week-clashes-with-global-thirst-for-us-attention",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "cf18a7e8-98bf-49e3-b1cf-217027a2ca83",
-      "title": "Trump Says Iran Will Suspend Nuclear Program, Hormuz Reopens | Balance of Power 4/17/2026",
-      "description": "On the early edition of Balance of Power, Bloombe Bloomberg Washington Correspondents Joe Mathieu and Kailey Leinz discuss the reopening of the Strait of Hormuz and the potential suspension of Iran's nuclear program. On today's show Chatham House associate fellow Natasha Hall, Harvard Kennedy School Ash Center Visiting Democracy Fellow Jeanne Sheehan Zaino, principal of the International Practice at BGR Group Lester Munson, and Rapidan Energy Group founder and president Bob McNally. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iebkx_.UeJ90/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-17T19:47:22",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-17/balance-of-power-early-edition-4-17-2026-video",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "e070f15d-a0df-44cb-8136-1b3c2d8030aa",
-      "title": "Iran, Magyar, Mythos & the Pope",
-      "description": "In a week where Iran declared the Strait of Hormuz fully open for commercial trade—effectively ending its nearly seven-week de facto blockade of the critical shipping lane, President Trump imposed a U.S. blockade on Iranian ports to strangle its ability to trade. Trump vowed to continue enforcing what is effectively a U.S. siege until a peace deal is finalized.",
-      "image": "https://s.france24.com/media/display/78a60976-3a89-11f1-b414-005056a90284/w:1024/p:16x9/Anglais-2026-04-17T17-56-00-252Z.jpg",
-      "publishedAt": "2026-04-17T19:45:58",
+      "id": "30dee7f6-5cd4-489e-bc68-95ff9ce413b7",
+      "title": "Turkey’s economy hit as Syrians return home",
+      "description": "Since the end of the war in Syria last year, many Syrians have left Turkey to return home. Of the 3.6 million refugees living in the country, more than half a million are believed to have already gone back. These departures are weakening the Turkish economy, which relies heavily on low-cost labour, particularly in the textile and agricultural sectors. In the south-east, in Gaziantep, half of the garment workshops closed last year due to a shortage of workers. A report by Jenna Le Bras and Adrià Rocha Cutiller.",
+      "image": "https://s.france24.com/media/display/53e596dc-3b2f-11f1-af70-005056bf30b7/w:1024/p:16x9/EN-20260411-144512-144756-CS.jpg",
+      "publishedAt": "2026-04-18T14:18:45",
       "source": "France 24",
-      "url": "https://www.france24.com/en/tv-shows/the-world-this-week/20260417-iran-magyar-mythos-the-pope",
+      "url": "https://www.france24.com/en/turkey-s-economy-hit-as-syrians-return-home",
       "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
+        "name": "Turkey",
+        "lat": 38.9637,
+        "lng": 35.2433
       },
       "meta": {
-        "country": "US",
+        "country": "TR",
         "topics": [
           "middle east",
           "politics"
@@ -440,20 +474,20 @@
       }
     },
     {
-      "id": "d46c1a80-a9d3-419d-96b4-9759f9f01e66",
-      "title": "Global Financial Watchdog to Share Insight on Anthropic’s Mythos",
-      "description": "The Financial Stability Board is gathering information from members about potential risks posed by Anthropic’s Mythos model as it look to share such insights more broadly among its network of regulators and central bankers to help them judge the risks of autonomous cyber attacks. Bloomberg's Jake Bleiberg reports. Bank of Canada Governor Tiff Macklem, who heads the FSB’s key committee for monitoring risks, said officials have “work to do” as they assess the severity of the risks posed by the artificial intelligence model relative to other budding dangers like private credit and the global energy crisis. The topic has featured heavily in conversations at this week’s IMF and World Bank meetings. It was discussed at a meeting of FSB representatives on Wednesday amid concerns that financial systems beyond the US are disadvantaged because they have little access to the model created by San Francisco-based Anthropic. (Source: Bloomberg)",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iupFJOlrOUC4/v3/1200x-1.jpg",
-      "publishedAt": "2026-04-17T19:27:37",
+      "id": "8ebbca7b-eca4-4f56-b3cf-c6fc2f901b53",
+      "title": "ECB Moves Away From April Hike as Peace Talks Progress: Overview",
+      "description": "European Central Bank officials are leaving Washington ever so slightly more optimistic than when they arrived, as ongoing US-Iran peace talks raise the prospect of energy shipments resuming from the Gulf.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iM8QEsLi1FEI/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-18T14:00:12",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/videos/2026-04-17/financial-watchdog-to-share-insight-on-anthropic-ai-video",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-18/ecb-moves-away-from-april-hike-as-peace-talks-progress-overview",
       "location": {
-        "name": "Canada",
-        "lat": 56.1304,
-        "lng": -106.3468
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
       },
       "meta": {
-        "country": "CA",
+        "country": "US",
         "topics": [
           "politics"
         ],
@@ -469,13 +503,13 @@
       }
     },
     {
-      "id": "768b92f6-6781-45cf-97c3-791f1209e995",
-      "title": "Spain Signs Deals With Brazil as Sánchez Builds Anti-Trump Bloc",
-      "description": "Spain and Brazil signed a flurry of agreements at Pedro Sánchez and Luiz Inácio Lula da Silva’s first bilateral summit, as the Spanish leader seeks to build an alliance to counter US President Donald Trump.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i7nGj4VppsUs/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-17T19:23:08",
+      "id": "6bdfdd52-e400-42c9-b0f1-733e39deb1e9",
+      "title": "Trump Signs Order Easing Restrictions on Psychedelic Drugs",
+      "description": "President Donald Trump signed an executive order to expedite research and access to psychedelics used outside the US to treat post-traumatic stress disorder.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqYJS41girRE/v0/1200x-1.jpg",
+      "publishedAt": "2026-04-18T13:49:03",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/spain-signs-deals-with-brazil-as-sanchez-builds-anti-trump-bloc",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-18/trump-signs-order-easing-restrictions-on-psychedelic-drugs",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -498,13 +532,42 @@
       }
     },
     {
-      "id": "13a9ac16-0f17-4298-9a74-7db4b6d77e18",
-      "title": "What's really happened with Mandelson's vetting",
-      "description": "What do I think really happened with Mandelson and vetting?",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skynews-peter-mandelson-london_7222482.jpg?20260417110805",
-      "publishedAt": "2026-04-17T19:23:00",
+      "id": "47720580-9349-447d-80c9-dd3a863d7f07",
+      "title": "Hungary’s Tisza Party Widens Election Majority in Fresh Tally",
+      "description": "The Tisza party led by Hungarian prime minister-elect Peter Magyar further widened its parliamentary majority, a fresh tally showed Saturday, giving it an even stronger mandate for change after last weekend’s election.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioicB98o6ajI/v1/1200x-1.jpg",
+      "publishedAt": "2026-04-18T13:04:38",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-18/hungary-s-tisza-party-widens-election-majority-in-fresh-tally",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "1bc61d71-b93d-4092-b537-dc47996b1f2b",
+      "title": "Zverev out of ATP 500 in Munich as Cobolli moved to tears",
+      "description": "Flavio Cobolli was brought to tears after securing his spot in the ATP 500 Munich final with a 6-3 6-3 win over world No 3 Alexander Zverev.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-flavio-cobolli-atp_7223404.jpg?20260418140939",
+      "publishedAt": "2026-04-18T12:52:00",
       "source": "Sky News",
-      "url": "https://news.sky.com/story/what-really-happened-with-peter-mandelson-and-how-olly-robbins-did-pm-two-favours-13533153",
+      "url": "https://news.sky.com/story/atp-500-munich-alexander-zverev-knocked-out-as-italys-flavio-cobolli-moved-to-tears-by-making-final-13533293",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -513,65 +576,7 @@
       "meta": {
         "country": null,
         "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "564d0420-e6b8-45f5-afcf-7187e55449b9",
-      "title": "Justice Department Shakes Up Probe Into Alleged Trump Conspiracy",
-      "description": "The Justice Department is shaking up the team probing former CIA Director John Brennan as part of a broad investigation into an alleged years-long conspiracy against President Donald Trump, according to people familiar with the matter.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/idVz2V.tjM.s/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-17T19:14:30",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/justice-department-shakes-up-probe-into-alleged-trump-conspiracy",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "67df44c9-6d56-4e5d-921c-0ae47b10503c",
-      "title": "Palantir, Thales Among Companies Competing on New FAA AI Tool",
-      "description": "The US Federal Aviation Administration has brought in Palantir Technologies Inc., Thales SA and Air Space Intelligence Inc. to compete on a new artificial intelligence tool for air traffic management, according to a person familiar with the matter.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iLmXuDYU1DF0/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-17T18:40:07",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-17/palantir-thales-among-companies-competing-on-new-faa-ai-tool",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
+          "sports"
         ],
         "keywords": [
           "general",
