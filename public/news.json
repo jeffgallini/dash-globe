@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-04-21T06:56:48.633Z",
+  "updatedAt": "2026-04-22T06:56:37.311Z",
   "count": 20,
   "stories": [
     {
-      "id": "a06b757f-6821-4344-ac20-621668aedd02",
-      "title": "Rosenior admits he doesn't know consequences of no CL football",
-      "description": "Chelsea boss Liam Rosenior has admitted he doesn't know what consequences the Blues will face if they fail to qualify for the Champions League.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-liam-rosenior-chelsea_7223982.jpg?20260418221139",
-      "publishedAt": "2026-04-18T21:52:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/chelsea-0-1-manchester-united-liam-rosenior-admits-he-doesnt-know-what-consequences-there-will-be-if-he-fails-to-bring-champions-league-football-13533607",
+      "id": "df0f409a-36a9-4b1d-8d9a-02241743b252",
+      "title": "La dolorosa despedida al joven de 25 años que murió en el Rally Sudamericano: “Siempre en nuestros corazones”",
+      "description": "Brahian Zárate González fue embestido este domingo por un auto que se despistó durante una competencia en Traslasierra. La carrera fue suspendida.",
+      "image": "https://tn.com.ar/resizer/v2/A6S6GU4TABHAHD2IXFCWH4XFWY.png?auth=57177052a38d109e0cc68877cb7f26ff7a4dee97c64d7e62be8f90f03d1bd38e",
+      "publishedAt": "2026-04-19T23:51:04",
+      "source": "Todo Noticias",
+      "url": "https://tn.com.ar/deportes/automovilismo/2026/04/19/la-dolorosa-despedida-al-joven-de-25-anos-que-murio-en-el-rally-sudamericano-siempre-en-nuestros-corazones/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -18,27 +18,33 @@
       "meta": {
         "country": null,
         "topics": [
+          "accident",
           "sports"
         ],
         "keywords": [
-          "general",
-          "news"
+          "sudamericano siempre",
+          "siempre en",
+          "sudamericano fue",
+          "murió en",
+          "ocurrió este",
+          "nuestra memoria",
+          "rally sudamericano"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.027,
+          "neg": 0.008,
+          "neu": 0.965
         }
       }
     },
     {
-      "id": "9d0ce44c-3a28-4fcc-b43c-ed3f5e9eba99",
-      "title": "North Korea Tests Unidentified Ballistic Missile, Yonhap Says",
-      "description": "North Korea launched an unidentified ballistic missile eastward, Yonhap news agency reported, citing the South Korean military.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i99RuI0i1S2c/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-18T21:47:34",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-18/north-korea-tests-unidentified-ballistic-missile-yonhap-says-mo4vbi1i",
+      "id": "d3891ed5-6020-48b5-b2ba-a8303141c3f4",
+      "title": "Joaquín García-Huidobro sobre el escenario político global: “Hay que tener la valentía de la moderación, atreverse a no ser extremo”",
+      "description": "En Influyentes, el académico de la Universidad de Los Andes abordó el escenario político internacional y local, criticando, entre otras cosas, el fenómeno asociado a Donald Trump.",
+      "image": "https://media.cnnchile.com/sites/2/2026/04/vlcsnap-2026-04-17-19h12m57s681-e1776473883123.png",
+      "publishedAt": "2026-04-19T23:50:06",
+      "source": "CNN Chile",
+      "url": "https://www.cnnchile.com/lodijeronencnn/joaquin-garcia-huidobro-sobre-el-escenario-politico-global-hay-que-tener-la-valentia-de-la-moderacion-atreverse-a-no-ser-extremo_20260419/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -50,54 +56,29 @@
           "politics"
         ],
         "keywords": [
-          "general",
-          "news"
+          "el trumpismo",
+          "escenario político",
+          "el conservadurismo",
+          "conservadurismo el",
+          "el escenario",
+          "político global",
+          "trumpismo"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.015,
+          "neg": 0.052,
+          "neu": 0.932
         }
       }
     },
     {
-      "id": "875cc2c6-f41b-4675-a087-0add5d0cd9f0",
-      "title": "Strait of Hormuz: Open, closed, open, closed - What's actually happening?",
-      "description": "The confusion around the Strait of Hormuz continues at pace. Having opened the straight on Friday for commercial vessels, Iran has moved to close the crucial channel once again. Tehran has accused the United States of \"piracy\" and added that any ship approaching the straights will now be targetted, until the US blockade is over. Jean-Emile Jammine speaks to International Affairs Editor, Andrew Hilliar, and Yousef Alshammari, President of London College of Energy Economics.",
-      "image": "https://s.france24.com/media/display/06e2de48-3b6c-11f1-9f91-005056bf30b7/w:1024/p:16x9/capture-134498234369e3f4f1cdc8f7-87855347.jpg",
-      "publishedAt": "2026-04-18T21:26:11",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/video/20260418-strait-of-hormuz-open-closed-open-closed-what-s-actually-happening",
-      "location": {
-        "name": "United Kingdom",
-        "lat": 55.3781,
-        "lng": -3.436
-      },
-      "meta": {
-        "country": "GB",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "b45ee341-7281-4277-8759-44a08613db82",
-      "title": "French UNIFIL soldier killed in Lebanon, Hezbollah responsible, says Macron",
-      "description": "French President Emmanuel Macron announced the death of a French UN peacekeeping soldier Saturday following an attack that also left three people wounded in southern Lebanon, saying that \"everything suggests\" Hezbollah being responsible for the attack. The Iran-backed group denied involvement.",
-      "image": "https://s.france24.com/media/display/74c13bda-3b3f-11f1-9c78-005056bf30b7/w:1024/p:16x9/000-A8AD8NQ.jpg",
-      "publishedAt": "2026-04-18T20:44:45",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/middle-east/20260418-french-unifil-soldier-killed-in-lebanon-hezbollah-responsible-says-macron",
+      "id": "8ed21951-813e-4aec-9052-ec2ebf74a4fa",
+      "title": "Eskalation im Nahen Osten: Ölpreis steigt kräftig - Börsen droht neue Talfahrt",
+      "description": "Vor dem Wochenende verzeichnen die Aktienmärkte aufgrund der Entspannung im Nahen Osten deutliche Gewinne, der Ölpreis fällt. Doch schon kurz darauf nehmen die Spannungen wieder zu. Das dürfte sich bei den Indizes bemerkbar machen.",
+      "image": "https://www.n-tv.de/img/30732010/1776649005/Img_4_3/250/Ship-traffic-resumes-at-Strait-of-Hormuz-following-US-Iran-ceasefire-OMAN-APRIL-8-A-ship-waits-to-pass-through-the-Strait-of-Hormuz-following-the-two-week-temporary-ceasefire-between-the-US-and-Iran-which-is-conditional-on-the-opening-of-the-strait-in-Oman-on-April-8-2026-Shipping-traffic-remained-at-low-levels-reported-Shadi-J-H-Alassar-Anadolu-Oman-Oman-Editorial-use-only-Please-get-in-touch-for-any-other-usage-PUBLICATIONxNOTxINxTURxUSAxCANxUKxJPNxITAxFRAxAUSxESPxBELxKORxRSAxHKGxNZL-Copyright-x2026xAnadoluxShadixJ-xH.jpg",
+      "publishedAt": "2026-04-19T23:39:40",
+      "source": "n-tv",
+      "url": "https://www.n-tv.de/wirtschaft/Oelpreis-steigt-kraeftig-Boersen-droht-neue-Talfahrt-id30732004.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -106,28 +87,33 @@
       "meta": {
         "country": null,
         "topics": [
-          "middle east",
+          "economy",
           "politics"
         ],
         "keywords": [
-          "general",
-          "news"
+          "aktienmärkte aufgrund",
+          "indizes bemerkbar",
+          "der entspannung",
+          "nahen osten",
+          "erneute eskalation",
+          "iran hat",
+          "aufgrund der"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "neg": 0.179,
+          "neu": 0.821
         }
       }
     },
     {
-      "id": "f8f3017c-8135-4f3f-b2fa-4a1021e3e356",
-      "title": "De Zerbi believes Spurs can win their last five games to stay up",
-      "description": "Tottenham head coach Roberto De Zerbi believes his side can win all five of their remaining games to stay in the Premier League.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-pedro-porro-spurs_7223950.jpg?20260418210155",
-      "publishedAt": "2026-04-18T20:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/roberto-de-zerbi-tottenham-boss-believes-relegation-threatened-side-can-win-final-five-games-to-stay-in-premier-league-13533574",
+      "id": "79096fba-c32c-4f5e-bd81-24208ef702f9",
+      "title": "Eskalation im Nahen Osten: Ölpreis steigt kräftig - Börsen droht neuer Sinkflug",
+      "description": "Vor dem Wochenende verzeichnen die Aktienmärkte aufgrund der Entspannung im Nahen Osten deutliche Gewinne, der Ölpreis fällt. Doch schon kurz darauf verschärft sich der Konflikt wieder. Das dürfte sich bei den Indizes bemerkbar machen.",
+      "image": "https://www.n-tv.de/img/30732010/1776649005/Img_4_3/250/Ship-traffic-resumes-at-Strait-of-Hormuz-following-US-Iran-ceasefire-OMAN-APRIL-8-A-ship-waits-to-pass-through-the-Strait-of-Hormuz-following-the-two-week-temporary-ceasefire-between-the-US-and-Iran-which-is-conditional-on-the-opening-of-the-strait-in-Oman-on-April-8-2026-Shipping-traffic-remained-at-low-levels-reported-Shadi-J-H-Alassar-Anadolu-Oman-Oman-Editorial-use-only-Please-get-in-touch-for-any-other-usage-PUBLICATIONxNOTxINxTURxUSAxCANxUKxJPNxITAxFRAxAUSxESPxBELxKORxRSAxHKGxNZL-Copyright-x2026xAnadoluxShadixJ-xH.jpg",
+      "publishedAt": "2026-04-19T23:39:40",
+      "source": "n-tv",
+      "url": "https://www.n-tv.de/wirtschaft/Oelpreis-steigt-kraeftig-Boersen-droht-neuer-Sinkflug-id30732004.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -136,69 +122,87 @@
       "meta": {
         "country": null,
         "topics": [
-          "sports"
+          "economy",
+          "politics"
         ],
         "keywords": [
-          "general",
-          "news"
+          "aktienmärkte aufgrund",
+          "indizes bemerkbar",
+          "aktienmärkte",
+          "der entspannung",
+          "die aktienmärkte",
+          "konflikt wieder",
+          "bemerkbar machen"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "neg": 0.161,
+          "neu": 0.839
         }
       }
     },
     {
-      "id": "cd3db84e-d83a-49be-997a-7ca490610085",
-      "title": "Somerset's Rew tipped for England as Hampshire mount fightback",
-      "description": "Division One pace-setters Somerset came up against stubborn resistance from Hampshire on day two at the Utilita Bowl.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-james-rew-somerset_7212008.jpg?20260406075152",
-      "publishedAt": "2026-04-18T19:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/county-championship-james-rew-gets-england-backing-but-sees-hampshire-fight-back-against-somerset-13533405",
+      "id": "3e4a2747-b26e-4f6c-95ee-17e769fac5b6",
+      "title": "Jesús María: Ciudadanos se congregan en la avenida de la Peruanidad para participar de un plantón",
+      "description": "Norma Yarrow, candidata a la vicepresidencia por Renovación Popular, señaló que su agrupación participará de este plantón y vigilia. También confirmó que Rafael López Aliaga estará presente en este evento.",
+      "image": "https://f.rpp-noticias.io/2026/04/19/412441_1859432.jpg?imgdimension=look",
+      "publishedAt": "2026-04-19T23:38:20",
+      "source": "Noticias de Deportes - RPP",
+      "url": "https://rpp.pe/lima/actualidad/jesus-maria-ciudadanos-se-congregan-en-la-avenida-de-la-peruanidad-para-participar-de-un-planton-noticia-1685008",
       "location": {
-        "name": "United Kingdom",
-        "lat": 55.3781,
-        "lng": -3.436
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
       },
       "meta": {
-        "country": "GB",
+        "country": null,
         "topics": [
-          "sports"
+          "politics",
+          "protests"
         ],
         "keywords": [
-          "general",
-          "news"
+          "maría ciudadanos",
+          "que rafael",
+          "jesús maría",
+          "agrupación participará",
+          "maría",
+          "agrupación",
+          "su agrupación"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.041,
+          "neg": 0.011,
+          "neu": 0.948
         }
       }
     },
     {
-      "id": "320828a0-4e18-442e-9280-df7a2fc66334",
-      "title": "Premiership Rugby: Smith breaks Chiefs' hearts with last-gasp winner",
-      "description": "A last-minute try by England fly-half Fin Smith saw Northampton Saints snatch a thrilling 35-28 victory over Exeter Chiefs at Sandy Park on Saturday afternoon.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-fin-smith-northampton_7223909.jpg?20260418200019",
-      "publishedAt": "2026-04-18T17:31:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/premiership-rugby-fin-smiths-late-try-sees-northampton-saints-claim-thrilling-win-against-exeter-chiefs-as-bath-thump-harlequins-13533540",
+      "id": "ee0e9821-6f61-4574-bb39-badbdde511fd",
+      "title": "Milei anunció en Israel la apertura de una ruta aérea directa entre Buenos Aires y Tel Aviv",
+      "description": "El Presidente firmó una declaración conjunta con Benjamín Netanyahu y fortaleció el alineamiento entre ambos países.",
+      "image": "https://tn.com.ar/resizer/v2/XR6BJMRFWFGHLC24KP2PEA6ZEA.jpeg?auth=97425e48f1a622d0c20cd1d3be007b12f14d828a090063473320bad4b8655a8d",
+      "publishedAt": "2026-04-19T23:38:05",
+      "source": "Todo Noticias",
+      "url": "https://tn.com.ar/politica/2026/04/19/milei-anuncio-en-israel-la-apertura-de-una-ruta-aerea-directa-entre-buenos-aires-y-tel-aviv/",
       "location": {
-        "name": "United Kingdom",
-        "lat": 55.3781,
-        "lng": -3.436
+        "name": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
       },
       "meta": {
-        "country": "GB",
+        "country": "IL",
         "topics": [
-          "sports"
+          "politics",
+          "international"
         ],
         "keywords": [
-          "general",
-          "news"
+          "netanyahu el",
+          "el antisemitismo",
+          "por israel",
+          "benjamín netanyahu",
+          "el terrorismo",
+          "israel javier",
+          "terrorismo el"
         ],
         "sentiment": {
           "pos": 0,
@@ -208,13 +212,13 @@
       }
     },
     {
-      "id": "931fb2be-728d-4b94-8c04-232ab0805163",
-      "title": "Leeds edge closer to Premier League safety leaving Wolves on brink of relegation",
-      "description": "Leeds 3-0 Wolves: James Justin, Noah Okafor and Dominic Calvert-Lewin were the goalscorers for the hosts",
-      "image": "https://static.independent.co.uk/2026/04/18/17/554654a7f9a6918a753a8160cf389e80Y29udGVudHNlYXJjaGFwaSwxNzc2NjE0Nzg2-2.84314181.jpg?width=1200&auto=webp&crop=3%3A2",
-      "publishedAt": "2026-04-18T16:25:01",
-      "source": "The Independent",
-      "url": "https://www.independent.co.uk/sport/football/leeds-wolves-dominic-calvert-lewin-goals-premier-league-result-b2960375.html",
+      "id": "ad498b38-e38a-4ed2-9a5d-3cb29cc1a1e0",
+      "title": "\"Guerra sucia\": Juan Tagle admite desgaste en Cruzados y descarta llegar a presidencia de la ANFP",
+      "description": "Juan Tagle, quien dejará la presidencia de Cruzados este 20 de abril, descartó cualquier posibilidad de llegar a la testera de la ANFP. El hombre que lideró institucionalmente a Universidad Católica en los últimos diez años reveló que tiene cero interés en seguir ligado al fútbol, por lo que cualquier rumor de su candidatura como . Continua leyendo Guerra sucia\": Juan Tagle admite desgaste en Cruzados y descarta llegar a presidencia de la ANFP\" The post \"Guerra sucia\": Juan Tagle admite desgaste en Cruzados y descarta llegar a presidencia de la ANFP appeared first on BioBioChile.",
+      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-juan-tagle-expresidente-cruzados-descarta-pelear-por-llegar-a-la-anfp.jpg",
+      "publishedAt": "2026-04-19T23:37:48",
+      "source": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/deportes/futbol/universidad-catolica/2026/04/19/juan-tagle-expresidente-cruzados-descarta-pelear-por-llegar-a-la-anfp.shtml",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -224,11 +228,51 @@
         "country": null,
         "topics": [
           "sports",
-          "soccer"
+          "fútbol"
         ],
         "keywords": [
-          "general",
-          "news"
+          "guerra sucia",
+          "juan tagle",
+          "leyendo guerra",
+          "post guerra",
+          "sucia juan",
+          "en cruzados",
+          "presidencia cruzados"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.04,
+          "neu": 0.96
+        }
+      }
+    },
+    {
+      "id": "754e5b8c-114d-4277-8c7b-628b402d027d",
+      "title": "Con lagrimas en los ojos, Brock Lesnar se despide de la WWE en WrestleMania 42",
+      "description": "Tras finalizar su lucha contra Oba Femi, en la que salió derrotado, 'The Beast' se quitó los guantes y las botas, dejándolos en el centro del ring. Con lágrimas evidentes, se despidió del público en Las Vegas.",
+      "image": "https://f.rpp-noticias.io/2026/04/19/201020_1859420.jpg?imgdimension=look",
+      "publishedAt": "2026-04-19T23:34:36",
+      "source": "Noticias de Deportes - RPP",
+      "url": "https://rpp.pe/lucha/wwe/con-lagrimas-en-los-ojos-brock-lesnar-se-despide-de-la-wwe-en-wrestlemania-42-noticia-1685013",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "wrestling",
+          "sports"
+        ],
+        "keywords": [
+          "lucha finalmente",
+          "en wrestlemania",
+          "la lucha",
+          "resultado lesnar",
+          "wrestlemania 42",
+          "brock lesnar",
+          "la wwe"
         ],
         "sentiment": {
           "pos": 0,
@@ -238,26 +282,207 @@
       }
     },
     {
-      "id": "83553981-5256-462c-8bb9-8f9afe38e876",
-      "title": "Modi Attacks Rivals After Failed Bid to Fast-Track Women’s Quota",
-      "description": "Indian Prime Minister Narendra Modi launched a vehement attack on opposition parties a day after his proposed amendments to expand Parliament and accelerate the reservation of at least a third of seats for women were struck down by rivals.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i5IG.m1F9Fu0/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-18T16:00:28",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-18/modi-attacks-rivals-after-failed-bid-to-fast-track-women-s-quota",
+      "id": "d3c2b51f-b4d1-49de-93d2-a2cc3bfb4ad6",
+      "title": "La Policía identifica al autor del tiroteo que mató a ocho menores de edad en Luisiana",
+      "description": "Según medios estadounidenses, el agresor, que fue abatido a tiros por la Policía tras huir del lugar del incidente en un vehículo robado, fue identificado como Shamar Elkins.",
+      "image": "https://f.rpp-noticias.io/2026/04/19/511951_1859426.jpg?imgdimension=look",
+      "publishedAt": "2026-04-19T23:33:06",
+      "source": "Noticias de Deportes - RPP",
+      "url": "https://rpp.pe/mundo/estados-unidos/la-policia-identifica-al-autor-del-tiroteo-que-mato-a-ocho-menores-de-edad-en-luisiana-noticia-1685009",
       "location": {
-        "name": "India",
-        "lat": 20.5937,
-        "lng": 78.9629
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
       },
       "meta": {
-        "country": "IN",
+        "country": null,
         "topics": [
+          "crime",
+          "shootings"
+        ],
+        "keywords": [
+          "altercado doméstico",
+          "doméstico el",
+          "autoridades luisiana",
+          "policía identifica",
+          "la policía",
+          "tiroteo que",
+          "agresor que"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.027,
+          "neu": 0.973
+        }
+      }
+    },
+    {
+      "id": "b5a81ba9-fd84-4258-b6e3-0bb13ba56640",
+      "title": "Tragedia en 'Sin senos sí hay paraíso': tres muertos y un herido tras ataque en pleno rodaje en Bogotá",
+      "description": "Un violento hecho registrado durante la grabación de la serie en el centro de Bogotá dejó víctimas mortales, heridos y varios detenidos, según las autoridades.",
+      "image": "https://f.rpp-noticias.io/2026/04/19/481048_1859422.jpg?imgdimension=look",
+      "publishedAt": "2026-04-19T23:30:33",
+      "source": "Noticias de Deportes - RPP",
+      "url": "https://rpp.pe/famosos/celebridades/tragedia-en-sin-senos-si-hay-paraiso-tres-muertos-y-un-herido-tras-ataque-en-pleno-rodaje-en-bogota-noticia-1685002",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "entertainment",
+          "crime"
+        ],
+        "keywords": [
+          "bogotá violento",
+          "tragedia en",
+          "bogotá dejó",
+          "violento hecho",
+          "en bogotá",
+          "bogotá",
+          "colombiana el"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.038,
+          "neu": 0.962
+        }
+      }
+    },
+    {
+      "id": "80308113-f8a7-4c06-89b4-9a4b62e8df8a",
+      "title": "Marcianeke es víctima de robo: sustraen su vehículo avaluado en más de 30 millones de pesos",
+      "description": "Mientras realizaba un concierto, el cantante urbano Marcianeke fue víctima de robo luego de que delincuentes sustrajeran su vehículo con todas sus pertenencias al interior. Así lo reveló el mismo Matías Muñoz, nombre real del artista, en sus redes sociales. Ahí el intérprete de “Party en la Pobla” hizo el llamado a sus seguidores. “Robada”, . Continua leyendo \"Marcianeke es víctima de robo: sustraen su vehículo avaluado en más de 30 millones de pesos\" The post Marcianeke es víctima de robo: sustraen su vehículo avaluado en más de 30 millones de pesos appeared first on BioBioChile.",
+      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-marcianeke.png",
+      "publishedAt": "2026-04-19T23:29:00",
+      "source": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/04/19/marcianeke-es-victima-de-robo-sustraen-su-vehiculo-avaluado-en-mas-de-30-millones-de-pesos.shtml",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "crime",
+          "entertainment"
+        ],
+        "keywords": [
+          "robo sustraen",
+          "seguidores robada",
+          "víctima robo",
+          "urbano marcianeke",
+          "es víctima",
+          "concierto el",
+          "marcianeke es"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.036,
+          "neu": 0.964
+        }
+      }
+    },
+    {
+      "id": "c8e7ba47-1b67-46df-a7e3-2c3dcc2245e1",
+      "title": "La fuerte autocrítica de Eduardo Coudet tras la derrota de River en el Superclásico: “Nos está costando”",
+      "description": "El entrenador del Millonario habló del rendimiento de su equipo contra Boca, repasó la polémica sobre el penal que protestó el conjunto de Núñez en el cierre del partido y reconoció las dificultades que está teniendo para mejorar el funcionamiento colectivo.",
+      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1864468",
+      "publishedAt": "2026-04-19T23:22:19",
+      "source": "Todo Noticias",
+      "url": "https://tn.com.ar/deportes/futbol/2026/04/19/la-fuerte-autocritica-de-eduardo-coudet-tras-la-derrota-de-river-en-el-superclasico-nos-esta-costando/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "football",
+          "sports"
+        ],
+        "keywords": [
+          "boca por",
+          "el funcionamiento",
+          "está costando",
+          "funcionamiento colectivo",
+          "costando el",
+          "el superclásico",
+          "boca repasó"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.05,
+          "neu": 0.95
+        }
+      }
+    },
+    {
+      "id": "a4f2d9c0-fe9f-4a33-916b-e2a9043d3876",
+      "title": "A pura cumbia y baile: el festejo íntimo de los jugadores de Boca en el vestuario tras la victoria ante River",
+      "description": "A pura cumbia y baile: el festejo íntimo de los jugadores de Boca en el vestuario tras la victoria ante River",
+      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1864467",
+      "publishedAt": "2026-04-19T23:16:28",
+      "source": "Todo Noticias",
+      "url": "https://tn.com.ar/deportes/futbol/2026/04/19/a-pura-cumbia-y-baile-el-festejo-intimo-de-los-jugadores-de-boca-en-el-vestuario-tras-la-victoria-ante-river/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports",
+          "entertainment"
+        ],
+        "keywords": [
+          "jugadores boca",
+          "los jugadores",
+          "el festejo",
+          "la fiesta",
+          "festejo íntimo",
+          "jugadores",
+          "baile el"
+        ],
+        "sentiment": {
+          "pos": 0.016,
+          "neg": 0,
+          "neu": 0.984
+        }
+      }
+    },
+    {
+      "id": "1e5b3fb0-aa21-4e7f-9398-25d6a6257d6f",
+      "title": "Middle East war live: Iran vows response after US destroyer fires on cargo ship",
+      "description": "Iran vowed retaliation after a US destroyer fired on an Iranian-flagged cargo ship in the Gulf of Oman on Sunday, as it was attempting to evade a US naval blockade. Tehran condemned the incident as “armed piracy” and warned its forces would respond soon. Follow our liveblog for the latest updates.",
+      "image": "https://s.france24.com/media/display/b88d9910-3c40-11f1-a4c8-005056bfb2b6/w:1024/p:16x9/2026-04-19T222619Z-619290836-RC2MSKAZI91Y-RTRMADP-3-IRAN-CRISIS-TRUMP-SHIP.jpg",
+      "publishedAt": "2026-04-19T23:16:20",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/middle-east/20260419-middle-east-war-live-iran-vows-response-after-us-destroyer-fires-on-cargo-ship",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "middle east",
           "politics"
         ],
         "keywords": [
-          "general",
-          "news"
+          "ship iran",
+          "blockade tehran",
+          "iranian flagged",
+          "iran vows",
+          "live iran",
+          "iran vowed",
+          "ship gulf"
         ],
         "sentiment": {
           "pos": 0,
@@ -267,13 +492,153 @@
       }
     },
     {
-      "id": "39949938-5505-4ea1-b021-5b50db9522f9",
-      "title": "Bromley promoted to League One for first time in their history",
-      "description": "Bromley have been promoted to League One for the first time in their history with two games of the season to spare.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-bromley-fc_7216830.jpg?20260411111207",
-      "publishedAt": "2026-04-18T16:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/bromley-promoted-to-league-one-for-the-first-time-in-their-history-13530042",
+      "id": "70beffbb-1ce8-45a5-afd9-9dd1485410ac",
+      "title": "Trump asegura que la Armada de EE.UU. incautó un buque con bandera de Irán en medio de enfrentamiento por el bloqueo",
+      "description": "“Hoy, un buque de carga con bandera iraní llamado TOUSKA, de casi 274 metros de eslora y con un peso casi equivalente al de un portaaviones, intentó pasar nuestro Bloqueo Naval, y no les fue bien”, escribió Trump en una publicación en Truth Social.",
+      "image": "https://media.cnnchile.com/sites/2/2026/04/9621605-20260417181039913-20260419200157108.jpg",
+      "publishedAt": "2026-04-19T23:13:08",
+      "source": "CNN Chile",
+      "url": "https://www.cnnchile.com/mundo/trump-asegura-que-la-armada-de-ee-uu-incauto-un-buque-con-bandera-de-iran-en-medio-de-enfrentamiento-por-el-bloqueo_20260419/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "military",
+          "politics"
+        ],
+        "keywords": [
+          "armada ee",
+          "la armada",
+          "armada",
+          "irán en",
+          "bandera irán",
+          "el bloqueo",
+          "incautó buque"
+        ],
+        "sentiment": {
+          "pos": 0.024,
+          "neg": 0.011,
+          "neu": 0.965
+        }
+      }
+    },
+    {
+      "id": "e428cd6d-6537-44aa-abb0-f7fdfc491701",
+      "title": "Influyentes, capítulo 93: Joaquín García-Huidobro y Beatriz Sánchez",
+      "description": "Influyentes, capítulo 93: Joaquín García-Huidobro y Beatriz Sánchez",
+      "image": "https://media.cnnchile.com/sites/2/2026/04/Dise%C3%B1o-sin-t%C3%ADtulo-18.jpg",
+      "publishedAt": "2026-04-19T23:09:14",
+      "source": "CNN Chile",
+      "url": "https://www.cnnchile.com/programas-completos/influyentes-capitulo-93-joaquin-garcia-huidobro-y-beatriz-sanchez_20260419/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "international"
+        ],
+        "keywords": [
+          "garcía huidobro",
+          "sánchez profundizamos",
+          "sánchez influyentes",
+          "edición influyentes",
+          "influyentes capítulo",
+          "beatriz sánchez",
+          "universidad los"
+        ],
+        "sentiment": {
+          "pos": 0.036,
+          "neg": 0,
+          "neu": 0.964
+        }
+      }
+    },
+    {
+      "id": "cfa67f65-1ed1-47ac-bde2-fd3746d7695f",
+      "title": "Tragedia en el Rally Sudamericano: auto en competencia se despista y deja un muerto y dos heridos tras volcadura",
+      "description": "Un joven de 25 años falleció y dos personas resultaron heridas tras el despiste de un Volkswagen Polo en el tramo Giulio Cesare, lo que provocó la cancelación total del evento en Córdoba.",
+      "image": "https://f.rpp-noticias.io/2026/04/19/100310_1859419.jpg?imgdimension=look",
+      "publishedAt": "2026-04-19T23:08:21",
+      "source": "Noticias de Deportes - RPP",
+      "url": "https://rpp.pe/mundo/argentina/muerte-en-el-rally-sudamericano-de-cordoba-tras-despiste-de-auto-noticia-1685011",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "accident",
+          "sports"
+        ],
+        "keywords": [
+          "rally sudamericano",
+          "el rally",
+          "córdoba trágico",
+          "evento en",
+          "en córdoba",
+          "córdoba resultó",
+          "del rally"
+        ],
+        "sentiment": {
+          "pos": 0.007,
+          "neg": 0.019,
+          "neu": 0.973
+        }
+      }
+    },
+    {
+      "id": "04463b4e-b61d-428f-9f0c-5627f09acdac",
+      "title": "“Podríamos haber liquidado el partido antes”: el análisis de Claudio Úbeda tras el triunfo de Boca sobre River",
+      "description": "“Podríamos haber liquidado el partido antes”: el análisis de Claudio Úbeda tras el triunfo de Boca sobre River",
+      "image": "https://tn.com.ar/resizer/v2/7K7ZTQESLVB4DOTPSYFZR6EMJI.jpg?auth=6c26a49d9d220e306eba577feaf1acc59844732bfd99200ed0b5c2772450d1eb",
+      "publishedAt": "2026-04-19T23:04:52",
+      "source": "Todo Noticias",
+      "url": "https://tn.com.ar/deportes/futbol/2026/04/19/podriamos-haber-liquidado-el-partido-antes-el-analisis-de-claudio-ubeda-tras-el-triunfo-de-boca-sobre-river/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "football",
+          "sports"
+        ],
+        "keywords": [
+          "haber liquidado",
+          "liquidado el",
+          "hacer partido",
+          "partido antes",
+          "que merecimos",
+          "river boca",
+          "el partido"
+        ],
+        "sentiment": {
+          "pos": 0.008,
+          "neg": 0.029,
+          "neu": 0.963
+        }
+      }
+    },
+    {
+      "id": "7748f043-97fa-4b19-b2ed-984be72f6370",
+      "title": "Cristiano Ronaldo Scores, Propels Al-Nassr to AFC Champions League Two Semifinal",
+      "description": "Portuguese superstar Cristiano Ronaldo scored his 969th career goal as Al-Nassr secured a dominant 4-0 victory over Al-Wasl.",
+      "image": "https://a57.foxnews.com/statics.foxsports.com/www.foxsports.com/content/uploads/2026/04/931/523/ronaldo-1.jpg?ve=1&tl=1",
+      "publishedAt": "2026-04-19T23:02:10",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/sports/cristiano-ronaldo-scores-propels-al-nassr-afc-champions-league-two-semifinal",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -296,73 +661,13 @@
       }
     },
     {
-      "id": "636f554e-d847-412f-ac08-8e6c124dbd0e",
-      "title": "Replay : Donald Trump holds briefing amid Hormuz tension",
-      "description": "Rewatch Donald Trump’s live briefing from the White House on Saturday, April 18, as Iran announced it was re-closing the Strait of Hormuz while the US maintains its port blockade. FRANCE 24's Andrew Hilliar has the analysis.",
-      "image": "https://s.france24.com/media/display/826cc2b0-3b38-11f1-9585-005056a90284/w:1024/p:16x9/EN-20260418-150859-152550-CS.jpg",
-      "publishedAt": "2026-04-18T15:27:53",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/replay-donald-trump-holds-briefing-amid-hormuz-tension",
-      "location": {
-        "name": "France",
-        "lat": 46.2276,
-        "lng": 2.2137
-      },
-      "meta": {
-        "country": "FR",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "33f4da30-7cb2-4c77-bc92-c3ed2a55fa5f",
-      "title": "UNIFIL sheds light on southern Lebanon attack that killed French soldier",
-      "description": "A French soldier was killed in southern Lebanon on Saturday 18, while serving with UNIFIL, the United Nations peacekeeping force. UNIFIL deputy spokesperson Tilak Pokharel was FRANCE 24’s guest this afternoon to explain what happened and what is currently known about those responsible.",
-      "image": "https://s.france24.com/media/display/214f3f2e-3b35-11f1-922e-005056bf30b7/w:1024/p:16x9/EN-20260418-160110-160632-CS.jpg",
-      "publishedAt": "2026-04-18T15:10:03",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/unifil-sheds-light-on-southern-lebanon-attack-that-killed-french-soldier",
-      "location": {
-        "name": "France",
-        "lat": 46.2276,
-        "lng": 2.2137
-      },
-      "meta": {
-        "country": "FR",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "91a3fc32-37c3-4c56-b0e2-dd3d5afb6eaf",
-      "title": "US Preparing to Board Iran-Linked Ships in Coming Days, WSJ Says",
-      "description": "The US military is preparing to board Iran-linked oil tankers and seize commercial ships in international waters in coming days, the Wall Street Journal reported, citing unnamed US officials.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iWC4AiCVtuIY/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-18T15:09:47",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-18/us-preparing-to-board-iran-linked-ships-in-coming-days-wsj-says",
+      "id": "a54f11a7-48f3-427b-9a40-93b849f5f579",
+      "title": "Die bittere Wahrheit hinter den Erfolgsmeldungen der Kriminalstatistik",
+      "description": "Die neue Kriminalstatistik zeigt: Die Gewaltkriminalität ist insgesamt zurückgegangen, Mordfälle und schwere Sexualdelikte hingegen sind gestiegen. Es gibt jeden Tag rund 80 Messerstraftaten; nichtdeutsche Tatverdächtige sind deutlich überrepräsentiert. WELT kennt die Details.",
+      "image": "https://images.welt.de/69e522d97c6e5e236a26c218/7ea076534453f5ec37051357df718802-master/ci23x11-w1200/dpa-com-20090101-251114-911-033872-jpg",
+      "publishedAt": "2026-04-19T23:01:05",
+      "source": "WELT",
+      "url": "https://www.welt.de/politik/deutschland/plus69e522d97c6e5e236a26c218/kriminalstatistik-2025-die-bittere-wahrheit-hinter-den-erfolgsmeldungen.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -371,216 +676,17 @@
       "meta": {
         "country": null,
         "topics": [
-          "politics"
+          "crime",
+          "statistics"
         ],
         "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "03e8dfec-6643-4cf5-b8cb-6f5baf291728",
-      "title": "No signs of regime collapse as Iran weathers weeks of war",
-      "description": "After weeks of US and Israeli strikes, Iranians are watching to see if ceasefire talks could lead to negotiations, while uncertainty over the future of the conflict persists. Despite foreign calls for regime change, analysts say Iran’s leadership remains entrenched, as economic pressure, repression and war damage deepen tensions inside the country.",
-      "image": "https://s.france24.com/media/display/87c9d352-3b37-11f1-94f2-005056a90284/w:1024/p:16x9/EN-20260418-160946-161132-CS.jpg",
-      "publishedAt": "2026-04-18T15:07:39",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/no-signs-of-regime-collapse-as-iran-weathers-weeks-of-war",
-      "location": {
-        "name": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "meta": {
-        "country": "IL",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "cd51d553-0d2c-440e-926e-2dab78487b5e",
-      "title": "Hits & misses: Fire has gone from Howe's Magpies | Should Silva give someone else a go?",
-      "description": "",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-premier-league-hits-and-misses_7223893.jpg?20260418194512",
-      "publishedAt": "2026-04-18T14:50:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/eddie-howes-newcastle-have-lost-their-fire-should-marco-silva-give-someone-else-a-go-at-fulham-premier-league-hits-misses-13533371",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "30dee7f6-5cd4-489e-bc68-95ff9ce413b7",
-      "title": "Turkey’s economy hit as Syrians return home",
-      "description": "Since the end of the war in Syria last year, many Syrians have left Turkey to return home. Of the 3.6 million refugees living in the country, more than half a million are believed to have already gone back. These departures are weakening the Turkish economy, which relies heavily on low-cost labour, particularly in the textile and agricultural sectors. In the south-east, in Gaziantep, half of the garment workshops closed last year due to a shortage of workers. A report by Jenna Le Bras and Adrià Rocha Cutiller.",
-      "image": "https://s.france24.com/media/display/53e596dc-3b2f-11f1-af70-005056bf30b7/w:1024/p:16x9/EN-20260411-144512-144756-CS.jpg",
-      "publishedAt": "2026-04-18T14:18:45",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/turkey-s-economy-hit-as-syrians-return-home",
-      "location": {
-        "name": "Turkey",
-        "lat": 38.9637,
-        "lng": 35.2433
-      },
-      "meta": {
-        "country": "TR",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "8ebbca7b-eca4-4f56-b3cf-c6fc2f901b53",
-      "title": "ECB Moves Away From April Hike as Peace Talks Progress: Overview",
-      "description": "European Central Bank officials are leaving Washington ever so slightly more optimistic than when they arrived, as ongoing US-Iran peace talks raise the prospect of energy shipments resuming from the Gulf.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iM8QEsLi1FEI/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-18T14:00:12",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-18/ecb-moves-away-from-april-hike-as-peace-talks-progress-overview",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "6bdfdd52-e400-42c9-b0f1-733e39deb1e9",
-      "title": "Trump Signs Order Easing Restrictions on Psychedelic Drugs",
-      "description": "President Donald Trump signed an executive order to expedite research and access to psychedelics used outside the US to treat post-traumatic stress disorder.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqYJS41girRE/v0/1200x-1.jpg",
-      "publishedAt": "2026-04-18T13:49:03",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-18/trump-signs-order-easing-restrictions-on-psychedelic-drugs",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "47720580-9349-447d-80c9-dd3a863d7f07",
-      "title": "Hungary’s Tisza Party Widens Election Majority in Fresh Tally",
-      "description": "The Tisza party led by Hungarian prime minister-elect Peter Magyar further widened its parliamentary majority, a fresh tally showed Saturday, giving it an even stronger mandate for change after last weekend’s election.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ioicB98o6ajI/v1/1200x-1.jpg",
-      "publishedAt": "2026-04-18T13:04:38",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-18/hungary-s-tisza-party-widens-election-majority-in-fresh-tally",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "1bc61d71-b93d-4092-b537-dc47996b1f2b",
-      "title": "Zverev out of ATP 500 in Munich as Cobolli moved to tears",
-      "description": "Flavio Cobolli was brought to tears after securing his spot in the ATP 500 Munich final with a 6-3 6-3 win over world No 3 Alexander Zverev.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-flavio-cobolli-atp_7223404.jpg?20260418140939",
-      "publishedAt": "2026-04-18T12:52:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/atp-500-munich-alexander-zverev-knocked-out-as-italys-flavio-cobolli-moved-to-tears-by-making-final-13533293",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
+          "der kriminalstatistik",
+          "kriminalstatistik zeigt",
+          "neue kriminalstatistik",
+          "kriminalstatistik",
+          "kriminalstatistik die",
+          "die gewaltkriminalität",
+          "gewaltkriminalität ist"
         ],
         "sentiment": {
           "pos": 0,
