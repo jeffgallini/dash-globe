@@ -37,7 +37,7 @@ jobs:
             echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
-          git commit -m "Update news snapshot"
+          git commit -m "[skip release] Update news snapshot"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
 
