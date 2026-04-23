@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-04-22T06:56:37.311Z",
+  "updatedAt": "2026-04-23T06:57:33.689Z",
   "count": 20,
   "stories": [
     {
-      "id": "df0f409a-36a9-4b1d-8d9a-02241743b252",
-      "title": "La dolorosa despedida al joven de 25 años que murió en el Rally Sudamericano: “Siempre en nuestros corazones”",
-      "description": "Brahian Zárate González fue embestido este domingo por un auto que se despistó durante una competencia en Traslasierra. La carrera fue suspendida.",
-      "image": "https://tn.com.ar/resizer/v2/A6S6GU4TABHAHD2IXFCWH4XFWY.png?auth=57177052a38d109e0cc68877cb7f26ff7a4dee97c64d7e62be8f90f03d1bd38e",
-      "publishedAt": "2026-04-19T23:51:04",
-      "source": "Todo Noticias",
-      "url": "https://tn.com.ar/deportes/automovilismo/2026/04/19/la-dolorosa-despedida-al-joven-de-25-anos-que-murio-en-el-rally-sudamericano-siempre-en-nuestros-corazones/",
+      "id": "6ca12d63-5c69-400c-8fca-9ad9d85ae0ea",
+      "title": "Lahore Qalandars v Quetta Gladiators - PSL scorecard",
+      "description": "Lahore Qalandars v Quetta Gladiators - PSL scorecard",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-21T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237126?at_medium=RSS&at_campaign=rss",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -18,33 +18,68 @@
       "meta": {
         "country": null,
         "topics": [
-          "accident",
           "sports"
         ],
         "keywords": [
-          "sudamericano siempre",
-          "siempre en",
-          "sudamericano fue",
-          "murió en",
-          "ocurrió este",
-          "nuestra memoria",
-          "rally sudamericano"
+          "fakharnot",
+          "fakhar",
+          "abdullahnot",
+          "batting",
+          "abdullahnot out not",
+          "fakharnot out not",
+          "abdullah not out"
         ],
         "sentiment": {
-          "pos": 0.027,
-          "neg": 0.008,
-          "neu": 0.965
+          "pos": 0,
+          "neg": 0.075,
+          "neu": 0.925
         }
       }
     },
     {
-      "id": "d3891ed5-6020-48b5-b2ba-a8303141c3f4",
-      "title": "Joaquín García-Huidobro sobre el escenario político global: “Hay que tener la valentía de la moderación, atreverse a no ser extremo”",
-      "description": "En Influyentes, el académico de la Universidad de Los Andes abordó el escenario político internacional y local, criticando, entre otras cosas, el fenómeno asociado a Donald Trump.",
-      "image": "https://media.cnnchile.com/sites/2/2026/04/vlcsnap-2026-04-17-19h12m57s681-e1776473883123.png",
-      "publishedAt": "2026-04-19T23:50:06",
-      "source": "CNN Chile",
-      "url": "https://www.cnnchile.com/lodijeronencnn/joaquin-garcia-huidobro-sobre-el-escenario-politico-global-hay-que-tener-la-valentia-de-la-moderacion-atreverse-a-no-ser-extremo_20260419/",
+      "id": "2c3d9e0a-efda-4831-bab0-da24bd0aab20",
+      "title": "Sunrisers Hyderabad v Delhi Capitals - IPL scorecard",
+      "description": "Sunrisers Hyderabad v Delhi Capitals - IPL scorecard",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-21T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237295?at_medium=RSS&at_campaign=rss",
+      "location": {
+        "name": "India",
+        "lat": 20.5937,
+        "lng": 78.9629
+      },
+      "meta": {
+        "country": "IN",
+        "topics": [
+          "cricket",
+          "sports"
+        ],
+        "keywords": [
+          "tata indian",
+          "league sunrisers hyderabad",
+          "international",
+          "responsible",
+          "hyderabad",
+          "rajiv gandhi international stadium",
+          "hyderabad sunrisers hyderabad",
+          "sunrisers hyderabad sunrisers"
+        ],
+        "sentiment": {
+          "pos": 0.063,
+          "neg": 0.033,
+          "neu": 0.903
+        }
+      }
+    },
+    {
+      "id": "814ad8eb-3419-4aaa-978b-608e313daabc",
+      "title": "EQT Lands Record Asia Buyout Fund at $15.6 Billion Amid Turmoil",
+      "description": "EQT AB raised $15.6 billion for its latest private equity Asia fund, the largest pool of capital ever assembled for the region, as global investors look beyond the US amid elevated uncertainty.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iLDBXYaq.zpY/v0/1200x-1.jpg",
+      "publishedAt": "2026-04-21T00:00:00",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-21/eqt-lands-record-asia-buyout-fund-at-15-6-billion-amid-turmoil",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -53,32 +88,66 @@
       "meta": {
         "country": null,
         "topics": [
-          "politics"
+          "finance",
+          "business"
         ],
         "keywords": [
-          "el trumpismo",
-          "escenario político",
-          "el conservadurismo",
-          "conservadurismo el",
-          "el escenario",
-          "político global",
-          "trumpismo"
+          "asia buyout",
+          "asia fund",
+          "eqt lands",
+          "equity asia",
+          "buyout fund",
+          "eqt",
+          "fund largest"
         ],
         "sentiment": {
-          "pos": 0.015,
-          "neg": 0.052,
-          "neu": 0.932
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "8ed21951-813e-4aec-9052-ec2ebf74a4fa",
-      "title": "Eskalation im Nahen Osten: Ölpreis steigt kräftig - Börsen droht neue Talfahrt",
-      "description": "Vor dem Wochenende verzeichnen die Aktienmärkte aufgrund der Entspannung im Nahen Osten deutliche Gewinne, der Ölpreis fällt. Doch schon kurz darauf nehmen die Spannungen wieder zu. Das dürfte sich bei den Indizes bemerkbar machen.",
-      "image": "https://www.n-tv.de/img/30732010/1776649005/Img_4_3/250/Ship-traffic-resumes-at-Strait-of-Hormuz-following-US-Iran-ceasefire-OMAN-APRIL-8-A-ship-waits-to-pass-through-the-Strait-of-Hormuz-following-the-two-week-temporary-ceasefire-between-the-US-and-Iran-which-is-conditional-on-the-opening-of-the-strait-in-Oman-on-April-8-2026-Shipping-traffic-remained-at-low-levels-reported-Shadi-J-H-Alassar-Anadolu-Oman-Oman-Editorial-use-only-Please-get-in-touch-for-any-other-usage-PUBLICATIONxNOTxINxTURxUSAxCANxUKxJPNxITAxFRAxAUSxESPxBELxKORxRSAxHKGxNZL-Copyright-x2026xAnadoluxShadixJ-xH.jpg",
-      "publishedAt": "2026-04-19T23:39:40",
-      "source": "n-tv",
-      "url": "https://www.n-tv.de/wirtschaft/Oelpreis-steigt-kraeftig-Boersen-droht-neue-Talfahrt-id30732004.html",
+      "id": "b89aca04-3376-4fd7-a5f6-a80c87d47a45",
+      "title": "국립문화유산연구원, 경주 황룡사지 가상현실로 재현",
+      "description": "국립문화유산연구원, 경주 황룡사지 가상현실로 재현",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042020232433259_1776684205.png",
+      "publishedAt": "2026-04-21T00:00:00",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042020260600711",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "culture",
+          "technology"
+        ],
+        "keywords": [
+          "kyongju",
+          "horilsan",
+          "virtualreality",
+          "experiencecenter",
+          "catalogue"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "b09f8872-4f2d-4a10-a93d-d0fc7521e51c",
+      "title": "울산시·현대차, 미래차 소부장 협력 맞손",
+      "description": "울산시·현대차, 미래차 소부장 협력 맞손",
+      "image": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+      "publishedAt": "2026-04-21T00:00:00",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042108365343022",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -88,32 +157,30 @@
         "country": null,
         "topics": [
           "economy",
-          "politics"
+          "technology"
         ],
         "keywords": [
-          "aktienmärkte aufgrund",
-          "indizes bemerkbar",
-          "der entspannung",
-          "nahen osten",
-          "erneute eskalation",
-          "iran hat",
-          "aufgrund der"
+          "울산시",
+          "현대차",
+          "미래차",
+          "소부장",
+          "초경량 차체 스트럭처"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0.179,
-          "neu": 0.821
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "79096fba-c32c-4f5e-bd81-24208ef702f9",
-      "title": "Eskalation im Nahen Osten: Ölpreis steigt kräftig - Börsen droht neuer Sinkflug",
-      "description": "Vor dem Wochenende verzeichnen die Aktienmärkte aufgrund der Entspannung im Nahen Osten deutliche Gewinne, der Ölpreis fällt. Doch schon kurz darauf verschärft sich der Konflikt wieder. Das dürfte sich bei den Indizes bemerkbar machen.",
-      "image": "https://www.n-tv.de/img/30732010/1776649005/Img_4_3/250/Ship-traffic-resumes-at-Strait-of-Hormuz-following-US-Iran-ceasefire-OMAN-APRIL-8-A-ship-waits-to-pass-through-the-Strait-of-Hormuz-following-the-two-week-temporary-ceasefire-between-the-US-and-Iran-which-is-conditional-on-the-opening-of-the-strait-in-Oman-on-April-8-2026-Shipping-traffic-remained-at-low-levels-reported-Shadi-J-H-Alassar-Anadolu-Oman-Oman-Editorial-use-only-Please-get-in-touch-for-any-other-usage-PUBLICATIONxNOTxINxTURxUSAxCANxUKxJPNxITAxFRAxAUSxESPxBELxKORxRSAxHKGxNZL-Copyright-x2026xAnadoluxShadixJ-xH.jpg",
-      "publishedAt": "2026-04-19T23:39:40",
-      "source": "n-tv",
-      "url": "https://www.n-tv.de/wirtschaft/Oelpreis-steigt-kraeftig-Boersen-droht-neuer-Sinkflug-id30732004.html",
+      "id": "a2bd4689-677c-4fbc-9fc0-0799478f5a04",
+      "title": "Rawalpindiz v Multan Sultans - PSL scorecard",
+      "description": "",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-21T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237127?at_medium=RSS&at_campaign=rss",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -122,33 +189,134 @@
       "meta": {
         "country": null,
         "topics": [
-          "economy",
-          "politics"
+          "cricket",
+          "sports"
         ],
         "keywords": [
-          "aktienmärkte aufgrund",
-          "indizes bemerkbar",
-          "aktienmärkte",
-          "der entspannung",
-          "die aktienmärkte",
-          "konflikt wieder",
-          "bemerkbar machen"
+          "psl scorecard",
+          "rawalpindiz multan",
+          "sultans psl",
+          "scorecard",
+          "multan sultans",
+          "rawalpindiz",
+          "multan"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0.161,
-          "neu": 0.839
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "3e4a2747-b26e-4f6c-95ee-17e769fac5b6",
-      "title": "Jesús María: Ciudadanos se congregan en la avenida de la Peruanidad para participar de un plantón",
-      "description": "Norma Yarrow, candidata a la vicepresidencia por Renovación Popular, señaló que su agrupación participará de este plantón y vigilia. También confirmó que Rafael López Aliaga estará presente en este evento.",
-      "image": "https://f.rpp-noticias.io/2026/04/19/412441_1859432.jpg?imgdimension=look",
-      "publishedAt": "2026-04-19T23:38:20",
-      "source": "Noticias de Deportes - RPP",
-      "url": "https://rpp.pe/lima/actualidad/jesus-maria-ciudadanos-se-congregan-en-la-avenida-de-la-peruanidad-para-participar-de-un-planton-noticia-1685008",
+      "id": "4a3d5abb-b9c1-4300-91c0-d1c41791d47d",
+      "title": "Why 2026 is a rare election year for Missouri",
+      "description": "It’s not your typical election year in Missouri. The only statewide office on the 2026 ballot is for Missouri Auditor, but that’s it. There’s no other state-level candidate, nor is there a U.S. Senate race.",
+      "image": "https://fox2now.com/wp-content/uploads/sites/14/2026/04/snapshot_621ccd.jpg?w=900",
+      "publishedAt": "2026-04-20T23:59:26",
+      "source": "FOX 2",
+      "url": "https://fox2now.com/news/missouri/why-2026-is-a-rare-election-year-for-missouri/",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "ballot missouri",
+          "2026 ballot",
+          "year missouri",
+          "missouri statewide",
+          "missouri",
+          "missouri typical",
+          "missouri auditor"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "de071903-fd33-4ec5-9ad0-3d3bc8a23bfa",
+      "title": "중고나라, 1분기 영업이익 흑자 달성…3개월 연속 손익분기점 돌파",
+      "description": "중고나라, 1분기 영업이익 흑자 달성…3개월 연속 손익분기점 돌파",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042108534033636_1776729219.jpg",
+      "publishedAt": "2026-04-20T23:59:01",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042108590101223",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "business"
+        ],
+        "keywords": [
+          "중고나라",
+          "분기 흑자",
+          "손익분기점",
+          "매출액",
+          "결제 수수료",
+          "안심결제"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "057fe8c2-cf8b-4484-9705-91ff6173f386",
+      "title": "한투운용, 한국투자글로벌AI&반도체TOP10 펀드 순자산액 1조원 돌파",
+      "description": "한투운용, 한국투자글로벌AI&반도체TOP10 펀드 순자산액 1조원 돌파",
+      "image": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+      "publishedAt": "2026-04-20T23:58:54",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042108585397690",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "finance",
+          "investment"
+        ],
+        "keywords": [
+          "한투운용",
+          "한국투자글로벌ai&반도체top10",
+          "펀드",
+          "순자산액",
+          "인공지능",
+          "반도체"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "b9cc1f02-47e4-4894-8fc2-e0e11cfbc197",
+      "title": "Soros-linked dark money network fuels Virginia redistricting push backed by national Democrats",
+      "description": "Virginians for Fair Elections, one of the main groups supporting the state's redistricting referendum, has raised $64 million from liberal dark money groups, labor unions, and major Dem figures.",
+      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/03/931/523/george-soros-walking-hallway.jpg?ve=1&tl=1",
+      "publishedAt": "2026-04-20T23:58:18",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/politics/soros-linked-dark-money-network-fuels-virginia-redistricting-push-backed-national-democrats",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -158,51 +326,86 @@
         "country": null,
         "topics": [
           "politics",
-          "protests"
+          "finance"
         ],
         "keywords": [
-          "maría ciudadanos",
-          "que rafael",
-          "jesús maría",
-          "agrupación participará",
-          "maría",
-          "agrupación",
-          "su agrupación"
+          "fox news",
+          "fair elections",
+          "representatives",
+          "gerrymandering",
+          "redistricting",
+          "independent redistricting commissions",
+          "democratic redistricting committee",
+          "national democratic redistricting"
         ],
         "sentiment": {
-          "pos": 0.041,
-          "neg": 0.011,
-          "neu": 0.948
+          "pos": 0.089,
+          "neg": 0.036,
+          "neu": 0.875
         }
       }
     },
     {
-      "id": "ee0e9821-6f61-4574-bb39-badbdde511fd",
-      "title": "Milei anunció en Israel la apertura de una ruta aérea directa entre Buenos Aires y Tel Aviv",
-      "description": "El Presidente firmó una declaración conjunta con Benjamín Netanyahu y fortaleció el alineamiento entre ambos países.",
-      "image": "https://tn.com.ar/resizer/v2/XR6BJMRFWFGHLC24KP2PEA6ZEA.jpeg?auth=97425e48f1a622d0c20cd1d3be007b12f14d828a090063473320bad4b8655a8d",
-      "publishedAt": "2026-04-19T23:38:05",
-      "source": "Todo Noticias",
-      "url": "https://tn.com.ar/politica/2026/04/19/milei-anuncio-en-israel-la-apertura-de-una-ruta-aerea-directa-entre-buenos-aires-y-tel-aviv/",
+      "id": "9f087433-0fdd-4013-a537-466262bce168",
+      "title": "쿠콘, 亞 핀테크얼라이언스 가입…\"글로벌 페이사업 본격화\"",
+      "description": "쿠콘, 亞 핀테크얼라이언스 가입…\"글로벌 페이사업 본격화\"",
+      "image": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+      "publishedAt": "2026-04-20T23:57:56",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042108575589912",
       "location": {
-        "name": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
       },
       "meta": {
-        "country": "IL",
+        "country": null,
+        "topics": [
+          "finance",
+          "technology"
+        ],
+        "keywords": [
+          "kukon",
+          "亞 핀테크얼라이언스",
+          "싱가포르",
+          "제휴회원",
+          "핀산협",
+          "아시아 핀테크 얼라이언스"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "48a6a0b1-aa17-4ebd-8cc5-245ff3141552",
+      "title": "Sud-Liban: l'instauration d'une «ligne jaune» par Israël confirme la création d'une zone tampon",
+      "description": "Dès l’annonce du cessez-le-feu le soir du 16 avril, le Premier ministre israélien avait déclaré que son pays maintiendrait une zone tampon dans le sud du Liban. Elle est justifiée par Israël par la défense de ses localités proches de la ligne de démarcation entre les deux pays et par la présence continue du Hezbollah dans ces régions. La ligne jaune, dont le tracé a été dévoilé par l’armée israélienne ce week-end, confirme la création de cette zone tampon. Mais de nombreuses questions demeurent.",
+      "image": "https://s.rfi.fr/media/display/88eacb68-3d14-11f1-b621-005056a97e36/w:1024/p:16x9/AP26109349904825.jpg",
+      "publishedAt": "2026-04-20T23:57:50",
+      "source": "RFI Khmer",
+      "url": "https://www.rfi.fr/fr/moyen-orient/20260420-sud-liban-l-instauration-d-une-ligne-jaune-par-isra%C3%ABl-confirme-la-cr%C3%A9ation-d-une-zone-tampon",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
         "topics": [
           "politics",
           "international"
         ],
         "keywords": [
-          "netanyahu el",
-          "el antisemitismo",
-          "por israel",
-          "benjamín netanyahu",
-          "el terrorismo",
-          "israel javier",
-          "terrorismo el"
+          "du liban",
+          "liban instauration",
+          "liban elle",
+          "liban",
+          "une ligne",
+          "du hezbollah",
+          "hezbollah dans"
         ],
         "sentiment": {
           "pos": 0,
@@ -212,13 +415,13 @@
       }
     },
     {
-      "id": "ad498b38-e38a-4ed2-9a5d-3cb29cc1a1e0",
-      "title": "\"Guerra sucia\": Juan Tagle admite desgaste en Cruzados y descarta llegar a presidencia de la ANFP",
-      "description": "Juan Tagle, quien dejará la presidencia de Cruzados este 20 de abril, descartó cualquier posibilidad de llegar a la testera de la ANFP. El hombre que lideró institucionalmente a Universidad Católica en los últimos diez años reveló que tiene cero interés en seguir ligado al fútbol, por lo que cualquier rumor de su candidatura como . Continua leyendo Guerra sucia\": Juan Tagle admite desgaste en Cruzados y descarta llegar a presidencia de la ANFP\" The post \"Guerra sucia\": Juan Tagle admite desgaste en Cruzados y descarta llegar a presidencia de la ANFP appeared first on BioBioChile.",
-      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-juan-tagle-expresidente-cruzados-descarta-pelear-por-llegar-a-la-anfp.jpg",
-      "publishedAt": "2026-04-19T23:37:48",
-      "source": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/deportes/futbol/universidad-catolica/2026/04/19/juan-tagle-expresidente-cruzados-descarta-pelear-por-llegar-a-la-anfp.shtml",
+      "id": "aada60ce-f921-4603-8f72-628fd1b6ac42",
+      "title": "Apple Taps Ternus as New CEO, Chavez-DeRemer Out as Labor Sec.",
+      "description": "Source: Bloomberg, 6:31",
+      "image": "http://assets.bwbx.io/images/icwJ54tsnUxU/v2/1200x-1.jpg",
+      "publishedAt": "2026-04-20T23:57:36",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/audio/2026-04-20/apple-taps-ternus-as-new-ceo-chavez-deremer-out-as-labor-sec",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -227,52 +430,17 @@
       "meta": {
         "country": null,
         "topics": [
-          "sports",
-          "fútbol"
+          "business",
+          "leadership"
         ],
         "keywords": [
-          "guerra sucia",
-          "juan tagle",
-          "leyendo guerra",
-          "post guerra",
-          "sucia juan",
-          "en cruzados",
-          "presidencia cruzados"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.04,
-          "neu": 0.96
-        }
-      }
-    },
-    {
-      "id": "754e5b8c-114d-4277-8c7b-628b402d027d",
-      "title": "Con lagrimas en los ojos, Brock Lesnar se despide de la WWE en WrestleMania 42",
-      "description": "Tras finalizar su lucha contra Oba Femi, en la que salió derrotado, 'The Beast' se quitó los guantes y las botas, dejándolos en el centro del ring. Con lágrimas evidentes, se despidió del público en Las Vegas.",
-      "image": "https://f.rpp-noticias.io/2026/04/19/201020_1859420.jpg?imgdimension=look",
-      "publishedAt": "2026-04-19T23:34:36",
-      "source": "Noticias de Deportes - RPP",
-      "url": "https://rpp.pe/lucha/wwe/con-lagrimas-en-los-ojos-brock-lesnar-se-despide-de-la-wwe-en-wrestlemania-42-noticia-1685013",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "wrestling",
-          "sports"
-        ],
-        "keywords": [
-          "lucha finalmente",
-          "en wrestlemania",
-          "la lucha",
-          "resultado lesnar",
-          "wrestlemania 42",
-          "brock lesnar",
-          "la wwe"
+          "new ceo",
+          "ceo chavez",
+          "ceo",
+          "taps ternus",
+          "labor sec",
+          "apple taps",
+          "ternus new"
         ],
         "sentiment": {
           "pos": 0,
@@ -282,13 +450,13 @@
       }
     },
     {
-      "id": "d3c2b51f-b4d1-49de-93d2-a2cc3bfb4ad6",
-      "title": "La Policía identifica al autor del tiroteo que mató a ocho menores de edad en Luisiana",
-      "description": "Según medios estadounidenses, el agresor, que fue abatido a tiros por la Policía tras huir del lugar del incidente en un vehículo robado, fue identificado como Shamar Elkins.",
-      "image": "https://f.rpp-noticias.io/2026/04/19/511951_1859426.jpg?imgdimension=look",
-      "publishedAt": "2026-04-19T23:33:06",
-      "source": "Noticias de Deportes - RPP",
-      "url": "https://rpp.pe/mundo/estados-unidos/la-policia-identifica-al-autor-del-tiroteo-que-mato-a-ocho-menores-de-edad-en-luisiana-noticia-1685009",
+      "id": "d4d8c584-f8cc-4d63-8e4c-4fe3f7cbc447",
+      "title": "장에 대변 오래 머무르면 해롭다…\"염증·대사질환과 연관\"",
+      "description": "장에 대변 오래 머무르면 해롭다…\"염증·대사질환과 연관\"",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042108273133527_1776727651.png",
+      "publishedAt": "2026-04-20T23:57:31",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042108505819671",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -297,33 +465,33 @@
       "meta": {
         "country": null,
         "topics": [
-          "crime",
-          "shootings"
+          "health",
+          "science"
         ],
         "keywords": [
-          "altercado doméstico",
-          "doméstico el",
-          "autoridades luisiana",
-          "policía identifica",
-          "la policía",
-          "tiroteo que",
-          "agresor que"
+          "sciencealert",
+          "denmark_copenhagen_university",
+          "gut_microbiota",
+          "digestion_speed",
+          "metabolic_diseases",
+          "inflammation",
+          "diet_analysis"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0.027,
-          "neu": 0.973
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "b5a81ba9-fd84-4258-b6e3-0bb13ba56640",
-      "title": "Tragedia en 'Sin senos sí hay paraíso': tres muertos y un herido tras ataque en pleno rodaje en Bogotá",
-      "description": "Un violento hecho registrado durante la grabación de la serie en el centro de Bogotá dejó víctimas mortales, heridos y varios detenidos, según las autoridades.",
-      "image": "https://f.rpp-noticias.io/2026/04/19/481048_1859422.jpg?imgdimension=look",
-      "publishedAt": "2026-04-19T23:30:33",
-      "source": "Noticias de Deportes - RPP",
-      "url": "https://rpp.pe/famosos/celebridades/tragedia-en-sin-senos-si-hay-paraiso-tres-muertos-y-un-herido-tras-ataque-en-pleno-rodaje-en-bogota-noticia-1685002",
+      "id": "4819fad0-7d52-4177-b4cf-caf897a4e24e",
+      "title": "Arrest made in disturbing indecent exposure investigation at Whole Foods",
+      "description": "A man has been arrested in connection with an indecent exposure and sexual battery case at a Whole Foods store late last month, officials with the Los Angeles County Sheriff’s Department announced. The incident occurred March 23 inside the Whole Foods Market at 24130 Valencia Blvd., according to the Los Angeles County Sheriff’s Department. Security [...]",
+      "image": "https://ktla.com/wp-content/uploads/sites/4/2026/03/whole-foods-lewd-act-suspect.jpg?w=900",
+      "publishedAt": "2026-04-20T23:57:11",
+      "source": "KTLA 5 News",
+      "url": "https://ktla.com/news/local-news/lasd-arrest-whole-foods-indecent-exposure/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -332,157 +500,16 @@
       "meta": {
         "country": null,
         "topics": [
-          "entertainment",
           "crime"
         ],
         "keywords": [
-          "bogotá violento",
-          "tragedia en",
-          "bogotá dejó",
-          "violento hecho",
-          "en bogotá",
-          "bogotá",
-          "colombiana el"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.038,
-          "neu": 0.962
-        }
-      }
-    },
-    {
-      "id": "80308113-f8a7-4c06-89b4-9a4b62e8df8a",
-      "title": "Marcianeke es víctima de robo: sustraen su vehículo avaluado en más de 30 millones de pesos",
-      "description": "Mientras realizaba un concierto, el cantante urbano Marcianeke fue víctima de robo luego de que delincuentes sustrajeran su vehículo con todas sus pertenencias al interior. Así lo reveló el mismo Matías Muñoz, nombre real del artista, en sus redes sociales. Ahí el intérprete de “Party en la Pobla” hizo el llamado a sus seguidores. “Robada”, . Continua leyendo \"Marcianeke es víctima de robo: sustraen su vehículo avaluado en más de 30 millones de pesos\" The post Marcianeke es víctima de robo: sustraen su vehículo avaluado en más de 30 millones de pesos appeared first on BioBioChile.",
-      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-marcianeke.png",
-      "publishedAt": "2026-04-19T23:29:00",
-      "source": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/04/19/marcianeke-es-victima-de-robo-sustraen-su-vehiculo-avaluado-en-mas-de-30-millones-de-pesos.shtml",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "crime",
-          "entertainment"
-        ],
-        "keywords": [
-          "robo sustraen",
-          "seguidores robada",
-          "víctima robo",
-          "urbano marcianeke",
-          "es víctima",
-          "concierto el",
-          "marcianeke es"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.036,
-          "neu": 0.964
-        }
-      }
-    },
-    {
-      "id": "c8e7ba47-1b67-46df-a7e3-2c3dcc2245e1",
-      "title": "La fuerte autocrítica de Eduardo Coudet tras la derrota de River en el Superclásico: “Nos está costando”",
-      "description": "El entrenador del Millonario habló del rendimiento de su equipo contra Boca, repasó la polémica sobre el penal que protestó el conjunto de Núñez en el cierre del partido y reconoció las dificultades que está teniendo para mejorar el funcionamiento colectivo.",
-      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1864468",
-      "publishedAt": "2026-04-19T23:22:19",
-      "source": "Todo Noticias",
-      "url": "https://tn.com.ar/deportes/futbol/2026/04/19/la-fuerte-autocritica-de-eduardo-coudet-tras-la-derrota-de-river-en-el-superclasico-nos-esta-costando/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "football",
-          "sports"
-        ],
-        "keywords": [
-          "boca por",
-          "el funcionamiento",
-          "está costando",
-          "funcionamiento colectivo",
-          "costando el",
-          "el superclásico",
-          "boca repasó"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.05,
-          "neu": 0.95
-        }
-      }
-    },
-    {
-      "id": "a4f2d9c0-fe9f-4a33-916b-e2a9043d3876",
-      "title": "A pura cumbia y baile: el festejo íntimo de los jugadores de Boca en el vestuario tras la victoria ante River",
-      "description": "A pura cumbia y baile: el festejo íntimo de los jugadores de Boca en el vestuario tras la victoria ante River",
-      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1864467",
-      "publishedAt": "2026-04-19T23:16:28",
-      "source": "Todo Noticias",
-      "url": "https://tn.com.ar/deportes/futbol/2026/04/19/a-pura-cumbia-y-baile-el-festejo-intimo-de-los-jugadores-de-boca-en-el-vestuario-tras-la-victoria-ante-river/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports",
-          "entertainment"
-        ],
-        "keywords": [
-          "jugadores boca",
-          "los jugadores",
-          "el festejo",
-          "la fiesta",
-          "festejo íntimo",
-          "jugadores",
-          "baile el"
-        ],
-        "sentiment": {
-          "pos": 0.016,
-          "neg": 0,
-          "neu": 0.984
-        }
-      }
-    },
-    {
-      "id": "1e5b3fb0-aa21-4e7f-9398-25d6a6257d6f",
-      "title": "Middle East war live: Iran vows response after US destroyer fires on cargo ship",
-      "description": "Iran vowed retaliation after a US destroyer fired on an Iranian-flagged cargo ship in the Gulf of Oman on Sunday, as it was attempting to evade a US naval blockade. Tehran condemned the incident as “armed piracy” and warned its forces would respond soon. Follow our liveblog for the latest updates.",
-      "image": "https://s.france24.com/media/display/b88d9910-3c40-11f1-a4c8-005056bfb2b6/w:1024/p:16x9/2026-04-19T222619Z-619290836-RC2MSKAZI91Y-RTRMADP-3-IRAN-CRISIS-TRUMP-SHIP.jpg",
-      "publishedAt": "2026-04-19T23:16:20",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/middle-east/20260419-middle-east-war-live-iran-vows-response-after-us-destroyer-fires-on-cargo-ship",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "ship iran",
-          "blockade tehran",
-          "iranian flagged",
-          "iran vows",
-          "live iran",
-          "iran vowed",
-          "ship gulf"
+          "indecent exposure",
+          "arrested",
+          "arrest disturbing",
+          "disturbing indecent",
+          "man arrested",
+          "investigation foods",
+          "arrest"
         ],
         "sentiment": {
           "pos": 0,
@@ -492,13 +519,13 @@
       }
     },
     {
-      "id": "70beffbb-1ce8-45a5-afd9-9dd1485410ac",
-      "title": "Trump asegura que la Armada de EE.UU. incautó un buque con bandera de Irán en medio de enfrentamiento por el bloqueo",
-      "description": "“Hoy, un buque de carga con bandera iraní llamado TOUSKA, de casi 274 metros de eslora y con un peso casi equivalente al de un portaaviones, intentó pasar nuestro Bloqueo Naval, y no les fue bien”, escribió Trump en una publicación en Truth Social.",
-      "image": "https://media.cnnchile.com/sites/2/2026/04/9621605-20260417181039913-20260419200157108.jpg",
-      "publishedAt": "2026-04-19T23:13:08",
-      "source": "CNN Chile",
-      "url": "https://www.cnnchile.com/mundo/trump-asegura-que-la-armada-de-ee-uu-incauto-un-buque-con-bandera-de-iran-en-medio-de-enfrentamiento-por-el-bloqueo_20260419/",
+      "id": "6b7d551a-aa0b-48d8-ba5a-7cd65eacb460",
+      "title": "금융보안원, 7월 금융보안관리사 자격검정 실시",
+      "description": "금융보안원, 7월 금융보안관리사 자격검정 실시",
+      "image": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+      "publishedAt": "2026-04-20T23:56:11",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042108561076520",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -507,103 +534,33 @@
       "meta": {
         "country": null,
         "topics": [
-          "military",
-          "politics"
+          "finance",
+          "security"
         ],
         "keywords": [
-          "armada ee",
-          "la armada",
-          "armada",
-          "irán en",
-          "bandera irán",
-          "el bloqueo",
-          "incautó buque"
+          "금융보안원",
+          "금융보안관리사",
+          "자격검정",
+          "디지털",
+          "인공지능",
+          "보안위협",
+          "전자금융보안"
         ],
         "sentiment": {
-          "pos": 0.024,
-          "neg": 0.011,
-          "neu": 0.965
-        }
-      }
-    },
-    {
-      "id": "e428cd6d-6537-44aa-abb0-f7fdfc491701",
-      "title": "Influyentes, capítulo 93: Joaquín García-Huidobro y Beatriz Sánchez",
-      "description": "Influyentes, capítulo 93: Joaquín García-Huidobro y Beatriz Sánchez",
-      "image": "https://media.cnnchile.com/sites/2/2026/04/Dise%C3%B1o-sin-t%C3%ADtulo-18.jpg",
-      "publishedAt": "2026-04-19T23:09:14",
-      "source": "CNN Chile",
-      "url": "https://www.cnnchile.com/programas-completos/influyentes-capitulo-93-joaquin-garcia-huidobro-y-beatriz-sanchez_20260419/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics",
-          "international"
-        ],
-        "keywords": [
-          "garcía huidobro",
-          "sánchez profundizamos",
-          "sánchez influyentes",
-          "edición influyentes",
-          "influyentes capítulo",
-          "beatriz sánchez",
-          "universidad los"
-        ],
-        "sentiment": {
-          "pos": 0.036,
+          "pos": 0,
           "neg": 0,
-          "neu": 0.964
+          "neu": 1
         }
       }
     },
     {
-      "id": "cfa67f65-1ed1-47ac-bde2-fd3746d7695f",
-      "title": "Tragedia en el Rally Sudamericano: auto en competencia se despista y deja un muerto y dos heridos tras volcadura",
-      "description": "Un joven de 25 años falleció y dos personas resultaron heridas tras el despiste de un Volkswagen Polo en el tramo Giulio Cesare, lo que provocó la cancelación total del evento en Córdoba.",
-      "image": "https://f.rpp-noticias.io/2026/04/19/100310_1859419.jpg?imgdimension=look",
-      "publishedAt": "2026-04-19T23:08:21",
-      "source": "Noticias de Deportes - RPP",
-      "url": "https://rpp.pe/mundo/argentina/muerte-en-el-rally-sudamericano-de-cordoba-tras-despiste-de-auto-noticia-1685011",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "accident",
-          "sports"
-        ],
-        "keywords": [
-          "rally sudamericano",
-          "el rally",
-          "córdoba trágico",
-          "evento en",
-          "en córdoba",
-          "córdoba resultó",
-          "del rally"
-        ],
-        "sentiment": {
-          "pos": 0.007,
-          "neg": 0.019,
-          "neu": 0.973
-        }
-      }
-    },
-    {
-      "id": "04463b4e-b61d-428f-9f0c-5627f09acdac",
-      "title": "“Podríamos haber liquidado el partido antes”: el análisis de Claudio Úbeda tras el triunfo de Boca sobre River",
-      "description": "“Podríamos haber liquidado el partido antes”: el análisis de Claudio Úbeda tras el triunfo de Boca sobre River",
-      "image": "https://tn.com.ar/resizer/v2/7K7ZTQESLVB4DOTPSYFZR6EMJI.jpg?auth=6c26a49d9d220e306eba577feaf1acc59844732bfd99200ed0b5c2772450d1eb",
-      "publishedAt": "2026-04-19T23:04:52",
+      "id": "7dc1ddcf-36ff-44e1-b394-21d38470b2d7",
+      "title": "Carlos Alcaraz puso en duda su presencia en Roland Garros y encendió las alarmas entre los fanáticos del tenis",
+      "description": "El español, número dos del ranking ATP, arrastra una lesión en su muñeca derecha. Fue el campeón en las últimas dos ediciones del torneo de Grand Slam que se disputa en París.",
+      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1864784",
+      "publishedAt": "2026-04-20T23:56:05",
       "source": "Todo Noticias",
-      "url": "https://tn.com.ar/deportes/futbol/2026/04/19/podriamos-haber-liquidado-el-partido-antes-el-analisis-de-claudio-ubeda-tras-el-triunfo-de-boca-sobre-river/",
+      "url": "https://tn.com.ar/deportes/tenis/2026/04/20/carlos-alcaraz-puso-en-duda-su-presencia-en-roland-garros-y-encendio-las-alarmas-entre-los-fanaticos-del-tenis/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -612,33 +569,33 @@
       "meta": {
         "country": null,
         "topics": [
-          "football",
+          "tennis",
           "sports"
         ],
         "keywords": [
-          "haber liquidado",
-          "liquidado el",
-          "hacer partido",
-          "partido antes",
-          "que merecimos",
-          "river boca",
-          "el partido"
+          "alcaraz puso",
+          "roland garros",
+          "ranking atp",
+          "carlos alcaraz",
+          "en roland",
+          "atp arrastra",
+          "grand slam"
         ],
         "sentiment": {
-          "pos": 0.008,
-          "neg": 0.029,
+          "pos": 0.014,
+          "neg": 0.023,
           "neu": 0.963
         }
       }
     },
     {
-      "id": "7748f043-97fa-4b19-b2ed-984be72f6370",
-      "title": "Cristiano Ronaldo Scores, Propels Al-Nassr to AFC Champions League Two Semifinal",
-      "description": "Portuguese superstar Cristiano Ronaldo scored his 969th career goal as Al-Nassr secured a dominant 4-0 victory over Al-Wasl.",
-      "image": "https://a57.foxnews.com/statics.foxsports.com/www.foxsports.com/content/uploads/2026/04/931/523/ronaldo-1.jpg?ve=1&tl=1",
-      "publishedAt": "2026-04-19T23:02:10",
-      "source": "Fox News",
-      "url": "https://www.foxnews.com/sports/cristiano-ronaldo-scores-propels-al-nassr-afc-champions-league-two-semifinal",
+      "id": "5b060a42-ffaf-4677-937c-2032739c7f95",
+      "title": "A preschool classroom is shaken by loss after a mass killing in Louisiana",
+      "description": "Across Shreveport, Louisiana, schools were limping through the day, stung by the deadliest mass shooting in the U. S. in more than two years.",
+      "image": "https://static.independent.co.uk/2026/04/21/01/Mass_Shooting_Louisiana__991.jpg?width=1200&auto=webp&crop=3%3A2",
+      "publishedAt": "2026-04-20T23:55:39",
+      "source": "The Independent",
+      "url": "https://www.independent.co.uk/news/louisiana-b2961478.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -647,27 +604,34 @@
       "meta": {
         "country": null,
         "topics": [
-          "sports"
+          "education",
+          "crime"
         ],
         "keywords": [
-          "general",
-          "news"
+          "angela hall",
+          "louisiana",
+          "kindergarten",
+          "face-to-face",
+          "immediately",
+          "face-to-face with distraught",
+          "shooting rattled classrooms",
+          "shreveport where teachers"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.104,
+          "neg": 0.086,
+          "neu": 0.81
         }
       }
     },
     {
-      "id": "a54f11a7-48f3-427b-9a40-93b849f5f579",
-      "title": "Die bittere Wahrheit hinter den Erfolgsmeldungen der Kriminalstatistik",
-      "description": "Die neue Kriminalstatistik zeigt: Die Gewaltkriminalität ist insgesamt zurückgegangen, Mordfälle und schwere Sexualdelikte hingegen sind gestiegen. Es gibt jeden Tag rund 80 Messerstraftaten; nichtdeutsche Tatverdächtige sind deutlich überrepräsentiert. WELT kennt die Details.",
-      "image": "https://images.welt.de/69e522d97c6e5e236a26c218/7ea076534453f5ec37051357df718802-master/ci23x11-w1200/dpa-com-20090101-251114-911-033872-jpg",
-      "publishedAt": "2026-04-19T23:01:05",
-      "source": "WELT",
-      "url": "https://www.welt.de/politik/deutschland/plus69e522d97c6e5e236a26c218/kriminalstatistik-2025-die-bittere-wahrheit-hinter-den-erfolgsmeldungen.html",
+      "id": "781203f4-c45d-4054-b588-5605d3784cf8",
+      "title": "Экс-следователь рассказал, где можно найти следы пропавшего Героя России",
+      "description": "Экс-следователь рассказал, где можно найти следы пропавшего Героя России",
+      "image": "https://cdnn21.img.ria.ru/images/sharing/article/2088053919.jpg?20853856371776729335",
+      "publishedAt": "2026-04-20T23:55:34",
+      "source": "RIA Novosti (РИА Новости)",
+      "url": "https://ria.ru/20260421/poiski-2088053919.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -677,21 +641,55 @@
         "country": null,
         "topics": [
           "crime",
-          "statistics"
+          "investigation"
         ],
         "keywords": [
-          "der kriminalstatistik",
-          "kriminalstatistik zeigt",
-          "neue kriminalstatistik",
-          "kriminalstatistik",
-          "kriminalstatistik die",
-          "die gewaltkriminalität",
-          "gewaltkriminalität ist"
+          "следователь",
+          "асылханов",
+          "рия",
+          "ск рф",
+          "биологические следы"
         ],
         "sentiment": {
           "pos": 0,
           "neg": 0,
           "neu": 1
+        }
+      }
+    },
+    {
+      "id": "3ffacc69-95bc-4a8a-93ca-67a30ebec78f",
+      "title": "Some businesses report issues with Trump administration's new tariff refund portal",
+      "description": "The Trump administration launched an online portal on Monday to begin refunding businesses impacted by tariffs the Supreme Court deemed illegal, but some have already reported issues with the system. CBS News MoneyWatch reporter Megan Cerullo has the details.",
+      "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/04/20/7b658418-cb20-400b-bc91-cca17d1c3269/thumbnail/1200x630/e026f388e766ae4d0a910e175d420371/cbsn-fusion-some-businesses-report-issues-trump-administration-new-tariff-refund-portal-thumbnail.jpg",
+      "publishedAt": "2026-04-20T23:54:48",
+      "source": "CBS News",
+      "url": "https://www.cbsnews.com/video/some-businesses-report-issues-trump-administration-new-tariff-refund-portal/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "business",
+          "economy"
+        ],
+        "keywords": [
+          "megan cerullo",
+          "administration",
+          "moneywatch",
+          "businesses",
+          "trump administration launched",
+          "refunding businesses impacted",
+          "begin refunding businesses",
+          "administration launched an"
+        ],
+        "sentiment": {
+          "pos": 0.085,
+          "neg": 0.055,
+          "neu": 0.86
         }
       }
     }
