@@ -1,6 +1,6 @@
 {
   "name": "dash_globe",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "React Globe.gl in Dash",
   "main": "build/index.js",
   "scripts": {
