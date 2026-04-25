@@ -1,122 +1,15 @@
 {
-  "updatedAt": "2026-04-24T06:58:05.587Z",
+  "updatedAt": "2026-04-25T06:47:01.963Z",
   "count": 20,
   "stories": [
     {
-      "id": "e7e76f35-2aa0-46c8-bfbb-2e0b5244b466",
-      "title": "Hyderabad Kingsmen v Multan Sultans - PSL scorecard",
-      "description": "Hyderabad Kingsmen v Multan Sultans - PSL scorecard",
-      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
-      "publishedAt": "2026-04-22T00:00:00",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237219?at_medium=RSS&at_campaign=rss",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports",
-          "cricket"
-        ],
-        "keywords": [
-          "karachi hyderabad kingsmen",
-          "responsible",
-          "hyderabad",
-          "scheduled",
-          "hbl pakistan super league hyderabad kingsmen",
-          "hyderabad kingsmen hyderabad",
-          "kingsmen hyderabad kingsmen",
-          "national bank cricket arena"
-        ],
-        "sentiment": {
-          "pos": 0.123,
-          "neg": 0.032,
-          "neu": 0.845
-        }
-      }
-    },
-    {
-      "id": "7a167bb9-6116-46c6-81e3-a92c020f8807",
-      "title": "Karachi Kings v Peshawar Zalmi - PSL scorecard",
-      "description": "Karachi Kings v Peshawar Zalmi - PSL scorecard",
-      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
-      "publishedAt": "2026-04-22T00:00:00",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237218?at_medium=RSS&at_campaign=rss",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "cricket",
-          "sports"
-        ],
-        "keywords": [
-          "m alinot",
-          "m ali",
-          "mendisnot",
-          "yousufnot",
-          "batting",
-          "farhan yousufnot out",
-          "kusal mendisnot out",
-          "farhan yousuf not"
-        ],
-        "sentiment": {
-          "pos": 0.047,
-          "neg": 0,
-          "neu": 0.953
-        }
-      }
-    },
-    {
-      "id": "55a9c542-27f0-4e5c-b18b-caed7b120786",
-      "title": "Lucknow Super Giants v Rajasthan Royals - IPL scorecard",
-      "description": "Lucknow Super Giants v Rajasthan Royals - IPL scorecard",
-      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
-      "publishedAt": "2026-04-22T00:00:00",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237296?at_medium=RSS&at_campaign=rss",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "cricket",
-          "sports"
-        ],
-        "keywords": [
-          "tata indian",
-          "league lucknow super giants",
-          "responsible",
-          "rajasthan",
-          "scheduled",
-          "bharat ratna shri atal bihari vajpayee ekana cricket stadium",
-          "rajasthan royals rajasthan"
-        ],
-        "sentiment": {
-          "pos": 0.243,
-          "neg": 0.025,
-          "neu": 0.732
-        }
-      }
-    },
-    {
-      "id": "d3fae54a-2d7f-404d-aec2-6b78c2c53c85",
-      "title": "Indonesia Set to Hold Key Rate as Rupiah Hits Record Lows on Oil",
-      "description": "Indonesia’s central bank will likely keep its benchmark interest rate unchanged to support the rupiah, which has hit a succession of record lows since the start of the US war on Iran.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iqHDoja8m9Kg/v2/1200x-1.png",
-      "publishedAt": "2026-04-22T00:00:00",
+      "id": "9b27464a-aec9-484b-8f97-a995aba1f983",
+      "title": "Garuda Leads Losses in Bonds of Asian Airlines Stung by Iran War",
+      "description": "Bonds of Asian airlines, led by PT Garuda Indonesia, are showing strain from the Iran war, as higher fuel burdens compared with global peers amplify their vulnerabilities.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i_eP2WW_UDW8/v2/1200x-1.png",
+      "publishedAt": "2026-04-23T00:00:00",
       "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-22/indonesia-set-to-hold-key-rate-as-rupiah-hits-record-lows-on-oil",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-23/garuda-leads-losses-in-bonds-of-asian-airlines-stung-by-iran-war",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -125,33 +18,171 @@
       "meta": {
         "country": null,
         "topics": [
-          "finance",
-          "economy"
+          "bonds",
+          "finance"
         ],
         "keywords": [
-          "rate rupiah",
-          "oil indonesia",
-          "key rate",
-          "indonesia set",
-          "indonesia",
-          "rate unchanged",
-          "indonesia central"
+          "garuda",
+          "bloomberg",
+          "state-controlled",
+          "vulnerabilities",
+          "exacerbating",
+          "amplify their vulnerabilities",
+          "state-controlled garuda has",
+          "of state-controlled garuda"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "neg": 0.165,
+          "neu": 0.835
         }
       }
     },
     {
-      "id": "bd003ac0-4fec-485f-a47a-c16ed4270396",
-      "title": "Gli insulti di Solovyev a Meloni",
-      "description": "“Pecore Elettriche”, si chiama così in omaggio a Philip Dick. E' disponibile tutti i giorni, dal lunedì al venerdì e si occupa di politica, di cultura, libri, videogiochi e serie tv.",
-      "image": "https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/OGVjMDI4MjUtMmM3OC00/0/pecore-elettriche.jpg",
-      "publishedAt": "2026-04-22T00:00:00",
+      "id": "f2522ed1-157d-466a-9add-fe7a446f98dd",
+      "title": "Rawalpindiz v Islamabad United - PSL scorecard",
+      "description": "Rawalpindiz v Islamabad United - PSL scorecard",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-23T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237130?at_medium=RSS&at_campaign=rss",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "conway",
+          "faiqnot",
+          "conwaynot",
+          "batting",
+          "conwaynot out not",
+          "extras no balls",
+          "not out batting"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.074,
+          "neu": 0.926
+        }
+      }
+    },
+    {
+      "id": "d1cf8685-c990-407d-a128-bfd82805e340",
+      "title": "Lahore Qalandars v Karachi Kings - PSL scorecard",
+      "description": "Lahore Qalandars v Karachi Kings - PSL scorecard",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-23T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237131?at_medium=RSS&at_campaign=rss",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "fakharnot",
+          "fakhar",
+          "farooqnot",
+          "mohammad",
+          "mohammad farooqnot out",
+          "mohammad farooq not",
+          "fakharnot out not"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.068,
+          "neu": 0.932
+        }
+      }
+    },
+    {
+      "id": "be518673-991e-4f28-b9c8-4454fb7ced19",
+      "title": "Mumbai Indians v Chennai Super Kings - IPL scorecard",
+      "description": "Mumbai Indians v Chennai Super Kings - IPL scorecard",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-23T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237297?at_medium=RSS&at_campaign=rss",
+      "location": {
+        "name": "India",
+        "lat": 20.5937,
+        "lng": 78.9629
+      },
+      "meta": {
+        "country": "IN",
+        "topics": [
+          "cricket",
+          "sports"
+        ],
+        "keywords": [
+          "samson",
+          "samsonnot",
+          "gaikwadnot",
+          "batting",
+          "gaikwadnot out not",
+          "samsonnot out not",
+          "extras no balls"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.078,
+          "neu": 0.922
+        }
+      }
+    },
+    {
+      "id": "9313e426-7160-45cd-923d-bdb9202afcb1",
+      "title": "Spannaus: “Trump rischio costante. Prima minaccia, poi apre. Genera instabilità”",
+      "description": "L’analista statunitense: “Evita la diplomazia classica, deve riaffermare sempre la sua leadership. Ma il pericolo è quello di urtare gli interlocutori”.",
+      "image": "https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/NTU1Y2U4NDMtNzE0MC00/0/n14at3.jpg",
+      "publishedAt": "2026-04-23T00:00:00",
       "source": "Quotidiano.net",
-      "url": "https://www.quotidiano.net/podcast/pecore-elettriche/insulti-solovyev-meloni-ovlro79s",
+      "url": "https://www.quotidiano.net/esteri/spannaus-trump-guerra-iran-x6gv8o5z",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "rischio costante",
+          "trump rischio",
+          "prima minaccia",
+          "rischio",
+          "spannaus trump",
+          "minaccia poi",
+          "minaccia"
+        ],
+        "sentiment": {
+          "pos": 0.036,
+          "neg": 0.014,
+          "neu": 0.951
+        }
+      }
+    },
+    {
+      "id": "39e50f3f-e910-4179-a74b-ed885d6a2954",
+      "title": "\"Безумные идеи\": на Западе ответили на план Украины по Донбассу",
+      "description": "\"Безумные идеи\": на Западе ответили на план Украины по Донбассу",
+      "image": "https://cdnn21.img.ria.ru/images/sharing/article/2088460144.jpg?18611239561776902489",
+      "publishedAt": "2026-04-22T23:59:59",
+      "source": "RIA Novosti (РИА Новости)",
+      "url": "https://ria.ru/20260423/donbass-2088460144.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -161,220 +192,14 @@
         "country": null,
         "topics": [
           "politics",
-          "media"
-        ],
-        "keywords": [
-          "gli insulti",
-          "solovyev propagandista",
-          "solovyev meloni",
-          "insulti sono",
-          "putiniane se",
-          "meloni gli",
-          "insulti di"
-        ],
-        "sentiment": {
-          "pos": 0.025,
-          "neg": 0.027,
-          "neu": 0.947
-        }
-      }
-    },
-    {
-      "id": "b04d0728-92df-4b37-995d-26493a66166a",
-      "title": "Presidenta del Senado, Paulina Núñez, aborda en CNN Prime el proyecto de Reconstrucción",
-      "description": "Presidenta del Senado, Paulina Núñez, aborda en CNN Prime el proyecto de Reconstrucción",
-      "image": "https://media.cnnchile.com/sites/2/2026/04/A_UNO_1732613-e1776815519928.jpg",
-      "publishedAt": "2026-04-21T23:59:13",
-      "source": "CNN Chile",
-      "url": "https://www.cnnchile.com/programas-completos/presidenta-del-senado-paulina-nunez-aborda-en-cnn-prime-el-proyecto-de-reconstruccion_20260421/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "reconstrucción presidenta",
-          "contingencia política",
-          "proyecto reconstrucción",
-          "presidenta del",
-          "la presidenta",
-          "reconstrucción nacional",
-          "la contingencia"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "a9760719-ab1e-4f9a-ba59-bb55eac668ca",
-      "title": "SK하닉은 안되고 삼전은 됐다…기업 성과급 '임금' 인정 판단이 엇갈린 까닭[Invest&Law]",
-      "description": "SK하닉은 안되고 삼전은 됐다…기업 성과급 '임금' 인정 판단이 엇갈린 까닭[Invest&Law]",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042115143734610_1776752078.jpg",
-      "publishedAt": "2026-04-21T23:59:09",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042111060528069",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "law",
-          "business"
-        ],
-        "keywords": [
-          "sk하닉스",
-          "삼성전자",
-          "대법원",
-          "성과급",
-          "임금",
-          "퇴직금"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "219a33b7-0287-4eb1-b90b-3bee95921079",
-      "title": "SK인텔릭스, 독일 레드닷 디자인 어워드서 본상 2개",
-      "description": "SK인텔릭스, 독일 레드닷 디자인 어워드서 본상 2개",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042208572835409_1776815848.jpg",
-      "publishedAt": "2026-04-21T23:59:02",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042208590205397",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "technology",
-          "design"
-        ],
-        "keywords": [
-          "sk인텔릭스",
-          "레드닷 디자인 어워드",
-          "제품 디자인",
-          "본상",
-          "정수기"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "d4e1e85a-460f-4e0e-af06-ab3660b0201a",
-      "title": "В Тегеране предупредили о немедленном ответе в случае атаки США",
-      "description": "Иранские вооруженные силы находятся в полной боевой готовности и в случае нападения США немедленно нанесут удар по \"заранее определенным целям\", заявил официальный представитель центрального штаба \"Хатам аль-Анбия\" вооруженных сил Исламской Республики Иран (ИРИ) Эбрахим Зольфагари.\"Наши боеспособные и мощные силы уже давно находятся в состоянии стопроцентной готовности\", цитируют Зольфагари иранские СМИ.",
-      "image": "https://www.interfax.ru/aspimg/1085242.jpg",
-      "publishedAt": "2026-04-21T23:59:00",
-      "source": "Interfax ( Интерфакс )",
-      "url": "https://www.interfax.ru/world/1085242",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "military",
-          "politics"
-        ],
-        "keywords": [
-          "тегеран",
-          "иран",
-          "хатам аль-анбия",
-          "боевая готовность",
-          "удар",
-          "цели"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "61054904-c8f3-48e7-afb7-47a30301d24a",
-      "title": "NH농협은행, NHN KCP와 차세대 디지털 지급결제 협력 본격화",
-      "description": "NH농협은행, NHN KCP와 차세대 디지털 지급결제 협력 본격화",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042208564635400_1776815806.jpg",
-      "publishedAt": "2026-04-21T23:58:38",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042208583801123",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "technology",
-          "finance"
-        ],
-        "keywords": [
-          "nh농협은행",
-          "nhnkcp",
-          "스테이블코인",
-          "차세대 지급결제",
-          "ai 에이전트",
-          "디지털 결제 인프라"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "5c41fd4e-7c2b-4384-be4f-af4ba26f0047",
-      "title": "'K-색조' 루나, 도쿄 팝업 연다…日 공략 본격화",
-      "description": "'K-색조' 루나, 도쿄 팝업 연다…日 공략 본격화",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042208504535386_1776815445.jpg",
-      "publishedAt": "2026-04-21T23:58:33",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042208524261864",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "business",
           "international"
         ],
         "keywords": [
-          "k-색조",
-          "루나",
-          "도쿄",
-          "팝업",
-          "애경산업",
-          "메이크업",
-          "롱 래스팅"
+          "ukraine",
+          "donbass",
+          "trump",
+          "spiegel",
+          "moscow"
         ],
         "sentiment": {
           "pos": 0,
@@ -384,48 +209,13 @@
       }
     },
     {
-      "id": "a9d39240-0f88-4f5d-931d-d85d7453f995",
-      "title": "시지바이오, 환자맞춤형 티타늄 임플란트 '이지메이드 TI' 美 FDA 510(k) 허가 획득",
-      "description": "시지바이오, 환자맞춤형 티타늄 임플란트 '이지메이드 TI' 美 FDA 510(k) 허가 획득",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042208573935413_1776815859.png",
-      "publishedAt": "2026-04-21T23:58:14",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042208581490798",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "medicine",
-          "technology"
-        ],
-        "keywords": [
-          "시지바이오",
-          "환자맞춤형",
-          "티타늄",
-          "임플란트",
-          "이지메이드 ti",
-          "fda",
-          "510(k)"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "79ffbc67-a80d-4852-b2c2-21043bde8c0e",
-      "title": "DOJ indicts Southern Poverty Law Center over alleged informant payments",
-      "description": "DOJ indicts Southern Poverty Law Center over alleged informant payments",
-      "image": "https://static.independent.co.uk/2026/04/22/00/2026-04-06T143202Z_1840431758_RC2QJKA6078V_RTRMADP_3_USA-TRUMP-JUSTICE.jpg?width=1200&auto=webp&crop=3%3A2",
-      "publishedAt": "2026-04-21T23:57:33",
-      "source": "The Independent",
-      "url": "https://www.independent.co.uk/bulletin/news/southern-poverty-law-center-doj-indictment-b2962297.html",
+      "id": "f2ce2b53-24b9-4d41-a002-9691373371ff",
+      "title": "La Justicia confirmó que Manuel Adorni pagó casi 9000 dólares por su estadía en dos hoteles en Aruba",
+      "description": "La Justicia confirmó que Manuel Adorni pagó casi 9000 dólares por su estadía en dos hoteles en Aruba",
+      "image": "https://tn.com.ar/resizer/v2/24IWIXRZPVEPJGUMT7HWB2C5SA?auth=0b5f65bc8603e059ef5374d563dae43fb824ebca9824884f4e728aa55f68eed4",
+      "publishedAt": "2026-04-22T23:59:38",
+      "source": "Todo Noticias",
+      "url": "https://tn.com.ar/politica/2026/04/22/la-justicia-confirmo-que-manuel-adorni-pago-casi-9000-dolares-por-su-estadia-en-dos-hoteles-en-aruba/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -435,50 +225,16 @@
         "country": null,
         "topics": [
           "legal",
-          "politics"
+          "finance"
         ],
         "keywords": [
-          "jump",
-          "please",
-          "notifications",
-          "automatically",
-          "organization",
-          "automatically logged inplease",
-          "the independent notifications",
-          "independent notifications can"
-        ],
-        "sentiment": {
-          "pos": 0.087,
-          "neg": 0.098,
-          "neu": 0.815
-        }
-      }
-    },
-    {
-      "id": "7dd973ca-f1ce-482e-b73f-901fd3d8c16e",
-      "title": "Посол Ирана: США требовали от Тегерана доступ к управлению Ормузским проливом",
-      "description": "Посол Ирана: США требовали от Тегерана доступ к управлению Ормузским проливом",
-      "image": "https://b1.m24.ru/c/2338679.360p.mp4",
-      "publishedAt": "2026-04-21T23:57:00",
-      "source": "M24 (Moscow 24) (Москва 24)",
-      "url": "https://www.m24.ru/news/politika/22042026/893675",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics",
-          "international"
-        ],
-        "keywords": [
-          "iran",
-          "us",
-          "ormus strait",
-          "islamabad",
-          "negotiations"
+          "que manuel",
+          "información sumada",
+          "9000 dólares",
+          "aruba ese",
+          "en aruba",
+          "investigación",
+          "justicia confirmó"
         ],
         "sentiment": {
           "pos": 0,
@@ -488,48 +244,319 @@
       }
     },
     {
-      "id": "9e035ab8-d6ec-471c-aa94-235d3867a1ef",
-      "title": "Claudio Úbeda analizó la jugada más polémica del Superclásico: del “no fue penal” a “las excusas” de River",
-      "description": "El DT del Xeneize explicó por qué no hubo falta de Lautaro Blanco contra Lucas Martínez Quarta en el cierre del partido en el Monumental.",
-      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1865104",
-      "publishedAt": "2026-04-21T23:56:45",
+      "id": "f1fe41d7-1668-46b4-b383-f65022032863",
+      "title": "“Todos juntos”: los jugadores de Boca fueron a ver el Superclásico de Reserva después del entrenamiento",
+      "description": "El plantel profesional del Xeneize se prepara para enfrentar a Defensa y Justicia, y tuvo un gran gesto con las jóvenes promesas del club.",
+      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1865390",
+      "publishedAt": "2026-04-22T23:59:38",
       "source": "Todo Noticias",
-      "url": "https://tn.com.ar/deportes/futbol/2026/04/21/claudio-ubeda-analizo-la-jugada-mas-polemica-del-superclasico-del-no-fue-penal-a-las-excusas-de-river/",
+      "url": "https://tn.com.ar/deportes/futbol/2026/04/22/todos-juntos-los-jugadores-de-boca-fueron-a-ver-el-superclasico-de-reserva-despues-del-entrenamiento/",
       "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
       },
       "meta": {
-        "country": "US",
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "todos juntos",
+          "entrenamiento el",
+          "todos se",
+          "el entrenamiento",
+          "juntos los",
+          "jugadores boca",
+          "del entrenamiento"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.011,
+          "neu": 0.989
+        }
+      }
+    },
+    {
+      "id": "b29f493f-0cdd-437c-b31b-c5472d549488",
+      "title": "삼표그룹, 사내 AI 포상제도 시행…대상팀에 500만원",
+      "description": "삼표그룹, 사내 AI 포상제도 시행…대상팀에 500만원",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308564437161_1776902205.jpg",
+      "publishedAt": "2026-04-22T23:58:55",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042308585546431",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "business",
+          "technology"
+        ],
+        "keywords": [
+          "삼표그룹",
+          "ai 포상제도",
+          "디지털 전환",
+          "트랙"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "4d72a8d4-8697-4958-92d2-312ee3a92dc6",
+      "title": "Virginia court declares state's redistricting vote was unconstitutional in legal win for Republicans",
+      "description": "A Virginia circuit court judge ruled that Democrats' redistricting referendum was unconstitutional one day after voters approved the Democrat-drawn map on Tuesday.",
+      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/04/931/523/Vote-sign-in-Virginia-for-redistricting-referendum.jpeg?ve=1&tl=1",
+      "publishedAt": "2026-04-22T23:57:59",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/politics/virginia-court-declares-states-redistricting-vote-unconstitutional-legal-win-republicans",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "law"
+        ],
+        "keywords": [
+          "fox news",
+          "virginia circuit court",
+          "unconstitutional",
+          "administration",
+          "redistricting",
+          "american principles project election transparency initiative",
+          "democrat redistricting referendum",
+          "injunction blocking certification"
+        ],
+        "sentiment": {
+          "pos": 0.055,
+          "neg": 0.062,
+          "neu": 0.883
+        }
+      }
+    },
+    {
+      "id": "34c35175-22b5-4137-9059-85d633a1678d",
+      "title": "대한항공, 20개 항공사와 예지정비 네트워크 구축",
+      "description": "대한항공, 20개 항공사와 예지정비 네트워크 구축",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308562437158_1776902184.jpg",
+      "publishedAt": "2026-04-22T23:57:47",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042308574842081",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "aviation",
+          "technology"
+        ],
+        "keywords": [
+          "대한항공",
+          "항공사",
+          "예지정비",
+          "네트워크",
+          "워크숍"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "dc3d595e-af55-47fe-a874-cf46afe30b75",
+      "title": "\"인도, 저비용 생산기지 아닌 장기 사업 설계로 진출해야\"",
+      "description": "\"인도, 저비용 생산기지 아닌 장기 사업 설계로 진출해야\"",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308544037147_1776902081.png",
+      "publishedAt": "2026-04-22T23:57:34",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042308573435917",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "business",
+          "economy"
+        ],
+        "keywords": [
+          "india",
+          "korea",
+          "pwc",
+          "low-cost production base",
+          "long-term business strategy",
+          "supply chain reconfiguration",
+          "decelerating growth trend"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "2e919203-9f96-447b-920c-bfc9b20c7ade",
+      "title": "Voyeur caught secretly installing camera in shower gel bottle to target victim",
+      "description": "Voyeur caught secretly installing camera in shower gel bottle to target victim",
+      "image": "https://static.independent.co.uk/2026/04/22/21/42/jean-pierre-francis.jpeg?width=1200&auto=webp&trim=236%2C0%2C237%2C0",
+      "publishedAt": "2026-04-22T23:57:31",
+      "source": "The Independent",
+      "url": "https://www.independent.co.uk/news/uk/crime/voyeur-secret-camera-shower-bottle-northampton-b2963093.html",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "privacy",
+          "crime"
+        ],
+        "keywords": [
+          "francis",
+          "investigation",
+          "investigator",
+          "instrumental",
+          "digital media investigation team",
+          "investigator detective constable",
+          "highly technical investigation"
+        ],
+        "sentiment": {
+          "pos": 0.029,
+          "neg": 0.125,
+          "neu": 0.846
+        }
+      }
+    },
+    {
+      "id": "e63b395e-afea-4b65-895f-2c046388ee61",
+      "title": "В Госдуме рассказали, как получить налоговый вычет за значок ГТО",
+      "description": "В Госдуме рассказали, как получить налоговый вычет за значок ГТО",
+      "image": "https://cdnn21.img.ria.ru/images/sharing/article/2088459921.jpg?10096178191776902232",
+      "publishedAt": "2026-04-22T23:57:11",
+      "source": "RIA Novosti (РИА Новости)",
+      "url": "https://ria.ru/20260423/vychet-2088459921.html",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "taxes",
+          "sports"
+        ],
+        "keywords": [
+          "госдума",
+          "налоговый вычет",
+          "значок гто",
+          "нормативы гто",
+          "профосмотр"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "daae0f83-d8f4-4fc0-9093-21cbb44f845f",
+      "title": "로앤컴퍼니, 법률 AI 교육 플랫폼 '슈퍼로이어 아카데미' 출시…디지털 수료증 제공",
+      "description": "로앤컴퍼니, 법률 AI 교육 플랫폼 '슈퍼로이어 아카데미' 출시…디지털 수료증 제공",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308212137023_1776900081.png",
+      "publishedAt": "2026-04-22T23:56:37",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042308563727012",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "technology",
+          "education"
+        ],
+        "keywords": [
+          "로앤컴퍼니",
+          "슈퍼로이어 아카데미",
+          "디지털 수료증",
+          "법률 ai",
+          "리터러시"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "2bfe01de-a44b-4b67-9b19-65443837f454",
+      "title": "Emisarul lui Trump cere FIFA înlocuirea Iranului cu Italia la Cupa Mondială",
+      "description": "Un emisar apropiat de președintele Statelor Unite ale Americii, Donald Trump, a propus FIFA înlocuirea Iranului cu Italia la Cupa Mondială din această vară, găzduită de SUA, Mexic și Canada.",
+      "image": "https://www.mediafax.ro//wp-content/uploads/2025/11/8013555-hepta_mediafax_foto-abacapress_hepta-1024x631.jpg",
+      "publishedAt": "2026-04-22T23:56:16",
+      "source": "mediafax.ro",
+      "url": "https://www.mediafax.ro/externe/emisarul-lui-trump-cere-fifa-inlocuirea-iranului-cu-italia-la-cupa-mondiala-23724840",
+      "location": {
+        "name": "Canada",
+        "lat": 56.1304,
+        "lng": -106.3468
+      },
+      "meta": {
+        "country": "CA",
         "topics": [
           "football",
           "sports"
         ],
         "keywords": [
-          "polémica del",
-          "fue penal",
-          "más polémica",
-          "superclásico que",
-          "la polémica",
-          "jugada del",
-          "del superclásico"
+          "cupa mondială",
+          "cere fifa",
+          "fifa înlocuirea",
+          "italia la",
+          "emisarul lui",
+          "mondială",
+          "cu italia"
         ],
         "sentiment": {
-          "pos": 0.027,
-          "neg": 0.015,
-          "neu": 0.958
+          "pos": 0.021,
+          "neg": 0,
+          "neu": 0.979
         }
       }
     },
     {
-      "id": "1f52adfe-c2ce-4ca6-bed9-27785571f4b3",
-      "title": "2026 World Cup Power Rankings: Every Team Ranked From 48 to 1",
-      "description": "It's time to rank all 48 World Cup teams. And remember, these are my power rankings. If you don't like them, you can get your own.",
-      "image": "https://a57.foxnews.com/statics.foxsports.com/www.foxsports.com/content/uploads/2026/04/1200/675/artboard-1-43.jpg?ve=1&tl=1",
-      "publishedAt": "2026-04-21T23:56:12",
-      "source": "Fox News",
-      "url": "https://www.foxnews.com/sports/2026-world-cup-power-rankings-preview-alexi-lalas",
+      "id": "a74cdabe-67fa-4414-ad76-d02384ebe903",
+      "title": "美股財報／特斯拉上季獲利優預期 盤後漲4%後轉跌",
+      "description": "美國電動車大廠特斯拉（TSLA）最新公布上季財報，單季營收223.9億美元，年增成長16%，仍低於市場預期，但EPS達0.41美元，又高於預期，加上宣布將增加50億美元資本支出，盤後股價一度上漲逾4%、但隨後又轉跌。 由於歐洲和北美需求出現反彈，帶動特斯拉現金流比年增超過一倍。首季營收來到223.9億元，其中電動車業務營收為162億元，年增16%，公司預告，未來將會推出Model Y休旅車和Model 3的「經濟實惠」版。 此外，特斯拉也積極進攻自駕車與人型機器人領域，今年初宣布將加州Fremont工廠轉為生產Optimus人形機器人後，再度預告第二季將開始籌備首座大規模人形機器人工廠，目標首條產線年產100萬台機器人。 延伸閱讀：·CPU漲價潮爆發! 消費型漲10% 伺服器達2成·力積電連虧10季轉盈! 不算業外挹注照樣賺",
+      "image": "https://cdn.ustv.com.tw/new_newsimg/20260423/A001003/20260423A001003_075454.webp",
+      "publishedAt": "2026-04-22T23:56:01",
+      "source": "USTV FeiFan News ( 非凡新聞台 )",
+      "url": "https://news.ustv.com.tw/newsdetail/20260423A001003",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -538,16 +565,16 @@
       "meta": {
         "country": null,
         "topics": [
-          "sports"
+          "business",
+          "technology"
         ],
         "keywords": [
-          "power rankings",
-          "rankings don",
-          "rankings",
-          "rankings team",
-          "team ranked",
-          "world cup",
-          "ranked 48"
+          "tesla",
+          "tsla",
+          "electric_vehicle",
+          "cash_flow",
+          "model_y",
+          "optimus"
         ],
         "sentiment": {
           "pos": 0,
@@ -557,13 +584,13 @@
       }
     },
     {
-      "id": "26daf411-8b0f-400d-8f23-5578846bd443",
-      "title": "CA inflation relief cards expire April 30. Here's how to fix problems, see if you have money coming",
-      "description": "You'd think it would be easy to give away billions of dollars for disaster relief, but millions of Californians still haven't taken their share.",
-      "image": "https://cdn.abcotvs.com/dip/images/18937023_042126-kgo-mctr-tn.jpg?w=1600",
-      "publishedAt": "2026-04-21T23:56:09",
-      "source": "ABC7 News",
-      "url": "https://abc7news.com/post/california-inflation-relief-cards-expire-april-30-heres-how-access-funds-fix-problems-see-have-money-coming/18929141/",
+      "id": "4159f498-8aa8-4668-b3f2-158bb5675547",
+      "title": "\"Известия\": Совфед предложил увеличить штрафы за обман потребителей в 10 раз",
+      "description": "\"Известия\": Совфед предложил увеличить штрафы за обман потребителей в 10 раз",
+      "image": "https://b1.m24.ru/c/2339630.360p.mp4",
+      "publishedAt": "2026-04-22T23:56:00",
+      "source": "M24 (Moscow 24) (Москва 24)",
+      "url": "https://www.m24.ru/news/ehkonomika/23042026/894038",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -572,128 +599,92 @@
       "meta": {
         "country": null,
         "topics": [
-          "finance",
-          "government"
+          "law",
+          "finance"
         ],
         "keywords": [
-          "money network",
-          "1-800-240-0223",
-          "alternatively",
-          "verification",
-          "verification questions such",
-          "options including electing",
-          "money network deactivated"
+          "совфед",
+          "штрафы",
+          "потребители",
+          "обман",
+          "бизнес",
+          "кабмин",
+          "регламент"
         ],
         "sentiment": {
-          "pos": 0.065,
-          "neg": 0.043,
-          "neu": 0.893
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "9efaaac4-a2bf-4087-90df-080653d6f538",
-      "title": "Fourth man charged over mistaken identity kidnap murder of Sydney grandfather",
-      "description": "Fourth man charged over mistaken identity kidnap murder of Sydney grandfather",
-      "image": "https://ichef.bbci.co.uk/news/1024/branded_news/ac21/live/c5c7fe40-1120-11f1-8b3d-a740410c025d.jpg",
-      "publishedAt": "2026-04-21T23:55:32",
-      "source": "BBC News",
-      "url": "https://www.bbc.com/news/articles/cly7ezv8yp2o?at_medium=RSS&at_campaign=rss",
+      "id": "2e165f79-e983-4e77-a1c2-77f60fb14bb1",
+      "title": "\"과학기술 60년부터 AI 미래까지\"…대한민국 과학기술대전 개막",
+      "description": "\"과학기술 60년부터 AI 미래까지\"…대한민국 과학기술대전 개막",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308535837141_1776902038.jpg",
+      "publishedAt": "2026-04-22T23:55:19",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042308551997921",
       "location": {
-        "name": "Australia",
-        "lat": -25.2744,
-        "lng": 133.7751
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
       },
       "meta": {
-        "country": "AU",
+        "country": null,
+        "topics": [
+          "science",
+          "technology"
+        ],
+        "keywords": [
+          "科学技術",
+          "ai",
+          "大韓民國",
+          "科學技術大展",
+          "韓國研究財團",
+          "kintex"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "190170d8-845d-44ba-a836-294354ecb3e1",
+      "title": "Hasan Piker sparks backlash with Luigi Mangione remarks, claims slain CEO engaged in 'social murder'",
+      "description": "Hasan Piker called Brian Thompson's role as UnitedHealthcare CEO \"social murder\" and said Americans understood why Luigi Mangione allegedly acted.",
+      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/04/931/523/hasan-piker-feb-3-2026.jpg?ve=1&tl=1",
+      "publishedAt": "2026-04-22T23:55:01",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/media/hasan-piker-sparks-backlash-luigi-mangione-remarks-claims-slain-ceo-engaged-social-murder",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
         "topics": [
           "crime",
-          "law enforcement"
+          "politics"
         ],
         "keywords": [
-          "chris baghsarian",
-          "baghsarian",
-          "investigators",
-          "grandfather",
-          "authorities",
-          "expected after investigators",
-          "grandfather who authorities",
-          "after investigators earlier"
+          "fox news",
+          "hasan piker",
+          "unitedhealthcare",
+          "representatives",
+          "controversial",
+          "people immediately understand",
+          "controversial twitch streamer",
+          "healthcare providers trying"
         ],
         "sentiment": {
-          "pos": 0.031,
-          "neg": 0.189,
-          "neu": 0.78
-        }
-      }
-    },
-    {
-      "id": "e7dd5e2f-be88-4c58-a709-3ad452c680bb",
-      "title": "جلسه محرمانه کاخ سفید برای جلب حمایت از ترامپ در جریان انتخابات کنگره",
-      "description": "نشریه \"واشنگتن اگزمینر\" گزارش داد که نمایندگان دولت دونالد ترامپ جلسه‌ای محرمانه برای بحث در مورد جلب حمایت رأی‌دهندگان در طول انتخابات کنگره نوامبر 2026 برگزار کردند.",
-      "image": "https://media.mehrnews.com/d/2026/02/09/4/5896154.jpg",
-      "publishedAt": "2026-04-21T23:54:51",
-      "source": "Mehr News Agency (MNA)",
-      "url": "https://www.mehrnews.com/news/6807734/%D8%AC%D9%84%D8%B3%D9%87-%D9%85%D8%AD%D8%B1%D9%85%D8%A7%D9%86%D9%87-%DA%A9%D8%A7%D8%AE-%D8%B3%D9%81%DB%8C%D8%AF-%D8%A8%D8%B1%D8%A7%DB%8C-%D8%AC%D9%84%D8%A8-%D8%AD%D9%85%D8%A7%DB%8C%D8%AA-%D8%A7%D8%B2-%D8%AA%D8%B1%D8%A7%D9%85%D9%BE-%D8%AF%D8%B1-%D8%AC%D8%B1%DB%8C%D8%A7%D9%86-%D8%A7%D9%86%D8%AA%D8%AE%D8%A7%D8%A8%D8%A7%D8%AA",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics",
-          "election"
-        ],
-        "keywords": [
-          "wahlstrom",
-          "james_blair",
-          "white_house",
-          "congress_elections_2026",
-          "donald_trump",
-          "washington_post",
-          "wall_hilton"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "3cfb7a5d-b9b5-4ad9-b391-a554844e93b2",
-      "title": "Contraloría indaga contrato por $680 millones en el Sótero del Río: empresa era de médico del hospital",
-      "description": "La Contraloría General de la República (CGR) anunció el inicio de un sumario y una fiscalización en el Hospital Sótero del Río, luego de detectar eventuales irregularidades en la contratación de servicios médicos por más de $680 millones con una empresa vinculada a un funcionario del propio recinto. De acuerdo con el organismo fiscalizador, el . Continua leyendo \"Contraloría indaga contrato por $680 millones en el Sótero del Río: empresa era de médico del hospital\" The post Contraloría indaga contrato por $680 millones en el Sótero del Río: empresa era de médico del hospital appeared first on BioBioChile.",
-      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-digital-1200-x-633-px-2-2.png",
-      "publishedAt": "2026-04-21T23:54:16",
-      "source": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/04/21/contraloria-indaga-contrato-por-680-millones-en-el-sotero-del-rio-empresa-era-de-medico-del-hospital.shtml",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "health",
-          "governance"
-        ],
-        "keywords": [
-          "contratación servicios",
-          "médicos por",
-          "una fiscalización",
-          "organismo fiscalizador",
-          "fiscalización en",
-          "fiscalización",
-          "era médico"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.044,
-          "neu": 0.956
+          "pos": 0.044,
+          "neg": 0.166,
+          "neu": 0.79
         }
       }
     }
