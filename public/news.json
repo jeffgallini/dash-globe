@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-04-25T06:47:01.963Z",
+  "updatedAt": "2026-04-26T06:56:49.137Z",
   "count": 20,
   "stories": [
     {
-      "id": "9b27464a-aec9-484b-8f97-a995aba1f983",
-      "title": "Garuda Leads Losses in Bonds of Asian Airlines Stung by Iran War",
-      "description": "Bonds of Asian airlines, led by PT Garuda Indonesia, are showing strain from the Iran war, as higher fuel burdens compared with global peers amplify their vulnerabilities.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i_eP2WW_UDW8/v2/1200x-1.png",
-      "publishedAt": "2026-04-23T00:00:00",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-23/garuda-leads-losses-in-bonds-of-asian-airlines-stung-by-iran-war",
+      "id": "e7ed400e-b0e8-4200-a86d-0b3c746d37b9",
+      "title": "Hyderabad Kingsmen v Islamabad United - PSL scorecard",
+      "description": "Hyderabad Kingsmen v Islamabad United - PSL scorecard",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-24T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237220?at_medium=RSS&at_campaign=rss",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -18,34 +18,34 @@
       "meta": {
         "country": null,
         "topics": [
-          "bonds",
-          "finance"
+          "sports",
+          "cricket"
         ],
         "keywords": [
-          "garuda",
-          "bloomberg",
-          "state-controlled",
-          "vulnerabilities",
-          "exacerbating",
-          "amplify their vulnerabilities",
-          "state-controlled garuda has",
-          "of state-controlled garuda"
+          "karachi islamabad united",
+          "responsible",
+          "islamabad",
+          "hyderabad",
+          "hbl pakistan super league hyderabad kingsmen",
+          "hyderabad kingsmen hyderabad",
+          "kingsmen hyderabad kingsmen",
+          "national bank cricket arena"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0.165,
-          "neu": 0.835
+          "pos": 0.273,
+          "neg": 0.029,
+          "neu": 0.698
         }
       }
     },
     {
-      "id": "f2522ed1-157d-466a-9add-fe7a446f98dd",
-      "title": "Rawalpindiz v Islamabad United - PSL scorecard",
-      "description": "Rawalpindiz v Islamabad United - PSL scorecard",
+      "id": "ca64320e-4188-49b3-b331-b770f90db871",
+      "title": "Royal Challengers Bengaluru v Gujarat Titans - IPL scorecard",
+      "description": "Royal Challengers Bengaluru v Gujarat Titans - IPL scorecard",
       "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
-      "publishedAt": "2026-04-23T00:00:00",
+      "publishedAt": "2026-04-24T00:00:00",
       "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237130?at_medium=RSS&at_campaign=rss",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237298?at_medium=RSS&at_campaign=rss",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -53,102 +53,102 @@
       },
       "meta": {
         "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "conway",
-          "faiqnot",
-          "conwaynot",
-          "batting",
-          "conwaynot out not",
-          "extras no balls",
-          "not out batting"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.074,
-          "neu": 0.926
-        }
-      }
-    },
-    {
-      "id": "d1cf8685-c990-407d-a128-bfd82805e340",
-      "title": "Lahore Qalandars v Karachi Kings - PSL scorecard",
-      "description": "Lahore Qalandars v Karachi Kings - PSL scorecard",
-      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
-      "publishedAt": "2026-04-23T00:00:00",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237131?at_medium=RSS&at_campaign=rss",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "fakharnot",
-          "fakhar",
-          "farooqnot",
-          "mohammad",
-          "mohammad farooqnot out",
-          "mohammad farooq not",
-          "fakharnot out not"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.068,
-          "neu": 0.932
-        }
-      }
-    },
-    {
-      "id": "be518673-991e-4f28-b9c8-4454fb7ced19",
-      "title": "Mumbai Indians v Chennai Super Kings - IPL scorecard",
-      "description": "Mumbai Indians v Chennai Super Kings - IPL scorecard",
-      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
-      "publishedAt": "2026-04-23T00:00:00",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237297?at_medium=RSS&at_campaign=rss",
-      "location": {
-        "name": "India",
-        "lat": 20.5937,
-        "lng": 78.9629
-      },
-      "meta": {
-        "country": "IN",
         "topics": [
           "cricket",
           "sports"
         ],
         "keywords": [
-          "samson",
-          "samsonnot",
-          "gaikwadnot",
-          "batting",
-          "gaikwadnot out not",
-          "samsonnot out not",
-          "extras no balls"
+          "tata indian",
+          "league royal",
+          "challengers",
+          "chinnaswamy",
+          "responsible",
+          "bengaluru royal chal bengaluru",
+          "royal challengers bengaluru",
+          "challengers bengaluru royal"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0.078,
-          "neu": 0.922
+          "pos": 0.128,
+          "neg": 0.032,
+          "neu": 0.841
         }
       }
     },
     {
-      "id": "9313e426-7160-45cd-923d-bdb9202afcb1",
-      "title": "Spannaus: “Trump rischio costante. Prima minaccia, poi apre. Genera instabilità”",
-      "description": "L’analista statunitense: “Evita la diplomazia classica, deve riaffermare sempre la sua leadership. Ma il pericolo è quello di urtare gli interlocutori”.",
-      "image": "https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/NTU1Y2U4NDMtNzE0MC00/0/n14at3.jpg",
-      "publishedAt": "2026-04-23T00:00:00",
+      "id": "13a9cd4e-3577-4132-b444-6c94fd7bd238",
+      "title": "Riverside County Sheriff Chad Bianco on His Faith, Cutting Taxes and Ballot Seizure",
+      "description": "Bianco, who's running for governor as a Republican, said his experience in law enforcement equips him to fix the state.",
+      "image": "https://cdn.kqed.org/wp-content/uploads/sites/10/2026/04/260423-CHADBIANCOPB-05-BL-KQED.jpg",
+      "publishedAt": "2026-04-24T00:00:00",
+      "source": "KQED News",
+      "url": "https://ww2.kqed.org/news/2026/04/23/riverside-county-sheriff-chad-bianco-on-his-faith-cutting-taxes-and-ballot-seizure/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "law enforcement"
+        ],
+        "keywords": [
+          "riverside",
+          "donald trump",
+          "conversations",
+          "gubernatorial",
+          "enforcement",
+          "2026 gubernatorial candidates",
+          "gubernatorial candidates for",
+          "candidates for california"
+        ],
+        "sentiment": {
+          "pos": 0.057,
+          "neg": 0.047,
+          "neu": 0.896
+        }
+      }
+    },
+    {
+      "id": "c802a9a5-d933-4c70-8419-18aeed986d84",
+      "title": "로봇 캐디 등장…'골프장 경영 지형의 변화'",
+      "description": "로봇 캐디 등장…'골프장 경영 지형의 변화'",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042213143236086_1776831271.jpg",
+      "publishedAt": "2026-04-24T00:00:00",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042214304364932",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "golf",
+          "technology"
+        ],
+        "keywords": [
+          "robotic_caddy",
+          "golf_course",
+          "operating_environment_changes"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "44dd3a84-3a45-4b02-8bbd-c79afa8dff62",
+      "title": "Il crollo di Trump nei sondaggi",
+      "description": "“Pecore Elettriche”, si chiama così in omaggio a Philip Dick. E' disponibile tutti i giorni, dal lunedì al venerdì e si occupa di politica, di cultura, libri, videogiochi e serie tv.",
+      "image": "https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/ZGI0NTEzMjQtM2ExMy00/0/pecore-elettriche.jpg",
+      "publishedAt": "2026-04-24T00:00:00",
       "source": "Quotidiano.net",
-      "url": "https://www.quotidiano.net/esteri/spannaus-trump-guerra-iran-x6gv8o5z",
+      "url": "https://www.quotidiano.net/podcast/pecore-elettriche/trump-sondaggi-shjbupeu",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -160,29 +160,29 @@
           "politics"
         ],
         "keywords": [
-          "rischio costante",
-          "trump rischio",
-          "prima minaccia",
-          "rischio",
-          "spannaus trump",
-          "minaccia poi",
-          "minaccia"
+          "il crollo",
+          "crollo di",
+          "nei sondaggi",
+          "trump nei",
+          "di trump",
+          "sondaggi",
+          "crollo"
         ],
         "sentiment": {
-          "pos": 0.036,
-          "neg": 0.014,
-          "neu": 0.951
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "39e50f3f-e910-4179-a74b-ed885d6a2954",
-      "title": "\"Безумные идеи\": на Западе ответили на план Украины по Донбассу",
-      "description": "\"Безумные идеи\": на Западе ответили на план Украины по Донбассу",
-      "image": "https://cdnn21.img.ria.ru/images/sharing/article/2088460144.jpg?18611239561776902489",
-      "publishedAt": "2026-04-22T23:59:59",
+      "id": "a0c50b46-93b4-42a0-9410-21e20e431491",
+      "title": "Трамп назвал интересной идею заменить Иран на Италию на ЧМ-2026 по футболу",
+      "description": "Трамп назвал интересной идею заменить Иран на Италию на ЧМ-2026 по футболу",
+      "image": "https://cdnn21.img.ria.ru/images/sharing/article/2088659111.jpg?20847182391776988780",
+      "publishedAt": "2026-04-23T23:59:39",
       "source": "RIA Novosti (РИА Новости)",
-      "url": "https://ria.ru/20260423/donbass-2088460144.html",
+      "url": "https://ria.ru/20260424/tramp-2088659111.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -191,15 +191,14 @@
       "meta": {
         "country": null,
         "topics": [
-          "politics",
-          "international"
+          "football",
+          "politics"
         ],
         "keywords": [
-          "ukraine",
-          "donbass",
           "trump",
-          "spiegel",
-          "moscow"
+          "iran",
+          "italy",
+          "fifa world cup"
         ],
         "sentiment": {
           "pos": 0,
@@ -209,150 +208,13 @@
       }
     },
     {
-      "id": "f2ce2b53-24b9-4d41-a002-9691373371ff",
-      "title": "La Justicia confirmó que Manuel Adorni pagó casi 9000 dólares por su estadía en dos hoteles en Aruba",
-      "description": "La Justicia confirmó que Manuel Adorni pagó casi 9000 dólares por su estadía en dos hoteles en Aruba",
-      "image": "https://tn.com.ar/resizer/v2/24IWIXRZPVEPJGUMT7HWB2C5SA?auth=0b5f65bc8603e059ef5374d563dae43fb824ebca9824884f4e728aa55f68eed4",
-      "publishedAt": "2026-04-22T23:59:38",
-      "source": "Todo Noticias",
-      "url": "https://tn.com.ar/politica/2026/04/22/la-justicia-confirmo-que-manuel-adorni-pago-casi-9000-dolares-por-su-estadia-en-dos-hoteles-en-aruba/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "legal",
-          "finance"
-        ],
-        "keywords": [
-          "que manuel",
-          "información sumada",
-          "9000 dólares",
-          "aruba ese",
-          "en aruba",
-          "investigación",
-          "justicia confirmó"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "f1fe41d7-1668-46b4-b383-f65022032863",
-      "title": "“Todos juntos”: los jugadores de Boca fueron a ver el Superclásico de Reserva después del entrenamiento",
-      "description": "El plantel profesional del Xeneize se prepara para enfrentar a Defensa y Justicia, y tuvo un gran gesto con las jóvenes promesas del club.",
-      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1865390",
-      "publishedAt": "2026-04-22T23:59:38",
-      "source": "Todo Noticias",
-      "url": "https://tn.com.ar/deportes/futbol/2026/04/22/todos-juntos-los-jugadores-de-boca-fueron-a-ver-el-superclasico-de-reserva-despues-del-entrenamiento/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "todos juntos",
-          "entrenamiento el",
-          "todos se",
-          "el entrenamiento",
-          "juntos los",
-          "jugadores boca",
-          "del entrenamiento"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.011,
-          "neu": 0.989
-        }
-      }
-    },
-    {
-      "id": "b29f493f-0cdd-437c-b31b-c5472d549488",
-      "title": "삼표그룹, 사내 AI 포상제도 시행…대상팀에 500만원",
-      "description": "삼표그룹, 사내 AI 포상제도 시행…대상팀에 500만원",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308564437161_1776902205.jpg",
-      "publishedAt": "2026-04-22T23:58:55",
+      "id": "718df3f2-a9be-4160-9289-02545fd3b8f4",
+      "title": "대한항공, 에어버스 핵심 날개부품 누적 5000대 납품",
+      "description": "대한항공, 에어버스 핵심 날개부품 누적 5000대 납품",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042408550238870_1776988502.jpg",
+      "publishedAt": "2026-04-23T23:59:20",
       "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042308585546431",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "business",
-          "technology"
-        ],
-        "keywords": [
-          "삼표그룹",
-          "ai 포상제도",
-          "디지털 전환",
-          "트랙"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "4d72a8d4-8697-4958-92d2-312ee3a92dc6",
-      "title": "Virginia court declares state's redistricting vote was unconstitutional in legal win for Republicans",
-      "description": "A Virginia circuit court judge ruled that Democrats' redistricting referendum was unconstitutional one day after voters approved the Democrat-drawn map on Tuesday.",
-      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/04/931/523/Vote-sign-in-Virginia-for-redistricting-referendum.jpeg?ve=1&tl=1",
-      "publishedAt": "2026-04-22T23:57:59",
-      "source": "Fox News",
-      "url": "https://www.foxnews.com/politics/virginia-court-declares-states-redistricting-vote-unconstitutional-legal-win-republicans",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics",
-          "law"
-        ],
-        "keywords": [
-          "fox news",
-          "virginia circuit court",
-          "unconstitutional",
-          "administration",
-          "redistricting",
-          "american principles project election transparency initiative",
-          "democrat redistricting referendum",
-          "injunction blocking certification"
-        ],
-        "sentiment": {
-          "pos": 0.055,
-          "neg": 0.062,
-          "neu": 0.883
-        }
-      }
-    },
-    {
-      "id": "34c35175-22b5-4137-9059-85d633a1678d",
-      "title": "대한항공, 20개 항공사와 예지정비 네트워크 구축",
-      "description": "대한항공, 20개 항공사와 예지정비 네트워크 구축",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308562437158_1776902184.jpg",
-      "publishedAt": "2026-04-22T23:57:47",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042308574842081",
+      "url": "https://www.asiae.co.kr/article/2026042408591960836",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -362,14 +224,13 @@
         "country": null,
         "topics": [
           "aviation",
-          "technology"
+          "business"
         ],
         "keywords": [
           "대한항공",
-          "항공사",
-          "예지정비",
-          "네트워크",
-          "워크숍"
+          "에어버스",
+          "샤크렛",
+          "날개부품"
         ],
         "sentiment": {
           "pos": 0,
@@ -379,13 +240,13 @@
       }
     },
     {
-      "id": "dc3d595e-af55-47fe-a874-cf46afe30b75",
-      "title": "\"인도, 저비용 생산기지 아닌 장기 사업 설계로 진출해야\"",
-      "description": "\"인도, 저비용 생산기지 아닌 장기 사업 설계로 진출해야\"",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308544037147_1776902081.png",
-      "publishedAt": "2026-04-22T23:57:34",
+      "id": "dbd57d10-39bc-4ae9-8c6c-bccc974e0740",
+      "title": "광명시, AI로 미세먼지 잡는다…'공기질 사각지대’ 제로화 온힘",
+      "description": "광명시, AI로 미세먼지 잡는다…'공기질 사각지대’ 제로화 온힘",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042408542438869_1776988465.png",
+      "publishedAt": "2026-04-23T23:58:36",
       "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042308573435917",
+      "url": "https://www.asiae.co.kr/article/2026042408583652780",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -394,17 +255,15 @@
       "meta": {
         "country": null,
         "topics": [
-          "business",
-          "economy"
+          "environment",
+          "technology"
         ],
         "keywords": [
-          "india",
-          "korea",
-          "pwc",
-          "low-cost production base",
-          "long-term business strategy",
-          "supply chain reconfiguration",
-          "decelerating growth trend"
+          "광명시",
+          "ai",
+          "미세먼지",
+          "공기질",
+          "사각지대"
         ],
         "sentiment": {
           "pos": 0,
@@ -414,81 +273,13 @@
       }
     },
     {
-      "id": "2e919203-9f96-447b-920c-bfc9b20c7ade",
-      "title": "Voyeur caught secretly installing camera in shower gel bottle to target victim",
-      "description": "Voyeur caught secretly installing camera in shower gel bottle to target victim",
-      "image": "https://static.independent.co.uk/2026/04/22/21/42/jean-pierre-francis.jpeg?width=1200&auto=webp&trim=236%2C0%2C237%2C0",
-      "publishedAt": "2026-04-22T23:57:31",
-      "source": "The Independent",
-      "url": "https://www.independent.co.uk/news/uk/crime/voyeur-secret-camera-shower-bottle-northampton-b2963093.html",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "privacy",
-          "crime"
-        ],
-        "keywords": [
-          "francis",
-          "investigation",
-          "investigator",
-          "instrumental",
-          "digital media investigation team",
-          "investigator detective constable",
-          "highly technical investigation"
-        ],
-        "sentiment": {
-          "pos": 0.029,
-          "neg": 0.125,
-          "neu": 0.846
-        }
-      }
-    },
-    {
-      "id": "e63b395e-afea-4b65-895f-2c046388ee61",
-      "title": "В Госдуме рассказали, как получить налоговый вычет за значок ГТО",
-      "description": "В Госдуме рассказали, как получить налоговый вычет за значок ГТО",
-      "image": "https://cdnn21.img.ria.ru/images/sharing/article/2088459921.jpg?10096178191776902232",
-      "publishedAt": "2026-04-22T23:57:11",
-      "source": "RIA Novosti (РИА Новости)",
-      "url": "https://ria.ru/20260423/vychet-2088459921.html",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "taxes",
-          "sports"
-        ],
-        "keywords": [
-          "госдума",
-          "налоговый вычет",
-          "значок гто",
-          "нормативы гто",
-          "профосмотр"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "daae0f83-d8f4-4fc0-9093-21cbb44f845f",
-      "title": "로앤컴퍼니, 법률 AI 교육 플랫폼 '슈퍼로이어 아카데미' 출시…디지털 수료증 제공",
-      "description": "로앤컴퍼니, 법률 AI 교육 플랫폼 '슈퍼로이어 아카데미' 출시…디지털 수료증 제공",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308212137023_1776900081.png",
-      "publishedAt": "2026-04-22T23:56:37",
+      "id": "40e9c8c8-076f-4b33-a2aa-f0d7dd82982a",
+      "title": "바디프랜드, 북촌하우스서 AI 헬스케어로봇 체험관 운영",
+      "description": "바디프랜드, 북촌하우스서 AI 헬스케어로봇 체험관 운영",
+      "image": "https://cwstatic.asiae.co.kr/asiae_v2/asiae_news.png",
+      "publishedAt": "2026-04-23T23:58:34",
       "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042308563727012",
+      "url": "https://www.asiae.co.kr/article/2026042408583448997",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -498,14 +289,13 @@
         "country": null,
         "topics": [
           "technology",
-          "education"
+          "healthcare"
         ],
         "keywords": [
-          "로앤컴퍼니",
-          "슈퍼로이어 아카데미",
-          "디지털 수료증",
-          "법률 ai",
-          "리터러시"
+          "바디프랜드",
+          "북촌하우스",
+          "ai 헬스케어로봇",
+          "퀀텀 ai"
         ],
         "sentiment": {
           "pos": 0,
@@ -515,48 +305,13 @@
       }
     },
     {
-      "id": "2bfe01de-a44b-4b67-9b19-65443837f454",
-      "title": "Emisarul lui Trump cere FIFA înlocuirea Iranului cu Italia la Cupa Mondială",
-      "description": "Un emisar apropiat de președintele Statelor Unite ale Americii, Donald Trump, a propus FIFA înlocuirea Iranului cu Italia la Cupa Mondială din această vară, găzduită de SUA, Mexic și Canada.",
-      "image": "https://www.mediafax.ro//wp-content/uploads/2025/11/8013555-hepta_mediafax_foto-abacapress_hepta-1024x631.jpg",
-      "publishedAt": "2026-04-22T23:56:16",
-      "source": "mediafax.ro",
-      "url": "https://www.mediafax.ro/externe/emisarul-lui-trump-cere-fifa-inlocuirea-iranului-cu-italia-la-cupa-mondiala-23724840",
-      "location": {
-        "name": "Canada",
-        "lat": 56.1304,
-        "lng": -106.3468
-      },
-      "meta": {
-        "country": "CA",
-        "topics": [
-          "football",
-          "sports"
-        ],
-        "keywords": [
-          "cupa mondială",
-          "cere fifa",
-          "fifa înlocuirea",
-          "italia la",
-          "emisarul lui",
-          "mondială",
-          "cu italia"
-        ],
-        "sentiment": {
-          "pos": 0.021,
-          "neg": 0,
-          "neu": 0.979
-        }
-      }
-    },
-    {
-      "id": "a74cdabe-67fa-4414-ad76-d02384ebe903",
-      "title": "美股財報／特斯拉上季獲利優預期 盤後漲4%後轉跌",
-      "description": "美國電動車大廠特斯拉（TSLA）最新公布上季財報，單季營收223.9億美元，年增成長16%，仍低於市場預期，但EPS達0.41美元，又高於預期，加上宣布將增加50億美元資本支出，盤後股價一度上漲逾4%、但隨後又轉跌。 由於歐洲和北美需求出現反彈，帶動特斯拉現金流比年增超過一倍。首季營收來到223.9億元，其中電動車業務營收為162億元，年增16%，公司預告，未來將會推出Model Y休旅車和Model 3的「經濟實惠」版。 此外，特斯拉也積極進攻自駕車與人型機器人領域，今年初宣布將加州Fremont工廠轉為生產Optimus人形機器人後，再度預告第二季將開始籌備首座大規模人形機器人工廠，目標首條產線年產100萬台機器人。 延伸閱讀：·CPU漲價潮爆發! 消費型漲10% 伺服器達2成·力積電連虧10季轉盈! 不算業外挹注照樣賺",
-      "image": "https://cdn.ustv.com.tw/new_newsimg/20260423/A001003/20260423A001003_075454.webp",
-      "publishedAt": "2026-04-22T23:56:01",
-      "source": "USTV FeiFan News ( 非凡新聞台 )",
-      "url": "https://news.ustv.com.tw/newsdetail/20260423A001003",
+      "id": "9e0825d2-7224-44f9-9ede-221d6498bc0b",
+      "title": "جنگ خاورمیانه بحران بهداشتی و انسانی را در سودان تشدید کرده است.",
+      "description": "بحران سلامت در سودان، در پی جنگ میان ایران و ایالات متحده و همچنین اختلال در عبور و مرور از تنگه هرمز، یکی از مهم‌ترین گذرگاه‌های انتقال انرژی و کالاهای حیاتی، شکل گرفته است.",
+      "image": "https://media.mehrnews.com/d/2026/04/24/4/5998522.jpg",
+      "publishedAt": "2026-04-23T23:58:26",
+      "source": "Mehr News Agency (MNA)",
+      "url": "https://www.mehrnews.com/news/6809513/%D8%AC%D9%86%DA%AF-%D8%AE%D8%A7%D9%88%D8%B1%D9%85%DB%8C%D8%A7%D9%86%D9%87-%D8%A8%D8%AD%D8%B1%D8%A7%D9%86-%D8%A8%D9%87%D8%AF%D8%A7%D8%B4%D8%AA%DB%8C-%D9%88-%D8%A7%D9%86%D8%B3%D8%A7%D9%86%DB%8C-%D8%B1%D8%A7-%D8%AF%D8%B1-%D8%B3%D9%88%D8%AF%D8%A7%D9%86-%D8%AA%D8%B4%D8%AF%DB%8C%D8%AF-%DA%A9%D8%B1%D8%AF%D9%87-%D8%A7%D8%B3%D8%AA",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -565,16 +320,17 @@
       "meta": {
         "country": null,
         "topics": [
-          "business",
-          "technology"
+          "health",
+          "conflict"
         ],
         "keywords": [
-          "tesla",
-          "tsla",
-          "electric_vehicle",
-          "cash_flow",
-          "model_y",
-          "optimus"
+          "sudan",
+          "health crisis",
+          "humanitarian crisis",
+          "gulf of hormuz",
+          "conflict",
+          "energy transit",
+          "medical services"
         ],
         "sentiment": {
           "pos": 0,
@@ -584,13 +340,13 @@
       }
     },
     {
-      "id": "4159f498-8aa8-4668-b3f2-158bb5675547",
-      "title": "\"Известия\": Совфед предложил увеличить штрафы за обман потребителей в 10 раз",
-      "description": "\"Известия\": Совфед предложил увеличить штрафы за обман потребителей в 10 раз",
-      "image": "https://b1.m24.ru/c/2339630.360p.mp4",
-      "publishedAt": "2026-04-22T23:56:00",
-      "source": "M24 (Moscow 24) (Москва 24)",
-      "url": "https://www.m24.ru/news/ehkonomika/23042026/894038",
+      "id": "a266f87d-801b-40d1-9159-ee011255eb87",
+      "title": "Хакеры заявили о взломе одного из пропагандистских телеканалов на Украине",
+      "description": "Хакеры заявили о взломе одного из пропагандистских телеканалов на Украине",
+      "image": "https://cdnn21.img.ria.ru/images/sharing/article/2088658963.jpg?19857236821776988654",
+      "publishedAt": "2026-04-23T23:57:33",
+      "source": "RIA Novosti (РИА Новости)",
+      "url": "https://ria.ru/20260424/khakery-2088658963.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -599,92 +355,330 @@
       "meta": {
         "country": null,
         "topics": [
-          "law",
-          "finance"
-        ],
-        "keywords": [
-          "совфед",
-          "штрафы",
-          "потребители",
-          "обман",
-          "бизнес",
-          "кабмин",
-          "регламент"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "2e165f79-e983-4e77-a1c2-77f60fb14bb1",
-      "title": "\"과학기술 60년부터 AI 미래까지\"…대한민국 과학기술대전 개막",
-      "description": "\"과학기술 60년부터 AI 미래까지\"…대한민국 과학기술대전 개막",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042308535837141_1776902038.jpg",
-      "publishedAt": "2026-04-22T23:55:19",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042308551997921",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "science",
-          "technology"
-        ],
-        "keywords": [
-          "科学技術",
-          "ai",
-          "大韓民國",
-          "科學技術大展",
-          "韓國研究財團",
-          "kintex"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "190170d8-845d-44ba-a836-294354ecb3e1",
-      "title": "Hasan Piker sparks backlash with Luigi Mangione remarks, claims slain CEO engaged in 'social murder'",
-      "description": "Hasan Piker called Brian Thompson's role as UnitedHealthcare CEO \"social murder\" and said Americans understood why Luigi Mangione allegedly acted.",
-      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/04/931/523/hasan-piker-feb-3-2026.jpg?ve=1&tl=1",
-      "publishedAt": "2026-04-22T23:55:01",
-      "source": "Fox News",
-      "url": "https://www.foxnews.com/media/hasan-piker-sparks-backlash-luigi-mangione-remarks-claims-slain-ceo-engaged-social-murder",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "crime",
+          "cybersecurity",
           "politics"
         ],
         "keywords": [
-          "fox news",
-          "hasan piker",
-          "unitedhealthcare",
-          "representatives",
-          "controversial",
-          "people immediately understand",
-          "controversial twitch streamer",
-          "healthcare providers trying"
+          "хакеры",
+          "пропагандистский телеканал",
+          "freeдом",
+          "кибер серп",
+          "база данных"
         ],
         "sentiment": {
-          "pos": 0.044,
-          "neg": 0.166,
-          "neu": 0.79
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "db86acf4-ee81-4523-aa8b-2db8f72066e5",
+      "title": "Meta to slash 8000 jobs as tech giant embarks on aggressive AI spend",
+      "description": "The Mark Zuckerberg-founded company plans to cut its global workforce by 10 per cent﻿ and will cancel around 6000 open positions as Meta offsets its AI spend in a ruthless pursuit of \"efficiency\".",
+      "image": "https://prod.static9.net.au/fs/18c533e0-6567-45ec-9234-a710872358fe",
+      "publishedAt": "2026-04-23T23:57:26",
+      "source": "9News",
+      "url": "https://www.9news.com.au/national/meta-to-slash-thousands-of-jobs-in-ai-push/ddbeef78-ee8c-452d-a3fa-e367845a07ae",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "technology",
+          "employment"
+        ],
+        "keywords": [
+          "facebook",
+          "instagram",
+          "zuckerberg-founded",
+          "viaappleandgoogle",
+          "contributions",
+          "zuckerberg-founded company plans",
+          "mark zuckerberg-founded company",
+          "offering voluntary redundancies"
+        ],
+        "sentiment": {
+          "pos": 0.103,
+          "neg": 0.027,
+          "neu": 0.869
+        }
+      }
+    },
+    {
+      "id": "43b43574-0673-4610-9d4e-ad9bf3228e6d",
+      "title": "한예종 광주로 오나…이전·대학원 설치 법안 발의",
+      "description": "한예종 광주로 오나…이전·대학원 설치 법안 발의",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042408355938821_1776987359.jpg",
+      "publishedAt": "2026-04-23T23:56:37",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042408364810149",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "education",
+          "politics"
+        ],
+        "keywords": [
+          "한예종",
+          "광주",
+          "법률 개정안",
+          "민형배",
+          "대학원"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "e0a8528f-a94f-4f0f-871b-8b10249e2926",
+      "title": "Витік документів Казанського авіазаводу розкрив плани РФ щодо оновлення ядерної тріади",
+      "description": "Витік документів Казанського авіазаводу розкрив плани РФ щодо оновлення ядерної тріади",
+      "image": "https://images.unian.net/photos/2025_06/1749679133-3891.jpg",
+      "publishedAt": "2026-04-23T23:56:00",
+      "source": "Ukrainian Independent Information Agency",
+      "url": "https://www.unian.ua/curiosities/tu-160-vitik-dokumentiv-kazanskogo-zavodu-rozkriv-skilki-litakiv-modernizuye-rosiya-13359933.html",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "military",
+          "technology"
+        ],
+        "keywords": [
+          "dokumenty",
+          "kazanskyj aviazavod",
+          "russia",
+          "tu-160",
+          "tu-22m",
+          "dallas analytics"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "f3c156fa-4d0f-4848-a5ba-2b5ee9b5fef6",
+      "title": "SLEP Santiago Centro solicita intervención de autoridades para desalojar tomas de liceos emblemáticos",
+      "description": "Ante las tomas del Liceo de Aplicación, Instituto Nacional y Liceo 1 Javiera Carrera por parte de estudiantes, el Servicio Local de Educación Pública (SLEP) Santiago Centro emitió una declaración pública, en la que afirmó que se solicitó la intervención de las autoridades correspondientes para restituir los recintos. En la mañana de este jueves, grupos . Continua leyendo \"SLEP Santiago Centro solicita intervención de autoridades para desalojar tomas de liceos emblemáticos\" The post SLEP Santiago Centro solicita intervención de autoridades para desalojar tomas de liceos emblemáticos appeared first on BioBioChile.",
+      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-slep-santiago-centro-liceos-emblematicos.jpg",
+      "publishedAt": "2026-04-23T23:55:36",
+      "source": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/nacional/region-metropolitana/2026/04/23/slep-santiago-centro-solicita-intervencion-de-autoridades-para-desalojar-tomas-de-liceos-emblematicos.shtml",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "education",
+          "politics"
+        ],
+        "keywords": [
+          "santiago centro",
+          "santiago",
+          "liceos emblemáticos",
+          "slep santiago",
+          "intervención las",
+          "liceo aplicación",
+          "la intervención"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.027,
+          "neu": 0.973
+        }
+      }
+    },
+    {
+      "id": "5a95931f-3dc4-4c2c-9398-03544b37fad3",
+      "title": "La SAQ veut protéger son bénéfice, malgré la baisse de la consommation",
+      "description": "La SAQ veut protéger son bénéfice, malgré la baisse de la consommation",
+      "image": "https://images.radio-canada.ca/q_auto,w_635/v1/ici-info/16x9/saq-quebec-alcool-facade.jpg",
+      "publishedAt": "2026-04-23T23:55:28",
+      "source": "Radio-Canada",
+      "url": "https://ici.radio-canada.ca/nouvelle/2248706/saq-proteger-benefice-baisse-onsommation",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "business"
+        ],
+        "keywords": [
+          "milliard en",
+          "bénéfice milliard",
+          "milliard",
+          "la saq",
+          "saq vise",
+          "en 2029",
+          "2029 2030"
+        ],
+        "sentiment": {
+          "pos": 0.01,
+          "neg": 0.006,
+          "neu": 0.984
+        }
+      }
+    },
+    {
+      "id": "b9092bc5-0d64-4637-a8b6-e3c85ce68e33",
+      "title": "„Meine volle Sympathie“ – Söder stellt sich hinter mögliche Kandidatur Aigners als Staatsoberhaupt",
+      "description": "Im Ringen um die Nachfolge von Frank-Walter Steinmeier bringt Markus Söder erneut Ilse Aigner ins Spiel. Die CSU-Politikerin gilt unionsintern als aussichtsreiche Kandidatin auch, weil vieles für eine Frau im höchsten Staatsamt spricht.",
+      "image": "https://images.welt.de/69eaac4064985fbd2f02250d/58a3e7ace33fd31d5996636343bc9882-master/ci23x11-w1200/dpa-com-260423-935-1298763-jpg",
+      "publishedAt": "2026-04-23T23:55:24",
+      "source": "WELT",
+      "url": "https://www.welt.de/politik/deutschland/article69eaac4064985fbd2f02250d/amt-des-bundespraesidenten-soeder-stellt-sich-hinter-moegliche-kandidatur-aigners-als-staatsoberhaupt.html",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "unionsintern als",
+          "sympathie söder",
+          "volle sympathie",
+          "ilse aigner",
+          "aigner unterstützen",
+          "bundespräsidentin anstreben",
+          "bayerns ministerpräsident"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.119,
+          "neu": 0.881
+        }
+      }
+    },
+    {
+      "id": "77cb6dfc-4660-45f0-b7c0-495c3e9498cd",
+      "title": "엘리스그룹, AI 이동식 모듈형 데이터센터 특허 4종 취득",
+      "description": "엘리스그룹, AI 이동식 모듈형 데이터센터 특허 4종 취득",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042408524538865_1776988366.png",
+      "publishedAt": "2026-04-23T23:55:12",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042408551218357",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "technology",
+          "ai"
+        ],
+        "keywords": [
+          "엘리스그룹",
+          "ai",
+          "모듈형 데이터센터",
+          "특허",
+          "냉각 시스템"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "5107aa52-1f0a-4555-85cb-073a1238fc87",
+      "title": "Fresno drops Cesar Chavez name from nearly 7-mile stretch of road",
+      "description": "On Thursday, the City of Fresno reversed course, opting to drop \"Cesar Chavez\" from a nearly 7-mile stretch of road.",
+      "image": "https://vcl.abcotv.net/video/kfsn/2026/04/23/042326-kfsn-4p-cesar-chavez-blvd-renaming-vid.mp4",
+      "publishedAt": "2026-04-23T23:54:36",
+      "source": "ABC30",
+      "url": "https://abc30.com/post/fresno-drops-cesar-chavez-name-7-mile-stretch-road/18953247/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "road naming",
+          "politics"
+        ],
+        "keywords": [
+          "cesar chavez",
+          "brandon vang",
+          "councilmembers",
+          "unfortunately",
+          "recognition",
+          "public works director scott mozier",
+          "councilmembers ultimately settled",
+          "but councilmembers ultimately"
+        ],
+        "sentiment": {
+          "pos": 0.115,
+          "neg": 0.062,
+          "neu": 0.823
+        }
+      }
+    },
+    {
+      "id": "ac679810-a029-43be-a2be-25e24583562b",
+      "title": "AI Coding Firm Cognition in Funding Talks at $25 Billion Value",
+      "description": "Cognition AI Inc. is in early talks to raise a new round of funding that would more than double its valuation to $25 billion, according to people familiar with the matter, tapping into increased demand for companies that understand how to use artificial intelligence in software development.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/ij4VLT6dF2sU/v0/1200x-1.png",
+      "publishedAt": "2026-04-23T23:54:08",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-23/ai-coding-firm-cognition-in-funding-talks-at-25-billion-value",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "ai",
+          "finance"
+        ],
+        "keywords": [
+          "cognition funding",
+          "cognition ai",
+          "ai coding",
+          "funding",
+          "ai",
+          "ai early",
+          "funding talks"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
         }
       }
     }
