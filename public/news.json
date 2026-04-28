@@ -1,15 +1,565 @@
 {
-  "updatedAt": "2026-04-27T07:12:14.486Z",
+  "updatedAt": "2026-04-28T07:12:33.761Z",
   "count": 20,
   "stories": [
     {
-      "id": "2f2137d1-142f-4791-af19-1c70c4ca65f9",
-      "title": "AI Chip Surge Elevates Taiwan, Korea in Global Equity Rankings",
-      "description": "The artificial intelligence boom has triggered a seismic reshuffling of global equity markets, with Taiwan and South Korea muscling past European nations one by one.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iEIj7dJH2LWs/v0/1200x-1.jpg",
-      "publishedAt": "2026-04-25T00:00:00",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-25/ai-chip-surge-elevates-taiwan-korea-in-global-equity-rankings",
+      "id": "7bac6ef0-8a09-48af-8700-6a480192604b",
+      "title": "Neville: Arsenal will need wheelbarrow to get over line in PL title race",
+      "description": "Sky Sports' Gary Neville says Arsenal \"will need a wheelbarrow\" to get over the line in the Premier League title race after an edgy 1-0 win against Newcastle on Saturday Night Football.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-neville-arsenal-neville_7230769.jpg?20260425211943",
+      "publishedAt": "2026-04-25T21:20:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/arsenal-1-0-newcastle-gary-neville-says-gunners-will-need-wheelbarrow-to-get-over-the-line-in-premier-league-title-race-13536612",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "5442d875-9203-4782-b1db-9ac8549be748",
+      "title": "Starmer stands by sacking of senior civil servant - and signals intention to fight on",
+      "description": "Sir Keir Starmer has defended his decision to sack Olly Robbins over the vetting process for Peter Mandelson - saying the senior civil servant only faced the \"everyday pressure of government\".",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skynews-starmer-downing-street_7230770.jpg?20260425212133",
+      "publishedAt": "2026-04-25T20:11:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/defiant-sir-keir-starmer-stands-by-sacking-of-olly-robbins-and-signals-intention-to-fight-on-13536614",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "e4de8090-6e9e-48ee-a51a-966e9310e283",
+      "title": "Strait talk: What's at stake in Hormuz",
+      "description": "The Strait of Hormuz, which is a key passage for oil produced in the Middle East, has come to the forefront of the Iran-US conflict. We get analysis from Duncan L Potts, a former senior Royal Navy officer.",
+      "image": "https://s.france24.com/media/display/14322f62-40cc-11f1-a7f0-005056bf30b7/w:1024/p:16x9/Anglais-2026-04-25T16-22-30-904Z.jpg",
+      "publishedAt": "2026-04-25T17:56:24",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20260425-strait-talks-what-s-at-stake-in-hormuz",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "ccac4bf0-baa7-4b91-ad13-8ea61578e451",
+      "title": "A difficult balance to find: Pakistan wants to be key actor in shaping US-Iran peace",
+      "description": "Since the beginning of the Iran-US war, Pakistan has tried to host talks between the two countries, aiming at finding peace. We hear from Pakistani policy analyst and journalist Raza Rumi.",
+      "image": "https://s.france24.com/media/display/6e5b67dc-4249-11f1-9851-005056bf30b7/w:1024/p:16x9/capture-213477993569ef79611f03f4-94291215.jpg",
+      "publishedAt": "2026-04-25T17:14:06",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/tv-shows/spotlight/20260425-a-difficult-balance-to-find-pakistan-wants-to-be-a-key-actor-in-shaping-us-iran-peace",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "82c873f7-9d05-4dd2-b768-9cf9e2bf4ccc",
+      "title": "Race for Europe: Advantage Brighton after Brentford lose at Man Utd",
+      "description": "The Premier League could have six teams in the Champions League next season and 10 in Europe after a potentially pivotal weekend.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-champions-league_7225302.jpg?20260420151633",
+      "publishedAt": "2026-04-25T17:00:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/how-10-premier-league-teams-could-be-in-europe-next-season-with-six-in-the-champions-league-13534068",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "caa2a2e6-6e1f-4156-af6f-2a002763df9b",
+      "title": "Festive mood in West Bank as local elections underway",
+      "description": "A festive and cheerful mood has taken hold of the West Bank as the Palestinian Authority holds local elections, FRANCE 24's Noga Tarnopolsky said, reporting from Bethlehem. Most electoral lists are aligned with president Mahmud Abbas's secular-nationalist Fatah party or running as independents. There are no lists affiliated with Fatah's archrival Hamas, which controls nearly half of the Gaza Strip.",
+      "image": "https://s.france24.com/media/display/65e2a5ce-40ba-11f1-82b5-005056bf30b7/w:1024/p:16x9/EN-20260425-170216-170441-CS.jpg",
+      "publishedAt": "2026-04-25T15:36:12",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/festive-mood-in-west-bank-as-local-elections-underway",
+      "location": {
+        "name": "France",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      "meta": {
+        "country": "FR",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "b20679c0-e793-4377-8c34-f6a09e599430",
+      "title": "Low voter turnout in Gaza as West Bank holds local elections",
+      "description": "Palestinians in the West Bank and central Gaza voted Saturday in municipal elections, the first since the war in Gaza erupted, with low turnout and a limited political field. Nearly 1.5 million people are registered to vote in the Israeli-occupied West Bank, as well as 70,000 people in Gaza's Deir el-Balah area, according to the Ramallah-based Central Elections Commission.",
+      "image": "https://s.france24.com/media/display/1a0ed2a6-40b2-11f1-a5cb-005056a90284/w:1024/p:16x9/EN-20260425-160153-160352-CS.jpg",
+      "publishedAt": "2026-04-25T14:46:57",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/low-voter-turnout-in-gaza-as-west-bank-holds-local-elections",
+      "location": {
+        "name": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "meta": {
+        "country": "IL",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "3071ada2-7056-4d4f-990f-7096b3f35b8e",
+      "title": "Iran rules out talks with US unless blockade of ports lifted",
+      "description": "US envoys were expected in the Pakistani capital on Saturday to kickstart a new round of peace negotiations with Iran, although Iranian state media said Tehran's representatives had no immediate plans to hold face-to-face talks. \"According to Tehran, until and unless that blockade (of Iranian ports) is lifted, the conditions are not ripe for diplomacy,\" FRANCE 24's Reza Sayah said, reporting from Tehran.",
+      "image": "https://s.france24.com/media/display/b78bf3aa-40ae-11f1-afbb-005056a90284/w:1024/p:16x9/EN-20260425-150508-150857-CS.jpg",
+      "publishedAt": "2026-04-25T14:02:32",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/iran-rules-out-talks-with-us-unless-blockade-of-ports-lifted",
+      "location": {
+        "name": "France",
+        "lat": 46.2276,
+        "lng": 2.2137
+      },
+      "meta": {
+        "country": "FR",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "b0102fd5-8f42-4bf9-95e0-c5df53367f3f",
+      "title": "Starmer faces mounting pressure as Labour leadership chatter grows",
+      "description": "On Friday, Keir Starmer's circle gathered at his country retreat of Chequers to wargame the coming weeks for a prime minister whose future is on the line.",
+      "image": "https://e3.365dm.com/26/04/1920x1080/skynews-keir-starmer-paris_7222799.jpg?20260417153420",
+      "publishedAt": "2026-04-25T13:11:00",
+      "source": "Sky News",
+      "url": "https://news.sky.com/story/when-not-if-labours-uncertainty-over-starmers-future-13536252",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "940885a1-36a5-4224-a08e-1f458362a00a",
+      "title": "Elections in West Bank provide 'credibility to Palestinian sovereignty', expert says",
+      "description": "Local elections are being held in the West Bank and parts of Gaza on Saturday. The vote will determine the makeup of local councils tasked with overseeing water, roads, and electricity. Bertrand Besancenot, former French ambassador to Qatar and Saudi Arabia, said the vote would provide “credibility to Palestinian sovereignty” if voter turnout is high.",
+      "image": "https://s.france24.com/media/display/c236396a-40a3-11f1-9423-005056a90284/w:1024/p:16x9/EN-20260425-140149-140829-CS.jpg",
+      "publishedAt": "2026-04-25T12:47:29",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/elections-in-west-bank-provide-credibility-to-palestinian-sovereignty-expert-says",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "66814f5c-6704-4e4c-8bb0-6c2ad0a01e6d",
+      "title": "Elections in West Bank: ‘Barometer’ on Palestinian public opinion",
+      "description": "Palestinians on Saturday cast ballots in tents and damaged buildings in Deir al-Balah, marking the first local election in part of Gaza Strip in over 20 years. With Hamas affiliated candidates on the list of candidates, the vote serves as a \"barometer\" on Palestinian public opinion, said Hussein Ibish, Senior Resident Scholar at the Arab Gulf States Institute.",
+      "image": "https://s.france24.com/media/display/bd73b5f6-4099-11f1-8d32-005056bf30b7/w:1024/p:16x9/EN-20260425-131311-132251-CS.jpg",
+      "publishedAt": "2026-04-25T11:38:05",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/elections-in-west-bank-barometer-on-palestinian-public-opinion",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "756d0f83-b7ce-4049-8f89-7c796388cfe7",
+      "title": "Displaced Lebanese remain skeptical despite extended truce",
+      "description": "In the coastal city of Sidon, displaced families sheltering from months of conflict express little relief at the extension of a fragile truce between Lebanon and Israel. While Donald Trump voiced optimism about a path toward peace, many civilians – uprooted by fighting involving Hezbollah – say ongoing strikes, uncertainty, and deep mistrust prevent them from returning home or believing in lasting stability.",
+      "image": "https://s.france24.com/media/display/e2f861da-4087-11f1-ac7e-005056bf30b7/w:1024/p:16x9/EN-20260425-110353-110539-CS.jpg",
+      "publishedAt": "2026-04-25T09:39:04",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/displaced-lebanese-remain-skeptical-despite-extended-truce",
+      "location": {
+        "name": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "meta": {
+        "country": "IL",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "c4583f3b-1531-4439-8a45-5e39b344130f",
+      "title": "US envoys to travel to Islamabad despite Iran ruling out direct negotiations with US",
+      "description": "US envoys are expected to travel to Pakistan on Saturday in a new bid to salvage ceasefire talks with Tehran, even as Iran ruled out direct negotiations with US representatives as its top diplomat arrived in Islamabad. The latest effort to broker a deal comes as an indefinite ceasefire has paused most fighting, but the economic fallout is still mounting with global energy shipments disrupted by the closure of the Strait of Hormuz.",
+      "image": "https://s.france24.com/media/display/93ef7fce-4087-11f1-9177-005056a90284/w:1024/p:16x9/EN-20260425-110115-110325-CS.jpg",
+      "publishedAt": "2026-04-25T09:35:58",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/us-envoys-to-travel-to-islamabad-despite-iran-ruling-out-direct-negotiations-with-us",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "8c74c297-f3e6-42a9-9997-f1245b7261e0",
+      "title": "Spain PM brushes of reported Pentagon email on punishing NATO members",
+      "description": "Spanish Prime Minister Pedro Sanchez on Friday refused to be drawn into a dispute with the United States over reports that the Pentagon is weighing whether to punish members of NATO that fail to support American operations in the Iran war. Among those in the firing line is Spain, which has refused to allow US forces involved in the war to use bases on its territory or airspace. Spain says that US-Israeli actions in the Iran war contravenes international law.",
+      "image": "https://s.france24.com/media/display/f0dfddf6-4086-11f1-b54b-005056a97e36/w:1024/p:16x9/EN-20260425-101006-101209-CS.jpg",
+      "publishedAt": "2026-04-25T09:21:13",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/video/20260425-spain-pm-brushes-of-reported-pentagon-email-on-punishing-nato-members",
+      "location": {
+        "name": "Israel",
+        "lat": 31.0461,
+        "lng": 34.8516
+      },
+      "meta": {
+        "country": "IL",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "9752533c-4f74-4850-adb1-0aa1c29ffd4d",
+      "title": "Mojtaba Khamenei remains out of the spotlight in Iran",
+      "description": "Mojtaba Khamenei has remained out of the spotlight since being named supreme leader of Iran, fuelling speculation that he was seriously injured in the strike that killed his father almost two months ago. According to a New York Times report, Khamenei lives in hiding, fearing for his life and participates in decision making by hand-written notes.",
+      "image": "https://s.france24.com/media/display/842336ec-4084-11f1-bb1a-005056bfb2b6/w:1024/p:16x9/EN-20260425-100356-100543-CS.jpg",
+      "publishedAt": "2026-04-25T09:03:24",
+      "source": "France 24",
+      "url": "https://www.france24.com/en/mojtaba-khamenei-remains-out-of-the-spotlight-in-iran",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "middle east",
+          "politics"
+        ],
+        "keywords": [
+          "general",
+          "news"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "24e9a31e-7ef9-4c4d-a5dc-ca3ad69e9014",
+      "title": "В Вашингтоне перед визитом Карла III по ошибке вывесили австралийские флаги",
+      "description": "В Вашингтоне перед визитом Карла III по ошибке вывесили австралийские флаги",
+      "image": "https://cdnn21.img.ria.ru/images/07e9/0c/16/2063790665_0:40:3072:1768_650x0_80_0_0_c49421fbbee6ac09387575a16e878345.jpg",
+      "publishedAt": "2026-04-25T06:51:53",
+      "source": "RIA Novosti (РИА Новости)",
+      "url": "https://ria.ru/20260425/vashington-2088867420.html",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "international"
+        ],
+        "keywords": [
+          "washington",
+          "carl iii",
+          "australia",
+          "britain",
+          "white house",
+          "flags",
+          "royal visit"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "e9d8d5e7-76b1-4002-884d-bcfeae916a03",
+      "title": "چاپ کتابی از روایت های زندگی رهبر شهید انقلاب به زبان روسی",
+      "description": "با همکاری رایزنی فرهنگی جمهوری اسلامی ایران در فدراسیون روسیه، کتاب «پدر دلسوز» حاوی روایت‌هایی از زندگی رهبر شهیدمان به زبان روسی منتشر شد.",
+      "image": "https://media.mehrnews.com/d/2026/04/25/4/5999653.jpg",
+      "publishedAt": "2026-04-25T06:50:50",
+      "source": "Mehr News Agency (MNA)",
+      "url": "https://www.mehrnews.com/news/6810446/%DA%86%D8%A7%D9%BE-%DA%A9%D8%AA%D8%A7%D8%A8%DB%8C-%D8%A7%D8%B2-%D8%B1%D9%88%D8%A7%DB%8C%D8%AA-%D9%87%D8%A7%DB%8C-%D8%B2%D9%86%D8%AF%DA%AF%DB%8C-%D8%B1%D9%87%D8%A8%D8%B1-%D8%B4%D9%87%DB%8C%D8%AF-%D8%A7%D9%86%D9%82%D9%84%D8%A7%D8%A8-%D8%A8%D9%87-%D8%B2%D8%A8%D8%A7%D9%86-%D8%B1%D9%88%D8%B3%DB%8C",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "books",
+          "politics"
+        ],
+        "keywords": [
+          "چاپ",
+          "کتاب",
+          "روایت",
+          "زندگی",
+          "شهید",
+          "انقلاب",
+          "روسی"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "3b85ba5a-e23f-4392-b900-c0c098e9b3ff",
+      "title": "Vučić rekao da će SNS imati skup u Beogradu na Vidovdan, ili...",
+      "description": "\"Biće to vrijeme važnih i velikih odluka za građane Srbije, ali da li su to izbori ili nešto drugo, otom potom\", izjavio je Vučić u Parizu, gdje učestvuje na Međunarodnoj konferenciji o globalnoj politici.",
+      "image": "https://www.vijesti.me/data/images/2026/04/25/08/5722000_aleksandar-vucic_ff.jpg",
+      "publishedAt": "2026-04-25T06:49:00",
+      "source": "Vijesti",
+      "url": "https://www.vijesti.me/svijet/balkan/805948/vucic-rekao-da-ce-sns-imati-skup-u-beogradu-na-vidovdan-ili-prije-nije-zelio-da-kaze-kada-ce-biti-izbori",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics"
+        ],
+        "keywords": [
+          "građane srbije",
+          "biće vrijeme",
+          "vučić najavio",
+          "vidovdan ili",
+          "vrijeme važnih",
+          "na vidovdan",
+          "je vučić"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "a2ee6b22-38bb-4cd3-bfe6-c245eb6488cd",
+      "title": "پیام‌رسان ایکس از راه رسید",
+      "description": "پیام‌رسان ایکس از راه رسید",
+      "image": "https://media.mehrnews.com/d/2025/03/29/4/5442076.jpg",
+      "publishedAt": "2026-04-25T06:47:33",
+      "source": "Mehr News Agency (MNA)",
+      "url": "https://www.mehrnews.com/news/6810437/%D9%BE%DB%8C%D8%A7%D9%85-%D8%B1%D8%B3%D8%A7%D9%86-%D8%A7%DB%8C%DA%A9%D8%B3-%D8%A7%D8%B2-%D8%B1%D8%A7%D9%87-%D8%B1%D8%B3%DB%8C%D8%AF",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -19,16 +569,14 @@
         "country": null,
         "topics": [
           "technology",
-          "economy"
+          "communication"
         ],
         "keywords": [
-          "korea global",
-          "global equity",
-          "equity rankings",
-          "ai chip",
-          "taiwan korea",
-          "intelligence boom",
-          "elevates taiwan"
+          "piaamrasan",
+          "x_crunch",
+          "mehr",
+          "ios",
+          "x_chat"
         ],
         "sentiment": {
           "pos": 0,
@@ -38,83 +586,13 @@
       }
     },
     {
-      "id": "bfc406cb-70c3-4f66-811e-bcfae1790669",
-      "title": "Guerra in Iran, Margelletti: arsenale Usa in rosso. “Servono anni per reintegrarlo”",
-      "description": "Il presidente del Cesi: uno show politico l’arrivo della Bush, ma il blocco navale può durare a lungo.",
-      "image": "https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/ZDA3NDQ4MTMtNmQ5OS00/0/us-israel-iran-war-hegseth.jpg",
-      "publishedAt": "2026-04-25T00:00:00",
-      "source": "Quotidiano.net",
-      "url": "https://www.quotidiano.net/esteri/guerra-iran-margelletti-arsenale-usa-gt4zawt4",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "politics",
-          "military"
-        ],
-        "keywords": [
-          "guerra iran",
-          "iran margelletti",
-          "politico arrivo",
-          "iran della",
-          "di politico",
-          "margelletti presidente",
-          "uno politico"
-        ],
-        "sentiment": {
-          "pos": 0.013,
-          "neg": 0.007,
-          "neu": 0.98
-        }
-      }
-    },
-    {
-      "id": "44df3f98-54b0-4bfc-8cda-4fd514477c00",
-      "title": "Francesco Daniele: “Corro nel nome di papà Pino e voglio laurearmi. La musica? Eredità pesantissima, meglio non rischiare”",
-      "description": "Il figlio 20enne di Pino Daniele (morto nel 2015) debutta oggi nel campionato Gran Turismo a Imola al volante di una Lamborghini Huracán della DL racing: “Mio padre sarebbe contento. Ho provato per un anno e mezzo a suonare la chitarra, la musica non faceva per me”.",
-      "image": "https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/OGFjMmI2ODYtODJjMC00/0/il-pilota-francesco-daniele-figlio-del-cantautore-pino-morto-nel-2015-ha-ventanni-e-debutta-oggi-a-imola-nella-gran-turismo.jpg",
-      "publishedAt": "2026-04-25T00:00:00",
-      "source": "Quotidiano.net",
-      "url": "https://www.quotidiano.net/cronaca/francesco-daniele-corro-nel-nome-di-papa-pino-e-voglio-laurearmi-la-musica-eredita-pesantissima-meglio-non-rischiare-qc06sitf",
-      "location": {
-        "name": "France",
-        "lat": 46.2276,
-        "lng": 2.2137
-      },
-      "meta": {
-        "country": "FR",
-        "topics": [
-          "sports",
-          "music"
-        ],
-        "keywords": [
-          "musica pino",
-          "pino daniele",
-          "pino voglio",
-          "musica non",
-          "pino non",
-          "francesco daniele",
-          "di pino"
-        ],
-        "sentiment": {
-          "pos": 0.052,
-          "neg": 0,
-          "neu": 0.948
-        }
-      }
-    },
-    {
-      "id": "41fe4e91-17f9-496d-8396-a5c84e8bda3b",
-      "title": "\"자세가 이상하다\"…'우승을 위해서라면'",
-      "description": "\"자세가 이상하다\"…'우승을 위해서라면'",
-      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042220341436763_1776857654.jpg",
-      "publishedAt": "2026-04-25T00:00:00",
-      "source": "Asia Economy ( 아시아경제 )",
-      "url": "https://www.asiae.co.kr/article/2026042220480047543",
+      "id": "aa64d4b3-9e5a-41e0-9f08-e9031821ea00",
+      "title": "Live η επίσκεψη Μητσοτάκη - Μακρόν στη φρεγάτα «Κίμων» στον Πειραιά",
+      "description": "Στην επίσκεψη συμμετέχουν επίσης οι υπουργοί Άμυνας Ελλάδας και Γαλλίας, οι υφυπουργοί Εξωτερικών των δύο χωρών, καθώς και η στρατιωτική ηγεσία της χώρας Αμέσως μετά οι υπογραφές για τη νέα αμυντική συνεργασία Ελλάδας Γαλλίας.",
+      "image": "https://www.protothema.gr/images/640x360share/jpg/files/2026-04-25/kimon-mak.jpg",
+      "publishedAt": "2026-04-25T06:47:00",
+      "source": "Proto Thema",
+      "url": "https://www.protothema.gr/politics/article/1808635/live-i-episkepsi-mitsotaki-kai-makron-sti-fregata-kimon/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -123,586 +601,22 @@
       "meta": {
         "country": null,
         "topics": [
-          "golf",
-          "sports"
-        ],
-        "keywords": [
-          "green",
-          "hiltonhead",
-          "island",
-          "rbc heritage",
-          "pga tour"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "8b674f09-cb2a-455f-a12c-42ff4ad825b5",
-      "title": "Bipartisan funding push to cure deadly disease",
-      "description": "It will take the largest donors in America and help from Congress, but the American Center for Cures thinks it can rid the world of chronic and deadly diseases. Lou Weisbach is co-founder of the group working to gain bipartisan support, and raise $750 billion dollars. Weisbach joins WGN-TV Political Editor Tahman Bradley to talk [...]",
-      "image": "https://wgntv.com/wp-content/uploads/sites/5/2026/04/648FE64D59CA795FF07C3283D62308A0.jpg?w=800",
-      "publishedAt": "2026-04-25T00:00:00",
-      "source": "WGN-TV",
-      "url": "https://wgntv.com/news/politics/wgn-the-point-politics-chicago-illinois/bipartisan-funding-push-to-cure-deadly-disease/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "healthcare",
+          "defense",
           "politics"
         ],
         "keywords": [
-          "bipartisan funding",
-          "donors america",
-          "largest donors",
-          "funding",
-          "donors",
-          "funding push",
-          "cure deadly"
+          "mitsotakis",
+          "macron",
+          "kimon",
+          "pieraeas",
+          "greece",
+          "france",
+          "defense"
         ],
         "sentiment": {
           "pos": 0,
           "neg": 0,
           "neu": 1
-        }
-      }
-    },
-    {
-      "id": "d6e5bc96-c588-4867-b1d4-d0a196a8c074",
-      "title": "Family vacation nightmare unfolds as child is hospitalized after fall on cruise ship",
-      "description": "On TUI Cruises' Mein Schiff 7, a young child was hospitalized after falling aboard the cruise ship while it was docked in Funchal, Madeira. The toddler fell about six to 10 feet.",
-      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/04/931/523/TUI-CRUISE-MEIN-SCHIFF-7-INCIDENT-TODDLER-TRAVEL-FUNCHAL-MADIERA-3.jpeg?ve=1&tl=1",
-      "publishedAt": "2026-04-24T23:59:01",
-      "source": "Fox News",
-      "url": "https://www.foxnews.com/travel/family-vacation-nightmare-unfolds-toddler-hospitalized-after-fall-cruise-ship",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "health",
-          "safety"
-        ],
-        "keywords": [
-          "fox news",
-          "mein schiff",
-          "cruises-operated",
-          "life-threatening",
-          "cruise-related",
-          "have life-threatening injuries",
-          "other cruise-related incidents",
-          "cruise-related incidents this"
-        ],
-        "sentiment": {
-          "pos": 0.052,
-          "neg": 0.06,
-          "neu": 0.888
-        }
-      }
-    },
-    {
-      "id": "05d63117-41a5-420f-9636-5444eb7e036c",
-      "title": "B.C. Supreme Court judge approves disposal of Robert Pickton evidence",
-      "description": "Thousands of pieces of evidence were seized from serial killer Robert Pickton’s pig farm decades ago, whether it was used in his murder trial or not.",
-      "image": "https://globalnews.ca/wp-content/uploads/2024/11/20241106171144-20241106171120-258582f798c36463058b011c8082d098a2a90b7880e984efd6ad4d19f5410f3d_e6a315.jpg?quality=65&strip=all",
-      "publishedAt": "2026-04-24T23:58:38",
-      "source": "Global News",
-      "url": "https://globalnews.ca/news/11816426/bc-judge-approves-disposal-robert-pickton-evidence/",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "law",
-          "crime"
-        ],
-        "keywords": [
-          "robert pickton",
-          "investigation",
-          "second-degree",
-          "marginalized",
-          "thoroughly investigate cases",
-          "investigation into missing",
-          "and thoroughly investigate"
-        ],
-        "sentiment": {
-          "pos": 0.087,
-          "neg": 0.175,
-          "neu": 0.738
-        }
-      }
-    },
-    {
-      "id": "1ac2c1da-3b23-4093-a12f-c9f59a4c6262",
-      "title": "Officers seize dozens of weapons, gun parts in Nogales border bust",
-      "description": "A woman attempting to leave the United States for Mexico was arrested after an inspection led to dozens of weapons seized.",
-      "image": "https://ktar.com/wp-content/uploads/2026/04/weapons_total-e1777074715961-150x150.jpg",
-      "publishedAt": "2026-04-24T23:57:20",
-      "source": "KTAR News",
-      "url": "https://ktar.com/immigration/weapons-seized/5852235/",
-      "location": {
-        "name": "Mexico",
-        "lat": 23.6345,
-        "lng": -102.5528
-      },
-      "meta": {
-        "country": "MX",
-        "topics": [
-          "border security",
-          "crime"
-        ],
-        "keywords": [
-          "border",
-          "dennis deconcini port",
-          "rocket-propelled",
-          "miscellaneous",
-          "transnational",
-          "transnational criminal organizations",
-          "rocket-propelled grenade launcher",
-          "field operations carlos gonzalez"
-        ],
-        "sentiment": {
-          "pos": 0.079,
-          "neg": 0.153,
-          "neu": 0.768
-        }
-      }
-    },
-    {
-      "id": "d663b7ca-b9c1-4bb5-82bf-7f48acb19530",
-      "title": "Prevención del Suicidio entre los afectados: los 24 programas que Gobierno pidió descontinuar en Salud",
-      "description": "A través de un oficio, el Ministerio de Hacienda solicitó descontinuar o aplicar un ajuste presupuestario a una serie de programas de todos los Ministerios, de cara a la Ley de Presupuestos 2027 y la Programación Financiera 2028-2031 de cada cartera. Si bien la información era previsible luego del anuncio del recorte de un . Continua leyendo \"Prevención del Suicidio entre los afectados: los 24 programas que Gobierno pidió descontinuar en Salud\" The post Prevención del Suicidio entre los afectados: los 24 programas que Gobierno pidió descontinuar en Salud appeared first on BioBioChile.",
-      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-cntxt-freepik-por-gobierno-solicita-descontinuar-24-programas-de-salud.jpg",
-      "publishedAt": "2026-04-24T23:55:16",
-      "source": "BioBioChile",
-      "url": "https://www.biobiochile.cl/noticias/bbcl-explica/bbcl-explica-notas/2026/04/24/prevencion-del-suicidio-entre-los-afectados-los-24-programas-que-gobierno-pidio-descontinuar-en-salud.shtml",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "health",
-          "government-budget-cut"
-        ],
-        "keywords": [
-          "la programación",
-          "programación",
-          "leyendo prevención",
-          "prevención del",
-          "suicidio entre",
-          "la información",
-          "información era"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.036,
-          "neu": 0.964
-        }
-      }
-    },
-    {
-      "id": "7a814d33-30d8-4e57-9d77-83bc63298655",
-      "title": "Iran war taking a toll on U.S. missile stockpiles, analysis finds",
-      "description": "An analysis from the Center for Strategic and International Studies finds the U. S. \"may have expended more than half of the prewar inventory\" of at least four key munitions, including Tomahawk missiles. CBS News national security contributor Sam Vinograd has more.",
-      "image": "https://assets2.cbsnewsstatic.com/hub/i/r/2026/04/24/2c449437-b00f-4b9b-8e82-f1c7624012c5/thumbnail/1200x630/2a416f9af97592dfacf78542f1b5bdd6/cbsn-fusion-iran-wa-taking-toll-us-missile-stockpiles-analysis-finds-thumbnail.jpg",
-      "publishedAt": "2026-04-24T23:55:00",
-      "source": "CBS News",
-      "url": "https://www.cbsnews.com/video/iran-war-taking-toll-us-missile-stockpiles-analysis-finds/",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "military",
-          "politics"
-        ],
-        "keywords": [
-          "strategic",
-          "sam vinograd",
-          "international",
-          "contributor",
-          "national security contributor",
-          "international studies finds",
-          "including tomahawk missiles"
-        ],
-        "sentiment": {
-          "pos": 0.057,
-          "neg": 0,
-          "neu": 0.943
-        }
-      }
-    },
-    {
-      "id": "30b32038-cc1b-47bb-82b7-55c1450389ce",
-      "title": "WATCH: Newly released video shows a suspect driving off with a police officer in the car",
-      "description": "Surveillance video shows a suspect driving off with a police officer in the car during a confrontation of a reported robbery in Antioch, California.",
-      "image": "https://i.abcnewsfe.com/a/acc74369-4991-4b9a-b407-d2b423d88b98/260424_wn_vo_officer_hpMain_16x9.jpg?w=992",
-      "publishedAt": "2026-04-24T23:54:46",
-      "source": "ABC News",
-      "url": "https://abcnews.com/video/132364699/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "crime",
-          "surveillance"
-        ],
-        "keywords": [
-          "confrontation",
-          "surveillance",
-          "california",
-          "released",
-          "surveillance video shows",
-          "car surveillance video",
-          "during a confrontation",
-          "released video shows"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.183,
-          "neu": 0.817
-        }
-      }
-    },
-    {
-      "id": "b37d14dc-c0a3-4833-85c8-e327741b3f89",
-      "title": "Cyberattacks on US businesses linked to Iran, despite ongoing ceasefire",
-      "description": "ABC News has learned of multiple cyberattacks linked to Iran on US businesses in just the past week, despite the ongoing ceasefire President Donald Trump extended as he claims Iran may have a counteroffer to a peace deal.",
-      "image": "https://vcl.abcotv.net/video/wls/042426-wls-iteam-rivera-iran-cyber-6p-vid.mp4",
-      "publishedAt": "2026-04-24T23:54:40",
-      "source": "ABC 7 Chicago",
-      "url": "https://abc7chicago.com/post/cyberattacks-us-businesses-linked-iranian-groups-despite-trumps-ongoing-ceasefire-iran/18961489/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "cybersecurity",
-          "politics"
-        ],
-        "keywords": [
-          "donald trump",
-          "click",
-          "iranian-associated",
-          "denial-of-service",
-          "infrastructure",
-          "denial-of-service attacks against",
-          "were denial-of-service attacks",
-          "with denial-of-service attacks"
-        ],
-        "sentiment": {
-          "pos": 0.047,
-          "neg": 0.06,
-          "neu": 0.892
-        }
-      }
-    },
-    {
-      "id": "2f6c0902-9f0f-4c05-8fe5-896291c6458c",
-      "title": "'Millionaire tax' proposal fails to advance in Illinois House",
-      "description": "The proposal, sponsored by Rep. La Shawn Ford, D-Chicago, would require voter approval to change Illinois’ constitution to allow higher taxes on income earned above $1 million.",
-      "image": "https://fox2now.com/wp-content/uploads/sites/14/2026/04/Story_2218470_ver1.0_e00bff.jpg?w=690",
-      "publishedAt": "2026-04-24T23:53:39",
-      "source": "FOX 2",
-      "url": "https://fox2now.com/news/illinois/millionaire-tax-proposal-fails-to-advance-in-illinois-house/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics",
-          "taxation"
-        ],
-        "keywords": [
-          "tax proposal",
-          "millionaire tax",
-          "change illinois",
-          "proposal fails",
-          "illinois house",
-          "house proposal",
-          "higher taxes"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "9e6d8fbc-fd84-4bfa-aab0-edca08d07da9",
-      "title": "Wake County man accused of sex crimes involving 2 children",
-      "description": "Wake County man accused of sex crimes involving 2 children",
-      "image": "https://cdn.abcotvs.com/dip/images/15015526_14553702_032124-wtvd-wake-county-sheriff-generic-logo-img.jpg?w=1600",
-      "publishedAt": "2026-04-24T23:53:00",
-      "source": "ABC11",
-      "url": "https://abc11.com/post/wake-county-man-accused-sex-crimes-involving-2-children/18961538/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "crime",
-          "law enforcement"
-        ],
-        "keywords": [
-          "reginald leonard giltz",
-          "wake county",
-          "investigation",
-          "investigators",
-          "neighborhood",
-          "wake county district attorney",
-          "investigators charged glitz",
-          "information was immediately"
-        ],
-        "sentiment": {
-          "pos": 0.062,
-          "neg": 0.158,
-          "neu": 0.779
-        }
-      }
-    },
-    {
-      "id": "8f6204ff-7e5b-419f-ab6c-d56101e150e4",
-      "title": "Darío Benedetto fue contundente sobre la polémica en el Superclásico entre River y Boca",
-      "description": "Darío Benedetto fue contundente sobre la polémica en el Superclásico entre River y Boca",
-      "image": "https://api.vodgc.net/player/v2/embed/playerId/HKA9Y71614802794/contentId/1866039",
-      "publishedAt": "2026-04-24T23:52:28",
-      "source": "Todo Noticias",
-      "url": "https://tn.com.ar/deportes/futbol/2026/04/24/dario-benedetto-fue-contundente-sobre-la-polemica-en-el-superclasico-entre-river-y-boca/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "football",
-          "sports"
-        ],
-        "keywords": [
-          "divididas darío",
-          "boca darío",
-          "polémica en",
-          "el superclásico",
-          "darío pipa",
-          "darío",
-          "la polémica"
-        ],
-        "sentiment": {
-          "pos": 0.015,
-          "neg": 0.056,
-          "neu": 0.929
-        }
-      }
-    },
-    {
-      "id": "709c3b15-79c0-4141-90f0-ca5b4b613d7b",
-      "title": "Chiefs to unveil domed stadium renderings this summer: Clark Hunt",
-      "description": "The Kansas City Chiefs plan to unveil designs for a new $3 billion domed stadium later this summer.",
-      "image": "https://fox2now.com/wp-content/uploads/sites/14/2026/04/Chiefs-Kanss-Stadium-Rendering.png?w=900",
-      "publishedAt": "2026-04-24T23:51:16",
-      "source": "FOX 2",
-      "url": "https://fox2now.com/sports/kansas-city-chiefs/chiefs-to-unveil-domed-stadium-renderings-this-summer-clark-hunt/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "architecture",
-          "sports"
-        ],
-        "keywords": [
-          "chiefs unveil",
-          "chiefs plan",
-          "domed stadium",
-          "stadium renderings",
-          "unveil domed",
-          "chiefs",
-          "city chiefs"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "8f03ba3f-44a2-45f2-a6fb-2e01635d7d95",
-      "title": "Grinning suspect cuffed after alleged fiery street takeover, drag race caught on camera",
-      "description": "Queens DA announces arrest of Asil Assaidi, who allegedly helped wreak havoc during a drag-racing street takeover involving more than 100 vehicles.",
-      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2026/04/931/523/Queens-Street-Racing-Suspect.jpeg?ve=1&tl=1",
-      "publishedAt": "2026-04-24T23:50:09",
-      "source": "Fox News",
-      "url": "https://www.foxnews.com/us/grinning-suspect-cuffed-alleged-fiery-street-takeover-drag-race-caught-camera",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "crime",
-          "law enforcement"
-        ],
-        "keywords": [
-          "fox news",
-          "district attorney melinda katz",
-          "investigating",
-          "investigation",
-          "intersection",
-          "nypd investigating 'reckless",
-          "drag-racing street takeover"
-        ],
-        "sentiment": {
-          "pos": 0.029,
-          "neg": 0.121,
-          "neu": 0.85
-        }
-      }
-    },
-    {
-      "id": "a8d4a39c-43fd-4a72-964a-127ebaf6fe6d",
-      "title": "LIVE BLOG: Chiefs take DE Mason Thomas at #40",
-      "description": "The second and third rounds of the 2026 NFL Draft are going down Friday at 6 p.m., with the Kansas City Chiefs still needing a variety of positions to help the team get back to its winning ways.",
-      "image": "https://fox2now.com/wp-content/uploads/sites/14/2026/04/AP26114706268470.jpg?w=900",
-      "publishedAt": "2026-04-24T23:49:30",
-      "source": "FOX 2",
-      "url": "https://fox2now.com/sports/kansas-city-chiefs/live-blog-chiefs-take-de-mason-thomas-at-40/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "football",
-          "sports"
-        ],
-        "keywords": [
-          "chiefs needing",
-          "chiefs mason",
-          "chiefs",
-          "nfl draft",
-          "city chiefs",
-          "mason thomas",
-          "draft going"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "fe09ee49-0257-42a8-bae8-d24238db286e",
-      "title": "Reise-Genehmigung: „Hätte niemals im Gesetz stehen dürfen“",
-      "description": "Verteidigungsminister Boris Pistorius (SPD) räumt ein, dass die Regelung zu Auslandsreisen wehrfähiger Männer für Verunsicherung gesorgt hat. Nun will er Klarheit schaffen.",
-      "image": "https://www.zdfheute.de/assets/boris-pistorius-352~384x216?cb=1777074575873",
-      "publishedAt": "2026-04-24T23:49:00",
-      "source": "ZDFheute",
-      "url": "https://www.zdfheute.de/politik/deutschland/pistorius-wehrpflicht-reisen-ausland-reisegenehmigung-100.html",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "military",
-          "politics"
-        ],
-        "keywords": [
-          "eine genehmigungspflicht",
-          "boris pistorius",
-          "genehmigungspflicht für",
-          "verteidigungsminister boris",
-          "verunsicherung gesorgt",
-          "genehmigung hätte",
-          "spd politiker"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0.068,
-          "neu": 0.932
-        }
-      }
-    },
-    {
-      "id": "9464095a-0604-419e-9463-9bcb56c242e8",
-      "title": "RSL sub-branch targeted with vile 'anti-veteran' graffiti on Anzac Day",
-      "description": "The Reservoir RSL sub-branch building in Melbourne's north was targeted with graffiti overnight, \"containing anti-veteran, anti-Australian Defence Force and deeply offensive slurs\".",
-      "image": "https://prod.static9.net.au/fs/319d582a-9223-4f67-a866-111e424ded99",
-      "publishedAt": "2026-04-24T23:48:01",
-      "source": "9News",
-      "url": "https://www.9news.com.au/national/rsl-sub-branch-targeted-by-candals-on-anzac-day/c56dd29c-a622-48d5-a8ca-71fa5d59d043",
-      "location": {
-        "name": "Australia",
-        "lat": -25.2744,
-        "lng": 133.7751
-      },
-      "meta": {
-        "country": "AU",
-        "topics": [
-          "crime",
-          "politics"
-        ],
-        "keywords": [
-          "anzac",
-          "reservoir",
-          "anti-australian",
-          "unfortunately",
-          "condemnation",
-          "graffiti containing anti-veteran",
-          "anti-australian defence force",
-          "traditional gunfire breakfast"
-        ],
-        "sentiment": {
-          "pos": 0.108,
-          "neg": 0.22,
-          "neu": 0.672
         }
       }
     }
