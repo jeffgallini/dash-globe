@@ -1,461 +1,15 @@
 {
-  "updatedAt": "2026-04-28T07:12:33.761Z",
+  "updatedAt": "2026-04-29T07:06:44.626Z",
   "count": 20,
   "stories": [
     {
-      "id": "7bac6ef0-8a09-48af-8700-6a480192604b",
-      "title": "Neville: Arsenal will need wheelbarrow to get over line in PL title race",
-      "description": "Sky Sports' Gary Neville says Arsenal \"will need a wheelbarrow\" to get over the line in the Premier League title race after an edgy 1-0 win against Newcastle on Saturday Night Football.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-neville-arsenal-neville_7230769.jpg?20260425211943",
-      "publishedAt": "2026-04-25T21:20:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/arsenal-1-0-newcastle-gary-neville-says-gunners-will-need-wheelbarrow-to-get-over-the-line-in-premier-league-title-race-13536612",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "5442d875-9203-4782-b1db-9ac8549be748",
-      "title": "Starmer stands by sacking of senior civil servant - and signals intention to fight on",
-      "description": "Sir Keir Starmer has defended his decision to sack Olly Robbins over the vetting process for Peter Mandelson - saying the senior civil servant only faced the \"everyday pressure of government\".",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skynews-starmer-downing-street_7230770.jpg?20260425212133",
-      "publishedAt": "2026-04-25T20:11:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/defiant-sir-keir-starmer-stands-by-sacking-of-olly-robbins-and-signals-intention-to-fight-on-13536614",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "e4de8090-6e9e-48ee-a51a-966e9310e283",
-      "title": "Strait talk: What's at stake in Hormuz",
-      "description": "The Strait of Hormuz, which is a key passage for oil produced in the Middle East, has come to the forefront of the Iran-US conflict. We get analysis from Duncan L Potts, a former senior Royal Navy officer.",
-      "image": "https://s.france24.com/media/display/14322f62-40cc-11f1-a7f0-005056bf30b7/w:1024/p:16x9/Anglais-2026-04-25T16-22-30-904Z.jpg",
-      "publishedAt": "2026-04-25T17:56:24",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/tv-shows/spotlight/20260425-strait-talks-what-s-at-stake-in-hormuz",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "ccac4bf0-baa7-4b91-ad13-8ea61578e451",
-      "title": "A difficult balance to find: Pakistan wants to be key actor in shaping US-Iran peace",
-      "description": "Since the beginning of the Iran-US war, Pakistan has tried to host talks between the two countries, aiming at finding peace. We hear from Pakistani policy analyst and journalist Raza Rumi.",
-      "image": "https://s.france24.com/media/display/6e5b67dc-4249-11f1-9851-005056bf30b7/w:1024/p:16x9/capture-213477993569ef79611f03f4-94291215.jpg",
-      "publishedAt": "2026-04-25T17:14:06",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/tv-shows/spotlight/20260425-a-difficult-balance-to-find-pakistan-wants-to-be-a-key-actor-in-shaping-us-iran-peace",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "82c873f7-9d05-4dd2-b768-9cf9e2bf4ccc",
-      "title": "Race for Europe: Advantage Brighton after Brentford lose at Man Utd",
-      "description": "The Premier League could have six teams in the Champions League next season and 10 in Europe after a potentially pivotal weekend.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skysports-champions-league_7225302.jpg?20260420151633",
-      "publishedAt": "2026-04-25T17:00:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/how-10-premier-league-teams-could-be-in-europe-next-season-with-six-in-the-champions-league-13534068",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "caa2a2e6-6e1f-4156-af6f-2a002763df9b",
-      "title": "Festive mood in West Bank as local elections underway",
-      "description": "A festive and cheerful mood has taken hold of the West Bank as the Palestinian Authority holds local elections, FRANCE 24's Noga Tarnopolsky said, reporting from Bethlehem. Most electoral lists are aligned with president Mahmud Abbas's secular-nationalist Fatah party or running as independents. There are no lists affiliated with Fatah's archrival Hamas, which controls nearly half of the Gaza Strip.",
-      "image": "https://s.france24.com/media/display/65e2a5ce-40ba-11f1-82b5-005056bf30b7/w:1024/p:16x9/EN-20260425-170216-170441-CS.jpg",
-      "publishedAt": "2026-04-25T15:36:12",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/festive-mood-in-west-bank-as-local-elections-underway",
-      "location": {
-        "name": "France",
-        "lat": 46.2276,
-        "lng": 2.2137
-      },
-      "meta": {
-        "country": "FR",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "b20679c0-e793-4377-8c34-f6a09e599430",
-      "title": "Low voter turnout in Gaza as West Bank holds local elections",
-      "description": "Palestinians in the West Bank and central Gaza voted Saturday in municipal elections, the first since the war in Gaza erupted, with low turnout and a limited political field. Nearly 1.5 million people are registered to vote in the Israeli-occupied West Bank, as well as 70,000 people in Gaza's Deir el-Balah area, according to the Ramallah-based Central Elections Commission.",
-      "image": "https://s.france24.com/media/display/1a0ed2a6-40b2-11f1-a5cb-005056a90284/w:1024/p:16x9/EN-20260425-160153-160352-CS.jpg",
-      "publishedAt": "2026-04-25T14:46:57",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/low-voter-turnout-in-gaza-as-west-bank-holds-local-elections",
-      "location": {
-        "name": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "meta": {
-        "country": "IL",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "3071ada2-7056-4d4f-990f-7096b3f35b8e",
-      "title": "Iran rules out talks with US unless blockade of ports lifted",
-      "description": "US envoys were expected in the Pakistani capital on Saturday to kickstart a new round of peace negotiations with Iran, although Iranian state media said Tehran's representatives had no immediate plans to hold face-to-face talks. \"According to Tehran, until and unless that blockade (of Iranian ports) is lifted, the conditions are not ripe for diplomacy,\" FRANCE 24's Reza Sayah said, reporting from Tehran.",
-      "image": "https://s.france24.com/media/display/b78bf3aa-40ae-11f1-afbb-005056a90284/w:1024/p:16x9/EN-20260425-150508-150857-CS.jpg",
-      "publishedAt": "2026-04-25T14:02:32",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/iran-rules-out-talks-with-us-unless-blockade-of-ports-lifted",
-      "location": {
-        "name": "France",
-        "lat": 46.2276,
-        "lng": 2.2137
-      },
-      "meta": {
-        "country": "FR",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "b0102fd5-8f42-4bf9-95e0-c5df53367f3f",
-      "title": "Starmer faces mounting pressure as Labour leadership chatter grows",
-      "description": "On Friday, Keir Starmer's circle gathered at his country retreat of Chequers to wargame the coming weeks for a prime minister whose future is on the line.",
-      "image": "https://e3.365dm.com/26/04/1920x1080/skynews-keir-starmer-paris_7222799.jpg?20260417153420",
-      "publishedAt": "2026-04-25T13:11:00",
-      "source": "Sky News",
-      "url": "https://news.sky.com/story/when-not-if-labours-uncertainty-over-starmers-future-13536252",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "940885a1-36a5-4224-a08e-1f458362a00a",
-      "title": "Elections in West Bank provide 'credibility to Palestinian sovereignty', expert says",
-      "description": "Local elections are being held in the West Bank and parts of Gaza on Saturday. The vote will determine the makeup of local councils tasked with overseeing water, roads, and electricity. Bertrand Besancenot, former French ambassador to Qatar and Saudi Arabia, said the vote would provide “credibility to Palestinian sovereignty” if voter turnout is high.",
-      "image": "https://s.france24.com/media/display/c236396a-40a3-11f1-9423-005056a90284/w:1024/p:16x9/EN-20260425-140149-140829-CS.jpg",
-      "publishedAt": "2026-04-25T12:47:29",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/elections-in-west-bank-provide-credibility-to-palestinian-sovereignty-expert-says",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "66814f5c-6704-4e4c-8bb0-6c2ad0a01e6d",
-      "title": "Elections in West Bank: ‘Barometer’ on Palestinian public opinion",
-      "description": "Palestinians on Saturday cast ballots in tents and damaged buildings in Deir al-Balah, marking the first local election in part of Gaza Strip in over 20 years. With Hamas affiliated candidates on the list of candidates, the vote serves as a \"barometer\" on Palestinian public opinion, said Hussein Ibish, Senior Resident Scholar at the Arab Gulf States Institute.",
-      "image": "https://s.france24.com/media/display/bd73b5f6-4099-11f1-8d32-005056bf30b7/w:1024/p:16x9/EN-20260425-131311-132251-CS.jpg",
-      "publishedAt": "2026-04-25T11:38:05",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/elections-in-west-bank-barometer-on-palestinian-public-opinion",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "756d0f83-b7ce-4049-8f89-7c796388cfe7",
-      "title": "Displaced Lebanese remain skeptical despite extended truce",
-      "description": "In the coastal city of Sidon, displaced families sheltering from months of conflict express little relief at the extension of a fragile truce between Lebanon and Israel. While Donald Trump voiced optimism about a path toward peace, many civilians – uprooted by fighting involving Hezbollah – say ongoing strikes, uncertainty, and deep mistrust prevent them from returning home or believing in lasting stability.",
-      "image": "https://s.france24.com/media/display/e2f861da-4087-11f1-ac7e-005056bf30b7/w:1024/p:16x9/EN-20260425-110353-110539-CS.jpg",
-      "publishedAt": "2026-04-25T09:39:04",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/displaced-lebanese-remain-skeptical-despite-extended-truce",
-      "location": {
-        "name": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "meta": {
-        "country": "IL",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "c4583f3b-1531-4439-8a45-5e39b344130f",
-      "title": "US envoys to travel to Islamabad despite Iran ruling out direct negotiations with US",
-      "description": "US envoys are expected to travel to Pakistan on Saturday in a new bid to salvage ceasefire talks with Tehran, even as Iran ruled out direct negotiations with US representatives as its top diplomat arrived in Islamabad. The latest effort to broker a deal comes as an indefinite ceasefire has paused most fighting, but the economic fallout is still mounting with global energy shipments disrupted by the closure of the Strait of Hormuz.",
-      "image": "https://s.france24.com/media/display/93ef7fce-4087-11f1-9177-005056a90284/w:1024/p:16x9/EN-20260425-110115-110325-CS.jpg",
-      "publishedAt": "2026-04-25T09:35:58",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/us-envoys-to-travel-to-islamabad-despite-iran-ruling-out-direct-negotiations-with-us",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "8c74c297-f3e6-42a9-9997-f1245b7261e0",
-      "title": "Spain PM brushes of reported Pentagon email on punishing NATO members",
-      "description": "Spanish Prime Minister Pedro Sanchez on Friday refused to be drawn into a dispute with the United States over reports that the Pentagon is weighing whether to punish members of NATO that fail to support American operations in the Iran war. Among those in the firing line is Spain, which has refused to allow US forces involved in the war to use bases on its territory or airspace. Spain says that US-Israeli actions in the Iran war contravenes international law.",
-      "image": "https://s.france24.com/media/display/f0dfddf6-4086-11f1-b54b-005056a97e36/w:1024/p:16x9/EN-20260425-101006-101209-CS.jpg",
-      "publishedAt": "2026-04-25T09:21:13",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/video/20260425-spain-pm-brushes-of-reported-pentagon-email-on-punishing-nato-members",
-      "location": {
-        "name": "Israel",
-        "lat": 31.0461,
-        "lng": 34.8516
-      },
-      "meta": {
-        "country": "IL",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "9752533c-4f74-4850-adb1-0aa1c29ffd4d",
-      "title": "Mojtaba Khamenei remains out of the spotlight in Iran",
-      "description": "Mojtaba Khamenei has remained out of the spotlight since being named supreme leader of Iran, fuelling speculation that he was seriously injured in the strike that killed his father almost two months ago. According to a New York Times report, Khamenei lives in hiding, fearing for his life and participates in decision making by hand-written notes.",
-      "image": "https://s.france24.com/media/display/842336ec-4084-11f1-bb1a-005056bfb2b6/w:1024/p:16x9/EN-20260425-100356-100543-CS.jpg",
-      "publishedAt": "2026-04-25T09:03:24",
-      "source": "France 24",
-      "url": "https://www.france24.com/en/mojtaba-khamenei-remains-out-of-the-spotlight-in-iran",
-      "location": {
-        "name": "United States",
-        "lat": 39.8283,
-        "lng": -98.5795
-      },
-      "meta": {
-        "country": "US",
-        "topics": [
-          "middle east",
-          "politics"
-        ],
-        "keywords": [
-          "general",
-          "news"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "24e9a31e-7ef9-4c4d-a5dc-ca3ad69e9014",
-      "title": "В Вашингтоне перед визитом Карла III по ошибке вывесили австралийские флаги",
-      "description": "В Вашингтоне перед визитом Карла III по ошибке вывесили австралийские флаги",
-      "image": "https://cdnn21.img.ria.ru/images/07e9/0c/16/2063790665_0:40:3072:1768_650x0_80_0_0_c49421fbbee6ac09387575a16e878345.jpg",
-      "publishedAt": "2026-04-25T06:51:53",
-      "source": "RIA Novosti (РИА Новости)",
-      "url": "https://ria.ru/20260425/vashington-2088867420.html",
+      "id": "c37ba65b-5a87-4607-80e1-ddb7826c8685",
+      "title": "Virginia Supreme Court considers whether to block voter-approved US House map favoring Democrats",
+      "description": "RICHMOND, Va. (AP) — Virginia Supreme Court justices on Monday questioned whether the state’s Democratic-led legislature complied with constitutional requirements when it sent a congressional…",
+      "image": "https://wgntv.com/wp-content/uploads/sites/5/2026/04/69efa172ed9442.33634604.jpeg?w=1280",
+      "publishedAt": "2026-04-27T00:00:00",
+      "source": "WGN-TV",
+      "url": "https://wgntv.com/politics-3/ap-politics/ap-virginia-supreme-court-considers-whether-to-block-voter-approved-us-house-map-favoring-democrats/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -465,32 +19,32 @@
         "country": null,
         "topics": [
           "politics",
-          "international"
+          "law"
         ],
         "keywords": [
-          "washington",
-          "carl iii",
-          "australia",
-          "britain",
-          "white house",
-          "flags",
-          "royal visit"
+          "virginia supreme",
+          "congressional richmond",
+          "virginia",
+          "democrats richmond",
+          "congressional redistricting",
+          "supreme court",
+          "ap virginia"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.134,
+          "neg": 0.078,
+          "neu": 0.789
         }
       }
     },
     {
-      "id": "e9d8d5e7-76b1-4002-884d-bcfeae916a03",
-      "title": "چاپ کتابی از روایت های زندگی رهبر شهید انقلاب به زبان روسی",
-      "description": "با همکاری رایزنی فرهنگی جمهوری اسلامی ایران در فدراسیون روسیه، کتاب «پدر دلسوز» حاوی روایت‌هایی از زندگی رهبر شهیدمان به زبان روسی منتشر شد.",
-      "image": "https://media.mehrnews.com/d/2026/04/25/4/5999653.jpg",
-      "publishedAt": "2026-04-25T06:50:50",
-      "source": "Mehr News Agency (MNA)",
-      "url": "https://www.mehrnews.com/news/6810446/%DA%86%D8%A7%D9%BE-%DA%A9%D8%AA%D8%A7%D8%A8%DB%8C-%D8%A7%D8%B2-%D8%B1%D9%88%D8%A7%DB%8C%D8%AA-%D9%87%D8%A7%DB%8C-%D8%B2%D9%86%D8%AF%DA%AF%DB%8C-%D8%B1%D9%87%D8%A8%D8%B1-%D8%B4%D9%87%DB%8C%D8%AF-%D8%A7%D9%86%D9%82%D9%84%D8%A7%D8%A8-%D8%A8%D9%87-%D8%B2%D8%A8%D8%A7%D9%86-%D8%B1%D9%88%D8%B3%DB%8C",
+      "id": "7096ca66-caac-4f53-a492-fe6110ab22ee",
+      "title": "BWU praised for decades of advocacy ahead of milestone anniversary",
+      "description": "General Secretary of the Barbados Workers’ Union, Toni Moore, has praised the organisation’s legacy as it approaches a The post BWU praised for decades of advocacy ahead of milestone anniversary appeared first on Caribbean Broadcasting Corporation.",
+      "image": "https://www.youtube.com/embed/DIIk52gcKHM",
+      "publishedAt": "2026-04-26T23:48:31",
+      "source": "Caribbean Broadcasting Corporation (CBC)",
+      "url": "https://www.cbc.bb/news/local-news/bwu-praised-for-decades-of-advocacy-ahead-of-milestone-anniversary/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -499,17 +53,17 @@
       "meta": {
         "country": null,
         "topics": [
-          "books",
+          "union",
           "politics"
         ],
         "keywords": [
-          "چاپ",
-          "کتاب",
-          "روایت",
-          "زندگی",
-          "شهید",
-          "انقلاب",
-          "روسی"
+          "bwu praised",
+          "moore praised",
+          "praised organisation",
+          "bwu",
+          "praised decades",
+          "moore",
+          "post bwu"
         ],
         "sentiment": {
           "pos": 0,
@@ -519,13 +73,13 @@
       }
     },
     {
-      "id": "3b85ba5a-e23f-4392-b900-c0c098e9b3ff",
-      "title": "Vučić rekao da će SNS imati skup u Beogradu na Vidovdan, ili...",
-      "description": "\"Biće to vrijeme važnih i velikih odluka za građane Srbije, ali da li su to izbori ili nešto drugo, otom potom\", izjavio je Vučić u Parizu, gdje učestvuje na Međunarodnoj konferenciji o globalnoj politici.",
-      "image": "https://www.vijesti.me/data/images/2026/04/25/08/5722000_aleksandar-vucic_ff.jpg",
-      "publishedAt": "2026-04-25T06:49:00",
-      "source": "Vijesti",
-      "url": "https://www.vijesti.me/svijet/balkan/805948/vucic-rekao-da-ce-sns-imati-skup-u-beogradu-na-vidovdan-ili-prije-nije-zelio-da-kaze-kada-ce-biti-izbori",
+      "id": "444de89f-5c5d-4299-92b6-8664cabd9e11",
+      "title": "San Francisco native DB Julian Neal drafted by Super Bowl champs Seahawks",
+      "description": "A long-held dream of playing in the NFL became reality for defensive back Julian Neal, drafted by the 'world champs' Seattle Seahawks in the 99th overall pick. He grew up in the Bayview-Hunters Point neighborhood, and said he hopes his journey can serve as inspiration for other young people in San Francisco.",
+      "image": "https://cdn.abcotvs.com/dip/images/18973590_042626-kgo-nfl-draftpick-local-img.jpg?w=1600",
+      "publishedAt": "2026-04-26T23:44:36",
+      "source": "ABC7 News",
+      "url": "https://abc7news.com/post/san-francisco-native-db-julian-neal-arkansas-drafted-super-bowl-champs-seattle-seahawks/18968956/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -534,32 +88,533 @@
       "meta": {
         "country": null,
         "topics": [
+          "sports",
+          "football"
+        ],
+        "keywords": [
+          "san francisco",
+          "julian neal",
+          "bayview-hunters",
+          "professional",
+          "neighborhood",
+          "bayview-hunters point neighborhood",
+          "celebration continued saturday",
+          "continued saturday afternoon"
+        ],
+        "sentiment": {
+          "pos": 0.127,
+          "neg": 0.005,
+          "neu": 0.867
+        }
+      }
+    },
+    {
+      "id": "e2fcc821-f2e2-4acb-8d35-bd6645ea74a3",
+      "title": "Police make dramatic casino arrest after reports of 'gun' pointed at car",
+      "description": "A Perth man has been charged following a dramatic arrest inside Crown Casino, accused of pointing a gun-shaped object at a car.",
+      "image": "https://prod.static9.net.au/fs/9d04ea36-d2ef-40bf-8c22-f53a1e9ec6bd",
+      "publishedAt": "2026-04-26T23:42:11",
+      "source": "9News",
+      "url": "https://www.9news.com.au/national/perth-man-charged-after-dramatic-arrest-in-casino-allegedly-pointing-gun-shape-object-at-car/271d5d92-93a5-4176-b244-e2f6ab7c59bc",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "crime",
+          "law enforcement"
+        ],
+        "keywords": [
+          "teddington road",
+          "crown casino",
+          "viaappleandgoogle",
+          "entertainment",
+          "paraphernalia",
+          "possessing drug paraphernalia",
+          "multiple offences following",
+          "viaappleandgoogle play make"
+        ],
+        "sentiment": {
+          "pos": 0.04,
+          "neg": 0.096,
+          "neu": 0.864
+        }
+      }
+    },
+    {
+      "id": "f8c02836-1a48-4a3f-ab93-0d7f3c8d4e13",
+      "title": "MacKinnon leads Avalanche to 5-1 win and 1st-round sweep of LA Kings, ending Anze Kopitar's career",
+      "description": "Nathan MacKinnon had two goals and an assist, Nicolas Roy and Devon Toews scored in the third period, and the top-seeded Colorado Avalanche swept the Los Angeles Kings out of the first round of the Stanley Cup playoffs with a 5-1 victory.",
+      "image": "https://ewscripps.brightspotcdn.com/dims4/default/7f2b487/2147483647/strip/true/crop/3000x1575+0+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fda%2Fab%2F1aea8f6c44f7a7a84fac05260116%2Fap26116831522390.jpg",
+      "publishedAt": "2026-04-26T23:35:22",
+      "source": "ABC7 Denver",
+      "url": "https://www.denver7.com/sports/avalanche/mackinnon-leads-avalanche-to-5-1-win-and-1st-round-sweep-of-la-kings-ending-anze-kopitars-career",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "hockey",
+          "sports"
+        ],
+        "keywords": [
+          "nathan mackinnon",
+          "nicolas roy",
+          "trophy-winning",
+          "demonstration",
+          "defense-first",
+          "masterful four-game demonstration",
+          "heavyweight first-round series",
+          "top-seeded colorado avalanche"
+        ],
+        "sentiment": {
+          "pos": 0.127,
+          "neg": 0.065,
+          "neu": 0.808
+        }
+      }
+    },
+    {
+      "id": "7eeedd09-3a27-4088-b7bf-c209eb556897",
+      "title": "St. Edward’s 12 week MBA program targets AI-driven future",
+      "description": "St. Edward’s MBA program targets AI-driven future",
+      "image": "https://www.kxan.com/wp-content/uploads/sites/40/2026/04/St-Eds-offering-12-week-MBA.jpg?w=386",
+      "publishedAt": "2026-04-26T23:33:12",
+      "source": "KXAN Austin",
+      "url": "https://www.kxan.com/news/education/st-edwards-12-week-mba-program-targets-ai-driven-future/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "education",
+          "technology"
+        ],
+        "keywords": [
+          "edward mba",
+          "mba program",
+          "ai driven",
+          "mba",
+          "week mba",
+          "ai",
+          "targets ai"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "8416e8a9-7434-47da-855c-0ab5a4e2a2f2",
+      "title": "BOJ Seen Holding Rates in Messaging Risk for Ueda as Yen Teeters",
+      "description": "The Bank of Japan is widely expected to keep interest rates unchanged on Tuesday, setting up a communication challenge for Governor Kazuo Ueda as the foundering yen hovers near levels that have prompted past interventions.",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i5mIOrppcmeQ/v3/1200x-1.png",
+      "publishedAt": "2026-04-26T23:30:00",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-26/boj-seen-holding-rates-in-messaging-risk-for-ueda-as-yen-teeters",
+      "location": {
+        "name": "Japan",
+        "lat": 36.2048,
+        "lng": 138.2529
+      },
+      "meta": {
+        "country": "JP",
+        "topics": [
+          "finance",
+          "economy"
+        ],
+        "keywords": [
+          "bank japan",
+          "holding rates",
+          "rates messaging",
+          "boj",
+          "yen teeters",
+          "boj seen",
+          "rates unchanged"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "ddf2344e-6675-42d5-bd47-d3f47c60d6f7",
+      "title": "President Trump raises hotel security concerns",
+      "description": "After Cole Tomas Allen breached the White House Correspondents’ Dinner armed with multiple weapons, President Trump raised general security concerns about the size and layout of the hotel.",
+      "image": "https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/f_vert_alba_security_questions_260426/3/abs/index.m3u8",
+      "publishedAt": "2026-04-26T23:29:22",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/video/shorts/trump-raises-security-concerns-after-gunman-breached-whcd-262143557625",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "security"
+        ],
+        "keywords": [
+          "hotel security",
+          "raises hotel",
+          "security concerns",
+          "security",
+          "hotel",
+          "trump raises",
+          "president trump"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "042037c5-9408-4fc0-a86c-4ac98ac94784",
+      "title": "Denver business owners fear cultural loss as historic Asia Center redevelopment looms",
+      "description": "Plans to redevelop the Asia Center on Federal Boulevard at Tennessee Avenue have raised concerns among business owners and community members who fear for the preservation of the area's cultural history.",
+      "image": "https://ewscripps.brightspotcdn.com/dims4/default/800b3ab/2147483647/strip/true/crop/1587x833+0+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fb4%2Fbe%2Ffcde42f744c6a8860a5d4380a13a%2Fscreenshot-2026-04-26-at-4-21-09-pm.png",
+      "publishedAt": "2026-04-26T23:27:03",
+      "source": "ABC7 Denver",
+      "url": "https://www.denver7.com/news/local-news/denver-business-owners-fear-cultural-loss-as-historic-asia-center-redevelopment-looms",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "business",
+          "culture"
+        ],
+        "keywords": [
+          "katrina nguyen",
+          "kim son",
+          "underrepresented",
+          "redevelopment",
+          "mid-interview",
+          "affordable housing apartments",
+          "'re already underrepresented",
+          "already underrepresented in"
+        ],
+        "sentiment": {
+          "pos": 0.1,
+          "neg": 0.042,
+          "neu": 0.858
+        }
+      }
+    },
+    {
+      "id": "fdb1e120-d4ae-44f8-8eea-f0c7ee54feb5",
+      "title": "Jeffries blames House GOP for stalling DHS funding over ICE after WHCA dinner shooting",
+      "description": "House Minority Leader Hakeem Jeffries (D-NY) blamed House Republicans for stalling a bipartisan Department of Homeland Security funding bill, arguing the impasse centers on GOP demands over Immigration and Customs Enforcement funding in the wake of the White House Correspondents’ Association dinner shooting. Jeffries stressed that DHS funding for the Secret Service, Transportation Security Administration, [.].",
+      "image": "https://www.washingtonexaminer.com/wp-content/uploads/2026/04/AP26113616696428.jpg?w=696",
+      "publishedAt": "2026-04-26T23:24:14",
+      "source": "Washington Examiner",
+      "url": "https://www.washingtonexaminer.com/news/house/4543800/jeffries-house-gop-stalling-dhs-funding/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "government"
+        ],
+        "keywords": [
+          "jeffries",
+          "fox news",
+          "representatives",
+          "correspondents",
+          "appropriations",
+          "addressing cost-of-living concerns",
+          "impeachment proceedings against",
+          "separating ice-related funding"
+        ],
+        "sentiment": {
+          "pos": 0.125,
+          "neg": 0.105,
+          "neu": 0.77
+        }
+      }
+    },
+    {
+      "id": "6e6246fe-6018-4087-9499-f73ab4ca916a",
+      "title": "Inside the world’s largest art heist when over $500M of paintings stolen",
+      "description": "A former FBI agent is offering the first detailed account of how investigators identified the people believed to have carried out the 1990 Isabella Stewart Gardner Museum heist.",
+      "image": "https://i.abcnewsfe.com/a/4da84cf3-957e-4bad-b645-857f2c91ec62/wirestory_512da0322ce5c93c1bbafc7a5e228b2c_16x9.jpg?w=1600",
+      "publishedAt": "2026-04-26T23:22:31",
+      "source": "ABC News",
+      "url": "https://abcnews.com/Entertainment/wireStory/inside-worlds-largest-art-heist-500m-paintings-stolen-132406537",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "art",
+          "crime"
+        ],
+        "keywords": [
+          "geoffrey kelly",
+          "gardner",
+          "long-circulating",
+          "palazzo-inspired",
+          "intermediaries",
+          "challenges long-circulating theories",
+          "venetian palazzo-inspired building",
+          "isabella stewart gardner museum"
+        ],
+        "sentiment": {
+          "pos": 0.067,
+          "neg": 0.131,
+          "neu": 0.802
+        }
+      }
+    },
+    {
+      "id": "28168020-a8b3-4e21-b5dc-78cd10bab6df",
+      "title": "Inside the world’s biggest art heist: $500M of paintings stolen from Boston museum",
+      "description": "Inside the world’s biggest art heist: $500M of paintings stolen from Boston museum",
+      "image": "https://i.abcnewsfe.com/a/4da84cf3-957e-4bad-b645-857f2c91ec62/wirestory_512da0322ce5c93c1bbafc7a5e228b2c_16x9.jpg?w=1600",
+      "publishedAt": "2026-04-26T23:22:30",
+      "source": "ABC News",
+      "url": "https://abcnews.com/US/wireStory/inside-worlds-largest-art-heist-500m-paintings-stolen-132397210",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "art",
+          "crime"
+        ],
+        "keywords": [
+          "geoffrey kelly",
+          "gardner",
+          "long-circulating",
+          "palazzo-inspired",
+          "intermediaries",
+          "challenges long-circulating theories",
+          "venetian palazzo-inspired building",
+          "isabella stewart gardner museum"
+        ],
+        "sentiment": {
+          "pos": 0.067,
+          "neg": 0.131,
+          "neu": 0.802
+        }
+      }
+    },
+    {
+      "id": "1dba0cf1-971d-47ce-8151-d31fc34aa6c0",
+      "title": "Stewart breaks Atwood's homer record, Longhorns sweep Kentucky",
+      "description": "AUSTIN (KXAN) — Reese Atwood's single-season home run record didn't stand for long. Katie Stewart crushed her 24th homer of the season, surpassing Atwood's 23 she hit last season, to help Texas sweep Kentucky with an 11-2 win Sunday at John Cropp Stadium in Lexington, Kentucky. SEC softball: No. 4 Texas 3, Kentucky 0 The [...]",
+      "image": "https://www.kxan.com/wp-content/uploads/sites/40/2026/04/GettyImages-2272070090.jpg?w=900",
+      "publishedAt": "2026-04-26T23:15:24",
+      "source": "KXAN Austin",
+      "url": "https://www.kxan.com/sports/stewart-breaks-atwoods-homer-record-longhorns-sweep-kentucky/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports",
+          "baseball"
+        ],
+        "keywords": [
+          "sweep kentucky",
+          "texas sweep",
+          "atwood homer",
+          "longhorns sweep",
+          "homer record",
+          "record longhorns",
+          "softball texas"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "06ac613c-6bbc-4d6e-8531-c79586f08f67",
+      "title": "WGN EXCLUSIVE: Cop Killer Suspect's Previous Victim: \"I'm So Mad!\"",
+      "description": "CHICAGO (WGN) — The man now in police custody believed responsible for shooting two Chicago police officers has a long criminal history; and was on pre-trial release in a carjacking case. \"It's honestly shocking,\" the carjacking victim told WGN Investigates. \"It makes me so mad that someone who pulled a gun on me was released,\" she said. [...]",
+      "image": "https://wgntv.com/wp-content/uploads/sites/5/2026/04/2025-carjacking.jpg?w=640",
+      "publishedAt": "2026-04-26T23:14:43",
+      "source": "WGN-TV",
+      "url": "https://wgntv.com/news/wgn-investigates/wgn-exclusive-cop-killer-suspects-previous-victim-im-so-mad/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "crime",
+          "law enforcement"
+        ],
+        "keywords": [
+          "shooting chicago",
+          "cop killer",
+          "chicago police",
+          "killer suspect",
+          "mad chicago",
+          "chicago wgn",
+          "carjacking victim"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "c5c48be8-b63d-4bbd-aa40-bb079216cbeb",
+      "title": "Who is Trump’s 'would-be assassin' and were there security failings at DC shooting?",
+      "description": "Who is Trump’s 'would-be assassin' and were there security failings at DC shooting?",
+      "image": "https://ichef.bbci.co.uk/images/ic/1024x576/p0j72y80.jpg",
+      "publishedAt": "2026-04-26T23:14:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sounds/play/p0ngrsbh?at_medium=RSS&at_campaign=rss",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "crime"
+        ],
+        "keywords": [
+          "justin",
+          "sarah",
+          "correspondents",
+          "investigators",
+          "department",
+          "bbc state department correspondent",
+          "department correspondent tom",
+          "department correspondent get"
+        ],
+        "sentiment": {
+          "pos": 0.096,
+          "neg": 0.011,
+          "neu": 0.893
+        }
+      }
+    },
+    {
+      "id": "c4fc08ea-82c7-4580-a3eb-f62305356afc",
+      "title": "Arrest made after teenager killed in Windsor stabbing",
+      "description": "Arrest made after teenager killed in Windsor stabbing",
+      "image": "https://i.cbc.ca/ais/0045081c-819b-422f-927a-c786855c14b6,1777298702690/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620",
+      "publishedAt": "2026-04-26T23:10:42",
+      "source": "CBC News",
+      "url": "https://www.cbc.ca/news/canada/windsor/teenager-death-9.7178142?cmp=rss",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "crime",
+          "homicide"
+        ],
+        "keywords": [
+          "goyeau street",
+          "life-threatening",
+          "investigating",
+          "investigation",
+          "hospital with life-threatening",
+          "with life-threatening injuries",
+          "the homicide investigation",
+          "investigating a suspected"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.165,
+          "neu": 0.835
+        }
+      }
+    },
+    {
+      "id": "d2124d70-c0a2-46d9-929c-4574315eaa3c",
+      "title": "Justice Department cites dinner shooting to press preservationists to drop Trump ballroom suit",
+      "description": "The Justice Department is pushing to dismiss a lawsuit blocking President Donald Trump's $400 million White House ballroom project.",
+      "image": "https://i.abcnewsfe.com/a/f0fd49dd-1af4-456c-a7cf-76becfcec3aa/wirestory_1d063b208677631cb964c6c8ff64bd96_16x9.jpg?w=1600",
+      "publishedAt": "2026-04-26T23:09:18",
+      "source": "ABC News",
+      "url": "https://abcnews.com/US/wireStory/justice-department-cites-dinner-shooting-press-preservationists-drop-132406134",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "law",
           "politics"
         ],
         "keywords": [
-          "građane srbije",
-          "biće vrijeme",
-          "vučić najavio",
-          "vidovdan ili",
-          "vrijeme važnih",
-          "na vidovdan",
-          "je vučić"
+          "donald trump",
+          "todd blanche",
+          "preservationists",
+          "correspondents",
+          "administration",
+          "extraordinary security challenges",
+          "presents extraordinary security",
+          "future assassination attempts"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.103,
+          "neg": 0.033,
+          "neu": 0.864
         }
       }
     },
     {
-      "id": "a2ee6b22-38bb-4cd3-bfe6-c245eb6488cd",
-      "title": "پیام‌رسان ایکس از راه رسید",
-      "description": "پیام‌رسان ایکس از راه رسید",
-      "image": "https://media.mehrnews.com/d/2025/03/29/4/5442076.jpg",
-      "publishedAt": "2026-04-25T06:47:33",
-      "source": "Mehr News Agency (MNA)",
-      "url": "https://www.mehrnews.com/news/6810437/%D9%BE%DB%8C%D8%A7%D9%85-%D8%B1%D8%B3%D8%A7%D9%86-%D8%A7%DB%8C%DA%A9%D8%B3-%D8%A7%D8%B2-%D8%B1%D8%A7%D9%87-%D8%B1%D8%B3%DB%8C%D8%AF",
+      "id": "59094493-578f-45c4-9852-287837c401d1",
+      "title": "Baytown father arrested, charged with capital murder of his 7-week-old baby, court documents show",
+      "description": "Court documents said the baby was alone with the father, Christopher Leon Jenkins, when medics were called to the Baytown apartment and found the baby with no pulse. Jenkins is now charged with capital murder.",
+      "image": "https://vcl.abcotv.net/video/ktrk/042626-ktrk-ewn-530p-father-charged-murder-newborn-baytown-SAL-nkey-vid.mp4",
+      "publishedAt": "2026-04-26T23:09:11",
+      "source": "ABC13 Houston",
+      "url": "https://abc13.com/post/baytown-father-arrested-charged-capital-murder-7-week-old-baby-according-court-documents/18973018/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -568,31 +623,34 @@
       "meta": {
         "country": null,
         "topics": [
-          "technology",
-          "communication"
+          "crime",
+          "law enforcement"
         ],
         "keywords": [
-          "piaamrasan",
-          "x_crunch",
-          "mehr",
-          "ios",
-          "x_chat"
+          "christopher leon jenkins",
+          "jenkins",
+          "investigators",
+          "investigation",
+          "demonstration",
+          "investigators claimed jenkins",
+          "allegedly told investigators",
+          "baytown apartment complex"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.015,
+          "neg": 0.158,
+          "neu": 0.827
         }
       }
     },
     {
-      "id": "aa64d4b3-9e5a-41e0-9f08-e9031821ea00",
-      "title": "Live η επίσκεψη Μητσοτάκη - Μακρόν στη φρεγάτα «Κίμων» στον Πειραιά",
-      "description": "Στην επίσκεψη συμμετέχουν επίσης οι υπουργοί Άμυνας Ελλάδας και Γαλλίας, οι υφυπουργοί Εξωτερικών των δύο χωρών, καθώς και η στρατιωτική ηγεσία της χώρας Αμέσως μετά οι υπογραφές για τη νέα αμυντική συνεργασία Ελλάδας Γαλλίας.",
-      "image": "https://www.protothema.gr/images/640x360share/jpg/files/2026-04-25/kimon-mak.jpg",
-      "publishedAt": "2026-04-25T06:47:00",
-      "source": "Proto Thema",
-      "url": "https://www.protothema.gr/politics/article/1808635/live-i-episkepsi-mitsotaki-kai-makron-sti-fregata-kimon/",
+      "id": "6c74e3ef-8c69-40df-9f6b-618250a13914",
+      "title": "Politik für Berufstätige machen: NRW-SPD verlangt Kurskorrektur von Klingbeil",
+      "description": "Nach dramatischen Umfragewerten für die SPD in NRW fordert die Düsseldorfer Parteispitze von den Genossen im Bund eine Kehrtwende. Die Sozialdemokraten müssten endlich wieder Politik machen für Menschen, die arbeiten. Als Beispiel nennt Spitzenkandidat Ott die Gesundheitsreform.",
+      "image": "https://www.n-tv.de/img/30757663/1777251352/Img_4_3/250/Lars-Klingbeil-gemeinsam-mit-Jochen-Ott-bei-der-Verleihung-des-Orden-Wider-den-tierischen-Ernst-im-Congress-Center-Aachen-31-01.jpg",
+      "publishedAt": "2026-04-26T23:04:24",
+      "source": "n-tv",
+      "url": "https://www.n-tv.de/politik/NRW-SPD-verlangt-Kurskorrektur-von-Klingbeil-id30757662.html",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -601,22 +659,58 @@
       "meta": {
         "country": null,
         "topics": [
-          "defense",
-          "politics"
+          "politics",
+          "healthcare"
         ],
         "keywords": [
-          "mitsotakis",
-          "macron",
-          "kimon",
-          "pieraeas",
-          "greece",
-          "france",
-          "defense"
+          "die gesundheitsreform",
+          "gesundheitsreform nach",
+          "gesundheitsreform angesichts",
+          "düsseldorfer parteispitze",
+          "gesundheitsreform",
+          "berufstätige machen",
+          "politik für"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "neg": 0.153,
+          "neu": 0.847
+        }
+      }
+    },
+    {
+      "id": "1a44dcd1-5b30-417f-afb7-fb614a56be43",
+      "title": "Fitzpatricks' historic win earns younger brother Alex PGA Tour card",
+      "description": "Alex and Matt Fitzpatrick make history by becoming the first brothers to win a PGA Tour event at the Zurich Classic of New Orleans pairs tournament.",
+      "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/636a/live/b470de40-41c3-11f1-9799-cf1cb5420f82.jpg",
+      "publishedAt": "2026-04-26T23:02:03",
+      "source": "BBC News",
+      "url": "https://www.bbc.com/sport/golf/articles/cdrmr6rppe4o?at_medium=RSS&at_campaign=rss",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "sports",
+          "golf"
+        ],
+        "keywords": [
+          "alex",
+          "matt fitzpatrick",
+          "fitzpatricks",
+          "championship",
+          "eligibility",
+          "players championship next",
+          "orleans pairs tournament",
+          "english brothers started"
+        ],
+        "sentiment": {
+          "pos": 0.153,
+          "neg": 0.025,
+          "neu": 0.822
         }
       }
     }
