@@ -1,15 +1,15 @@
 {
-  "updatedAt": "2026-04-29T07:06:44.626Z",
+  "updatedAt": "2026-04-30T07:09:59.800Z",
   "count": 20,
   "stories": [
     {
-      "id": "c37ba65b-5a87-4607-80e1-ddb7826c8685",
-      "title": "Virginia Supreme Court considers whether to block voter-approved US House map favoring Democrats",
-      "description": "RICHMOND, Va. (AP) — Virginia Supreme Court justices on Monday questioned whether the state’s Democratic-led legislature complied with constitutional requirements when it sent a congressional…",
-      "image": "https://wgntv.com/wp-content/uploads/sites/5/2026/04/69efa172ed9442.33634604.jpeg?w=1280",
-      "publishedAt": "2026-04-27T00:00:00",
+      "id": "ca931fb2-c174-4331-944f-245002b67ef2",
+      "title": "House in limbo as GOP struggles to find path for spy powers, farm bill, ICE funding",
+      "description": "House Republicans’ ambitious agenda for the week is in limbo as leaders struggle to come to a consensus with hard-line conservatives on legislation to reauthorize foreign spy powers, the farm bill,…",
+      "image": "https://wgntv.com/wp-content/uploads/sites/5/2026/04/johnsonmike_041526gn07_w_bb59d3.jpg?w=1280",
+      "publishedAt": "2026-04-28T00:00:00",
       "source": "WGN-TV",
-      "url": "https://wgntv.com/politics-3/ap-politics/ap-virginia-supreme-court-considers-whether-to-block-voter-approved-us-house-map-favoring-democrats/",
+      "url": "https://wgntv.com/hill-politics/house-in-limbo-as-gop-struggles-to-find-path-for-spy-powers-farm-bill-ice-funding/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -18,68 +18,33 @@
       "meta": {
         "country": null,
         "topics": [
-          "politics",
-          "law"
-        ],
-        "keywords": [
-          "virginia supreme",
-          "congressional richmond",
-          "virginia",
-          "democrats richmond",
-          "congressional redistricting",
-          "supreme court",
-          "ap virginia"
-        ],
-        "sentiment": {
-          "pos": 0.134,
-          "neg": 0.078,
-          "neu": 0.789
-        }
-      }
-    },
-    {
-      "id": "7096ca66-caac-4f53-a492-fe6110ab22ee",
-      "title": "BWU praised for decades of advocacy ahead of milestone anniversary",
-      "description": "General Secretary of the Barbados Workers’ Union, Toni Moore, has praised the organisation’s legacy as it approaches a The post BWU praised for decades of advocacy ahead of milestone anniversary appeared first on Caribbean Broadcasting Corporation.",
-      "image": "https://www.youtube.com/embed/DIIk52gcKHM",
-      "publishedAt": "2026-04-26T23:48:31",
-      "source": "Caribbean Broadcasting Corporation (CBC)",
-      "url": "https://www.cbc.bb/news/local-news/bwu-praised-for-decades-of-advocacy-ahead-of-milestone-anniversary/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "union",
+          "government",
           "politics"
         ],
         "keywords": [
-          "bwu praised",
-          "moore praised",
-          "praised organisation",
-          "bwu",
-          "praised decades",
-          "moore",
-          "post bwu"
+          "limbo gop",
+          "house limbo",
+          "house republicans",
+          "funding house",
+          "limbo leaders",
+          "gop struggles",
+          "limbo"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "pos": 0.077,
+          "neg": 0.052,
+          "neu": 0.871
         }
       }
     },
     {
-      "id": "444de89f-5c5d-4299-92b6-8664cabd9e11",
-      "title": "San Francisco native DB Julian Neal drafted by Super Bowl champs Seahawks",
-      "description": "A long-held dream of playing in the NFL became reality for defensive back Julian Neal, drafted by the 'world champs' Seattle Seahawks in the 99th overall pick. He grew up in the Bayview-Hunters Point neighborhood, and said he hopes his journey can serve as inspiration for other young people in San Francisco.",
-      "image": "https://cdn.abcotvs.com/dip/images/18973590_042626-kgo-nfl-draftpick-local-img.jpg?w=1600",
-      "publishedAt": "2026-04-26T23:44:36",
-      "source": "ABC7 News",
-      "url": "https://abc7news.com/post/san-francisco-native-db-julian-neal-arkansas-drafted-super-bowl-champs-seattle-seahawks/18968956/",
+      "id": "8d609eda-3523-40ab-9858-106c883cc72f",
+      "title": "Peshawar Zalmi v Islamabad United - PSL Qualifier scorecard",
+      "description": "Latest scorecard from the Pakistan Super League Qualifier match between Peshawar Zalmi and Islamabad United in Karachi.",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-28T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237137?at_medium=RSS&at_campaign=rss",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -89,105 +54,238 @@
         "country": null,
         "topics": [
           "sports",
-          "football"
+          "cricket"
         ],
         "keywords": [
-          "san francisco",
-          "julian neal",
-          "bayview-hunters",
-          "professional",
-          "neighborhood",
-          "bayview-hunters point neighborhood",
-          "celebration continued saturday",
-          "continued saturday afternoon"
+          "qualifier peshawar zalmi",
+          "karachi islamabad united",
+          "responsible",
+          " qualifier",
+          "islamabad",
+          "national bank cricket arena",
+          "islamabad united islamabad",
+          "hbl pakistan super league"
         ],
         "sentiment": {
-          "pos": 0.127,
-          "neg": 0.005,
-          "neu": 0.867
+          "pos": 0.269,
+          "neg": 0.028,
+          "neu": 0.702
         }
       }
     },
     {
-      "id": "e2fcc821-f2e2-4acb-8d35-bd6645ea74a3",
-      "title": "Police make dramatic casino arrest after reports of 'gun' pointed at car",
-      "description": "A Perth man has been charged following a dramatic arrest inside Crown Casino, accused of pointing a gun-shaped object at a car.",
-      "image": "https://prod.static9.net.au/fs/9d04ea36-d2ef-40bf-8c22-f53a1e9ec6bd",
-      "publishedAt": "2026-04-26T23:42:11",
-      "source": "9News",
-      "url": "https://www.9news.com.au/national/perth-man-charged-after-dramatic-arrest-in-casino-allegedly-pointing-gun-shape-object-at-car/271d5d92-93a5-4176-b244-e2f6ab7c59bc",
+      "id": "1da23d4b-e71e-4636-a801-5b83e33e2ef5",
+      "title": "Punjab Kings v Rajasthan Royals - IPL scorecard",
+      "description": "Latest scorecard from the Indian Premier League match between Punjab Kings and Rajasthan Royals in New Chandigarh.",
+      "image": "https://static.files.bbci.co.uk/core/website/assets/static/sport/bbc-sport-logo.ebbfcde41a.webp",
+      "publishedAt": "2026-04-28T00:00:00",
+      "source": "BBC News",
+      "url": "https://www.bbc.co.uk/sport/cricket/scorecard/e-237304?at_medium=RSS&at_campaign=rss",
       "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
+        "name": "India",
+        "lat": 20.5937,
+        "lng": 78.9629
       },
       "meta": {
-        "country": null,
+        "country": "IN",
         "topics": [
-          "crime",
-          "law enforcement"
-        ],
-        "keywords": [
-          "teddington road",
-          "crown casino",
-          "viaappleandgoogle",
-          "entertainment",
-          "paraphernalia",
-          "possessing drug paraphernalia",
-          "multiple offences following",
-          "viaappleandgoogle play make"
-        ],
-        "sentiment": {
-          "pos": 0.04,
-          "neg": 0.096,
-          "neu": 0.864
-        }
-      }
-    },
-    {
-      "id": "f8c02836-1a48-4a3f-ab93-0d7f3c8d4e13",
-      "title": "MacKinnon leads Avalanche to 5-1 win and 1st-round sweep of LA Kings, ending Anze Kopitar's career",
-      "description": "Nathan MacKinnon had two goals and an assist, Nicolas Roy and Devon Toews scored in the third period, and the top-seeded Colorado Avalanche swept the Los Angeles Kings out of the first round of the Stanley Cup playoffs with a 5-1 victory.",
-      "image": "https://ewscripps.brightspotcdn.com/dims4/default/7f2b487/2147483647/strip/true/crop/3000x1575+0+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fda%2Fab%2F1aea8f6c44f7a7a84fac05260116%2Fap26116831522390.jpg",
-      "publishedAt": "2026-04-26T23:35:22",
-      "source": "ABC7 Denver",
-      "url": "https://www.denver7.com/sports/avalanche/mackinnon-leads-avalanche-to-5-1-win-and-1st-round-sweep-of-la-kings-ending-anze-kopitars-career",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "hockey",
+          "cricket",
           "sports"
         ],
         "keywords": [
-          "nathan mackinnon",
-          "nicolas roy",
-          "trophy-winning",
-          "demonstration",
-          "defense-first",
-          "masterful four-game demonstration",
-          "heavyweight first-round series",
-          "top-seeded colorado avalanche"
+          "prabhsimrannot",
+          "arya",
+          "aryanot",
+          "batting",
+          "prabhsimrannot out not",
+          "prabhsimran not out",
+          "extras no balls"
         ],
         "sentiment": {
-          "pos": 0.127,
-          "neg": 0.065,
-          "neu": 0.808
+          "pos": 0.069,
+          "neg": 0,
+          "neu": 0.931
         }
       }
     },
     {
-      "id": "7eeedd09-3a27-4088-b7bf-c209eb556897",
-      "title": "St. Edward’s 12 week MBA program targets AI-driven future",
-      "description": "St. Edward’s MBA program targets AI-driven future",
-      "image": "https://www.kxan.com/wp-content/uploads/sites/40/2026/04/St-Eds-offering-12-week-MBA.jpg?w=386",
-      "publishedAt": "2026-04-26T23:33:12",
-      "source": "KXAN Austin",
-      "url": "https://www.kxan.com/news/education/st-edwards-12-week-mba-program-targets-ai-driven-future/",
+      "id": "ae57cc01-683f-4de2-bea2-bb4374751845",
+      "title": "Il dramma della Terra Santa. Pizzaballa: “Tutti soffrono, ma c’è chi sta occupando”",
+      "description": "Lettera del patriarca di Gerusalemme: persone uccise per un algoritmo. “Bisogna riconoscere la differenza fra chi ha il potere e chi lo subisce”.",
+      "image": "https://www.quotidiano.net/image-service/view/acePublic/alias/contentid/OGRmMTA4YzEtY2IwOC00/1/n14ah1_.jpg",
+      "publishedAt": "2026-04-28T00:00:00",
+      "source": "Quotidiano.net",
+      "url": "https://www.quotidiano.net/esteri/il-dramma-della-terra-santa-pizzaballa-tutti-soffrono-ma-ce-chi-sta-occupando-fajv3ca9",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "religion",
+          "politics"
+        ],
+        "keywords": [
+          "pizzaballa tutti",
+          "pizzaballa esiste",
+          "pierbattista pizzaballa",
+          "pizzaballa",
+          "della sofferenza",
+          "che sia",
+          "santa pizzaballa"
+        ],
+        "sentiment": {
+          "pos": 0.011,
+          "neg": 0.018,
+          "neu": 0.971
+        }
+      }
+    },
+    {
+      "id": "651138d3-601a-4061-a1ea-8993bab10973",
+      "title": "독도는 다케시마, 김치는 파오차이?…구글 번역기 오류 심각",
+      "description": "독도는 다케시마, 김치는 파오차이?…구글 번역기 오류 심각",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042808280642671_1777332486.jpg",
+      "publishedAt": "2026-04-27T23:59:32",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042808573629181",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "technology",
+          "translation"
+        ],
+        "keywords": [
+          "google translate",
+          "korea",
+          "dakishima",
+          "kimchi",
+          "professor",
+          "xiaozhi"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "c83a5770-60d4-41e7-a9f0-0ecc05871357",
+      "title": "CJ제일제당, '썩는 종량제 봉투' 내놨다…PHA 상용화 확대",
+      "description": "CJ제일제당, '썩는 종량제 봉투' 내놨다…PHA 상용화 확대",
+      "image": "https://cphoto.asiae.co.kr/listimglink/1/2026042808494042765_1777333780.png",
+      "publishedAt": "2026-04-27T23:59:21",
+      "source": "Asia Economy ( 아시아경제 )",
+      "url": "https://www.asiae.co.kr/article/2026042808504139091",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "environment",
+          "technology"
+        ],
+        "keywords": [
+          "cj제일제당",
+          "pha",
+          "종량제 봉투",
+          "생분해성 바이오 소재"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "2c4348b7-554b-4105-a739-c297edaf289b",
+      "title": "New IU QB Josh Hoover carries the torch for Indiana football",
+      "description": "Indiana football's annual Spring Game took place on Saturday, April 25th, with new quarterback Josh Hoover looking to follow in the footsteps of last year's Heisman Trophy winner, Fernando Mendoza.",
+      "image": "https://www.wishtv.com/wp-content/uploads/2026/04/27/IMG_4156-scaled-1.avif?resize",
+      "publishedAt": "2026-04-27T23:59:12",
+      "source": "WISH-TV",
+      "url": "https://www.wishtv.com/sports/football/iu-football/new-iu-qb-josh-hoover-carries-the-torch-for-indiana-football/",
+      "location": {
+        "name": "India",
+        "lat": 20.5937,
+        "lng": 78.9629
+      },
+      "meta": {
+        "country": "IN",
+        "topics": [
+          "football",
+          "sports"
+        ],
+        "keywords": [
+          "josh hoover",
+          "hoover",
+          "championship",
+          "expectations",
+          "bloomington",
+          "transfer quarterback josh",
+          "national championship run",
+          "indiana quarterback josh"
+        ],
+        "sentiment": {
+          "pos": 0.242,
+          "neg": 0,
+          "neu": 0.758
+        }
+      }
+    },
+    {
+      "id": "ca9d90c1-ef9d-4895-ba0f-73b74708bd1f",
+      "title": "В ГД не поддержали идею ограничить детям доступ к соцсетям",
+      "description": "В ГД не поддержали идею ограничить детям доступ к соцсетям",
+      "image": "https://www.m24.ru/b/d/nBkSUhL2h1Mim82wI76BrNOp2Z3y9pj21inFh_fH_nKUPXuaDyXTjHou4MVO6BCVoZKf9GqVe5Q_CPawk214LyWK9G1N5ho=Y5LOPovR9S_qpGSyBrp91A.jpg",
+      "publishedAt": "2026-04-27T23:58:00",
+      "source": "M24 (Moscow 24) (Москва 24)",
+      "url": "https://www.m24.ru/news/politika/28042026/895433",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "legislation"
+        ],
+        "keywords": [
+          "госдума",
+          "соцсети",
+          "дети",
+          "законодательство",
+          "охрана здоровья"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "ec0e3327-ab6b-4081-9282-5e777cae41f1",
+      "title": "El Gobierno intimó a las universidades a garantizar las clases y pidió planes de contingencia ante los paros",
+      "description": "La cartera que conduce Sandra Pettovello reclamó a los rectores que informen cómo asegurarán la continuidad académica frente a las medidas de fuerza.",
+      "image": "https://tn.com.ar/resizer/v2/S7OOM3MXRVFWLLNOEXWXZUDLXA.jpg?auth=dc4966a5e98d1ca53bcd6af4579dc539316af92a5d579ac60c3b6592cc816aab",
+      "publishedAt": "2026-04-27T23:57:43",
+      "source": "Todo Noticias",
+      "url": "https://tn.com.ar/politica/2026/04/27/el-gobierno-intimo-a-las-universidades-a-garantizar-las-clases-y-pidio-planes-de-contingencia-ante-los-paros/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -197,460 +295,173 @@
         "country": null,
         "topics": [
           "education",
-          "technology"
+          "politics"
         ],
         "keywords": [
-          "edward mba",
-          "mba program",
-          "ai driven",
-          "mba",
-          "week mba",
-          "ai",
-          "targets ai"
+          "universidades garantizar",
+          "universidades públicas",
+          "académica frente",
+          "continuidad académica",
+          "políticas universitarias",
+          "las universidades",
+          "universidades"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0,
-          "neu": 1
+          "neg": 0.011,
+          "neu": 0.989
         }
       }
     },
     {
-      "id": "8416e8a9-7434-47da-855c-0ab5a4e2a2f2",
-      "title": "BOJ Seen Holding Rates in Messaging Risk for Ueda as Yen Teeters",
-      "description": "The Bank of Japan is widely expected to keep interest rates unchanged on Tuesday, setting up a communication challenge for Governor Kazuo Ueda as the foundering yen hovers near levels that have prompted past interventions.",
-      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i5mIOrppcmeQ/v3/1200x-1.png",
-      "publishedAt": "2026-04-26T23:30:00",
-      "source": "Bloomberg",
-      "url": "https://www.bloomberg.com/news/articles/2026-04-26/boj-seen-holding-rates-in-messaging-risk-for-ueda-as-yen-teeters",
+      "id": "c35f0e61-9596-45d3-875c-7d70855eaa9f",
+      "title": "'Hell Week' in Washington: A look at House Republicans' current bind, and how we got here",
+      "description": "House Republicans face a grueling week aligning with the Senate on a reconciliation budget framework to address emergency DHS funding for ICE and CBP.",
+      "image": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2024/08/931/523/Capitol-Hill.jpg?ve=1&tl=1",
+      "publishedAt": "2026-04-27T23:57:36",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/politics/hell-week-washington-look-house-republicans-current-bind-how-we-got-here",
       "location": {
-        "name": "Japan",
-        "lat": 36.2048,
-        "lng": 138.2529
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
       },
       "meta": {
-        "country": "JP",
-        "topics": [
-          "finance",
-          "economy"
-        ],
-        "keywords": [
-          "bank japan",
-          "holding rates",
-          "rates messaging",
-          "boj",
-          "yen teeters",
-          "boj seen",
-          "rates unchanged"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "ddf2344e-6675-42d5-bd47-d3f47c60d6f7",
-      "title": "President Trump raises hotel security concerns",
-      "description": "After Cole Tomas Allen breached the White House Correspondents’ Dinner armed with multiple weapons, President Trump raised general security concerns about the size and layout of the hotel.",
-      "image": "https://prodamdnewsencoding.akamaized.net/NBC_News_Digital/f_vert_alba_security_questions_260426/3/abs/index.m3u8",
-      "publishedAt": "2026-04-26T23:29:22",
-      "source": "NBC News",
-      "url": "https://www.nbcnews.com/video/shorts/trump-raises-security-concerns-after-gunman-breached-whcd-262143557625",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics",
-          "security"
-        ],
-        "keywords": [
-          "hotel security",
-          "raises hotel",
-          "security concerns",
-          "security",
-          "hotel",
-          "trump raises",
-          "president trump"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "042037c5-9408-4fc0-a86c-4ac98ac94784",
-      "title": "Denver business owners fear cultural loss as historic Asia Center redevelopment looms",
-      "description": "Plans to redevelop the Asia Center on Federal Boulevard at Tennessee Avenue have raised concerns among business owners and community members who fear for the preservation of the area's cultural history.",
-      "image": "https://ewscripps.brightspotcdn.com/dims4/default/800b3ab/2147483647/strip/true/crop/1587x833+0+0/resize/1200x630!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2Fb4%2Fbe%2Ffcde42f744c6a8860a5d4380a13a%2Fscreenshot-2026-04-26-at-4-21-09-pm.png",
-      "publishedAt": "2026-04-26T23:27:03",
-      "source": "ABC7 Denver",
-      "url": "https://www.denver7.com/news/local-news/denver-business-owners-fear-cultural-loss-as-historic-asia-center-redevelopment-looms",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "business",
-          "culture"
-        ],
-        "keywords": [
-          "katrina nguyen",
-          "kim son",
-          "underrepresented",
-          "redevelopment",
-          "mid-interview",
-          "affordable housing apartments",
-          "'re already underrepresented",
-          "already underrepresented in"
-        ],
-        "sentiment": {
-          "pos": 0.1,
-          "neg": 0.042,
-          "neu": 0.858
-        }
-      }
-    },
-    {
-      "id": "fdb1e120-d4ae-44f8-8eea-f0c7ee54feb5",
-      "title": "Jeffries blames House GOP for stalling DHS funding over ICE after WHCA dinner shooting",
-      "description": "House Minority Leader Hakeem Jeffries (D-NY) blamed House Republicans for stalling a bipartisan Department of Homeland Security funding bill, arguing the impasse centers on GOP demands over Immigration and Customs Enforcement funding in the wake of the White House Correspondents’ Association dinner shooting. Jeffries stressed that DHS funding for the Secret Service, Transportation Security Administration, [.].",
-      "image": "https://www.washingtonexaminer.com/wp-content/uploads/2026/04/AP26113616696428.jpg?w=696",
-      "publishedAt": "2026-04-26T23:24:14",
-      "source": "Washington Examiner",
-      "url": "https://www.washingtonexaminer.com/news/house/4543800/jeffries-house-gop-stalling-dhs-funding/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
+        "country": "US",
         "topics": [
           "politics",
           "government"
         ],
         "keywords": [
-          "jeffries",
-          "fox news",
-          "representatives",
-          "correspondents",
-          "appropriations",
-          "addressing cost-of-living concerns",
-          "impeachment proceedings against",
-          "separating ice-related funding"
-        ],
-        "sentiment": {
-          "pos": 0.125,
-          "neg": 0.105,
-          "neu": 0.77
-        }
-      }
-    },
-    {
-      "id": "6e6246fe-6018-4087-9499-f73ab4ca916a",
-      "title": "Inside the world’s largest art heist when over $500M of paintings stolen",
-      "description": "A former FBI agent is offering the first detailed account of how investigators identified the people believed to have carried out the 1990 Isabella Stewart Gardner Museum heist.",
-      "image": "https://i.abcnewsfe.com/a/4da84cf3-957e-4bad-b645-857f2c91ec62/wirestory_512da0322ce5c93c1bbafc7a5e228b2c_16x9.jpg?w=1600",
-      "publishedAt": "2026-04-26T23:22:31",
-      "source": "ABC News",
-      "url": "https://abcnews.com/Entertainment/wireStory/inside-worlds-largest-art-heist-500m-paintings-stolen-132406537",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "art",
-          "crime"
-        ],
-        "keywords": [
-          "geoffrey kelly",
-          "gardner",
-          "long-circulating",
-          "palazzo-inspired",
-          "intermediaries",
-          "challenges long-circulating theories",
-          "venetian palazzo-inspired building",
-          "isabella stewart gardner museum"
-        ],
-        "sentiment": {
-          "pos": 0.067,
-          "neg": 0.131,
-          "neu": 0.802
-        }
-      }
-    },
-    {
-      "id": "28168020-a8b3-4e21-b5dc-78cd10bab6df",
-      "title": "Inside the world’s biggest art heist: $500M of paintings stolen from Boston museum",
-      "description": "Inside the world’s biggest art heist: $500M of paintings stolen from Boston museum",
-      "image": "https://i.abcnewsfe.com/a/4da84cf3-957e-4bad-b645-857f2c91ec62/wirestory_512da0322ce5c93c1bbafc7a5e228b2c_16x9.jpg?w=1600",
-      "publishedAt": "2026-04-26T23:22:30",
-      "source": "ABC News",
-      "url": "https://abcnews.com/US/wireStory/inside-worlds-largest-art-heist-500m-paintings-stolen-132397210",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "art",
-          "crime"
-        ],
-        "keywords": [
-          "geoffrey kelly",
-          "gardner",
-          "long-circulating",
-          "palazzo-inspired",
-          "intermediaries",
-          "challenges long-circulating theories",
-          "venetian palazzo-inspired building",
-          "isabella stewart gardner museum"
-        ],
-        "sentiment": {
-          "pos": 0.067,
-          "neg": 0.131,
-          "neu": 0.802
-        }
-      }
-    },
-    {
-      "id": "1dba0cf1-971d-47ce-8151-d31fc34aa6c0",
-      "title": "Stewart breaks Atwood's homer record, Longhorns sweep Kentucky",
-      "description": "AUSTIN (KXAN) — Reese Atwood's single-season home run record didn't stand for long. Katie Stewart crushed her 24th homer of the season, surpassing Atwood's 23 she hit last season, to help Texas sweep Kentucky with an 11-2 win Sunday at John Cropp Stadium in Lexington, Kentucky. SEC softball: No. 4 Texas 3, Kentucky 0 The [...]",
-      "image": "https://www.kxan.com/wp-content/uploads/sites/40/2026/04/GettyImages-2272070090.jpg?w=900",
-      "publishedAt": "2026-04-26T23:15:24",
-      "source": "KXAN Austin",
-      "url": "https://www.kxan.com/sports/stewart-breaks-atwoods-homer-record-longhorns-sweep-kentucky/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "sports",
-          "baseball"
-        ],
-        "keywords": [
-          "sweep kentucky",
-          "texas sweep",
-          "atwood homer",
-          "longhorns sweep",
-          "homer record",
-          "record longhorns",
-          "softball texas"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "06ac613c-6bbc-4d6e-8531-c79586f08f67",
-      "title": "WGN EXCLUSIVE: Cop Killer Suspect's Previous Victim: \"I'm So Mad!\"",
-      "description": "CHICAGO (WGN) — The man now in police custody believed responsible for shooting two Chicago police officers has a long criminal history; and was on pre-trial release in a carjacking case. \"It's honestly shocking,\" the carjacking victim told WGN Investigates. \"It makes me so mad that someone who pulled a gun on me was released,\" she said. [...]",
-      "image": "https://wgntv.com/wp-content/uploads/sites/5/2026/04/2025-carjacking.jpg?w=640",
-      "publishedAt": "2026-04-26T23:14:43",
-      "source": "WGN-TV",
-      "url": "https://wgntv.com/news/wgn-investigates/wgn-exclusive-cop-killer-suspects-previous-victim-im-so-mad/",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "crime",
-          "law enforcement"
-        ],
-        "keywords": [
-          "shooting chicago",
-          "cop killer",
-          "chicago police",
-          "killer suspect",
-          "mad chicago",
-          "chicago wgn",
-          "carjacking victim"
-        ],
-        "sentiment": {
-          "pos": 0,
-          "neg": 0,
-          "neu": 1
-        }
-      }
-    },
-    {
-      "id": "c5c48be8-b63d-4bbd-aa40-bb079216cbeb",
-      "title": "Who is Trump’s 'would-be assassin' and were there security failings at DC shooting?",
-      "description": "Who is Trump’s 'would-be assassin' and were there security failings at DC shooting?",
-      "image": "https://ichef.bbci.co.uk/images/ic/1024x576/p0j72y80.jpg",
-      "publishedAt": "2026-04-26T23:14:00",
-      "source": "BBC News",
-      "url": "https://www.bbc.co.uk/sounds/play/p0ngrsbh?at_medium=RSS&at_campaign=rss",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "politics",
-          "crime"
-        ],
-        "keywords": [
-          "justin",
-          "sarah",
-          "correspondents",
-          "investigators",
-          "department",
-          "bbc state department correspondent",
-          "department correspondent tom",
-          "department correspondent get"
-        ],
-        "sentiment": {
-          "pos": 0.096,
-          "neg": 0.011,
-          "neu": 0.893
-        }
-      }
-    },
-    {
-      "id": "c4fc08ea-82c7-4580-a3eb-f62305356afc",
-      "title": "Arrest made after teenager killed in Windsor stabbing",
-      "description": "Arrest made after teenager killed in Windsor stabbing",
-      "image": "https://i.cbc.ca/ais/0045081c-819b-422f-927a-c786855c14b6,1777298702690/full/max/0/default.jpg?im=Crop%2Crect%3D%280%2C0%2C1920%2C1080%29%3BResize%3D620",
-      "publishedAt": "2026-04-26T23:10:42",
-      "source": "CBC News",
-      "url": "https://www.cbc.ca/news/canada/windsor/teenager-death-9.7178142?cmp=rss",
-      "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
-      },
-      "meta": {
-        "country": null,
-        "topics": [
-          "crime",
-          "homicide"
-        ],
-        "keywords": [
-          "goyeau street",
+          "capitol hill",
+          "troy nehls",
           "life-threatening",
-          "investigating",
-          "investigation",
-          "hospital with life-threatening",
-          "with life-threatening injuries",
-          "the homicide investigation",
-          "investigating a suspected"
+          "record-breaking",
+          "reconciliation",
+          "record-breaking dhs shutdown",
+          "security secretary markwayne",
+          "homeland security secretary"
         ],
         "sentiment": {
-          "pos": 0,
-          "neg": 0.165,
-          "neu": 0.835
+          "pos": 0.076,
+          "neg": 0.126,
+          "neu": 0.798
         }
       }
     },
     {
-      "id": "d2124d70-c0a2-46d9-929c-4574315eaa3c",
-      "title": "Justice Department cites dinner shooting to press preservationists to drop Trump ballroom suit",
-      "description": "The Justice Department is pushing to dismiss a lawsuit blocking President Donald Trump's $400 million White House ballroom project.",
-      "image": "https://i.abcnewsfe.com/a/f0fd49dd-1af4-456c-a7cf-76becfcec3aa/wirestory_1d063b208677631cb964c6c8ff64bd96_16x9.jpg?w=1600",
-      "publishedAt": "2026-04-26T23:09:18",
-      "source": "ABC News",
-      "url": "https://abcnews.com/US/wireStory/justice-department-cites-dinner-shooting-press-preservationists-drop-132406134",
+      "id": "d31ce7ac-bc44-43bd-8ef6-3b7e42ef4313",
+      "title": "White House Security in Spotlight | Balance of Power: Late Edition 04/27/2026",
+      "description": "\"Balance of Power: Late Edition\" focuses on the intersection of politics and global business. On today's show, Donell Harvin, former DC Chief of Homeland Security and Intelligence, shares his reaction to the White House Correspondent's Dinner assassination attempt. CBO Director Phillip Swagel discusses how the long term fiscal outlook of the United States is looking and the adjustments the CBO has had to make to their ten year outlook following the US Supreme Court striking down on President Trump's global tariffs and the President launching a war with Iran. Congressman Troy Downing (R-MT) talks about the latest on US Iran talks and lawmakers considering a FISA extension. (Source: Bloomberg)",
+      "image": "https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iL8.M2AdPmbI/v3/1200x-1.jpg",
+      "publishedAt": "2026-04-27T23:57:26",
+      "source": "Bloomberg",
+      "url": "https://www.bloomberg.com/news/videos/2026-04-27/balance-of-power-late-edition-04-27-2026-video",
       "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
       },
       "meta": {
-        "country": null,
+        "country": "US",
         "topics": [
-          "law",
           "politics"
         ],
         "keywords": [
-          "donald trump",
-          "todd blanche",
-          "preservationists",
-          "correspondents",
-          "administration",
-          "extraordinary security challenges",
-          "presents extraordinary security",
-          "future assassination attempts"
+          "white house",
+          "considering fisa",
+          "homeland security",
+          "fisa",
+          "fisa extension",
+          "striking president",
+          "iran congressman"
         ],
         "sentiment": {
-          "pos": 0.103,
-          "neg": 0.033,
-          "neu": 0.864
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "59094493-578f-45c4-9852-287837c401d1",
-      "title": "Baytown father arrested, charged with capital murder of his 7-week-old baby, court documents show",
-      "description": "Court documents said the baby was alone with the father, Christopher Leon Jenkins, when medics were called to the Baytown apartment and found the baby with no pulse. Jenkins is now charged with capital murder.",
-      "image": "https://vcl.abcotv.net/video/ktrk/042626-ktrk-ewn-530p-father-charged-murder-newborn-baytown-SAL-nkey-vid.mp4",
-      "publishedAt": "2026-04-26T23:09:11",
-      "source": "ABC13 Houston",
-      "url": "https://abc13.com/post/baytown-father-arrested-charged-capital-murder-7-week-old-baby-according-court-documents/18973018/",
+      "id": "6cb8692e-f5ce-43b1-8c8e-079d70f263b7",
+      "title": "Measles case triggers health warning across Sydney",
+      "description": "Measles case triggers health warning across Sydney",
+      "image": "https://prod.static9.net.au/fs/c05075c1-9e9b-45c2-9749-a2f4ce6a7fd4",
+      "publishedAt": "2026-04-27T23:57:21",
+      "source": "9News",
+      "url": "https://www.9news.com.au/health/measles-alert-nsw-health-japan-airport-hospital-warning/d35ad93c-fa21-4973-aab4-1669874b3381",
       "location": {
-        "name": "Global",
-        "lat": 0,
-        "lng": 0
+        "name": "Australia",
+        "lat": -25.2744,
+        "lng": 133.7751
       },
       "meta": {
-        "country": null,
+        "country": "AU",
         "topics": [
-          "crime",
-          "law enforcement"
+          "health",
+          "travel"
         ],
         "keywords": [
-          "christopher leon jenkins",
-          "jenkins",
-          "investigators",
-          "investigation",
-          "demonstration",
-          "investigators claimed jenkins",
-          "allegedly told investigators",
-          "baytown apartment complex"
+          "sydney local health district public health unit",
+          "hess",
+          "measles-mumps-rubella",
+          "viaappleandgoogle",
+          "international",
+          "hospital emergency department",
+          "repatriation general hospital"
         ],
         "sentiment": {
-          "pos": 0.015,
-          "neg": 0.158,
-          "neu": 0.827
+          "pos": 0.081,
+          "neg": 0.08,
+          "neu": 0.839
         }
       }
     },
     {
-      "id": "6c74e3ef-8c69-40df-9f6b-618250a13914",
-      "title": "Politik für Berufstätige machen: NRW-SPD verlangt Kurskorrektur von Klingbeil",
-      "description": "Nach dramatischen Umfragewerten für die SPD in NRW fordert die Düsseldorfer Parteispitze von den Genossen im Bund eine Kehrtwende. Die Sozialdemokraten müssten endlich wieder Politik machen für Menschen, die arbeiten. Als Beispiel nennt Spitzenkandidat Ott die Gesundheitsreform.",
-      "image": "https://www.n-tv.de/img/30757663/1777251352/Img_4_3/250/Lars-Klingbeil-gemeinsam-mit-Jochen-Ott-bei-der-Verleihung-des-Orden-Wider-den-tierischen-Ernst-im-Congress-Center-Aachen-31-01.jpg",
-      "publishedAt": "2026-04-26T23:04:24",
-      "source": "n-tv",
-      "url": "https://www.n-tv.de/politik/NRW-SPD-verlangt-Kurskorrektur-von-Klingbeil-id30757662.html",
+      "id": "07685126-dfc8-4933-86bd-3e644561ad94",
+      "title": "The silent, terrifying moment a gunman rushed security at the W.H. correspondents' dinner",
+      "description": "No one was hurt inside the Washington Hilton ballroom where President Donald Trump was set to speak, but Cole Allen's ability to get so close raised security concerns.",
+      "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_fit_1500w/rockcms/2026-04/260425-wh-dinner-ww-1917-289a71.jpg",
+      "publishedAt": "2026-04-27T23:57:12",
+      "source": "NBC News",
+      "url": "https://www.nbcnews.com/news/us-news/white-house-correspondents-dinner-cole-allen-security-trump-rcna342264",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "security",
+          "politics"
+        ],
+        "keywords": [
+          "helen mabus",
+          "mabus",
+          "correspondents",
+          "revolutionary",
+          "babysitting",
+          "iranian revolutionary guard",
+          "white house correspondents",
+          "washington hilton saturday"
+        ],
+        "sentiment": {
+          "pos": 0.061,
+          "neg": 0.095,
+          "neu": 0.844
+        }
+      }
+    },
+    {
+      "id": "cd4733c8-a3cf-46fa-9552-0042ba7f485f",
+      "title": "New Jersey Republican expects to be 'back in the near future' after reports on absences",
+      "description": "Rep. Tom Kean Jr. (R-N.J.) on Monday addressed reports of his absence from Congress, saying he is dealing with a “personal medical issue” and expects to return to Capitol Hill in the near future. “I want to thank my constituents and colleagues for their patience as I address a personal medical issue,” Kean wrote in...",
+      "image": "https://thehill.com/wp-content/uploads/sites/2/2025/06/keanjrthomas_061025gn01_w.jpg?w=900",
+      "publishedAt": "2026-04-27T23:57:09",
+      "source": "The Hill",
+      "url": "https://thehill.com/homenews/house/5851993-tom-kean-jr-congress-absence/",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -663,29 +474,65 @@
           "healthcare"
         ],
         "keywords": [
-          "die gesundheitsreform",
-          "gesundheitsreform nach",
-          "gesundheitsreform angesichts",
-          "düsseldorfer parteispitze",
-          "gesundheitsreform",
-          "berufstätige machen",
-          "politik für"
+          "future reports",
+          "absence congress",
+          "jersey republican",
+          "tom kean",
+          "near future",
+          "kean jr",
+          "rep tom"
         ],
         "sentiment": {
           "pos": 0,
-          "neg": 0.153,
-          "neu": 0.847
+          "neg": 0,
+          "neu": 1
         }
       }
     },
     {
-      "id": "1a44dcd1-5b30-417f-afb7-fb614a56be43",
-      "title": "Fitzpatricks' historic win earns younger brother Alex PGA Tour card",
-      "description": "Alex and Matt Fitzpatrick make history by becoming the first brothers to win a PGA Tour event at the Zurich Classic of New Orleans pairs tournament.",
-      "image": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/636a/live/b470de40-41c3-11f1-9799-cf1cb5420f82.jpg",
-      "publishedAt": "2026-04-26T23:02:03",
-      "source": "BBC News",
-      "url": "https://www.bbc.com/sport/golf/articles/cdrmr6rppe4o?at_medium=RSS&at_campaign=rss",
+      "id": "0e4be7fa-2ec8-4d86-8577-d99ef3ecd137",
+      "title": "The Trump Administration’s Campaign To Replace Immigration Judges With Fringe Right-Wingers",
+      "description": "The Trump Administration’s Campaign To Replace Immigration Judges With Fringe Right-Wingers",
+      "image": "https://media.zenfs.com/en/the_huffington_post_584/6d45dca87d135067a50f9ecb25b0fa5e",
+      "publishedAt": "2026-04-27T23:56:52",
+      "source": "Yahoo News Philippines",
+      "url": "https://sg.news.yahoo.com/trump-administration-campaign-replace-immigration-235652053.html",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "immigration",
+          "politics"
+        ],
+        "keywords": [
+          "transparency",
+          "personalized",
+          "advertising",
+          "information",
+          "personalized advertising and",
+          "technical identifiers and",
+          "these additional purposes",
+          "precise geolocation data"
+        ],
+        "sentiment": {
+          "pos": 0.065,
+          "neg": 0.037,
+          "neu": 0.898
+        }
+      }
+    },
+    {
+      "id": "f74d8a9a-dec0-438b-b017-40c1d39e560e",
+      "title": "2026 NFL Draft: Which 3 Teams Have Improved the Most This Offseason?",
+      "description": "2026 NFL Draft: Which 3 Teams Have Improved the Most This Offseason?",
+      "image": "https://a57.foxnews.com/statics.foxsports.com/www.foxsports.com/content/uploads/2026/04/1200/675/y91zjhi0yd4eonc4.jpg?ve=1&tl=1",
+      "publishedAt": "2026-04-27T23:56:14",
+      "source": "Fox News",
+      "url": "https://www.foxnews.com/sports/2026-nfl-draft-which-3-teams-have-improved-most-offseason",
       "location": {
         "name": "Global",
         "lat": 0,
@@ -695,22 +542,159 @@
         "country": null,
         "topics": [
           "sports",
-          "golf"
+          "nfl"
         ],
         "keywords": [
-          "alex",
-          "matt fitzpatrick",
-          "fitzpatricks",
-          "championship",
-          "eligibility",
-          "players championship next",
-          "orleans pairs tournament",
-          "english brothers started"
+          "colin cowherd",
+          "john harbaugh",
+          "disappointing",
+          "inconsistency",
+          "season-ending",
+          "seahawks offensive coordinator",
+          "legitimate playoff contender",
+          "offensive coordinator klint"
         ],
         "sentiment": {
-          "pos": 0.153,
-          "neg": 0.025,
-          "neu": 0.822
+          "pos": 0.138,
+          "neg": 0.058,
+          "neu": 0.805
+        }
+      }
+    },
+    {
+      "id": "7f288e9b-9458-4807-802e-2ff5b932bfb1",
+      "title": "ماکرون: گفت وگو با مقامات ایرانی درباره تنگه هرمز را از سر می گیرم",
+      "description": "ماکرون: گفت وگو با مقامات ایرانی درباره تنگه هرمز را از سر می گیرم",
+      "image": "https://media.mehrnews.com/d/2025/05/14/4/5504267.jpg",
+      "publishedAt": "2026-04-27T23:55:38",
+      "source": "Mehr News Agency (MNA)",
+      "url": "https://www.mehrnews.com/news/6813401/%D9%85%D8%A7%DA%A9%D8%B1%D9%88%D9%86-%DA%AF%D9%81%D8%AA-%D9%88%DA%AF%D9%88-%D8%A8%D8%A7-%D9%85%D9%82%D8%A7%D9%85%D8%A7%D8%AA-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86%DB%8C-%D8%AF%D8%B1%D8%A8%D8%A7%D8%B1%D9%87-%D8%AA%D9%86%DA%AF%D9%87-%D9%87%D8%B1%D9%85%D8%B2-%D8%B1%D8%A7-%D8%A7%D8%B2-%D8%B3%D8%B1-%D9%85%DB%8C",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "international"
+        ],
+        "keywords": [
+          "macon",
+          "iran",
+          "strait_of_hormuz",
+          "france"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
+        }
+      }
+    },
+    {
+      "id": "556a021e-7775-4edc-954e-57eeef341703",
+      "title": "PC y FA presionan para dividir la megarreforma tras reuniones con el Gobierno: UDI criticó las citas",
+      "description": "El Gobierno se reunió con el Frente Amplio y el Partido Comunista para abordar el proyecto de Reconstrucción Nacional,. Las citas no estuvieron exentas de críticas, pues desde la UDI cuestionaron que el Ejecutivo se siente a dialogar con quienes buscan llevar la reforma al Tribunal Constitucional. La crítica de la oposición a la llamada . Continua leyendo \"PC y FA presionan para dividir la megarreforma tras reuniones con el Gobierno: UDI criticó las citas\" The post PC y FA presionan para dividir la megarreforma tras reuniones con el Gobierno: UDI criticó las citas appeared first on BioBioChile.",
+      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-pc-y-fa-presionan-para-dividir-la-megarreforma-tras-reuniones-con-el-gobierno-udi-critico-las-citas.png",
+      "publishedAt": "2026-04-27T23:55:32",
+      "source": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/nacional/chile/2026/04/27/pc-y-fa-presionan-para-dividir-la-megarreforma-tras-reuniones-con-el-gobierno-udi-critico-las-citas.shtml",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "economy"
+        ],
+        "keywords": [
+          "tribunal constitucional",
+          "la megarreforma",
+          "se reunió",
+          "constitucional la",
+          "la oposición",
+          "oposición la",
+          "constitucional"
+        ],
+        "sentiment": {
+          "pos": 0.015,
+          "neg": 0.017,
+          "neu": 0.968
+        }
+      }
+    },
+    {
+      "id": "e97efee2-ef0f-4fd6-88c3-c302c4a64a77",
+      "title": "\"Usar autismo o síndrome de Down como insulto\": Wilma González expone cruel posteo por su embarazo",
+      "description": "La influencer española Wilma González, usó sus redes sociales para denunciar un cruel comentario que recibió por parte de un usuario, debido a su avanzado embarazo, junto con su edad, 41 años. Recordemos que la exchica reality espera un hijo junto a su pareja y esposo, el DJ Nicolás Seguel. Por medio de un video, . Continua leyendo Usar autismo o síndrome de Down como insulto\": Wilma González expone cruel posteo por su embarazo\" The post \"Usar autismo o síndrome de Down como insulto\": Wilma González expone cruel posteo por su embarazo appeared first on BioBioChile.",
+      "image": "https://media.biobiochile.cl/wp-content/uploads/2026/04/social-wilma-gonzalez.jpg",
+      "publishedAt": "2026-04-27T23:55:15",
+      "source": "BioBioChile",
+      "url": "https://www.biobiochile.cl/noticias/espectaculos-y-tv/celebridades/2026/04/27/usar-autismo-o-sindrome-de-down-como-insulto-wilma-gonzalez-expone-cruel-posteo-por-su-embarazo.shtml",
+      "location": {
+        "name": "United States",
+        "lat": 39.8283,
+        "lng": -98.5795
+      },
+      "meta": {
+        "country": "US",
+        "topics": [
+          "entertainment",
+          "politics"
+        ],
+        "keywords": [
+          "autismo síndrome",
+          "como insulto",
+          "insulto wilma",
+          "usar autismo",
+          "autismo",
+          "insulto",
+          "avanzado embarazo"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0.036,
+          "neu": 0.964
+        }
+      }
+    },
+    {
+      "id": "54813aef-e8b1-4aa8-93b4-cebb71cdb821",
+      "title": "Local law enforcement responds to congresswomen Boebert's new bill",
+      "description": "FOX31 is getting reaction from local law enforcement now that Rep. Lauren Boebert has introduced a federal bill that would require a judicial warrant when it comes to automated license plate readers like Flock.",
+      "image": "https://kdvr.com/wp-content/uploads/sites/11/2025/10/AP25064670234720-e1759930376882.jpg?w=800",
+      "publishedAt": "2026-04-27T23:54:38",
+      "source": "FOX31 Denver",
+      "url": "https://kdvr.com/news/local/local-law-enforcement-responds-to-congresswomen-boeberts-new-bill/",
+      "location": {
+        "name": "Global",
+        "lat": 0,
+        "lng": 0
+      },
+      "meta": {
+        "country": null,
+        "topics": [
+          "politics",
+          "law enforcement"
+        ],
+        "keywords": [
+          "enforcement responds",
+          "judicial warrant",
+          "enforcement",
+          "enforcement rep",
+          "license plate",
+          "warrant",
+          "law enforcement"
+        ],
+        "sentiment": {
+          "pos": 0,
+          "neg": 0,
+          "neu": 1
         }
       }
     }
