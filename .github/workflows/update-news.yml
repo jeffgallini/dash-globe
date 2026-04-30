@@ -6,7 +6,6 @@ on:
     - cron: "17 6 * * *"
 
 permissions:
-  actions: write
   contents: write
 
 jobs:
@@ -28,15 +27,14 @@ jobs:
         run: node script/update-news.mjs
 
       - name: Commit changes
-        id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add public/news.json
           if git diff --staged --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
             exit 0
           fi
+<<<<<<< Updated upstream
           git commit -m "[skip release] Update news snapshot"
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -46,3 +44,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: gh workflow run publish-package.yml --ref master
+=======
+          git commit -m "Update news snapshot [skip release]"
+          git push
+>>>>>>> Stashed changes
