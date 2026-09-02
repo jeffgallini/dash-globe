@@ -1,0 +1,31 @@
+# Dash Globe
+
+> Dash Globe is a Python package that wraps react-globe.gl for Plotly Dash, exposing a chainable figure-like API for interactive 3D globes.
+
+Important notes:
+
+- Install with `pip install dash-globe`. Import as `import dash_globe`.
+- Prefer the high-level chainable helpers on `dash_globe.DashGlobe` (`update_layout`, `update_globe`, `add_points`, `update_points`, etc.). Snake_case aliases are accepted for camelCase props.
+- For large GeoJSON, use `dash_globe.data_url(url)` plus `.enable_large_data_mode()` so payloads are fetched in the browser instead of embedded in the Dash layout.
+- Event props for callbacks: `clickData`, `rightClickData`, `hoverData`, `currentView`. Use `dash_globe.event_coords(event)` to extract `{lat, lng, altitude?}`.
+- The wrapper targets JSON-serialisable react-globe.gl features. Raw JavaScript callbacks, DOM nodes, and arbitrary Three.js objects are not exposed through the high-level helpers.
+- Docs site root: https://jeffgallini.github.io/dash-globe/
+
+## Docs
+
+- [API reference (markdown)](https://jeffgallini.github.io/dash-globe/api.md): Full Python API for DashGlobe helpers, layers, large-data utilities, presets, materials, and events
+- [Getting started (markdown)](https://jeffgallini.github.io/dash-globe/getting-started.md): Install, minimal app, and large GeoJSON quick start
+- [Examples gallery (markdown)](https://jeffgallini.github.io/dash-globe/examples.md): Captured examples from the interactive usage.py gallery
+- [Home (markdown)](https://jeffgallini.github.io/dash-globe/index.md): Project overview and feature summary
+
+## Examples
+
+- [Interactive gallery source](https://github.com/jeffgallini/dash-globe/blob/master/dash_globe/usage.py): Runnable Dash app demonstrating points, arcs, choropleth, large data, day/night, clouds, and more
+- [Package README](https://github.com/jeffgallini/dash-globe/blob/master/README.md): Repository overview and development notes
+
+## Optional
+
+- [HTML API page](https://jeffgallini.github.io/dash-globe/api.html): Human-oriented API documentation
+- [react-globe.gl](https://github.com/vasturiano/react-globe.gl): Upstream React globe library that Dash Globe wraps
+- [PyPI package](https://pypi.org/project/dash-globe/): Published package metadata and versions
+- [llms.txt specification](https://llmstxt.org/): Format used by this file

@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>API · Dash Globe</title>
+  <meta name="description" content="Python API reference for dash-globe: chainable DashGlobe helpers, layers, events, presets, and large-data utilities." />
+  <link rel="stylesheet" href="assets/site.css" />
+  <link rel="alternate" type="text/markdown" href="api.md" />
+  <link rel="describedby" href="llms.txt" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Dash Globe</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a class="active" href="api.html">API</a>
+        <a href="examples.html">Examples</a>
+        <a href="llms.txt">llms.txt</a>
+        <a href="https://github.com/jeffgallini/dash-globe">GitHub</a>
+        <a href="https://pypi.org/project/dash-globe/">PyPI</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="eyebrow">Reference</div>
+    <h1>Python API</h1>
+    <p class="lead">
+      <code>dash-globe</code> wraps <a href="https://github.com/vasturiano/react-globe.gl">react-globe.gl</a>
+      with a chainable, figure-like Python API. Configure layout, textures, camera, and layers in fluent
+      calls, then wire <code>clickData</code> / <code>hoverData</code> into normal Dash callbacks.
+    </p>
+
+    <div class="api-layout" style="margin-top: 2rem;">
+      <aside class="api-toc">
+        <h2>On this page</h2>
+        <nav>
+          <a href="#imports">Imports</a>
+          <a href="#dashglobe">DashGlobe</a>
+          <a href="#scene">Scene helpers</a>
+          <a href="#layers">Layers</a>
+          <a href="#large-data">Large data</a>
+          <a href="#helpers">Helpers</a>
+          <a href="#events">Events</a>
+          <a href="#accessors">Accessors</a>
+        </nav>
+      </aside>
+
+      <div>
+        <section class="api-section" id="imports">
+          <h2>Imports</h2>
+          <pre class="code">import dash_globe
+
+globe = dash_globe.DashGlobe(id="globe")
+# Helpers
+dash_globe.PRESETS
+dash_globe.data_url(...)
+dash_globe.event_coords(...)
+dash_globe.material_spec(...)
+dash_globe.lambert_material(...)
+dash_globe.ring_color_interpolator(...)</pre>
+          <p class="note">
+            Install with <code>pip install dash-globe</code>. Public exports are listed in
+            <code>dash_globe.__all__</code>.
+          </p>
+        </section>
+
+        <section class="api-section" id="dashglobe">
+          <h2>DashGlobe</h2>
+          <p class="section-intro">
+            Subclasses the generated Dash component. Defaults <code>responsive=True</code>.
+            All helpers return <code>self</code> so calls chain.
+          </p>
+
+          <div class="method">
+            <h3>DashGlobe(*args, **kwargs)</h3>
+            <p>Create a globe component. Pass any raw <code>react-globe.gl</code> prop alongside high-level helpers.</p>
+            <pre class="sig">dash_globe.DashGlobe(id="demo", responsive=True)</pre>
+          </div>
+
+          <div class="method">
+            <h3>update(**kwargs)</h3>
+            <p>
+              Set component props in place. Snake-case aliases are accepted for camelCase props
+              (for example <code>background_color</code> → <code>backgroundColor</code>).
+            </p>
+          </div>
+        </section>
+
+        <section class="api-section" id="scene">
+          <h2>Scene helpers</h2>
+
+          <div class="method">
+            <h3>update_layout(...)</h3>
+            <p>Outer layout and renderer settings.</p>
+            <table class="param-table">
+              <thead><tr><th>Parameter</th><th>Description</th></tr></thead>
+              <tbody>
+                <tr><td><code>width</code>, <code>height</code></td><td>Canvas size in pixels.</td></tr>
+                <tr><td><code>responsive</code></td><td>Resize with the container.</td></tr>
+                <tr><td><code>background_color</code></td><td>CSS color behind the canvas.</td></tr>
+                <tr><td><code>background_image_url</code></td><td>Background image URL.</td></tr>
+                <tr><td><code>globe_offset</code></td><td><code>[x, y]</code> offset from canvas center.</td></tr>
+                <tr><td><code>wait_for_globe_ready</code></td><td>Defer animation until assets load.</td></tr>
+                <tr><td><code>animate_in</code></td><td>Initial entrance animation.</td></tr>
+                <tr><td><code>renderer_config</code>, <code>style</code>, <code>class_name</code></td><td>Renderer / wrapper extras.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="method">
+            <h3>update_globe(...)</h3>
+            <p>Globe shell texture and atmosphere.</p>
+            <table class="param-table">
+              <thead><tr><th>Parameter</th><th>Description</th></tr></thead>
+              <tbody>
+                <tr><td><code>globe_image_url</code>, <code>bump_image_url</code></td><td>Base and bump textures.</td></tr>
+                <tr><td><code>show_globe</code>, <code>show_graticules</code>, <code>show_atmosphere</code></td><td>Visibility toggles.</td></tr>
+                <tr><td><code>atmosphere_color</code>, <code>atmosphere_altitude</code></td><td>Atmosphere styling.</td></tr>
+                <tr><td><code>curvature_resolution</code></td><td>Mesh curvature resolution.</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="method">
+            <h3>update_view(lat=, lng=, altitude=, transition_duration=)</h3>
+            <p>Set camera target. Omitted fields keep their current values.</p>
+          </div>
+
+          <div class="method">
+            <h3>update_controls(auto_rotate=, auto_rotate_speed=)</h3>
+            <p>Orbit control auto-rotation.</p>
+          </div>
+
+          <div class="method">
+            <h3>update_interaction(...)</h3>
+            <p>
+              Pointer picking, cursor style, line hover precision, animation pause, and
+              <code>currentView</code> report interval.
+            </p>
+          </div>
+
+          <div class="method">
+            <h3>update_day_night_cycle(...)</h3>
+            <p>
+              Built-in day/night shader:
+              <code>enabled</code>, <code>day_image_url</code>, <code>night_image_url</code>,
+              <code>time</code>, <code>animate</code>, <code>minutes_per_second</code>.
+            </p>
+          </div>
+
+          <div class="method">
+            <h3>update_clouds(...)</h3>
+            <p>
+              Rotating cloud shell:
+              <code>enabled</code>, <code>image_url</code>, <code>altitude</code>,
+              <code>rotation_speed</code>, <code>opacity</code>.
+            </p>
+          </div>
+
+          <div class="method">
+            <h3>clear_tile_cache()</h3>
+            <p>Bump <code>clearGlobeTileCacheKey</code> so the client refreshes cached tiles.</p>
+          </div>
+        </section>
+
+        <section class="api-section" id="layers">
+          <h2>Layers</h2>
+          <p class="section-intro">
+            Each layer has an <code>add_*</code> helper that appends records and an
+            <code>update_*</code> helper that replaces data and/or sets accessors.
+            Pass a single list or multiple positional records to <code>add_*</code>.
+          </p>
+
+          <div class="method">
+            <h3>Points</h3>
+            <pre class="sig">.add_points(*points)
+.update_points(data=None, **props)</pre>
+            <p>Common props: <code>point_lat</code>, <code>point_lng</code>, <code>point_color</code>, <code>point_label</code>, <code>point_altitude</code>, <code>point_radius</code>.</p>
+          </div>
+
+          <div class="method">
+            <h3>Arcs</h3>
+            <pre class="sig">.add_arcs(*arcs)
+.update_arcs(data=None, **props)</pre>
+            <p>Common props: <code>arc_start_lat</code>, <code>arc_start_lng</code>, <code>arc_end_lat</code>, <code>arc_end_lng</code>, <code>arc_color</code>, <code>arc_dash_length</code>, <code>arc_dash_gap</code>, <code>arc_dash_animate_time</code>.</p>
+          </div>
+
+          <div class="method">
+            <h3>Polygons</h3>
+            <pre class="sig">.add_polygons(*polygons)
+.update_polygons(data=None, **props)</pre>
+            <p>Common props: <code>polygon_geo_json_geometry</code>, <code>polygon_cap_color</code>, <code>polygon_side_color</code>, <code>polygon_stroke_color</code>, <code>polygon_altitude</code>, <code>polygon_label</code>.</p>
+          </div>
+
+          <div class="method">
+            <h3>Paths</h3>
+            <pre class="sig">.add_paths(*paths)
+.update_paths(data=None, path_points=..., path_color=..., ...)</pre>
+          </div>
+
+          <div class="method">
+            <h3>Heatmaps</h3>
+            <pre class="sig">.add_heatmap(points)
+.add_heatmaps(*heatmaps)
+.update_heatmap(data=None, **props)
+.update_heatmaps(data=None, **props)</pre>
+          </div>
+
+          <div class="method">
+            <h3>Hex bins &amp; hex polygons</h3>
+            <pre class="sig">.add_hex_bins(*points) / .update_hex_bins(...)
+.add_hex_polygons(*polygons) / .update_hex_polygons(...)</pre>
+          </div>
+
+          <div class="method">
+            <h3>Tiles</h3>
+            <pre class="sig">.add_tiles(*tiles)
+.update_tiles(data=None, tile_material=..., ...)</pre>
+            <p>Use <code>material_spec(...)</code> or <code>lambert_material(...)</code> for JSON-serialisable materials.</p>
+          </div>
+
+          <div class="method">
+            <h3>Particles</h3>
+            <pre class="sig">.add_particle_sets(*particle_sets)
+.update_particles(data=None, **props)</pre>
+          </div>
+
+          <div class="method">
+            <h3>Rings</h3>
+            <pre class="sig">.add_rings(*rings)
+.update_rings(data=None, ring_color=..., ...)</pre>
+            <p>Animated ring colors can use <code>ring_color_interpolator(...)</code> instead of a JS callback.</p>
+          </div>
+
+          <div class="method">
+            <h3>Labels</h3>
+            <pre class="sig">.add_labels(*labels)
+.update_labels(data=None, label_text=..., ...)</pre>
+          </div>
+
+          <div class="method">
+            <h3>HTML overlays</h3>
+            <pre class="sig">.add_html_elements(*elements, children=None)
+.update_html_elements(data=None, children=None, **props)</pre>
+            <p>Geo-anchored Dash children matched to <code>htmlElementsData</code> by index.</p>
+          </div>
+        </section>
+
+        <section class="api-section" id="large-data">
+          <h2>Large data</h2>
+          <div class="method">
+            <h3>enable_large_data_mode(enabled=True, **props)</h3>
+            <p>
+              Enables client-side large-data defaults (summary event payloads, merged point/hex
+              rendering, disabled layer transitions). Pair with <code>data_url(...)</code>.
+            </p>
+          </div>
+          <div class="method">
+            <h3>dash_globe.data_url(url, unwrap_features=True)</h3>
+            <p>
+              Returns a compact marker the React wrapper fetches in the browser so large GeoJSON
+              never enters the Dash layout. GeoJSON FeatureCollections are unwrapped to
+              <code>.features</code> by default.
+            </p>
+            <pre class="sig">.update_polygons(
+    data=dash_globe.data_url("https://example.com/countries.geojson"),
+    polygon_geo_json_geometry="geometry",
+    polygon_cap_color="steelblue",
+)</pre>
+          </div>
+        </section>
+
+        <section class="api-section" id="helpers">
+          <h2>Helpers</h2>
+
+          <div class="method">
+            <h3>PRESETS</h3>
+            <p>Built-in texture URLs:</p>
+            <table class="param-table">
+              <thead><tr><th>Attribute</th><th>Use</th></tr></thead>
+              <tbody>
+                <tr><td><code>EARTH</code>, <code>EARTH_DAY</code>, <code>EARTH_NIGHT</code>, <code>EARTH_DARK</code></td><td>Globe textures</td></tr>
+                <tr><td><code>EARTH_TOPOGRAPHY</code>, <code>EARTH_WATER</code></td><td>Bump / water masks</td></tr>
+                <tr><td><code>NIGHT_SKY</code></td><td>Background starfield</td></tr>
+                <tr><td><code>CLOUDS</code></td><td>Cloud shell texture</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="method">
+            <h3>event_coords(event)</h3>
+            <p>
+              Extract <code>{"lat", "lng", "altitude?"}</code> from a <code>clickData</code> /
+              <code>hoverData</code> payload. Returns <code>None</code> when coordinates are missing.
+            </p>
+          </div>
+
+          <div class="method">
+            <h3>material_spec(type, **options) / lambert_material(...)</h3>
+            <p>
+              JSON material specs for tile layers. Types:
+              <code>basic</code>, <code>lambert</code>, <code>phong</code>, <code>standard</code>.
+              Side: <code>front</code>, <code>back</code>, <code>double</code>.
+            </p>
+          </div>
+
+          <div class="method">
+            <h3>ring_color_interpolator(color, fade_color=, opacity=, fade_opacity=, easing=)</h3>
+            <p>
+              Serialisable stand-in for a JS <code>ringColor</code> callback.
+              Easing: <code>linear</code>, <code>sqrt</code>, <code>square</code>, <code>cubic</code>.
+            </p>
+          </div>
+        </section>
+
+        <section class="api-section" id="events">
+          <h2>Events &amp; callbacks</h2>
+          <p class="section-intro">
+            These props participate in normal Dash callbacks as Inputs/States:
+          </p>
+          <table class="param-table">
+            <thead><tr><th>Prop</th><th>Meaning</th></tr></thead>
+            <tbody>
+              <tr><td><code>clickData</code></td><td>Last left-click pick payload</td></tr>
+              <tr><td><code>rightClickData</code></td><td>Last right-click pick payload</td></tr>
+              <tr><td><code>hoverData</code></td><td>Current hover pick payload</td></tr>
+              <tr><td><code>currentView</code></td><td>Reported camera view (<code>lat</code>/<code>lng</code>/<code>altitude</code>)</td></tr>
+              <tr><td><code>eventDataMode</code></td><td><code>"summary"</code> or <code>"full"</code> payload size</td></tr>
+            </tbody>
+          </table>
+          <pre class="code">from dash import Input, Output, callback
+import dash_globe
+
+@callback(Output("out", "children"), Input("globe", "clickData"))
+def on_click(click_data):
+    coords = dash_globe.event_coords(click_data)
+    return str(coords)</pre>
+        </section>
+
+        <section class="api-section" id="accessors">
+          <h2>Accessors &amp; naming</h2>
+          <p class="section-intro">
+            Layer accessors accept either a constant value or a string field path
+            (for example <code>"lat"</code> or <code>"properties.ADMIN"</code>).
+            High-level helpers accept snake_case; raw camelCase props also work via
+            <code>update(...)</code> or the constructor.
+          </p>
+          <div class="note">
+            The wrapper targets JSON-serialisable <code>react-globe.gl</code> features.
+            Raw JavaScript functions, DOM nodes, and arbitrary Three.js objects are not
+            exposed through the high-level helpers.
+          </div>
+          <div class="actions">
+            <a class="button primary" href="getting-started.html">Getting started</a>
+            <a class="button secondary" href="examples.html">Examples</a>
+            <a class="button secondary" href="api.md">Markdown API</a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>Dash Globe v1.0.0 · API reference</div>
+      <div><a href="llms.txt">llms.txt for agents →</a></div>
+    </div>
+  </footer>
+</body>
+</html>
