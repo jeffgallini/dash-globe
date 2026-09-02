@@ -68,6 +68,19 @@ def test_hollow_globe_gallery_entry_uses_double_sided_polygon_material():
     assert globe.polygonStrokeColor is False
 
 
+def test_large_dataset_gallery_entry_uses_data_url_helper():
+    assert "large-dataset-globe" in usage.GLOBE_IDS
+    assert "large-dataset-globe" in usage.GLOBE_BUILDERS
+    assert "data_url" in usage.LARGE_DATASET_EXAMPLE_CODE
+    assert "enable_large_data_mode" in usage.LARGE_DATASET_EXAMPLE_CODE
+
+    globe = usage.build_large_dataset_globe()
+    assert globe.largeDataMode is True
+    assert globe.eventDataMode == "summary"
+    assert globe.polygonsData["type"] == "dash-globe-data-url"
+    assert "countries.geojson" in globe.polygonsData["url"]
+
+
 def test_day_night_cycle_gallery_entry_uses_new_helper():
     assert "day-night-cycle-globe" in usage.GLOBE_IDS
     assert "day-night-cycle-globe" in usage.GLOBE_BUILDERS

@@ -10,6 +10,7 @@ Dash Globe is a Dash component library that wraps `react-globe.gl` with a more P
 - First-class rotating cloud shell via `update_clouds(...)`
 - Serializable ripple-ring fades via `ring_color_interpolator(...)`
 - Data-driven globe layers for points, arcs, polygons, paths, heatmaps, hex bins, tiles, particles, rings, and labels
+- Client-side `data_url(...)` loading and `enable_large_data_mode()` for large GeoJSON / JSON datasets
 - Dash callback props for `clickData`, `rightClickData`, `hoverData`, and `currentView`
 - Example gallery in
   [`usage.py`](https://github.com/jeffgallini/dash-globe/blob/main/dash_globe/usage.py),

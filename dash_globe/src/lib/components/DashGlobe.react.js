@@ -27,7 +27,9 @@ DashGlobe.defaultProps = {
     cloudsOpacity: 1,
     cameraTransitionDuration: 0,
     animationPaused: false,
-    currentViewReportInterval: 250
+    currentViewReportInterval: 250,
+    eventDataMode: 'summary',
+    largeDataMode: false
 };
 
 DashGlobe.propTypes = {
@@ -310,6 +312,21 @@ DashGlobe.propTypes = {
     htmlElementTetherColor: PropTypes.any,
     htmlElementTetherWidth: PropTypes.any,
     htmlElementTetherAttach: PropTypes.any,
+
+    /**
+     * Controls how much object data is included in click/hover payloads.
+     * Use "summary" (default) for large datasets so Dash only receives compact
+     * identifiers/properties instead of full geometries. Use "full" to preserve
+     * the complete object payload.
+     */
+    eventDataMode: PropTypes.oneOf(['summary', 'full']),
+
+    /**
+     * When true, apply performance defaults aimed at large datasets: disable
+     * layer transitions, enable points merging when unset, and keep event
+     * payloads in summary mode.
+     */
+    largeDataMode: PropTypes.bool,
 
     /**
      * Last click event payload emitted by any supported layer.

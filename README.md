@@ -77,5 +77,7 @@ python usage.py
 ## Notes
 
 - The wrapper currently focuses on JSON-serialisable `react-globe.gl` features, which maps well to Dash callbacks.
+- For large datasets, prefer `dash_globe.data_url(...)` plus `enable_large_data_mode()` so GeoJSON is fetched in the browser and hover/click payloads stay compact.
+- The physical DashGlobe chunk is intentionally small; Three.js / H3 load as separately cached async vendor chunks.
 - Features that require raw JavaScript functions, DOM nodes, or arbitrary ThreeJS objects are not yet exposed through high-level Python helpers, although common scene-level effects like day/night shaders and the rotating clouds shell now have first-class APIs.
 - Any remaining `defaultProps` warnings seen only while `DASH_GLOBE_DEBUG=1` is enabled come from upstream Dash core component dev bundles, not from `dash-globe` rendering logic.

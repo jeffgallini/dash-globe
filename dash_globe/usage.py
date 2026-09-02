@@ -1987,6 +1987,31 @@ def highlight_country(hover_data):
     return json.dumps(hover_data, indent=2)
 """
 
+LARGE_DATASET_EXAMPLE_CODE = """import dash_globe
+
+
+COUNTRIES_URL = (
+    "https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/"
+    "ne_110m_admin_0_countries.geojson"
+)
+
+globe = (
+    dash_globe.DashGlobe(id="large-dataset")
+    .enable_large_data_mode()
+    .update_layout(height=480, background_color="#020617")
+    .update_globe(globe_image_url=dash_globe.PRESETS.EARTH_NIGHT)
+    .update_polygons(
+        data=dash_globe.data_url(COUNTRIES_URL),
+        polygon_geo_json_geometry="geometry",
+        polygon_cap_color="rgba(56, 189, 248, 0.55)",
+        polygon_side_color="rgba(14, 165, 233, 0.12)",
+        polygon_stroke_color="#0f172a",
+        polygon_altitude=0.012,
+        polygon_label="properties.ADMIN",
+    )
+)
+"""
+
 HOLLOW_GLOBE_EXAMPLE_CODE = """import json
 from urllib.request import urlopen
 
@@ -3528,6 +3553,7 @@ GLOBE_IDS = [
     "airline-routes-globe",
     "countries-population-globe",
     "choropleth-countries-globe",
+    "large-dataset-globe",
     "hollow-globe",
     "situation-room-globe",
 ]
@@ -3821,6 +3847,27 @@ def build_choropleth_countries_globe():
     )
 
 
+def build_large_dataset_globe():
+    """Showcase client-fetched GeoJSON so the Dash layout stays tiny."""
+    return (
+        dash_globe.DashGlobe(id="large-dataset-globe")
+        .enable_large_data_mode()
+        .update_layout(height=420, background_image_url=CHOROPLETH_BACKGROUND_IMAGE_URL)
+        .update_globe(globe_image_url=dash_globe.PRESETS.EARTH_NIGHT, show_atmosphere=True)
+        .update_controls(auto_rotate=True, auto_rotate_speed=0.35)
+        .update_view(lat=18, lng=12, altitude=1.85)
+        .update_polygons(
+            data=dash_globe.data_url(CHOROPLETH_COUNTRIES_URL),
+            polygon_geo_json_geometry="geometry",
+            polygon_cap_color="rgba(56, 189, 248, 0.55)",
+            polygon_side_color="rgba(14, 165, 233, 0.12)",
+            polygon_stroke_color="#0f172a",
+            polygon_altitude=0.012,
+            polygon_label="properties.ADMIN",
+        )
+    )
+
+
 def build_hollow_globe():
     return (
         dash_globe.DashGlobe(id="hollow-globe")
@@ -3946,6 +3993,7 @@ GLOBE_BUILDERS = {
     "airline-routes-globe": build_airline_routes_example_globe,
     "countries-population-globe": build_countries_population_globe,
     "choropleth-countries-globe": build_choropleth_countries_globe,
+    "large-dataset-globe": build_large_dataset_globe,
     "hollow-globe": build_hollow_globe,
     "situation-room-globe": build_situation_room_globe,
 }
@@ -4133,6 +4181,21 @@ def build_examples_grid():
                             ]
                         ),
                     ),
+                    globe_card(
+                        "Large Dataset via data_url",
+                        "Keep the Dash layout tiny by fetching GeoJSON in the browser with data_url(...), then enable_large_data_mode() so summary hover payloads and zero-duration layer transitions stay snappy.",
+                        build_globe_stage("large-dataset-globe"),
+                        html.Div(
+                            [
+                                html.Pre(LARGE_DATASET_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                                html.Pre(
+                                    id="large-dataset-event",
+                                    children="Click Run to mount this globe. Hover payloads stay compact (summary mode) even for country-scale GeoJSON.",
+                                    style={**CODE_BLOCK_STYLE, "margin": "12px 0 0 0"},
+                                ),
+                            ]
+                        ),
+                    ),
                 ],
             ),
         ],
@@ -4284,6 +4347,21 @@ def highlight_airline_routes(hover_data):
 )
 def highlight_choropleth_country(hover_data):
     payload_text = "Hover a country to highlight it and inspect the latest hover payload."
+    if hover_data is not None:
+        payload_text = json.dumps(hover_data, indent=2)
+
+    return payload_text
+
+
+@app.callback(
+    Output("large-dataset-event", "children"),
+    Input("large-dataset-globe", "hoverData"),
+)
+def describe_large_dataset_hover(hover_data):
+    payload_text = (
+        "Hover a country to inspect the compact summary payload. "
+        "Geometry stays in the browser; Dash only receives identifiers/properties."
+    )
     if hover_data is not None:
         payload_text = json.dumps(hover_data, indent=2)
 

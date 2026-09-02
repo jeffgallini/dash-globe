@@ -1,5 +1,19 @@
 # Changelog
 
+## [Unreleased]
+
+### Added
+
+- Client-side `data_url(...)` layer sources so large GeoJSON/JSON datasets stay out of the Dash layout and are fetched in the browser.
+- `enable_large_data_mode()` helper plus `largeDataMode` / `eventDataMode` props for snappier large-dataset rendering and compact click/hover payloads.
+- Webpack splits the physical globe bundle into cached `async-three`, `async-h3`, and `async-globe-vendor` chunks so `async-DashGlobe.js` stays small.
+- Gallery example: "Large Dataset via data_url".
+
+### Changed
+
+- Default interaction payloads now use summary mode (geometry omitted) to avoid shipping full polygon/path objects back to Python on every hover.
+- Distributed Python package no longer ships multi-megabyte `.js.map` files.
+
 ## [0.0.1] - 2026-04-18
 
 Initial public release of `dash_globe`.

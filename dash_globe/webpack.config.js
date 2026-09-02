@@ -34,7 +34,9 @@ module.exports = (env, argv) => {
 
     const entry = overrides.entry || {main: './src/lib/index.js'};
 
-    const devtool = overrides.devtool || 'source-map';
+    // Keep local source maps for debugging, but the Python package no longer
+    // ships the multi-MB .map files (see MANIFEST.in / package_data).
+    const devtool = overrides.devtool || (mode === 'development' ? 'eval-source-map' : 'source-map');
 
     const externals = ('externals' in overrides) ? overrides.externals : ({
         react: 'React',
@@ -84,11 +86,35 @@ module.exports = (env, argv) => {
         },
         optimization: {
             splitChunks: {
-                name: '[name].js',
                 cacheGroups: {
+                    // Pull the heaviest vendor graphs into separately cached
+                    // async chunks so DashGlobe updates stay smaller and the
+                    // browser can download/parse Three / H3 in parallel.
+                    three: {
+                        test: /[\\/]node_modules[\\/]three[\\/]/,
+                        name: 'async-three',
+                        chunks: 'async',
+                        priority: 30,
+                        enforce: true,
+                    },
+                    h3: {
+                        test: /[\\/]node_modules[\\/]h3-js[\\/]/,
+                        name: 'async-h3',
+                        chunks: 'async',
+                        priority: 25,
+                        enforce: true,
+                    },
+                    globeVendor: {
+                        test: /[\\/]node_modules[\\/]/,
+                        name: 'async-globe-vendor',
+                        chunks: 'async',
+                        priority: 10,
+                        minSize: 40_000,
+                    },
                     async: {
                         chunks: 'async',
                         minSize: 0,
+                        priority: 0,
                         name(module, chunks, cacheGroupKey) {
                             return `${cacheGroupKey}-${chunks[0].name}`;
                         }

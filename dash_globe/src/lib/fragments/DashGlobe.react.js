@@ -1,4 +1,4 @@
-import React, {useEffect, useMemo, useRef, useState} from 'react';
+import React, {useCallback, useEffect, useMemo, useRef, useState} from 'react';
 import Globe from 'react-globe.gl';
 import {
     BackSide,
@@ -14,6 +14,15 @@ import {
     TextureLoader,
     Vector2
 } from 'three';
+import {
+    LAYER_DATA_PROP_NAMES,
+    applyLargeDataModeDefaults,
+    compactEventData,
+    fetchLayerData,
+    fingerprintLayerData,
+    isDataUrlSpec,
+    normaliseDataUrlSpec
+} from './largeData';
 
 const INTERNAL_PROP_NAMES = new Set([
     'id',
@@ -44,6 +53,8 @@ const INTERNAL_PROP_NAMES = new Set([
     'polygonHoverSideColor',
     'polygonHoverStrokeColor',
     'currentViewReportInterval',
+    'eventDataMode',
+    'largeDataMode',
     'htmlElementsData',
     'htmlElementLat',
     'htmlElementLng',
@@ -83,15 +94,120 @@ function omitInternalProps(props) {
     }, {});
 }
 
-function buildEventPayload(type, layer, data, coords, previousData) {
+function buildEventPayload(type, layer, data, coords, previousData, eventDataMode = 'summary') {
     return {
         type,
         layer,
-        data: data === undefined ? null : data,
+        data: compactEventData(data, eventDataMode),
         coords: coords === undefined ? null : coords,
-        previousData: previousData === undefined ? null : previousData,
-        timestamp: Date.now()
+        previousData: compactEventData(previousData, eventDataMode),
+        timestamp: Date.now(),
+        dataMode: eventDataMode === 'full' ? 'full' : 'summary'
     };
+}
+
+function useStableLayerDataMap(sourceProps) {
+    const signature = LAYER_DATA_PROP_NAMES
+        .map((propName) => `${propName}:${fingerprintLayerData(sourceProps[propName])}`)
+        .join('|');
+
+    return useMemo(() => {
+        const snapshot = {};
+        LAYER_DATA_PROP_NAMES.forEach((propName) => {
+            if (sourceProps[propName] !== undefined) {
+                snapshot[propName] = sourceProps[propName];
+            }
+        });
+        return snapshot;
+        // signature is a content fingerprint of the layer props on sourceProps.
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [signature]);
+}
+
+function useResolvedLayerData(layerProps) {
+    const [resolvedUrlData, setResolvedUrlData] = useState({});
+    const requestIdsRef = useRef({});
+
+    const urlRequestSignature = LAYER_DATA_PROP_NAMES.map((propName) => {
+        const value = layerProps[propName];
+        if (!isDataUrlSpec(value)) {
+            return `${propName}:`;
+        }
+        const spec = normaliseDataUrlSpec(value);
+        return `${propName}:${spec.url}:${spec.unwrapFeatures ? 1 : 0}`;
+    }).join('|');
+
+    useEffect(() => {
+        const controllers = [];
+        const activeUrlProps = new Set();
+
+        LAYER_DATA_PROP_NAMES.forEach((propName) => {
+            const value = layerProps[propName];
+            if (!isDataUrlSpec(value)) {
+                delete requestIdsRef.current[propName];
+                return;
+            }
+
+            activeUrlProps.add(propName);
+            const spec = normaliseDataUrlSpec(value);
+            const requestKey = `${spec.url}::${spec.unwrapFeatures ? 1 : 0}`;
+            if (requestIdsRef.current[propName] === requestKey) {
+                return;
+            }
+
+            requestIdsRef.current[propName] = requestKey;
+            const controller = new AbortController();
+            controllers.push(controller);
+
+            fetchLayerData(spec, controller.signal)
+                .then((payload) => {
+                    setResolvedUrlData((current) => ({
+                        ...current,
+                        [propName]: payload
+                    }));
+                })
+                .catch((error) => {
+                    if (controller.signal.aborted) {
+                        return;
+                    }
+                    // Keep the previous resolved payload on transient failures.
+                    // eslint-disable-next-line no-console
+                    console.warn(`[dash_globe] ${error.message}`);
+                });
+        });
+
+        setResolvedUrlData((current) => {
+            let changed = false;
+            const next = {...current};
+            Object.keys(next).forEach((propName) => {
+                if (!activeUrlProps.has(propName)) {
+                    delete next[propName];
+                    changed = true;
+                }
+            });
+            return changed ? next : current;
+        });
+
+        return () => {
+            controllers.forEach((controller) => controller.abort());
+        };
+        // layerProps is read for URL specs keyed by urlRequestSignature.
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [urlRequestSignature]);
+
+    return useMemo(() => {
+        const next = {...layerProps};
+        LAYER_DATA_PROP_NAMES.forEach((propName) => {
+            if (isDataUrlSpec(layerProps[propName])) {
+                if (Object.prototype.hasOwnProperty.call(resolvedUrlData, propName)) {
+                    next[propName] = resolvedUrlData[propName];
+                } else {
+                    delete next[propName];
+                }
+            }
+        });
+        return next;
+    }, [layerProps, resolvedUrlData]);
 }
 
 const HOVER_SIGNATURE_KEYS = [
@@ -610,10 +726,20 @@ function resolveAccessorValue(accessor, datum) {
     if (
         typeof accessor === 'string' &&
         datum !== null &&
-        typeof datum === 'object' &&
-        Object.prototype.hasOwnProperty.call(datum, accessor)
+        typeof datum === 'object'
     ) {
-        return datum[accessor];
+        if (Object.prototype.hasOwnProperty.call(datum, accessor)) {
+            return datum[accessor];
+        }
+
+        if (accessor.includes('.')) {
+            return accessor.split('.').reduce((current, key) => {
+                if (current === null || current === undefined || typeof current !== 'object') {
+                    return undefined;
+                }
+                return current[key];
+            }, datum);
+        }
     }
 
     return accessor;
@@ -795,6 +921,7 @@ function buildPolygonHoverMatchSignature(datum, hoverKeyAccessor) {
 }
 
 export default function DashGlobe(props) {
+    const performanceProps = applyLargeDataModeDefaults(props);
     const {
         id,
         children,
@@ -826,11 +953,14 @@ export default function DashGlobe(props) {
         polygonHoverCapColor,
         polygonHoverSideColor,
         polygonHoverStrokeColor,
+        eventDataMode = 'summary',
         setProps
-    } = props;
+    } = performanceProps;
 
     const wrapperRef = useRef(null);
     const globeRef = useRef(null);
+    const setPropsRef = useRef(setProps);
+    const eventDataModeRef = useRef(eventDataMode);
     const lastCameraKeyRef = useRef(null);
     const lastAnimationStateRef = useRef(null);
     const lastTileCacheKeyRef = useRef(null);
@@ -852,20 +982,28 @@ export default function DashGlobe(props) {
     const [containerSize, setContainerSize] = useState({width: null, height: null});
     const [hoveredPolygonSignature, setHoveredPolygonSignature] = useState(null);
     const [dayNightMaterial, setDayNightMaterial] = useState(null);
+
+    setPropsRef.current = setProps;
+    eventDataModeRef.current = eventDataMode === 'full' ? 'full' : 'summary';
+
+    const stableLayerSeeds = useStableLayerDataMap(performanceProps);
+    const resolvedLayerProps = useResolvedLayerData(stableLayerSeeds);
     const polygonCapMaterial = useMemo(
-        () => buildThreeMaterial(props.polygonCapMaterial),
-        [props.polygonCapMaterial]
+        () => buildThreeMaterial(performanceProps.polygonCapMaterial),
+        [performanceProps.polygonCapMaterial]
     );
     const polygonSideMaterial = useMemo(
-        () => buildThreeMaterial(props.polygonSideMaterial),
-        [props.polygonSideMaterial]
+        () => buildThreeMaterial(performanceProps.polygonSideMaterial),
+        [performanceProps.polygonSideMaterial]
     );
     const tileMaterial = useMemo(
-        () => buildMaterialAccessor(props.tileMaterial, tileMaterialCacheRef),
-        [props.tileMaterial]
+        () => buildMaterialAccessor(performanceProps.tileMaterial, tileMaterialCacheRef),
+        [performanceProps.tileMaterial]
     );
     const projectedHtmlElements = useMemo(() => {
-        const data = Array.isArray(props.htmlElementsData) ? props.htmlElementsData : [];
+        const data = Array.isArray(resolvedLayerProps.htmlElementsData)
+            ? resolvedLayerProps.htmlElementsData
+            : [];
         const overlayChildren = normaliseChildren(children);
         return data
             .map((datum, index) => {
@@ -874,49 +1012,51 @@ export default function DashGlobe(props) {
                     return null;
                 }
 
-                const keyValue = props.htmlElementKey !== undefined
-                    ? resolveAccessorValue(props.htmlElementKey, datum)
+                const keyValue = performanceProps.htmlElementKey !== undefined
+                    ? resolveAccessorValue(performanceProps.htmlElementKey, datum)
                     : datum?.id;
 
                 return {
                     datum,
                     child,
                     key: keyValue === undefined || keyValue === null ? index : keyValue,
-                    lat: resolveAccessorValue(props.htmlElementLat, datum),
-                    lng: resolveAccessorValue(props.htmlElementLng, datum),
-                    altitude: resolveAccessorValue(props.htmlElementAltitude, datum),
-                    offsetX: resolveAccessorValue(props.htmlElementOffsetX, datum),
-                    offsetY: resolveAccessorValue(props.htmlElementOffsetY, datum),
-                    pointerEvents: resolveAccessorValue(props.htmlElementPointerEvents, datum),
-                    hidden: resolveAccessorValue(props.htmlElementHidden, datum),
-                    screenX: resolveAccessorValue(props.htmlElementScreenX, datum),
-                    screenY: resolveAccessorValue(props.htmlElementScreenY, datum),
-                    screenSide: normaliseOverlaySide(resolveAccessorValue(props.htmlElementScreenSide, datum)),
-                    tether: resolveAccessorValue(props.htmlElementTether, datum),
-                    tetherColor: resolveAccessorValue(props.htmlElementTetherColor, datum),
-                    tetherWidth: resolveAccessorValue(props.htmlElementTetherWidth, datum),
-                    tetherAttach: resolveAccessorValue(props.htmlElementTetherAttach, datum)
+                    lat: resolveAccessorValue(performanceProps.htmlElementLat, datum),
+                    lng: resolveAccessorValue(performanceProps.htmlElementLng, datum),
+                    altitude: resolveAccessorValue(performanceProps.htmlElementAltitude, datum),
+                    offsetX: resolveAccessorValue(performanceProps.htmlElementOffsetX, datum),
+                    offsetY: resolveAccessorValue(performanceProps.htmlElementOffsetY, datum),
+                    pointerEvents: resolveAccessorValue(performanceProps.htmlElementPointerEvents, datum),
+                    hidden: resolveAccessorValue(performanceProps.htmlElementHidden, datum),
+                    screenX: resolveAccessorValue(performanceProps.htmlElementScreenX, datum),
+                    screenY: resolveAccessorValue(performanceProps.htmlElementScreenY, datum),
+                    screenSide: normaliseOverlaySide(
+                        resolveAccessorValue(performanceProps.htmlElementScreenSide, datum)
+                    ),
+                    tether: resolveAccessorValue(performanceProps.htmlElementTether, datum),
+                    tetherColor: resolveAccessorValue(performanceProps.htmlElementTetherColor, datum),
+                    tetherWidth: resolveAccessorValue(performanceProps.htmlElementTetherWidth, datum),
+                    tetherAttach: resolveAccessorValue(performanceProps.htmlElementTetherAttach, datum)
                 };
             })
             .filter(Boolean);
     }, [
         children,
-        props.htmlElementsData,
-        props.htmlElementAltitude,
-        props.htmlElementHidden,
-        props.htmlElementKey,
-        props.htmlElementLat,
-        props.htmlElementLng,
-        props.htmlElementOffsetX,
-        props.htmlElementOffsetY,
-        props.htmlElementPointerEvents,
-        props.htmlElementScreenSide,
-        props.htmlElementScreenX,
-        props.htmlElementScreenY,
-        props.htmlElementTether,
-        props.htmlElementTetherAttach,
-        props.htmlElementTetherColor,
-        props.htmlElementTetherWidth
+        resolvedLayerProps.htmlElementsData,
+        performanceProps.htmlElementAltitude,
+        performanceProps.htmlElementHidden,
+        performanceProps.htmlElementKey,
+        performanceProps.htmlElementLat,
+        performanceProps.htmlElementLng,
+        performanceProps.htmlElementOffsetX,
+        performanceProps.htmlElementOffsetY,
+        performanceProps.htmlElementPointerEvents,
+        performanceProps.htmlElementScreenSide,
+        performanceProps.htmlElementScreenX,
+        performanceProps.htmlElementScreenY,
+        performanceProps.htmlElementTether,
+        performanceProps.htmlElementTetherAttach,
+        performanceProps.htmlElementTetherColor,
+        performanceProps.htmlElementTetherWidth
     ]);
     const resolvedWidth = responsive ? (containerSize.width || width) : width;
     const resolvedHeight = responsive ? (containerSize.height || height || 600) : height;
@@ -1335,7 +1475,7 @@ export default function DashGlobe(props) {
                 controlsChangeFrameRef.current = null;
             }
         };
-    }, [setProps]);
+    }, [globeReady]);
 
     useEffect(() => {
         if (!globeRef.current || animationPaused === undefined || animationPaused === null) {
@@ -1425,10 +1565,11 @@ export default function DashGlobe(props) {
     useEffect(() => () => {
         disposeMaterialCache(tileMaterialCacheRef);
         tileMaterialCacheRef.current = new Map();
-    }, [props.tileMaterial]);
+    }, [performanceProps.tileMaterial]);
 
-    const emitEvent = (propName, payload, options = {}) => {
-        if (!setProps) {
+    const emitEvent = useCallback((propName, payload, options = {}) => {
+        const publish = setPropsRef.current;
+        if (!publish) {
             return;
         }
 
@@ -1440,15 +1581,16 @@ export default function DashGlobe(props) {
             lastEventSignatureRef.current[propName] = signature;
         }
 
-        setProps({
+        publish({
             [propName]: payload,
             lastInteraction: payload
         });
-    };
+    }, []);
 
     const emitCurrentView = (pointOfViewOverride, options = {}) => {
         const globe = globeRef.current;
-        if (!globe || !setProps) {
+        const publish = setPropsRef.current;
+        if (!globe || !publish) {
             return;
         }
 
@@ -1470,13 +1612,13 @@ export default function DashGlobe(props) {
             altitude: Number(pointOfView.altitude).toFixed(4)
         });
 
-        if (signature === lastCurrentViewSignatureRef.current) {
+        if (!options.force && signature === lastCurrentViewSignatureRef.current) {
             return;
         }
 
         const now = Date.now();
-        const emitIntervalMs = Number.isFinite(props.currentViewReportInterval)
-            ? Number(props.currentViewReportInterval)
+        const emitIntervalMs = Number.isFinite(performanceProps.currentViewReportInterval)
+            ? Number(performanceProps.currentViewReportInterval)
             : 250;
         if (!options.force && (now - lastCurrentViewEmittedAtRef.current) < emitIntervalMs) {
             return;
@@ -1485,7 +1627,7 @@ export default function DashGlobe(props) {
         lastCurrentViewSignatureRef.current = signature;
         lastCurrentViewEmittedAtRef.current = now;
 
-        setProps({
+        publish({
             currentView: {
                 ...pointOfView,
                 timestamp: now
@@ -1496,7 +1638,7 @@ export default function DashGlobe(props) {
     const handleObjectEvent = (type, layer) => (data, event, coords) => {
         emitEvent(
             type === 'click' ? 'clickData' : 'rightClickData',
-            buildEventPayload(type, layer, data, coords)
+            buildEventPayload(type, layer, data, coords, undefined, eventDataModeRef.current)
         );
     };
 
@@ -1504,7 +1646,11 @@ export default function DashGlobe(props) {
         // Dash callbacks often restyle the hovered layer, which can recreate the
         // hovered object while the pointer is still over it. Deduping by a small
         // semantic signature prevents repeated network round-trips for the same hover target.
-        emitEvent('hoverData', buildEventPayload('hover', layer, data, null, previousData), {dedupe: true});
+        emitEvent(
+            'hoverData',
+            buildEventPayload('hover', layer, data, null, previousData, eventDataModeRef.current),
+            {dedupe: true}
+        );
     };
 
     const handlePolygonHover = (data, previousData) => {
@@ -1557,11 +1703,27 @@ export default function DashGlobe(props) {
         );
     };
 
+    const baseGlobeProps = omitInternalProps(performanceProps);
+    LAYER_DATA_PROP_NAMES.forEach((propName) => {
+        if (resolvedLayerProps[propName] !== undefined) {
+            baseGlobeProps[propName] = resolvedLayerProps[propName];
+        } else if (isDataUrlSpec(performanceProps[propName])) {
+            // Avoid forwarding unresolved URL markers to react-globe.gl.
+            delete baseGlobeProps[propName];
+        }
+    });
+
     const globeProps = {
-        ...omitInternalProps(props),
-        onGlobeReady: () => setProps && setProps({globeReady: true}),
-        onGlobeClick: (coords) => emitEvent('clickData', buildEventPayload('click', 'globe', null, coords)),
-        onGlobeRightClick: (coords) => emitEvent('rightClickData', buildEventPayload('rightClick', 'globe', null, coords)),
+        ...baseGlobeProps,
+        onGlobeReady: () => setPropsRef.current && setPropsRef.current({globeReady: true}),
+        onGlobeClick: (coords) => emitEvent(
+            'clickData',
+            buildEventPayload('click', 'globe', null, coords, undefined, eventDataModeRef.current)
+        ),
+        onGlobeRightClick: (coords) => emitEvent(
+            'rightClickData',
+            buildEventPayload('rightClick', 'globe', null, coords, undefined, eventDataModeRef.current)
+        ),
         onPointClick: handleObjectEvent('click', 'point'),
         onPointRightClick: handleObjectEvent('rightClick', 'point'),
         onPointHover: handleHoverEvent('point'),
@@ -1596,10 +1758,22 @@ export default function DashGlobe(props) {
     };
 
     if (shouldApplyPolygonHoverOverride) {
-        globeProps.polygonAltitude = buildPolygonHoverAccessor(props.polygonAltitude, polygonHoverAltitude);
-        globeProps.polygonCapColor = buildPolygonHoverAccessor(props.polygonCapColor, polygonHoverCapColor);
-        globeProps.polygonSideColor = buildPolygonHoverAccessor(props.polygonSideColor, polygonHoverSideColor);
-        globeProps.polygonStrokeColor = buildPolygonHoverAccessor(props.polygonStrokeColor, polygonHoverStrokeColor);
+        globeProps.polygonAltitude = buildPolygonHoverAccessor(
+            performanceProps.polygonAltitude,
+            polygonHoverAltitude
+        );
+        globeProps.polygonCapColor = buildPolygonHoverAccessor(
+            performanceProps.polygonCapColor,
+            polygonHoverCapColor
+        );
+        globeProps.polygonSideColor = buildPolygonHoverAccessor(
+            performanceProps.polygonSideColor,
+            polygonHoverSideColor
+        );
+        globeProps.polygonStrokeColor = buildPolygonHoverAccessor(
+            performanceProps.polygonStrokeColor,
+            polygonHoverStrokeColor
+        );
     }
 
     if (polygonCapMaterial !== undefined) {
@@ -1614,12 +1788,12 @@ export default function DashGlobe(props) {
         globeProps.globeMaterial = dayNightMaterial;
     }
 
-    if (props.arcColor !== undefined) {
-        globeProps.arcColor = buildSerializableAccessor(props.arcColor);
+    if (performanceProps.arcColor !== undefined) {
+        globeProps.arcColor = buildSerializableAccessor(performanceProps.arcColor);
     }
 
-    if (props.ringColor !== undefined) {
-        globeProps.ringColor = buildRingColorAccessor(props.ringColor);
+    if (performanceProps.ringColor !== undefined) {
+        globeProps.ringColor = buildRingColorAccessor(performanceProps.ringColor);
     }
 
     if (tileMaterial !== undefined) {
