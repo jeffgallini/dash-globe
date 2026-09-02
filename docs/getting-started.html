@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Getting Started · Dash Globe</title>
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">🌐</span>
+        <span>Dash Globe</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a class="active" href="getting-started.html">Getting Started</a>
+        <a href="examples.html">Examples</a>
+        <a href="https://github.com/jeffgallini/dash-globe">GitHub</a>
+        <a href="https://pypi.org/project/dash-globe/">PyPI</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="eyebrow">Quick start</div>
+    <h1>Get a globe on screen</h1>
+    <p class="lead">Install from PyPI, configure with chainable helpers, and wire events like any other Dash component.</p>
+
+    <section class="section">
+      <h2>Install</h2>
+      <pre class="code">pip install dash-globe</pre>
+    </section>
+
+    <section class="section">
+      <h2>Minimal app</h2>
+      <pre class="code">from dash import Dash, html
+import dash_globe
+
+app = Dash(__name__)
+
+globe = (
+    dash_globe.DashGlobe(id="globe")
+    .update_layout(height=520, background_color="#020817")
+    .update_globe(globe_image_url=dash_globe.PRESETS.EARTH_NIGHT, show_atmosphere=True)
+    .update_controls(auto_rotate=True, auto_rotate_speed=0.4)
+    .add_points([
+        {"name": "New York", "lat": 40.7128, "lng": -74.0060, "color": "#ff6b6b"},
+        {"name": "London", "lat": 51.5072, "lng": -0.1276, "color": "#ffd166"},
+        {"name": "Tokyo", "lat": 35.6762, "lng": 139.6503, "color": "#4cc9f0"},
+    ])
+    .update_points(
+        point_lat="lat",
+        point_lng="lng",
+        point_color="color",
+        point_label="name",
+        point_altitude=0.08,
+        point_radius=0.28,
+    )
+)
+
+app.layout = html.Div(globe)
+
+if __name__ == "__main__":
+    app.run(debug=True)</pre>
+    </section>
+
+    <section class="section">
+      <h2>Large GeoJSON without bloating the layout</h2>
+      <pre class="code">globe = (
+    dash_globe.DashGlobe(id="countries")
+    .enable_large_data_mode()
+    .update_polygons(
+        data=dash_globe.data_url(
+            "https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/ne_110m_admin_0_countries.geojson"
+        ),
+        polygon_geo_json_geometry="geometry",
+        polygon_cap_color="rgba(56, 189, 248, 0.55)",
+        polygon_side_color="rgba(14, 165, 233, 0.12)",
+        polygon_stroke_color="#0f172a",
+        polygon_altitude=0.06,
+        polygon_label="properties.ADMIN",
+    )
+)</pre>
+    </section>
+
+    <section class="section">
+      <h2>Local docs gallery</h2>
+      <p class="section-intro">
+        The repository ships a Mantine-styled interactive gallery. From the package folder:
+      </p>
+      <pre class="code">cd dash_globe
+python usage.py</pre>
+      <p class="section-intro">Then open <code>http://127.0.0.1:8050</code>. Set <code>DASH_GLOBE_DEBUG=1</code> if you want Dash debug tooling.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>Dash Globe v1.0.0</div>
+      <div><a href="examples.html">Browse examples →</a></div>
+    </div>
+  </footer>
+</body>
+</html>

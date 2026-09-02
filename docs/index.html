@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dash Globe · Interactive 3D globes for Dash</title>
+  <meta name="description" content="Dash Globe is a Pythonic Dash wrapper for react-globe.gl with a figure-like API, live examples, and GitHub Pages docs." />
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Dash Globe</span>
+      </a>
+      <nav class="nav">
+        <a class="active" href="index.html">Home</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a href="examples.html">Examples</a>
+        <a href="https://github.com/jeffgallini/dash-globe">GitHub</a>
+        <a href="https://pypi.org/project/dash-globe/">PyPI</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="eyebrow">v1.0.0 · Major release</div>
+        <h1>Interactive 3D globes for Dash</h1>
+        <p class="lead">
+          A figure-like Python API around <a href="https://github.com/vasturiano/react-globe.gl">react-globe.gl</a>.
+          Chain helpers, map your data with accessors, and wire globe events into normal Dash callbacks.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="getting-started.html">Get started</a>
+          <a class="button secondary" href="examples.html">Browse examples</a>
+          <a class="button secondary" href="https://github.com/jeffgallini/dash-globe/blob/main/dash_globe/usage.py">Live gallery source</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/examples/hero.png" alt="Dash Globe large dataset choropleth example" />
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Why Dash Globe</h2>
+      <p class="section-intro">
+        Built for Dash developers who want globe visualizations without dropping into raw Three.js.
+        The 1.0 release locks in the chainable API, large-data helpers, and a docs-ready example gallery.
+      </p>
+      <div class="grid features">
+        <article class="card">
+          <h3>Figure-like API</h3>
+          <p><code>update_layout</code>, <code>update_globe</code>, <code>add_points</code>, <code>add_arcs</code>, and more — all chainable.</p>
+        </article>
+        <article class="card">
+          <h3>Full layer coverage</h3>
+          <p>Points, arcs, polygons, paths, heatmaps, hex bins, tiles, particles, rings, and labels.</p>
+        </article>
+        <article class="card">
+          <h3>Dash-native events</h3>
+          <p><code>clickData</code>, <code>hoverData</code>, <code>rightClickData</code>, and <code>currentView</code> participate in normal callbacks.</p>
+        </article>
+        <article class="card">
+          <h3>Large data ready</h3>
+          <p><code>data_url(...)</code> and <code>enable_large_data_mode()</code> keep GeoJSON out of the Dash layout.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Install</h2>
+      <pre class="code">pip install dash-globe</pre>
+      <div class="actions">
+        <a class="button secondary" href="getting-started.html">Read the quick start →</a>
+      </div>
+    </section>
+
+    <section class="wrap section">
+      <h2>Featured examples</h2>
+      <p class="section-intro">
+        Screenshots and short loops from the interactive gallery. Run the full gallery locally with
+        <code>python usage.py</code>.
+      </p>
+      <div class="grid examples">
+        <article class="card example-card">
+          <img src="assets/examples/large-dataset.gif" alt="Large dataset globe animation" onerror="this.src='assets/examples/large-dataset.png'" />
+          <div class="body">
+            <h3>Large Dataset</h3>
+            <p>Client-fetched GeoJSON with compact summary hover payloads.</p>
+          </div>
+        </article>
+        <article class="card example-card">
+          <img src="assets/examples/choropleth.png" alt="Choropleth countries globe" />
+          <div class="body">
+            <h3>Choropleth</h3>
+            <p>GDP-per-capita country coloring with hover highlighting.</p>
+          </div>
+        </article>
+        <article class="card example-card">
+          <img src="assets/examples/day-night-cycle.gif" alt="Day night cycle globe animation" onerror="this.src='assets/examples/day-night-cycle.png'" />
+          <div class="body">
+            <h3>Day / Night</h3>
+            <p>First-class day-night shader without raw Three.js materials.</p>
+          </div>
+        </article>
+      </div>
+      <div class="actions">
+        <a class="button primary" href="examples.html">See all examples</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>Dash Globe v1.0.0 · MIT License</div>
+      <div>
+        Built on <a href="https://github.com/vasturiano/react-globe.gl">react-globe.gl</a>
+        · Docs via GitHub Pages
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

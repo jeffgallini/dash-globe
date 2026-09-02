@@ -1,6 +1,6 @@
 Package: dashGlobe
 Title: React Globe.gl in Dash
-Version: 0.0.10
+Version: 1.0.0
 Description: React Globe.gl in Dash
 Depends: R (>= 3.0.2)
 Imports: 

@@ -126,7 +126,7 @@ function useStableLayerDataMap(sourceProps) {
 
 function useResolvedLayerData(layerProps) {
     const [resolvedUrlData, setResolvedUrlData] = useState({});
-    const requestIdsRef = useRef({});
+    const inFlightKeysRef = useRef({});
 
     const urlRequestSignature = LAYER_DATA_PROP_NAMES.map((propName) => {
         const value = layerProps[propName];
@@ -137,6 +137,13 @@ function useResolvedLayerData(layerProps) {
         return `${propName}:${spec.url}:${spec.unwrapFeatures ? 1 : 0}`;
     }).join('|');
 
+    const pendingUrlPropNames = useMemo(
+        () => LAYER_DATA_PROP_NAMES.filter((propName) => isDataUrlSpec(layerProps[propName])),
+        // layerProps identity is already stabilized by fingerprint in useStableLayerDataMap.
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        [urlRequestSignature]
+    );
+
     useEffect(() => {
         const controllers = [];
         const activeUrlProps = new Set();
@@ -144,23 +151,26 @@ function useResolvedLayerData(layerProps) {
         LAYER_DATA_PROP_NAMES.forEach((propName) => {
             const value = layerProps[propName];
             if (!isDataUrlSpec(value)) {
-                delete requestIdsRef.current[propName];
+                delete inFlightKeysRef.current[propName];
                 return;
             }
 
             activeUrlProps.add(propName);
             const spec = normaliseDataUrlSpec(value);
             const requestKey = `${spec.url}::${spec.unwrapFeatures ? 1 : 0}`;
-            if (requestIdsRef.current[propName] === requestKey) {
+            if (inFlightKeysRef.current[propName] === requestKey) {
                 return;
             }
 
-            requestIdsRef.current[propName] = requestKey;
+            inFlightKeysRef.current[propName] = requestKey;
             const controller = new AbortController();
             controllers.push(controller);
 
             fetchLayerData(spec, controller.signal)
                 .then((payload) => {
+                    if (controller.signal.aborted) {
+                        return;
+                    }
                     setResolvedUrlData((current) => ({
                         ...current,
                         [propName]: payload
@@ -169,6 +179,10 @@ function useResolvedLayerData(layerProps) {
                 .catch((error) => {
                     if (controller.signal.aborted) {
                         return;
+                    }
+                    // Allow a later effect pass to retry this URL.
+                    if (inFlightKeysRef.current[propName] === requestKey) {
+                        delete inFlightKeysRef.current[propName];
                     }
                     // Keep the previous resolved payload on transient failures.
                     // eslint-disable-next-line no-console
@@ -190,24 +204,38 @@ function useResolvedLayerData(layerProps) {
 
         return () => {
             controllers.forEach((controller) => controller.abort());
+            // Drop in-flight markers so Strict Mode / remounts always refetch.
+            Object.keys(inFlightKeysRef.current).forEach((propName) => {
+                if (activeUrlProps.has(propName)) {
+                    delete inFlightKeysRef.current[propName];
+                }
+            });
         };
         // layerProps is read for URL specs keyed by urlRequestSignature.
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [urlRequestSignature]);
 
-    return useMemo(() => {
+    const resolvedLayerProps = useMemo(() => {
         const next = {...layerProps};
         LAYER_DATA_PROP_NAMES.forEach((propName) => {
             if (isDataUrlSpec(layerProps[propName])) {
                 if (Object.prototype.hasOwnProperty.call(resolvedUrlData, propName)) {
                     next[propName] = resolvedUrlData[propName];
                 } else {
-                    delete next[propName];
+                    // Keep a stable empty layer while fetching so react-kapsule
+                    // mounts cleanly, then receives real data on first paint.
+                    next[propName] = [];
                 }
             }
         });
         return next;
     }, [layerProps, resolvedUrlData]);
+
+    const waitingForUrlData = pendingUrlPropNames.some(
+        (propName) => !Object.prototype.hasOwnProperty.call(resolvedUrlData, propName)
+    );
+
+    return {resolvedLayerProps, waitingForUrlData};
 }
 
 const HOVER_SIGNATURE_KEYS = [
@@ -732,7 +760,10 @@ function resolveAccessorValue(accessor, datum) {
             return datum[accessor];
         }
 
-        if (accessor.includes('.')) {
+        // Only treat dotted strings as nested paths when they look like
+        // identifiers (properties.ADMIN). CSS colors such as
+        // rgba(56, 189, 248, 0.55) also contain dots.
+        if (/^[A-Za-z_][\w$]*(\.[A-Za-z_][\w$]*)+$/.test(accessor)) {
             return accessor.split('.').reduce((current, key) => {
                 if (current === null || current === undefined || typeof current !== 'object') {
                     return undefined;
@@ -987,7 +1018,7 @@ export default function DashGlobe(props) {
     eventDataModeRef.current = eventDataMode === 'full' ? 'full' : 'summary';
 
     const stableLayerSeeds = useStableLayerDataMap(performanceProps);
-    const resolvedLayerProps = useResolvedLayerData(stableLayerSeeds);
+    const {resolvedLayerProps, waitingForUrlData} = useResolvedLayerData(stableLayerSeeds);
     const polygonCapMaterial = useMemo(
         () => buildThreeMaterial(performanceProps.polygonCapMaterial),
         [performanceProps.polygonCapMaterial]
@@ -1757,25 +1788,6 @@ export default function DashGlobe(props) {
         onZoom: handleZoom
     };
 
-    if (shouldApplyPolygonHoverOverride) {
-        globeProps.polygonAltitude = buildPolygonHoverAccessor(
-            performanceProps.polygonAltitude,
-            polygonHoverAltitude
-        );
-        globeProps.polygonCapColor = buildPolygonHoverAccessor(
-            performanceProps.polygonCapColor,
-            polygonHoverCapColor
-        );
-        globeProps.polygonSideColor = buildPolygonHoverAccessor(
-            performanceProps.polygonSideColor,
-            polygonHoverSideColor
-        );
-        globeProps.polygonStrokeColor = buildPolygonHoverAccessor(
-            performanceProps.polygonStrokeColor,
-            polygonHoverStrokeColor
-        );
-    }
-
     if (polygonCapMaterial !== undefined) {
         globeProps.polygonCapMaterial = polygonCapMaterial;
     }
@@ -1796,6 +1808,49 @@ export default function DashGlobe(props) {
         globeProps.ringColor = buildRingColorAccessor(performanceProps.ringColor);
     }
 
+    // react-globe.gl / accessor-fn treat plain strings as property names. Wrap
+    // Dash-friendly CSS color constants and dotted paths into real accessors.
+    [
+        'pointColor',
+        'pointLabel',
+        'arcLabel',
+        'polygonCapColor',
+        'polygonSideColor',
+        'polygonStrokeColor',
+        'polygonLabel',
+        'pathColor',
+        'pathLabel',
+        'hexPolygonColor',
+        'hexPolygonLabel',
+        'tileLabel',
+        'labelColor',
+        'labelText',
+        'particleColor'
+    ].forEach((propName) => {
+        if (globeProps[propName] !== undefined && typeof globeProps[propName] !== 'function') {
+            globeProps[propName] = buildSerializableAccessor(globeProps[propName]);
+        }
+    });
+
+    if (shouldApplyPolygonHoverOverride) {
+        globeProps.polygonAltitude = buildPolygonHoverAccessor(
+            performanceProps.polygonAltitude,
+            polygonHoverAltitude
+        );
+        globeProps.polygonCapColor = buildPolygonHoverAccessor(
+            performanceProps.polygonCapColor,
+            polygonHoverCapColor
+        );
+        globeProps.polygonSideColor = buildPolygonHoverAccessor(
+            performanceProps.polygonSideColor,
+            polygonHoverSideColor
+        );
+        globeProps.polygonStrokeColor = buildPolygonHoverAccessor(
+            performanceProps.polygonStrokeColor,
+            polygonHoverStrokeColor
+        );
+    }
+
     if (tileMaterial !== undefined) {
         globeProps.tileMaterial = tileMaterial;
     }
@@ -1806,6 +1861,17 @@ export default function DashGlobe(props) {
 
     if (resolvedHeight !== undefined && resolvedHeight !== null) {
         globeProps.height = resolvedHeight;
+    }
+
+    // react-kapsule applies props during render. If we mount Globe before
+    // data_url fetches finish, then feed it the same array reference after
+    // mount, the post-mount render can skip re-applying polygonsData and the
+    // layer stays empty. Wait until URL layers resolve so the first Globe
+    // paint includes the real dataset (same path as inline choropleth data).
+    if (waitingForUrlData) {
+        return (
+            <div id={id} className={className} style={wrapperStyle} ref={wrapperRef} />
+        );
     }
 
     return (

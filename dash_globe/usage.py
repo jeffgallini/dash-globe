@@ -9,7 +9,22 @@ from random import Random
 from urllib.request import urlopen
 
 import dash_globe
+import dash_mantine_components as dmc
 from dash import Dash, Input, Output, State, ctx, dcc, html, no_update
+from dash_iconify import DashIconify
+
+from docs_shell import (
+    DOC_SECTIONS,
+    build_api_reference_list as _shell_build_api_reference_list,
+    build_badge_row,
+    build_helper_guide_item as _shell_build_helper_guide_item,
+    build_note_list,
+    build_parameter_table,
+    build_reference_table,
+    code_block,
+    doc_card,
+    nav_icon,
+)
 
 
 DEBUG_ENV_VAR = "DASH_GLOBE_DEBUG"
@@ -2000,15 +2015,15 @@ globe = (
     .enable_large_data_mode()
     .update_layout(height=480, background_color="#020617")
     .update_globe(globe_image_url=dash_globe.PRESETS.EARTH_NIGHT)
-    .update_polygons(
-        data=dash_globe.data_url(COUNTRIES_URL),
-        polygon_geo_json_geometry="geometry",
-        polygon_cap_color="rgba(56, 189, 248, 0.55)",
-        polygon_side_color="rgba(14, 165, 233, 0.12)",
-        polygon_stroke_color="#0f172a",
-        polygon_altitude=0.012,
-        polygon_label="properties.ADMIN",
-    )
+        .update_polygons(
+            data=dash_globe.data_url(COUNTRIES_URL),
+            polygon_geo_json_geometry="geometry",
+            polygon_cap_color="rgba(56, 189, 248, 0.55)",
+            polygon_side_color="rgba(14, 165, 233, 0.12)",
+            polygon_stroke_color="#0f172a",
+            polygon_altitude=0.06,
+            polygon_label="properties.ADMIN",
+        )
 )
 """
 
@@ -2537,16 +2552,7 @@ EVENT_REFERENCE_ROWS = [
 
 INSTALLATION_CODE = """pip install dash-globe"""
 
-DOC_SECTIONS = [
-    ("getting-started", "Usage"),
-    ("api-overview", "Overview"),
-    ("helper-guides", "Helper Guides"),
-    ("layer-reference", "Layer Reference"),
-    ("utilities", "Utilities"),
-    ("callbacks", "Callbacks"),
-    ("api-reference", "API Reference"),
-    ("examples", "Live Examples"),
-]
+# DOC_SECTIONS is provided by docs_shell for the AppShell sidebar / tests.
 
 API_REFERENCE_ITEMS = [
     {
@@ -2936,143 +2942,6 @@ RAW_PROP_GROUPS = [
     },
 ]
 
-SECTION_TITLE_STYLE = {"margin": "0 0 8px 0", "fontSize": "1.8rem", "color": "#182433"}
-SECTION_BODY_STYLE = {"margin": 0, "maxWidth": "840px", "color": "#5f6b7a", "lineHeight": 1.7}
-PANEL_STYLE = {
-    "background": "#ffffff",
-    "border": "1px solid #e4e9f0",
-    "borderRadius": "16px",
-    "padding": "20px",
-    "boxShadow": "0 1px 2px rgba(16, 24, 40, 0.04)",
-}
-
-
-def globe_card(title, description, globe, footer):
-    return html.Section(
-        [
-            html.Div(
-                [
-                    html.Span(
-                        "Interactive Example",
-                        style={
-                            "display": "inline-block",
-                            "marginBottom": "10px",
-                            "padding": "4px 10px",
-                            "borderRadius": "999px",
-                            "background": "#eef4ff",
-                            "color": "#3559b7",
-                            "fontSize": "0.78rem",
-                            "fontWeight": 700,
-                            "letterSpacing": "0.04em",
-                            "textTransform": "uppercase",
-                        },
-                    ),
-                    html.H3(title, style={"margin": "0 0 8px 0", "color": "#182433"}),
-                    html.P(description, style={"margin": 0, "color": "#5f6b7a", "lineHeight": 1.7}),
-                ],
-                style={"marginBottom": "18px"},
-            ),
-            html.Div(
-                [
-                    html.Div(globe, style={"minWidth": 0}),
-                    html.Div(footer, style={"minWidth": 0}),
-                ],
-                style={
-                    "display": "grid",
-                    "gridTemplateColumns": "repeat(auto-fit, minmax(320px, 1fr))",
-                    "gap": "18px",
-                    "alignItems": "start",
-                },
-            ),
-        ],
-        style=PANEL_STYLE,
-    )
-
-
-def doc_card(title, description, *children):
-    return html.Section(
-        [
-            html.H3(title, style={"margin": "0 0 8px 0", "color": "#182433"}),
-            html.P(description, style={"margin": "0 0 14px 0", "color": "#5f6b7a", "lineHeight": 1.7}),
-            *children,
-        ],
-        style=PANEL_STYLE,
-    )
-
-
-def build_badge_row(items):
-    return html.Div(
-        [
-            html.Span(
-                item,
-                style={
-                    "display": "inline-flex",
-                    "alignItems": "center",
-                    "padding": "6px 12px",
-                    "borderRadius": "999px",
-                    "background": "#f4f7fb",
-                    "border": "1px solid #d9e3f0",
-                    "fontSize": "0.88rem",
-                    "color": "#41556b",
-                },
-            )
-            for item in items
-        ],
-        style={"display": "flex", "flexWrap": "wrap", "gap": "8px", "marginTop": "14px"},
-    )
-
-
-def build_reference_table(headers, rows):
-    return html.Div(
-        html.Table(
-            [
-                html.Thead(
-                    html.Tr(
-                        [
-                            html.Th(
-                                header,
-                                style={
-                                    "textAlign": "left",
-                                    "padding": "10px 12px",
-                                    "fontSize": "0.82rem",
-                                    "letterSpacing": "0.08em",
-                                    "textTransform": "uppercase",
-                                    "color": "#738295",
-                                    "borderBottom": "1px solid #e4e9f0",
-                                },
-                            )
-                            for header in headers
-                        ]
-                    )
-                ),
-                html.Tbody(
-                    [
-                        html.Tr(
-                            [
-                                html.Td(
-                                    cell,
-                                    style={
-                                        "padding": "12px",
-                                        "verticalAlign": "top",
-                                        "borderBottom": "1px solid #edf1f6",
-                                        "lineHeight": 1.5,
-                                        "color": "#37485b",
-                                        "fontSize": "0.92rem",
-                                    },
-                                )
-                                for cell in row
-                            ]
-                        )
-                        for row in rows
-                    ]
-                ),
-            ],
-            style={"width": "100%", "borderCollapse": "collapse"},
-        ),
-        style={"overflowX": "auto"},
-    )
-
-
 def build_method_reference():
     return html.Div(
         [
@@ -3120,164 +2989,59 @@ def build_prop_group_reference():
     )
 
 
-def build_parameter_table(parameters):
-    return build_reference_table(
-        ["Parameter", "Type", "Description"],
-        parameters,
-    )
-
-
-def build_note_list(items):
-    return html.Ul(
-        [html.Li(item, style={"marginBottom": "6px"}) for item in items],
-        style={"margin": "12px 0 0 18px", "color": "#5f6b7a", "lineHeight": 1.7},
-    )
-
-
-def build_api_reference_item(item):
-    children = [
-        html.Div(item["name"], style={"fontWeight": 700, "fontSize": "1rem", "color": "#182433", "marginBottom": "10px"}),
-        html.Pre(item["signature"], style=CODE_BLOCK_STYLE),
-        html.P(item["summary"], style={"margin": "14px 0 0 0", "color": "#5f6b7a", "lineHeight": 1.7}),
-        html.Div(style={"height": "14px"}),
-        build_parameter_table(item["parameters"]),
-        html.Div(
-            [
-                html.Div("Returns", style={"fontWeight": 700, "color": "#182433", "margin": "14px 0 6px 0"}),
-                html.P(item["returns"], style={"margin": 0, "color": "#5f6b7a", "lineHeight": 1.7}),
-            ]
-        ),
-    ]
-    if item["notes"]:
-        children.append(
-            html.Div(
-                [
-                    html.Div("Notes", style={"fontWeight": 700, "color": "#182433", "margin": "14px 0 6px 0"}),
-                    build_note_list(item["notes"]),
-                ]
-            )
-        )
-
-    return html.Div(
-        children,
-        style={**PANEL_STYLE, "padding": "18px"},
-    )
-
 
 def build_api_reference_list():
-    return html.Div(
-        [build_api_reference_item(item) for item in API_REFERENCE_ITEMS],
-        style={"display": "grid", "gap": "18px"},
-    )
+    return _shell_build_api_reference_list(API_REFERENCE_ITEMS)
 
 
 def build_helper_guide_item(item):
-    return doc_card(
-        item["title"],
-        item["description"],
-        build_badge_row(item["related"]),
-        html.Pre(item["code"], style={**CODE_BLOCK_STYLE, "marginTop": "14px"}),
-    )
+    return _shell_build_helper_guide_item(item)
 
 
 def build_helper_guides_grid():
-    return html.Div(
-        [build_helper_guide_item(item) for item in HELPER_GUIDE_ITEMS],
-        style={"display": "grid", "gap": "18px"},
-    )
-
-
-def build_section_nav():
-    return html.Nav(
-        [
-            html.Div(
-                [
-                    html.Div("Documentation", style={"fontSize": "0.78rem", "fontWeight": 700, "letterSpacing": "0.08em", "textTransform": "uppercase", "color": "#738295"}),
-                    html.H2("On This Page", style={"margin": "8px 0 6px 0", "fontSize": "1.05rem", "color": "#182433"}),
-                    html.P(
-                        "A docs-first guide to the package API, helpers, and runnable examples.",
-                        style={"margin": 0, "color": "#5f6b7a", "lineHeight": 1.6, "fontSize": "0.92rem"},
-                    ),
-                ],
-                style={"marginBottom": "18px"},
-            ),
-            html.Div(
-                [
-                    html.A(
-                        label,
-                        href=f"#{section_id}",
-                        style={
-                            "display": "block",
-                            "padding": "9px 12px",
-                            "borderRadius": "10px",
-                            "color": "#41556b",
-                            "textDecoration": "none",
-                            "fontWeight": 500,
-                        },
-                    )
-                    for section_id, label in DOC_SECTIONS
-                ],
-                style={"display": "grid", "gap": "4px"},
-            ),
-        ],
-        style={
-            **PANEL_STYLE,
-            "position": "sticky",
-            "top": "24px",
-            "width": "240px",
-            "flex": "0 0 240px",
-            "padding": "18px",
-        },
-    )
+    return dmc.Stack([build_helper_guide_item(item) for item in HELPER_GUIDE_ITEMS], gap="md")
 
 
 def build_doc_section(section_id, title, description, *children):
-    return html.Section(
+    return dmc.Stack(
         [
-            html.Div(
+            dmc.Stack(
                 [
-                    html.Div(
-                        title.upper(),
-                        style={
-                            "fontSize": "0.76rem",
-                            "fontWeight": 700,
-                            "letterSpacing": "0.08em",
-                            "textTransform": "uppercase",
-                            "color": "#738295",
-                            "marginBottom": "10px",
-                        },
-                    ),
-                    html.H2(title, style=SECTION_TITLE_STYLE),
-                    html.P(description, style=SECTION_BODY_STYLE),
+                    dmc.Text("Dash Globe", size="sm", c="dimmed", tt="uppercase", fw=700, lts=1),
+                    dmc.Title(title, order=2),
+                    dmc.Text(description, c="dimmed", maw=820, style={"lineHeight": 1.7}),
                 ],
-                style={"marginBottom": "18px"},
+                gap="xs",
             ),
             *children,
         ],
+        gap="lg",
         id=section_id,
-        style={"marginBottom": "36px", "scrollMarginTop": "24px"},
+        style={"scrollMarginTop": "88px"},
+        mb=48,
     )
 
 
 def build_getting_started_section():
     return build_doc_section(
         "getting-started",
-        "Getting Started",
+        "Usage",
         "Dash Globe is a Dash wrapper around react-globe.gl. The intended workflow mirrors figure-building in Plotly: create a component, configure the scene, add data layers, then map your data fields with layer accessors.",
-        html.Div(
+        dmc.SimpleGrid(
             [
                 doc_card(
                     "Installation",
                     "Install the package, import dash_globe, and start with the chainable DashGlobe helper.",
-                    html.Pre(INSTALLATION_CODE, style=CODE_BLOCK_STYLE),
+                    code_block(INSTALLATION_CODE),
                 ),
                 doc_card(
                     "Basic Usage",
                     "A minimal app only needs a Dash layout and a single globe configured with points, textures, and camera position.",
-                    html.Pre(QUICK_START_CODE, style=CODE_BLOCK_STYLE),
+                    code_block(QUICK_START_CODE),
                 ),
             ],
-            style={"display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(320px, 1fr))", "gap": "18px"},
+            cols={"base": 1, "md": 2},
+            spacing="md",
         ),
         doc_card(
             "What the Package Covers",
@@ -3298,14 +3062,15 @@ def build_getting_started_section():
 def build_api_overview_section():
     return build_doc_section(
         "api-overview",
-        "API Overview",
+        "Overview",
         "The high-level API is centered on dash_globe.globe.DashGlobe, which layers Pythonic convenience methods on top of the generated Dash component surface.",
-        html.Div(
+        dmc.Stack(
             [
                 doc_card(
                     "Builder Pattern",
                     "Use update_layout, update_globe, update_view, and the add_* / update_* layer helpers to keep globe configuration readable as scenes grow.",
-                    html.Pre(BUILDER_PATTERN_CODE, style=CODE_BLOCK_STYLE),
+                    code_block(BUILDER_PATTERN_CODE),
+                    dmc.Space(h="md"),
                     build_method_reference(),
                 ),
                 doc_card(
@@ -3314,7 +3079,7 @@ def build_api_overview_section():
                     build_prop_group_reference(),
                 ),
             ],
-            style={"display": "grid", "gap": "18px"},
+            gap="md",
         ),
     )
 
@@ -3333,7 +3098,7 @@ def build_layer_reference_section():
         "layer-reference",
         "Layer Reference",
         "Each supported layer follows the same pattern: append data with add_* helpers, then describe how to read your records with update_* accessors.",
-        html.Div(
+        dmc.Stack(
             [
                 doc_card(
                     "Layer Helper Matrix",
@@ -3346,10 +3111,10 @@ def build_layer_reference_section():
                 doc_card(
                     "Advanced Layer Combinations",
                     "You can freely mix multiple layers on the same globe, or use raw props when you need an accessor that is not surfaced by a helper alias.",
-                    html.Pre(ADVANCED_FEATURES_CODE, style=CODE_BLOCK_STYLE),
+                    code_block(ADVANCED_FEATURES_CODE),
                 ),
             ],
-            style={"display": "grid", "gap": "18px"},
+            gap="md",
         ),
     )
 
@@ -3375,7 +3140,7 @@ def build_callbacks_section():
         "callbacks",
         "Callbacks",
         "Dash Globe behaves like a regular Dash component: the same interaction props you inspect in the docs can be read and written inside callbacks.",
-        html.Div(
+        dmc.SimpleGrid(
             [
                 doc_card(
                     "Interaction Props",
@@ -3388,10 +3153,11 @@ def build_callbacks_section():
                 doc_card(
                     "Callback Example",
                     "Use event_coords when you only care about geographic position instead of the full browser event payload shape.",
-                    html.Pre(CALLBACKS_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                    code_block(CALLBACKS_EXAMPLE_CODE),
                 ),
             ],
-            style={"display": "grid", "gridTemplateColumns": "repeat(auto-fit, minmax(320px, 1fr))", "gap": "18px"},
+            cols={"base": 1, "md": 2},
+            spacing="md",
         ),
     )
 
@@ -3561,15 +3327,21 @@ GLOBE_IDS = [
 
 def build_globe_placeholder(globe_id):
     return html.Div(
-        html.Div(
+        dmc.Stack(
             [
-                html.Div("Idle", style={"fontSize": "0.78rem", "letterSpacing": "0.14em", "textTransform": "uppercase", "opacity": 0.7}),
-                html.H4("Click Run to mount this globe", style={"margin": "10px 0 8px 0", "fontSize": "1.2rem"}),
-                html.P(
+                dmc.Text("Idle", size="xs", tt="uppercase", c="dimmed", fw=700, lts=1),
+                dmc.Title("Click Run to mount this globe", order=4),
+                dmc.Text(
                     "Only one globe is rendered at a time in this gallery so the browser stays responsive while you explore.",
-                    style={"maxWidth": "320px", "margin": 0, "lineHeight": 1.6},
+                    c="dimmed",
+                    size="sm",
+                    maw=320,
+                    ta="center",
+                    style={"lineHeight": 1.6},
                 ),
-            ]
+            ],
+            align="center",
+            gap="sm",
         ),
         id=f"{globe_id}-placeholder",
         style=PLACEHOLDER_BODY_STYLE,
@@ -3583,27 +3355,17 @@ def build_globe_stage(globe_id):
     return html.Div(
         [
             html.Div(id=f"{globe_id}-mount", children=build_globe_placeholder(globe_id)),
-            html.Button("Run", id=f"{globe_id}-run-button", n_clicks=0, style=RUN_BUTTON_STYLE),
+            dmc.Button(
+                "Run",
+                id=f"{globe_id}-run-button",
+                n_clicks=0,
+                variant="filled",
+                color="blue",
+                radius="xl",
+                style={"position": "absolute", "top": 14, "right": 14, "zIndex": 2},
+            ),
         ],
         style=container_style,
-    )
-
-
-def build_gallery_footer():
-    return html.P(
-        [
-            html.Code("clickData"),
-            ", ",
-            html.Code("hoverData"),
-            ", ",
-            html.Code("rightClickData"),
-            ", and ",
-            html.Code("currentView"),
-            " are regular Dash props, so the globe participates in the same callback model as the rest of a Dash app. "
-            "This gallery only mounts one globe at a time to keep browser performance healthy.",
-        ],
-        id="gallery-footer",
-        style={"marginTop": "20px", "color": "#5f6b7a", "lineHeight": 1.7},
     )
 
 
@@ -3862,7 +3624,7 @@ def build_large_dataset_globe():
             polygon_cap_color="rgba(56, 189, 248, 0.55)",
             polygon_side_color="rgba(14, 165, 233, 0.12)",
             polygon_stroke_color="#0f172a",
-            polygon_altitude=0.012,
+            polygon_altitude=0.06,
             polygon_label="properties.ADMIN",
         )
     )
@@ -3999,30 +3761,94 @@ GLOBE_BUILDERS = {
 }
 
 
-def build_example_group(title, description, cards):
-    return html.Div(
+
+def globe_card(title, description, globe, footer):
+    return dmc.Paper(
         [
-            html.Div(
+            dmc.Stack(
                 [
-                    html.H3(title, style={"margin": "0 0 8px 0", "color": "#182433"}),
-                    html.P(description, style={"margin": 0, "color": "#5f6b7a", "lineHeight": 1.7}),
+                    dmc.Group(
+                        [
+                            dmc.Badge("Interactive Example", variant="light", color="blue"),
+                            dmc.Badge("Run to mount", variant="outline", color="gray"),
+                        ],
+                        gap="xs",
+                    ),
+                    dmc.Title(title, order=3),
+                    dmc.Text(description, c="dimmed", style={"lineHeight": 1.7}),
+                    dmc.Tabs(
+                        [
+                            dmc.TabsList(
+                                [
+                                    dmc.TabsTab("Demo", value="demo"),
+                                    dmc.TabsTab("Code", value="code"),
+                                ]
+                            ),
+                            dmc.TabsPanel(globe, value="demo", pt="md"),
+                            dmc.TabsPanel(footer, value="code", pt="md"),
+                        ],
+                        value="demo",
+                        variant="outline",
+                    ),
                 ],
-                style={"marginBottom": "16px"},
-            ),
-            html.Div(
-                cards,
-                style={
-                    "display": "grid",
-                    "gap": "22px",
-                },
-            ),
+                gap="sm",
+            )
         ],
-        style={"marginBottom": "30px"},
+        withBorder=True,
+        radius="md",
+        p="lg",
+        shadow="xs",
+        mb="lg",
+    )
+
+
+def example_code_and_events(code, event_id=None, event_placeholder=None):
+    children = [code_block(code)]
+    if event_id:
+        children.append(
+            dmc.Paper(
+                [
+                    dmc.Text("Live event payload", size="sm", fw=700, mb=6),
+                    html.Pre(
+                        id=event_id,
+                        children=event_placeholder,
+                        style={
+                            "margin": 0,
+                            "whiteSpace": "pre-wrap",
+                            "fontFamily": "Consolas, monospace",
+                            "fontSize": "0.85rem",
+                            "lineHeight": 1.55,
+                        },
+                    ),
+                ],
+                withBorder=True,
+                radius="md",
+                p="md",
+                bg="var(--mantine-color-gray-0)",
+            )
+        )
+    return dmc.Stack(children, gap="sm")
+
+
+def build_example_group(title, description, cards):
+    return dmc.Stack(
+        [
+            dmc.Stack(
+                [
+                    dmc.Title(title, order=2),
+                    dmc.Text(description, c="dimmed", style={"lineHeight": 1.7}),
+                ],
+                gap=4,
+            ),
+            dmc.Stack(cards, gap="lg"),
+        ],
+        gap="md",
+        mb="xl",
     )
 
 
 def build_examples_grid():
-    return html.Div(
+    return dmc.Stack(
         [
             build_example_group(
                 "Core Layers",
@@ -4032,40 +3858,35 @@ def build_examples_grid():
                         "Upstream Basic Example",
                         "This mirrors the official basic react-globe.gl demo: a night-earth texture plus 300 random colored points whose altitude comes from a size field.",
                         build_globe_stage("basic-example-globe"),
-                        html.Pre(BASIC_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(BASIC_EXAMPLE_CODE),
                     ),
                     globe_card(
                         "Upstream Random Arcs",
                         "This mirrors the official random-arcs demo by precomputing the per-arc dash length, gap, and animation time in Python.",
                         build_globe_stage("random-arcs-example-globe"),
-                        html.Pre(RANDOM_ARCS_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(RANDOM_ARCS_EXAMPLE_CODE),
                     ),
                     globe_card(
                         "Upstream Emit Arcs On Click",
                         "This ports the emit-arcs-on-click demo into Dash by listening to globe click payloads, extracting geographic coordinates with a small event helper, and pruning transient arcs and rings on a short interval.",
                         build_globe_stage(EMIT_ARCS_GLOBE_ID),
-                        html.Div(
-                            [
-                                html.Pre(EMIT_ARCS_ON_CLICK_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
-                                html.Pre(
-                                    id="emit-arcs-on-click-event",
-                                    children=EMIT_ARCS_EVENT_PLACEHOLDER,
-                                    style={**CODE_BLOCK_STYLE, "margin": "12px 0 0 0"},
-                                ),
-                            ]
+                        example_code_and_events(
+                            EMIT_ARCS_ON_CLICK_EXAMPLE_CODE,
+                            event_id="emit-arcs-on-click-event",
+                            event_placeholder=EMIT_ARCS_EVENT_PLACEHOLDER,
                         ),
                     ),
                     globe_card(
                         "Upstream Ripple Rings",
                         "This mirrors the official random-rings demo and uses a serialisable ring color interpolator helper so Dash can recreate the fading ripple callback clientside.",
                         build_globe_stage("random-rings-example-globe"),
-                        html.Pre(RANDOM_RINGS_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(RANDOM_RINGS_EXAMPLE_CODE),
                     ),
                     globe_card(
                         "Upstream Heatmap",
                         "This mirrors the official heatmap demo with a single weighted dataset, and uses the package's single-heatmap helper so the Python API reads like a normal Dash layer setup.",
                         build_globe_stage("heatmap-example-globe"),
-                        html.Pre(HEATMAP_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(HEATMAP_EXAMPLE_CODE),
                     ),
                 ],
             ),
@@ -4077,19 +3898,19 @@ def build_examples_grid():
                         "Upstream Day Night Cycle",
                         "This ports the official day-night-cycle demo with a first-class shader mode, so Dash apps can blend day and night textures without constructing a raw Three.js material in Python.",
                         build_globe_stage("day-night-cycle-globe"),
-                        html.Pre(DAY_NIGHT_CYCLE_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(DAY_NIGHT_CYCLE_EXAMPLE_CODE),
                     ),
                     globe_card(
                         "Upstream Clouds",
                         "This mirrors the official clouds demo with a first-class rotating cloud shell, so Dash apps can add the extra transparent sphere without dropping down into Three.js scene management.",
                         build_globe_stage("clouds-globe"),
-                        html.Pre(CLOUDS_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(CLOUDS_EXAMPLE_CODE),
                     ),
                     globe_card(
                         "Upstream Hollow Globe",
                         "This adapts the hollow-globe example with double-sided polygon caps, so land remains visible through the transparent shell without exposing raw Three.js materials in Python.",
                         build_globe_stage("hollow-globe"),
-                        html.Pre(HOLLOW_GLOBE_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(HOLLOW_GLOBE_EXAMPLE_CODE),
                     ),
                 ],
             ),
@@ -4101,28 +3922,23 @@ def build_examples_grid():
                         "Upstream Submarine Cables",
                         "This mirrors the linked submarine-cables demo by flattening the cable GeoJSON into serialisable path segments, then exposing them through a richer path helper instead of raw prop names.",
                         build_globe_stage("submarine-cables-globe"),
-                        html.Div(
-                            [
-                                html.Pre(SUBMARINE_CABLES_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
-                                html.Pre(
-                                    id="submarine-cables-event",
-                                    children="Click Run to mount this globe, then hover a cable segment to inspect the latest path payload.",
-                                    style={**CODE_BLOCK_STYLE, "margin": "12px 0 0 0"},
-                                ),
-                            ]
+                        example_code_and_events(
+                            SUBMARINE_CABLES_EXAMPLE_CODE,
+                            event_id="submarine-cables-event",
+                            event_placeholder="Click Run to mount this globe, then hover a cable segment to inspect the latest path payload.",
                         ),
                     ),
                     globe_card(
                         "Upstream World Cities",
                         "This mirrors the official world-cities demo by loading the same Natural Earth populated-places GeoJSON and sizing each city label and marker dot from the square root of its maximum population.",
                         build_globe_stage("world-cities-globe"),
-                        html.Pre(WORLD_CITIES_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(WORLD_CITIES_EXAMPLE_CODE),
                     ),
                     globe_card(
                         "Upstream Tiles",
                         "This ports the official tiles demo with a first-class tile material accessor, so Python code can pass JSON material specs per tile instead of constructing raw Three.js materials in JavaScript.",
                         build_globe_stage("tiles-example-globe"),
-                        html.Pre(TILES_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(TILES_EXAMPLE_CODE),
                     ),
                 ],
             ),
@@ -4134,114 +3950,200 @@ def build_examples_grid():
                         "Situation Room Briefing",
                         "This package-specific advanced example turns a breaking-news payload into a dark-mode command-center scene with up to two tethered popups at once, always choosing the two stories closest to the live camera center and updating as the user drags the globe.",
                         build_globe_stage("situation-room-globe"),
-                        html.Pre(SITUATION_ROOM_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
+                        example_code_and_events(SITUATION_ROOM_EXAMPLE_CODE),
                     ),
                     globe_card(
                         "Upstream Airline Routes Highlight",
                         "This ports the official highlight-links demo into Dash by loading the OpenFlights airport and route datasets at startup, filtering them to Portuguese domestic non-stop routes, and then highlighting the hovered arc.",
                         build_globe_stage("airline-routes-globe"),
-                        html.Div(
-                            [
-                                html.Pre(AIRLINE_ROUTES_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
-                                html.Pre(
-                                    id="airline-routes-event",
-                                    children="Click Run to mount this globe, then hover a route to inspect the latest payload.",
-                                    style={**CODE_BLOCK_STYLE, "margin": "12px 0 0 0"},
-                                ),
-                            ]
+                        example_code_and_events(
+                            AIRLINE_ROUTES_EXAMPLE_CODE,
+                            event_id="airline-routes-event",
+                            event_placeholder="Click Run to mount this globe, then hover a route to inspect the latest payload.",
                         ),
                     ),
                     globe_card(
                         "Upstream Countries Population",
                         "This ports globe.gl's countries-population example by loading the same Natural Earth GeoJSON and extruding each country polygon by the square root of its population.",
                         build_globe_stage("countries-population-globe"),
-                        html.Div(
-                            [
-                                html.Pre(COUNTRIES_POPULATION_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
-                                html.Pre(
-                                    id="countries-population-event",
-                                    children="Click Run to mount this globe, then hover a country to inspect the latest population-polygon payload.",
-                                    style={**CODE_BLOCK_STYLE, "margin": "12px 0 0 0"},
-                                ),
-                            ]
+                        example_code_and_events(
+                            COUNTRIES_POPULATION_EXAMPLE_CODE,
+                            event_id="countries-population-event",
+                            event_placeholder="Click Run to mount this globe, then hover a country to inspect the latest population-polygon payload.",
                         ),
                     ),
                     globe_card(
                         "Upstream Choropleth Countries",
                         "This mirrors the choropleth-countries demo by loading the Natural Earth country GeoJSON, coloring countries by GDP per capita, and highlighting the hovered polygon clientside while still exposing hover payloads to Dash.",
                         build_globe_stage("choropleth-countries-globe"),
-                        html.Div(
-                            [
-                                html.Pre(CHOROPLETH_COUNTRIES_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
-                                html.Pre(
-                                    id="choropleth-countries-event",
-                                    children="Click Run to mount this globe, then hover a country to inspect the latest payload.",
-                                    style={**CODE_BLOCK_STYLE, "margin": "12px 0 0 0"},
-                                ),
-                            ]
+                        example_code_and_events(
+                            CHOROPLETH_COUNTRIES_EXAMPLE_CODE,
+                            event_id="choropleth-countries-event",
+                            event_placeholder="Click Run to mount this globe, then hover a country to inspect the latest payload.",
                         ),
                     ),
                     globe_card(
                         "Large Dataset via data_url",
                         "Keep the Dash layout tiny by fetching GeoJSON in the browser with data_url(...), then enable_large_data_mode() so summary hover payloads and zero-duration layer transitions stay snappy.",
                         build_globe_stage("large-dataset-globe"),
-                        html.Div(
-                            [
-                                html.Pre(LARGE_DATASET_EXAMPLE_CODE, style=CODE_BLOCK_STYLE),
-                                html.Pre(
-                                    id="large-dataset-event",
-                                    children="Click Run to mount this globe. Hover payloads stay compact (summary mode) even for country-scale GeoJSON.",
-                                    style={**CODE_BLOCK_STYLE, "margin": "12px 0 0 0"},
-                                ),
-                            ]
+                        example_code_and_events(
+                            LARGE_DATASET_EXAMPLE_CODE,
+                            event_id="large-dataset-event",
+                            event_placeholder="Click Run to mount this globe. Hover payloads stay compact (summary mode) even for country-scale GeoJSON.",
                         ),
                     ),
                 ],
             ),
         ],
-        style={"display": "grid", "gap": "8px"},
+        gap="sm",
     )
 
 
-app = Dash(__name__, suppress_callback_exceptions=True)
-server = app.server
-app.layout = html.Div(
-    [
-        html.Div(
+def build_docs_sidebar():
+    links = []
+    for section_id, label in DOC_SECTIONS:
+        links.append(
+            dmc.NavLink(
+                label=label,
+                href=f"#{section_id}",
+                leftSection=nav_icon("tabler:chevron-right"),
+                variant="subtle",
+            )
+        )
+    return dmc.AppShellNavbar(
+        id="docs-navbar",
+        p="md",
+        children=[
+            dmc.Stack(
+                [
+                    dmc.Text("On This Page", size="sm", fw=700),
+                    dmc.Text(
+                        "A docs-first guide to the package API, helpers, and runnable examples.",
+                        size="sm",
+                        c="dimmed",
+                        style={"lineHeight": 1.55},
+                    ),
+                    dmc.ScrollArea(dmc.Stack(links, gap=2), h="calc(100vh - 160px)", type="hover"),
+                ],
+                gap="sm",
+            )
+        ],
+    )
+
+
+def build_docs_header():
+    return dmc.AppShellHeader(
+        dmc.Group(
             [
-                html.Div(
-                    f"Dash Globe Documentation v{dash_globe.__version__}",
-                    style={
-                        "fontSize": "0.8rem",
-                        "fontWeight": 700,
-                        "letterSpacing": "0.08em",
-                        "textTransform": "uppercase",
-                        "color": "#738295",
-                        "marginBottom": "10px",
-                    },
-                ),
-                html.H1("Dash Globe", style={"margin": "0 0 12px 0", "fontSize": "2.9rem", "color": "#182433"}),
-                html.P(
-                    "Build interactive globe visualizations in Dash with a docs-first Python API: chainable scene helpers, full layer coverage, utility exports for common Three Globe patterns, and regular Dash callback props for interactivity.",
-                    style={"maxWidth": "860px", "color": "#5f6b7a", "fontSize": "1.05rem", "lineHeight": 1.8, "margin": 0},
-                ),
-                build_badge_row(
+                dmc.Group(
                     [
-                        "Chainable scene and camera helpers",
-                        "Points, arcs, polygons, paths, heatmaps, hex bins, tiles, particles, rings, and labels",
-                        "Day/night cycle and rotating clouds",
-                        "Serializable materials and ring color helpers",
-                        "clickData, hoverData, rightClickData, currentView, globeReady, lastInteraction",
-                    ]
+                        dmc.Burger(id="docs-burger", size="sm", hiddenFrom="sm", opened=False),
+                        dmc.ThemeIcon(
+                            DashIconify(icon="tabler:globe", width=18),
+                            variant="light",
+                            color="blue",
+                            radius="md",
+                        ),
+                        dmc.Stack(
+                            [
+                                dmc.Text("Dash Globe", fw=700, lh=1.1),
+                                dmc.Text("Docs & live examples", size="xs", c="dimmed", lh=1.1),
+                            ],
+                            gap=2,
+                        ),
+                    ],
+                    gap="sm",
+                ),
+                dmc.Group(
+                    [
+                        dmc.Badge(f"v{dash_globe.__version__}", variant="light", color="gray"),
+                        dmc.Anchor("GitHub", href="https://github.com/jeffgallini/dash-globe", target="_blank", size="sm"),
+                    ],
+                    gap="md",
+                    visibleFrom="xs",
                 ),
             ],
-            style={**PANEL_STYLE, "marginBottom": "28px", "padding": "28px"},
-        ),
-        html.Div(
-            [
-                build_section_nav(),
-                html.Main(
+            h="100%",
+            px="md",
+            justify="space-between",
+        )
+    )
+
+
+def build_gallery_footer():
+    return dmc.Alert(
+        [
+            dmc.Text(
+                [
+                    dmc.Code("clickData"),
+                    ", ",
+                    dmc.Code("hoverData"),
+                    ", ",
+                    dmc.Code("rightClickData"),
+                    ", and ",
+                    dmc.Code("currentView"),
+                    " are regular Dash props, so the globe participates in the same callback model as the rest of a Dash app. ",
+                    "This gallery mounts one globe at a time to keep browser performance healthy.",
+                ],
+                size="sm",
+                style={"lineHeight": 1.7},
+            )
+        ],
+        id="gallery-footer",
+        color="gray",
+        variant="light",
+        mt="md",
+    )
+
+
+app = Dash(
+    __name__,
+    suppress_callback_exceptions=True,
+    external_stylesheets=dmc.styles.ALL,
+)
+server = app.server
+app.layout = dmc.MantineProvider(
+    dmc.AppShell(
+        [
+            build_docs_header(),
+            build_docs_sidebar(),
+            dmc.AppShellMain(
+                dmc.Container(
                     [
+                        dmc.Paper(
+                            [
+                                dmc.Text(
+                                    f"Dash Globe Documentation v{dash_globe.__version__}",
+                                    size="sm",
+                                    c="dimmed",
+                                    tt="uppercase",
+                                    fw=700,
+                                    lts=1,
+                                    mb=8,
+                                ),
+                                dmc.Title("Dash Globe", order=1, mb=8),
+                                dmc.Text(
+                                    "Build interactive globe visualizations in Dash with a docs-first Python API: chainable scene helpers, full layer coverage, utility exports for common Three Globe patterns, and regular Dash callback props for interactivity.",
+                                    c="dimmed",
+                                    maw=860,
+                                    style={"lineHeight": 1.8},
+                                ),
+                                build_badge_row(
+                                    [
+                                        "Chainable scene and camera helpers",
+                                        "Points, arcs, polygons, paths, heatmaps, hex bins, tiles, particles, rings, and labels",
+                                        "Day/night cycle and rotating clouds",
+                                        "Serializable materials and ring color helpers",
+                                        "clickData, hoverData, rightClickData, currentView, globeReady, lastInteraction",
+                                    ]
+                                ),
+                            ],
+                            withBorder=True,
+                            radius="md",
+                            p="xl",
+                            shadow="xs",
+                            mb="xl",
+                        ),
                         build_getting_started_section(),
                         build_api_overview_section(),
                         build_helper_guides_section(),
@@ -4257,20 +4159,36 @@ app.layout = html.Div(
                             build_gallery_footer(),
                         ),
                     ],
-                    style={"flex": "1 1 780px", "minWidth": 0},
-                ),
-            ],
-            style={"display": "flex", "flexWrap": "wrap", "alignItems": "flex-start", "gap": "28px"},
-        ),
-    ],
-    style={
-        "minHeight": "100vh",
-        "padding": "24px",
-        "background": "#f6f8fb",
-        "color": "#182433",
-        "fontFamily": "Inter, Segoe UI, sans-serif",
+                    size="lg",
+                    px="md",
+                    py="xl",
+                )
+            ),
+        ],
+        header={"height": 64},
+        navbar={"width": 280, "breakpoint": "sm", "collapsed": {"mobile": True}},
+        padding="md",
+        id="docs-appshell",
+    ),
+    forceColorScheme="light",
+    theme={
+        "primaryColor": "blue",
+        "fontFamily": "Inter, Segoe UI, system-ui, sans-serif",
+        "headings": {"fontFamily": "Inter, Segoe UI, system-ui, sans-serif"},
+        "defaultRadius": "md",
     },
 )
+
+
+@app.callback(
+    Output("docs-appshell", "navbar"),
+    Input("docs-burger", "opened"),
+    State("docs-appshell", "navbar"),
+)
+def toggle_docs_navbar(opened, navbar):
+    navbar = dict(navbar or {})
+    navbar["collapsed"] = {"mobile": not opened}
+    return navbar
 
 
 @app.callback(

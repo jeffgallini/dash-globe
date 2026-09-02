@@ -424,11 +424,13 @@ def test_usage_page_replaces_old_custom_examples_with_reference_docs():
     assert "region-globe" not in usage.GLOBE_IDS
     assert "density-globe" not in usage.GLOBE_IDS
     assert usage.QUICK_START_CODE.startswith("from dash import Dash, html")
-    assert any("Usage" in str(getattr(component, "children", "")) for component in _walk_components(usage.app.layout))
-    assert any("Overview" in str(getattr(component, "children", "")) for component in _walk_components(usage.app.layout))
-    assert any("Helper Guides" in str(getattr(component, "children", "")) for component in _walk_components(usage.app.layout))
-    assert any("API Reference" in str(getattr(component, "children", "")) for component in _walk_components(usage.app.layout))
-    assert any("On This Page" in str(getattr(component, "children", "")) for component in _walk_components(usage.app.layout))
+    labels = " ".join(str(getattr(component, "children", "")) for component in _walk_components(usage.app.layout))
+    assert "Usage" in labels
+    assert "Overview" in labels
+    assert "Helper Guides" in labels
+    assert "API Reference" in labels
+    assert "On This Page" in labels
+    assert any(getattr(component, "id", None) == "docs-appshell" for component in _walk_components(usage.app.layout))
 
 
 @pytest.mark.skipif(not HAS_DASH_TESTING_EXTRAS, reason="dash[testing] extras are not installed")
