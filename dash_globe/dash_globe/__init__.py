@@ -54,19 +54,18 @@ _js_dist.extend(
     ]
 )
 
-# TODO: Figure out if unpkg link works
+# Vendor chunks split out of the physical DashGlobe bundle for parallel download
+# and long-term browser caching. Webpack loads these on demand; they are registered
+# so Dash serves them from the component suite path.
+_vendor_async_chunks = ("three", "h3", "globe-vendor")
 _js_dist.extend(
     [
         {
-            "relative_package_path": "async-{}.js.map".format(async_resource),
-            "external_url": (
-                "https://unpkg.com/{0}@{2}"
-                "/{1}/async-{3}.js.map"
-            ).format(package_name, __name__, __version__, async_resource),
+            "relative_package_path": "async-{}.js".format(chunk_name),
             "namespace": package_name,
-            "dynamic": True,
+            "async": True,
         }
-        for async_resource in async_resources
+        for chunk_name in _vendor_async_chunks
     ]
 )
 
@@ -77,12 +76,6 @@ _js_dist.extend(
     
             'namespace': package_name
         },
-        {
-            'relative_package_path': 'dash_globe.min.js.map',
-    
-            'namespace': package_name,
-            'dynamic': True
-        }
     ]
 )
 
@@ -95,6 +88,7 @@ for _component in __all__:
 
 from .globe import DashGlobe  # noqa: E402
 from .colors import ring_color_interpolator  # noqa: E402
+from .data import data_url, is_data_url  # noqa: E402
 from .events import event_coords  # noqa: E402
 from .materials import lambert_material, material_spec  # noqa: E402
 from .presets import PRESETS  # noqa: E402
@@ -102,6 +96,8 @@ from .presets import PRESETS  # noqa: E402
 __all__ = [
     "DashGlobe",
     "PRESETS",
+    "data_url",
+    "is_data_url",
     "event_coords",
     "ring_color_interpolator",
     "material_spec",

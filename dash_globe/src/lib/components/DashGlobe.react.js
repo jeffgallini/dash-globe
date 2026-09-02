@@ -27,7 +27,9 @@ DashGlobe.defaultProps = {
     cloudsOpacity: 1,
     cameraTransitionDuration: 0,
     animationPaused: false,
-    currentViewReportInterval: 250
+    currentViewReportInterval: 250,
+    eventDataMode: 'summary',
+    largeDataMode: false
 };
 
 DashGlobe.propTypes = {
@@ -113,7 +115,7 @@ DashGlobe.propTypes = {
     /**
      * Point layer data and accessors.
      */
-    pointsData: PropTypes.array,
+    pointsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     pointLabel: PropTypes.any,
     pointLat: PropTypes.any,
     pointLng: PropTypes.any,
@@ -127,7 +129,7 @@ DashGlobe.propTypes = {
     /**
      * Arc layer data and accessors.
      */
-    arcsData: PropTypes.array,
+    arcsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     arcLabel: PropTypes.any,
     arcStartLat: PropTypes.any,
     arcStartLng: PropTypes.any,
@@ -150,7 +152,7 @@ DashGlobe.propTypes = {
     /**
      * Polygon layer data and accessors.
      */
-    polygonsData: PropTypes.array,
+    polygonsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     polygonLabel: PropTypes.any,
     polygonGeoJsonGeometry: PropTypes.any,
     polygonCapMaterial: PropTypes.any,
@@ -170,7 +172,7 @@ DashGlobe.propTypes = {
     /**
      * Path layer data and accessors.
      */
-    pathsData: PropTypes.array,
+    pathsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     pathLabel: PropTypes.any,
     pathPoints: PropTypes.any,
     pathPointLat: PropTypes.any,
@@ -188,7 +190,7 @@ DashGlobe.propTypes = {
     /**
      * Heatmap layer data and accessors.
      */
-    heatmapsData: PropTypes.array,
+    heatmapsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     heatmapPoints: PropTypes.any,
     heatmapPointLat: PropTypes.any,
     heatmapPointLng: PropTypes.any,
@@ -202,7 +204,7 @@ DashGlobe.propTypes = {
     /**
      * Hex bin layer data and accessors.
      */
-    hexBinPointsData: PropTypes.array,
+    hexBinPointsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     hexLabel: PropTypes.any,
     hexBinPointLat: PropTypes.any,
     hexBinPointLng: PropTypes.any,
@@ -219,7 +221,7 @@ DashGlobe.propTypes = {
     /**
      * Hexed polygon layer data and accessors.
      */
-    hexPolygonsData: PropTypes.array,
+    hexPolygonsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     hexPolygonLabel: PropTypes.any,
     hexPolygonGeoJsonGeometry: PropTypes.any,
     hexPolygonColor: PropTypes.any,
@@ -234,7 +236,7 @@ DashGlobe.propTypes = {
     /**
      * Tile layer data and accessors.
      */
-    tilesData: PropTypes.array,
+    tilesData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     tileLabel: PropTypes.any,
     tileLat: PropTypes.any,
     tileLng: PropTypes.any,
@@ -249,7 +251,7 @@ DashGlobe.propTypes = {
     /**
      * Particle layer data and accessors.
      */
-    particlesData: PropTypes.array,
+    particlesData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     particlesList: PropTypes.any,
     particleLabel: PropTypes.any,
     particleLat: PropTypes.any,
@@ -262,7 +264,7 @@ DashGlobe.propTypes = {
     /**
      * Ring layer data and accessors.
      */
-    ringsData: PropTypes.array,
+    ringsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     ringLat: PropTypes.any,
     ringLng: PropTypes.any,
     ringAltitude: PropTypes.any,
@@ -275,7 +277,7 @@ DashGlobe.propTypes = {
     /**
      * Label layer data and accessors.
      */
-    labelsData: PropTypes.array,
+    labelsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     labelLabel: PropTypes.any,
     labelLat: PropTypes.any,
     labelLng: PropTypes.any,
@@ -294,7 +296,7 @@ DashGlobe.propTypes = {
      * Geo-anchored HTML overlay data. Children are projected onto the globe by
      * matching each child to a data item with the same index.
      */
-    htmlElementsData: PropTypes.array,
+    htmlElementsData: PropTypes.oneOfType([PropTypes.array, PropTypes.object]),
     htmlElementLat: PropTypes.any,
     htmlElementLng: PropTypes.any,
     htmlElementAltitude: PropTypes.any,
@@ -310,6 +312,21 @@ DashGlobe.propTypes = {
     htmlElementTetherColor: PropTypes.any,
     htmlElementTetherWidth: PropTypes.any,
     htmlElementTetherAttach: PropTypes.any,
+
+    /**
+     * Controls how much object data is included in click/hover payloads.
+     * Use "summary" (default) for large datasets so Dash only receives compact
+     * identifiers/properties instead of full geometries. Use "full" to preserve
+     * the complete object payload.
+     */
+    eventDataMode: PropTypes.oneOf(['summary', 'full']),
+
+    /**
+     * When true, apply performance defaults aimed at large datasets: disable
+     * layer transitions, enable points merging when unset, and keep event
+     * payloads in summary mode.
+     */
+    largeDataMode: PropTypes.bool,
 
     /**
      * Last click event payload emitted by any supported layer.

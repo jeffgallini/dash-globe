@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Examples · Dash Globe</title>
+  <link rel="stylesheet" href="assets/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">🌐</span>
+        <span>Dash Globe</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="getting-started.html">Getting Started</a>
+        <a class="active" href="examples.html">Examples</a>
+        <a href="https://github.com/jeffgallini/dash-globe">GitHub</a>
+        <a href="https://pypi.org/project/dash-globe/">PyPI</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap section">
+    <div class="eyebrow">Gallery</div>
+    <h1>Examples</h1>
+    <p class="lead">
+      Captured from the interactive <code>usage.py</code> gallery. Prefer GIFs where the scene animates;
+      otherwise a still PNG shows the rendered state.
+    </p>
+
+    <div class="grid examples" style="margin-top: 2rem;">
+      <article class="card example-card">
+        <img src="assets/examples/basic-points.png" alt="Basic points globe" />
+        <div class="body">
+          <h3>Basic Points</h3>
+          <p>Night-earth texture with random colored altitude points.</p>
+        </div>
+      </article>
+      <article class="card example-card">
+        <img src="assets/examples/random-arcs.gif" alt="Random arcs animation" onerror="this.src='assets/examples/random-arcs.png'" />
+        <div class="body">
+          <h3>Random Arcs</h3>
+          <p>Dashed arcs with per-arc dash timing authored in Python.</p>
+        </div>
+      </article>
+      <article class="card example-card">
+        <img src="assets/examples/choropleth.png" alt="Choropleth countries" />
+        <div class="body">
+          <h3>Choropleth Countries</h3>
+          <p>GDP-per-capita coloring with clientside hover highlight.</p>
+        </div>
+      </article>
+      <article class="card example-card">
+        <img src="assets/examples/large-dataset.gif" alt="Large dataset animation" onerror="this.src='assets/examples/large-dataset.png'" />
+        <div class="body">
+          <h3>Large Dataset via data_url</h3>
+          <p>Browser-fetched GeoJSON with summary hover payloads.</p>
+        </div>
+      </article>
+      <article class="card example-card">
+        <img src="assets/examples/airline-routes.png" alt="Airline routes globe" />
+        <div class="body">
+          <h3>Airline Routes</h3>
+          <p>OpenFlights-derived routes with hover highlighting.</p>
+        </div>
+      </article>
+      <article class="card example-card">
+        <img src="assets/examples/day-night-cycle.gif" alt="Day night cycle animation" onerror="this.src='assets/examples/day-night-cycle.png'" />
+        <div class="body">
+          <h3>Day Night Cycle</h3>
+          <p>First-class day/night shader mode.</p>
+        </div>
+      </article>
+      <article class="card example-card">
+        <img src="assets/examples/clouds.gif" alt="Clouds animation" onerror="this.src='assets/examples/clouds.png'" />
+        <div class="body">
+          <h3>Clouds</h3>
+          <p>Rotating transparent cloud shell.</p>
+        </div>
+      </article>
+      <article class="card example-card">
+        <img src="assets/examples/situation-room.png" alt="Situation room globe" />
+        <div class="body">
+          <h3>Situation Room</h3>
+          <p>Camera-aware tethered HTML overlays for briefing-style scenes.</p>
+        </div>
+      </article>
+    </div>
+
+    <section class="section">
+      <h2>Run the interactive gallery</h2>
+      <pre class="code">cd dash_globe
+python usage.py</pre>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <div>Dash Globe v1.0.0</div>
+      <div><a href="getting-started.html">Getting started →</a></div>
+    </div>
+  </footer>
+</body>
+</html>

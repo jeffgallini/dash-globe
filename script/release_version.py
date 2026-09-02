@@ -11,8 +11,11 @@ PACKAGE_ROOT = ROOT / "dash_globe"
 PACKAGE_JSON_PATH = PACKAGE_ROOT / "package.json"
 PACKAGE_INFO_PATH = PACKAGE_ROOT / "dash_globe" / "package-info.json"
 PROJECT_TOML_PATH = PACKAGE_ROOT / "Project.toml"
+DESCRIPTION_PATH = PACKAGE_ROOT / "DESCRIPTION"
+PACKAGE_LOCK_PATH = PACKAGE_ROOT / "package-lock.json"
 
 PROJECT_TOML_VERSION_PATTERN = re.compile(r'(?m)^version\s*=\s*"(?P<version>[^"]+)"\s*$')
+DESCRIPTION_VERSION_PATTERN = re.compile(r"(?m)^Version:\s*(?P<version>\S+)\s*$")
 SEMVER_PATTERN = re.compile(r"^(?P<major>\d+)\.(?P<minor>\d+)\.(?P<patch>\d+)$")
 COMMIT_VERSION_PATTERN = re.compile(r"\bv(?P<version>\d+\.\d+\.\d+)\b", re.IGNORECASE)
 
@@ -39,6 +42,32 @@ def _write_project_toml_version(version: str) -> None:
     PROJECT_TOML_PATH.write_text(updated, encoding="utf-8")
 
 
+def _read_description_version() -> str:
+    description = DESCRIPTION_PATH.read_text(encoding="utf-8")
+    match = DESCRIPTION_VERSION_PATTERN.search(description)
+    if match is None:
+        raise RuntimeError(f"Could not find a Version entry in {DESCRIPTION_PATH}")
+    return match.group("version")
+
+
+def _write_description_version(version: str) -> None:
+    description = DESCRIPTION_PATH.read_text(encoding="utf-8")
+    updated = DESCRIPTION_VERSION_PATTERN.sub(f"Version: {version}", description, count=1)
+    DESCRIPTION_PATH.write_text(updated, encoding="utf-8")
+
+
+def _write_package_lock_version(version: str) -> None:
+    if not PACKAGE_LOCK_PATH.exists():
+        return
+
+    package_lock = _load_json(PACKAGE_LOCK_PATH)
+    package_lock["version"] = version
+    packages = package_lock.get("packages")
+    if isinstance(packages, dict) and "" in packages and isinstance(packages[""], dict):
+        packages[""]["version"] = version
+    _write_json(PACKAGE_LOCK_PATH, package_lock)
+
+
 def _parse_semver(version: str) -> tuple[int, int, int]:
     match = SEMVER_PATTERN.fullmatch(version)
     if match is None:
@@ -55,12 +84,18 @@ def read_version() -> str:
     package_json_version = _load_json(PACKAGE_JSON_PATH)["version"]
     package_info_version = _load_json(PACKAGE_INFO_PATH)["version"]
     project_toml_version = _read_project_toml_version()
+    description_version = _read_description_version()
 
-    versions = {package_json_version, package_info_version, project_toml_version}
+    versions = {
+        package_json_version,
+        package_info_version,
+        project_toml_version,
+        description_version,
+    }
     if len(versions) != 1:
         raise RuntimeError(
             "Version metadata is out of sync across package.json, package-info.json, "
-            f"and Project.toml: {sorted(versions)}"
+            f"Project.toml, and DESCRIPTION: {sorted(versions)}"
         )
 
     return package_json_version
@@ -78,6 +113,8 @@ def write_version(version: str) -> str:
     _write_json(PACKAGE_INFO_PATH, package_info)
 
     _write_project_toml_version(version)
+    _write_description_version(version)
+    _write_package_lock_version(version)
     return version
 
 

@@ -75,7 +75,12 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dash_globe/package.json dash_globe/dash_globe/package-info.json dash_globe/Project.toml
+          git add \
+            dash_globe/package.json \
+            dash_globe/package-lock.json \
+            dash_globe/dash_globe/package-info.json \
+            dash_globe/Project.toml \
+            dash_globe/DESCRIPTION
           git diff --cached --quiet || git commit -m "chore: release ${{ steps.version.outputs.tag }} [skip release]"
 
       - name: Tag release

@@ -12,6 +12,7 @@ from collections.abc import Mapping as MappingABC
 from typing import Any, Iterable, Mapping, Sequence
 
 from .DashGlobe import DashGlobe as _DashGlobeBase
+from .data import is_data_url
 
 
 def _coerce_items(items: Sequence[Any]) -> list[Any]:
@@ -457,7 +458,37 @@ class DashGlobe(_DashGlobeBase):
     def _update_layer(self, data_prop: str, data: Iterable[Any] | None = None, **props: Any) -> "DashGlobe":
         updates = dict(props)
         if data is not None:
-            updates[data_prop] = list(data)
+            if isinstance(data, str) or is_data_url(data):
+                updates[data_prop] = data
+            else:
+                updates[data_prop] = list(data)
+        return self.update(**updates)
+
+    def enable_large_data_mode(self, enabled: bool = True, **props: Any) -> "DashGlobe":
+        """Tune the globe for large datasets and snappy Dash updates.
+
+        Parameters
+        ----------
+        enabled : bool, optional
+            When ``True`` (default), enable client-side large-data defaults such
+            as summary event payloads, merged point/hex rendering, and disabled
+            layer transitions.
+        **props
+            Extra component props to apply in the same update.
+
+        Returns
+        -------
+        DashGlobe
+            The updated globe instance.
+
+        Notes
+        -----
+        Pair this with :func:`dash_globe.data_url` so large GeoJSON / JSON layer
+        payloads are fetched in the browser instead of being embedded in the
+        Dash layout.
+        """
+        updates = {"large_data_mode": enabled, "event_data_mode": "summary"}
+        updates.update(props)
         return self.update(**updates)
 
     def add_points(self, *points: Any) -> "DashGlobe":

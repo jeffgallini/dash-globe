@@ -25,7 +25,6 @@ setup(
     package_data={
         package_name: [
             "*.js",
-            "*.js.map",
             "*.txt",
             "metadata.json",
             "package-info.json",
