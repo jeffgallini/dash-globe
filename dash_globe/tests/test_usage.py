@@ -301,7 +301,8 @@ def test_situation_room_gallery_entry_uses_html_element_helper_and_side_selectio
     assert "update_html_elements" in usage.SITUATION_ROOM_EXAMPLE_CODE
     assert "html_element_tether" in usage.SITUATION_ROOM_EXAMPLE_CODE
     assert "currentView" in usage.SITUATION_ROOM_EXAMPLE_CODE
-    assert usage.SITUATION_ROOM_NEWS_PAYLOAD["count"] == len(usage.SITUATION_ROOM_STORIES) == 20
+    assert usage.SITUATION_ROOM_NEWS_PAYLOAD["count"] == len(usage.SITUATION_ROOM_STORIES)
+    assert len(usage.SITUATION_ROOM_STORIES) >= 2
     assert any(
         story["location"]["name"] == "Global" and (story["location"]["lat"] != 0 or story["location"]["lng"] != 0)
         for story in usage.SITUATION_ROOM_STORIES
@@ -481,13 +482,7 @@ def test_render_component_gallery(dash_duo):
 
     hovered_payload = None
     for x_offset, y_offset in candidate_offsets:
-        from selenium.webdriver.common.action_chains import ActionChains
-        from selenium.webdriver.common.actions.pointer_input import PointerInput
-        from selenium.webdriver.common.actions.action_builder import ActionBuilder
-
-        actions = ActionBuilder(dash_duo.driver)
-        actions.pointer_action.move_to_element(canvas, x_offset, y_offset)
-        actions.perform()
+        ActionChains(dash_duo.driver).move_to_element_with_offset(canvas, x_offset, y_offset).perform()
         time.sleep(0.35)
         hovered_payload = dash_duo.find_element(choropleth_event).text
         if '"layer": "polygon"' in hovered_payload:

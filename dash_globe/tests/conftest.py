@@ -1,6 +1,8 @@
+import pytest
 from selenium.webdriver import ChromeOptions
 
 
+@pytest.hookimpl(optionalhook=True)
 def pytest_setup_options():
     """Provide CI-stable Chrome options for dash[testing] browser fixtures."""
     options = ChromeOptions()
