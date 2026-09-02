@@ -1112,6 +1112,12 @@ CHOROPLETH_COUNTRIES_URL = (
     "https://raw.githubusercontent.com/vasturiano/react-globe.gl/master/example/datasets/"
     "ne_110m_admin_0_countries.geojson"
 )
+CHOROPLETH_COUNTRIES_EVENT_PLACEHOLDER = (
+    "Click Run to mount this globe, then hover a country to inspect the latest payload."
+)
+CHOROPLETH_COUNTRIES_HOVER_IDLE_TEXT = (
+    "Hover a country to highlight it and inspect the latest hover payload."
+)
 CHOROPLETH_BACKGROUND_IMAGE_URL = "https://unpkg.com/three-globe@2.45.2/example/img/night-sky.png"
 CHOROPLETH_PALETTE = ["#ffffcc", "#ffeda0", "#fed976", "#feb24c", "#fd8d3c", "#f03b20", "#bd0026"]
 AIRLINE_ROUTE_COUNTRY = "Portugal"
@@ -3979,7 +3985,7 @@ def build_examples_grid():
                         example_code_and_events(
                             CHOROPLETH_COUNTRIES_EXAMPLE_CODE,
                             event_id="choropleth-countries-event",
-                            event_placeholder="Click Run to mount this globe, then hover a country to inspect the latest payload.",
+                            event_placeholder=CHOROPLETH_COUNTRIES_EVENT_PLACEHOLDER,
                         ),
                     ),
                     globe_card(
@@ -4264,7 +4270,7 @@ def highlight_airline_routes(hover_data):
     Input("choropleth-countries-globe", "hoverData"),
 )
 def highlight_choropleth_country(hover_data):
-    payload_text = "Hover a country to highlight it and inspect the latest hover payload."
+    payload_text = CHOROPLETH_COUNTRIES_HOVER_IDLE_TEXT
     if hover_data is not None:
         payload_text = json.dumps(hover_data, indent=2)
 

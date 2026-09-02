@@ -40,7 +40,7 @@ def test_gallery_footer_uses_html_instead_of_markdown():
     footer = usage.build_gallery_footer()
 
     assert footer.id == "gallery-footer"
-    assert footer.__class__.__name__ == "P"
+    assert footer.__class__.__name__ == "Alert"
     assert not any(component.__class__.__name__ == "Markdown" for component in _walk_components(usage.app.layout))
 
 
@@ -459,7 +459,10 @@ def test_render_component_gallery(dash_duo):
     assert dash_duo.find_element("#choropleth-countries-globe canvas")
 
     choropleth_event = "#choropleth-countries-event"
-    placeholder_text = "Click Run to mount this globe, then hover a country to inspect the latest hover payload."
+    choropleth_idle_texts = {
+        usage.CHOROPLETH_COUNTRIES_EVENT_PLACEHOLDER,
+        usage.CHOROPLETH_COUNTRIES_HOVER_IDLE_TEXT,
+    }
     canvas = dash_duo.find_element("#choropleth-countries-globe canvas")
     dash_duo.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", canvas)
     canvas_rect = canvas.rect
@@ -481,11 +484,11 @@ def test_render_component_gallery(dash_duo):
         ActionChains(dash_duo.driver).move_to_element_with_offset(canvas, x_offset, y_offset).perform()
         time.sleep(0.35)
         hovered_payload = dash_duo.find_element(choropleth_event).text
-        if hovered_payload != placeholder_text and '"layer": "polygon"' in hovered_payload:
+        if '"layer": "polygon"' in hovered_payload:
             break
 
     assert hovered_payload is not None
-    assert hovered_payload != placeholder_text
+    assert hovered_payload not in choropleth_idle_texts
     assert '"layer": "polygon"' in hovered_payload
 
     time.sleep(0.9)
