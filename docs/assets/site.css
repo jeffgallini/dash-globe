@@ -246,9 +246,127 @@ h3 { font-size: 1.15rem; margin-bottom: 0.45rem; }
   flex-wrap: wrap;
 }
 
+.api-layout {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+.api-toc {
+  position: sticky;
+  top: 88px;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(19, 35, 56, 0.72);
+}
+
+.api-toc h2 {
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.85rem;
+}
+
+.api-toc nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.api-toc a {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.api-toc a:hover {
+  color: var(--text);
+}
+
+.api-section + .api-section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.method {
+  margin: 1.25rem 0;
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(7, 17, 29, 0.72);
+}
+
+.method h3 {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 1rem;
+  color: #d7e6f7;
+}
+
+.method p {
+  color: var(--muted);
+  line-height: 1.65;
+  margin: 0.65rem 0 0;
+}
+
+.method .sig {
+  margin-top: 0.75rem;
+  overflow-x: auto;
+  padding: 0.7rem 0.85rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: #050d16;
+  color: #9fd0ff;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+.param-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.param-table th,
+.param-table td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.55rem 0.45rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.param-table th {
+  color: var(--muted);
+  font-weight: 650;
+}
+
+.param-table code {
+  color: #d7e6f7;
+}
+
+.note {
+  margin-top: 1rem;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(77, 163, 255, 0.08);
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
     padding-top: 2.5rem;
+  }
+
+  .api-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .api-toc {
+    position: static;
   }
 }
