@@ -481,7 +481,13 @@ def test_render_component_gallery(dash_duo):
 
     hovered_payload = None
     for x_offset, y_offset in candidate_offsets:
-        ActionChains(dash_duo.driver).move_to_element_with_offset(canvas, x_offset, y_offset).perform()
+        from selenium.webdriver.common.action_chains import ActionChains
+        from selenium.webdriver.common.actions.pointer_input import PointerInput
+        from selenium.webdriver.common.actions.action_builder import ActionBuilder
+
+        actions = ActionBuilder(dash_duo.driver)
+        actions.pointer_action.move_to_element(canvas, x_offset, y_offset)
+        actions.perform()
         time.sleep(0.35)
         hovered_payload = dash_duo.find_element(choropleth_event).text
         if '"layer": "polygon"' in hovered_payload:
