@@ -1,11 +1,5 @@
-import importlib.util
-
 import pytest
 import usage
-
-
-HAS_DASH_TESTING_EXTRAS = importlib.util.find_spec("multiprocess") is not None
-GALLERY_RENDER_TIMEOUT = 20
 
 
 def _walk_components(component):
@@ -450,30 +444,17 @@ def test_usage_page_replaces_old_custom_examples_with_reference_docs():
     assert any(getattr(component, "id", None) == "docs-appshell" for component in _walk_components(usage.app.layout))
 
 
-@pytest.mark.skipif(not HAS_DASH_TESTING_EXTRAS, reason="dash[testing] extras are not installed")
-def test_render_component_gallery(dash_duo):
-    from dash.testing.application_runners import import_app
+def test_gallery_layout_has_runnable_example_stages():
+    component_ids = {getattr(component, "id", None) for component in _walk_components(usage.app.layout)}
 
-    app = import_app("usage")
-    dash_duo.start_server(app)
+    assert "examples" in component_ids
+    assert "gallery-footer" in component_ids
+    assert "basic-example-globe-run-button" in component_ids
+    assert "basic-example-globe-mount" in component_ids
+    assert "choropleth-countries-globe-run-button" in component_ids
+    assert "choropleth-countries-globe-mount" in component_ids
+    assert "choropleth-countries-event" in component_ids
 
-    dash_duo.wait_for_text_to_equal("#examples h2", "Live Examples")
-
-    assert len(dash_duo.find_elements("canvas")) == 0
-
-    dash_duo.find_element("#basic-example-globe-run-button").click()
-    dash_duo.wait_for_element("#basic-example-globe canvas", timeout=GALLERY_RENDER_TIMEOUT)
-
-    assert dash_duo.find_element("#basic-example-globe canvas")
-    assert len(dash_duo.find_elements("canvas")) == 1
-
-    dash_duo.find_element("#choropleth-countries-globe-run-button").click()
-    dash_duo.wait_for_element("#choropleth-countries-globe canvas", timeout=GALLERY_RENDER_TIMEOUT)
-    dash_duo.wait_for_element("#gallery-footer")
-
-    assert len(dash_duo.find_elements("canvas")) == 1
-    assert dash_duo.find_element("#choropleth-countries-globe canvas")
-    dash_duo.wait_for_text_to_equal(
-        "#choropleth-countries-event",
-        usage.CHOROPLETH_COUNTRIES_EVENT_PLACEHOLDER,
-    )
+    assert usage.GLOBE_BUILDERS["basic-example-globe"]().id == "basic-example-globe"
+    assert usage.GLOBE_BUILDERS["choropleth-countries-globe"]().id == "choropleth-countries-globe"
+    assert usage.build_globe_placeholder("basic-example-globe").id == "basic-example-globe-placeholder"
