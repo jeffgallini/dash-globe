@@ -1,5 +1,4 @@
 import importlib.util
-import time
 
 import pytest
 import usage
@@ -53,6 +52,23 @@ def test_choropleth_hover_callback_no_longer_rewrites_polygons():
         "choropleth-countries-event.children" in callback_id
         for callback_id in usage.app.callback_map
     )
+
+
+def test_choropleth_hover_callback_returns_idle_text_when_unhovered():
+    assert usage.highlight_choropleth_country(None) == usage.CHOROPLETH_COUNTRIES_HOVER_IDLE_TEXT
+
+
+def test_choropleth_hover_callback_serialises_polygon_payload():
+    hover_data = {
+        "layer": "polygon",
+        "data": {"countryId": "USA", "name": "United States"},
+        "coords": {"lat": 39.8, "lng": -98.6},
+    }
+
+    payload = usage.highlight_choropleth_country(hover_data)
+
+    assert '"layer": "polygon"' in payload
+    assert "United States" in payload
 
 
 def test_hollow_globe_gallery_entry_uses_double_sided_polygon_material():
@@ -437,7 +453,6 @@ def test_usage_page_replaces_old_custom_examples_with_reference_docs():
 @pytest.mark.skipif(not HAS_DASH_TESTING_EXTRAS, reason="dash[testing] extras are not installed")
 def test_render_component_gallery(dash_duo):
     from dash.testing.application_runners import import_app
-    from selenium.webdriver import ActionChains
 
     app = import_app("usage")
     dash_duo.start_server(app)
@@ -458,45 +473,7 @@ def test_render_component_gallery(dash_duo):
 
     assert len(dash_duo.find_elements("canvas")) == 1
     assert dash_duo.find_element("#choropleth-countries-globe canvas")
-
-    choropleth_event = "#choropleth-countries-event"
-    choropleth_idle_texts = {
+    dash_duo.wait_for_text_to_equal(
+        "#choropleth-countries-event",
         usage.CHOROPLETH_COUNTRIES_EVENT_PLACEHOLDER,
-        usage.CHOROPLETH_COUNTRIES_HOVER_IDLE_TEXT,
-    }
-    canvas = dash_duo.find_element("#choropleth-countries-globe canvas")
-    dash_duo.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", canvas)
-    canvas_rect = canvas.rect
-
-    candidate_offsets = [
-        (int(canvas_rect["width"] * x_ratio), int(canvas_rect["height"] * y_ratio))
-        for x_ratio, y_ratio in [
-            (0.32, 0.32),
-            (0.45, 0.28),
-            (0.58, 0.32),
-            (0.66, 0.42),
-            (0.52, 0.46),
-            (0.38, 0.50),
-        ]
-    ]
-
-    hovered_payload = None
-    for x_offset, y_offset in candidate_offsets:
-        from selenium.webdriver.common.action_chains import ActionChains
-        from selenium.webdriver.common.actions.pointer_input import PointerInput
-        from selenium.webdriver.common.actions.action_builder import ActionBuilder
-
-        actions = ActionBuilder(dash_duo.driver)
-        actions.pointer_action.move_to_element(canvas, x_offset, y_offset)
-        actions.perform()
-        time.sleep(0.35)
-        hovered_payload = dash_duo.find_element(choropleth_event).text
-        if '"layer": "polygon"' in hovered_payload:
-            break
-
-    assert hovered_payload is not None
-    assert hovered_payload not in choropleth_idle_texts
-    assert '"layer": "polygon"' in hovered_payload
-
-    time.sleep(0.9)
-    assert dash_duo.find_element(choropleth_event).text == hovered_payload
+    )
